@@ -11,13 +11,13 @@ use App\Interfaces\SectionInterface;
 use App\Interfaces\SemesterInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Interfaces\SchoolSessionInterface;
-use App\Interfaces\AcademicSettingInterface;
+use App\Interfaces\AcademicoSettingInterface;
 use App\Http\Requests\AttendanceTypeUpdateRequest;
 
-class AcademicSettingController extends Controller
+class AcademicoSettingController extends Controller
 {
     use SchoolSession;
-    protected $academicSettingRepository;
+    protected $academicoSettingRepository;
     protected $schoolSessionRepository;
     protected $schoolClassRepository;
     protected $schoolSectionRepository;
@@ -26,7 +26,7 @@ class AcademicSettingController extends Controller
     protected $semesterRepository;
 
     public function __construct(
-        AcademicSettingInterface $academicSettingRepository,
+        AcademicoSettingInterface $academicoSettingRepository,
         SchoolSessionInterface $schoolSessionRepository,
         SchoolClassInterface $schoolClassRepository,
         SectionInterface $schoolSectionRepository,
@@ -34,9 +34,9 @@ class AcademicSettingController extends Controller
         CourseInterface $courseRepository,
         SemesterInterface $semesterRepository
     ) {
-        $this->middleware(['can:view academic settings']);
+        $this->middleware(['can:view academico settings']);
 
-        $this->academicSettingRepository = $academicSettingRepository;
+        $this->academicoSettingRepository = $academicoSettingRepository;
         $this->schoolSessionRepository = $schoolSessionRepository;
         $this->schoolClassRepository = $schoolClassRepository;
         $this->schoolSectionRepository = $schoolSectionRepository;
@@ -56,7 +56,7 @@ class AcademicSettingController extends Controller
 
         $latest_school_session = $this->schoolSessionRepository->getLatestSession();
 
-        $academic_setting = $this->academicSettingRepository->getAcademicSetting();
+        $academico_setting = $this->academicoSettingRepository->getAcademicoSetting();
 
         $school_sessions = $this->schoolSessionRepository->getAll();
 
@@ -73,7 +73,7 @@ class AcademicSettingController extends Controller
         $data = [
             'current_school_session_id' => $current_school_session_id,
             'latest_school_session_id'  => $latest_school_session->id,
-            'academic_setting'          => $academic_setting,
+            'academico_setting'          => $academico_setting,
             'school_sessions'           => $school_sessions,
             'school_classes'            => $school_classes,
             'school_sections'           => $school_sections,
@@ -82,7 +82,7 @@ class AcademicSettingController extends Controller
             'semesters'                 => $semesters,
         ];
 
-        return view('academics.settings', $data);
+        return view('academicos.settings', $data);
     }
 
     /**
@@ -94,7 +94,7 @@ class AcademicSettingController extends Controller
     public function updateAttendanceType(AttendanceTypeUpdateRequest $request)
     {
         try {
-            $this->academicSettingRepository->updateAttendanceType($request->validated());
+            $this->academicoSettingRepository->updateAttendanceType($request->validated());
 
             return back()->with('status', 'Attendance type update was successful!');
         } catch (\Exception $e) {
@@ -104,7 +104,7 @@ class AcademicSettingController extends Controller
 
     public function updateFinalMarksSubmissionStatus(Request $request) {
         try {
-            $this->academicSettingRepository->updateFinalMarksSubmissionStatus($request);
+            $this->academicoSettingRepository->updateFinalMarksSubmissionStatus($request);
 
             return back()->with('status', 'Final marks submission status update was successful!');
         } catch (\Exception $e) {

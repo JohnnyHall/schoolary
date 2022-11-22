@@ -3,10 +3,10 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Interfaces\AcademicSettingInterface;
-use App\Repositories\AcademicSettingRepository;
+use App\Interfaces\AcademicoSettingInterface;
+use App\Repositories\AcademicoSettingRepository;
 
-class AcademicSettingServiceProvider extends ServiceProvider
+class AcademicoSettingServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -15,7 +15,7 @@ class AcademicSettingServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(AcademicSettingInterface::class, AcademicSettingRepository::class);
+        $this->app->bind(AcademicoSettingInterface::class, AcademicoSettingRepository::class);
     }
 
     /**

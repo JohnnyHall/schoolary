@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="row mt-4 g-3">
-                                <h6>Academic Information</h6>
+                                <h6>Academico Information</h6>
                                 <div class="col-3">
                                     <label for="inputAssignToClass" class="form-label">Assign to class:<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select onchange="getSections(this);" class="form-select" id="inputAssignToClass" name="class_id" required>

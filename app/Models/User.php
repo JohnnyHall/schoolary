@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Models\Mark;
 use App\Models\StudentParentInfo;
-use App\Models\StudentAcademicInfo;
+use App\Models\StudentAcademicoInfo;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -67,11 +67,11 @@ class User extends Authenticatable
     }
 
     /**
-     * Get the academic_info.
+     * Get the academico_info.
      */
-    public function academic_info()
+    public function academico_info()
     {
-        return $this->hasOne(StudentAcademicInfo::class, 'student_id', 'id');
+        return $this->hasOne(StudentAcademicoInfo::class, 'student_id', 'id');
     }
 
     /**

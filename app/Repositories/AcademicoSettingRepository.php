@@ -2,17 +2,17 @@
 
 namespace App\Repositories;
 
-use App\Models\AcademicSetting;
-use App\Interfaces\AcademicSettingInterface;
+use App\Models\AcademicoSetting;
+use App\Interfaces\AcademicoSettingInterface;
 
-class AcademicSettingRepository implements AcademicSettingInterface {
-    public function getAcademicSetting(){
-        return AcademicSetting::find(1);
+class AcademicoSettingRepository implements AcademicoSettingInterface {
+    public function getAcademicoSetting(){
+        return AcademicoSetting::find(1);
     }
 
     public function updateAttendanceType($request) {
         try {
-            AcademicSetting::where('id', 1)->update($request);
+            AcademicoSetting::where('id', 1)->update($request);
         } catch (\Exception $e) {
             throw new \Exception('Failed to update attendance type. '.$e->getMessage());
         }
@@ -24,7 +24,7 @@ class AcademicSettingRepository implements AcademicSettingInterface {
             $status = "on";
         }
         try {
-            AcademicSetting::where('id', 1)->update(['marks_submission_status' => $status]);
+            AcademicoSetting::where('id', 1)->update(['marks_submission_status' => $status]);
         } catch (\Exception $e) {
             throw new \Exception('Failed to update final marks submission status. '.$e->getMessage());
         }

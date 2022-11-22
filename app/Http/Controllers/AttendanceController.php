@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Interfaces\UserInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Interfaces\SchoolSessionInterface;
-use App\Interfaces\AcademicSettingInterface;
+use App\Interfaces\AcademicoSettingInterface;
 use App\Http\Requests\AttendanceStoreRequest;
 use App\Interfaces\SectionInterface;
 use App\Repositories\AttendanceRepository;
@@ -18,7 +18,7 @@ use App\Traits\SchoolSession;
 class AttendanceController extends Controller
 {
     use SchoolSession;
-    protected $academicSettingRepository;
+    protected $academicoSettingRepository;
     protected $schoolSessionRepository;
     protected $schoolClassRepository;
     protected $sectionRepository;
@@ -26,7 +26,7 @@ class AttendanceController extends Controller
 
     public function __construct(
         UserInterface $userRepository,
-        AcademicSettingInterface $academicSettingRepository,
+        AcademicoSettingInterface $academicoSettingRepository,
         SchoolSessionInterface $schoolSessionRepository,
         SchoolClassInterface $schoolClassRepository,
         SectionInterface $sectionRepository
@@ -34,7 +34,7 @@ class AttendanceController extends Controller
         $this->middleware(['can:view attendances']);
 
         $this->userRepository = $userRepository;
-        $this->academicSettingRepository = $academicSettingRepository;
+        $this->academicoSettingRepository = $academicoSettingRepository;
         $this->schoolSessionRepository = $schoolSessionRepository;
         $this->schoolClassRepository = $schoolClassRepository;
         $this->sectionRepository = $sectionRepository;
@@ -47,7 +47,7 @@ class AttendanceController extends Controller
     public function index()
     {
         return back();
-        // $academic_setting = $this->academicSettingRepository->getAcademicSetting();
+        // $academico_setting = $this->academicoSettingRepository->getAcademicoSetting();
 
         // $current_school_session_id = $this->getSchoolCurrentSession();
 
@@ -56,7 +56,7 @@ class AttendanceController extends Controller
         // $courses = $courseRepository->getAll($current_school_session_id);
 
         // $data = [
-        //     'academic_setting'      => $academic_setting,
+        //     'academico_setting'      => $academico_setting,
         //     'classes_and_sections'  => $classes_and_sections,
         //     'courses'               => $courses,
         // ];
@@ -76,7 +76,7 @@ class AttendanceController extends Controller
             return abort(404);
         }
         try{
-            $academic_setting = $this->academicSettingRepository->getAcademicSetting();
+            $academico_setting = $this->academicoSettingRepository->getAcademicoSetting();
             $current_school_session_id = $this->getSchoolCurrentSession();
 
             $class_id = $request->query('class_id');
@@ -90,7 +90,7 @@ class AttendanceController extends Controller
 
             $attendanceRepository = new AttendanceRepository();
 
-            if($academic_setting->attendance_type == 'section') {
+            if($academico_setting->attendance_type == 'section') {
                 $attendance_count = $attendanceRepository->getSectionAttendance($class_id, $section_id, $current_school_session_id)->count();
             } else {
                 $attendance_count = $attendanceRepository->getCourseAttendance($class_id, $course_id, $current_school_session_id)->count();
@@ -98,7 +98,7 @@ class AttendanceController extends Controller
 
             $data = [
                 'current_school_session_id' => $current_school_session_id,
-                'academic_setting'  => $academic_setting,
+                'academico_setting'  => $academico_setting,
                 'student_list'      => $student_list,
                 'school_class'      => $school_class,
                 'school_section'    => $school_section,
@@ -150,8 +150,8 @@ class AttendanceController extends Controller
         $attendanceRepository = new AttendanceRepository();
 
         try {
-            $academic_setting = $this->academicSettingRepository->getAcademicSetting();
-            if($academic_setting->attendance_type == 'section') {
+            $academico_setting = $this->academicoSettingRepository->getAcademicoSetting();
+            if($academico_setting->attendance_type == 'section') {
                 $attendances = $attendanceRepository->getSectionAttendance($class_id, $section_id, $current_school_session_id);
             } else {
                 $attendances = $attendanceRepository->getCourseAttendance($class_id, $course_id, $current_school_session_id);

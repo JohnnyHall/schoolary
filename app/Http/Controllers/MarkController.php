@@ -16,14 +16,14 @@ use App\Interfaces\SemesterInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Repositories\GradeRuleRepository;
 use App\Interfaces\SchoolSessionInterface;
-use App\Interfaces\AcademicSettingInterface;
+use App\Interfaces\AcademicoSettingInterface;
 use App\Repositories\GradingSystemRepository;
 
 class MarkController extends Controller
 {
     use SchoolSession, AssignedTeacherCheck;
 
-    protected $academicSettingRepository;
+    protected $academicoSettingRepository;
     protected $userRepository;
     protected $schoolClassRepository;
     protected $schoolSectionRepository;
@@ -32,7 +32,7 @@ class MarkController extends Controller
     protected $schoolSessionRepository;
 
     public function __construct(
-        AcademicSettingInterface $academicSettingRepository,
+        AcademicoSettingInterface $academicoSettingRepository,
         UserInterface $userRepository,
         SchoolSessionInterface $schoolSessionRepository,
         SchoolClassInterface $schoolClassRepository,
@@ -40,7 +40,7 @@ class MarkController extends Controller
         CourseInterface $courseRepository,
         SemesterInterface $semesterRepository
     ) {
-        $this->academicSettingRepository = $academicSettingRepository;
+        $this->academicoSettingRepository = $academicoSettingRepository;
         $this->userRepository = $userRepository;
         $this->schoolSessionRepository = $schoolSessionRepository;
         $this->schoolClassRepository = $schoolClassRepository;
@@ -126,7 +126,7 @@ class MarkController extends Controller
             $current_school_session_id = $this->getSchoolCurrentSession();
             $this->checkIfLoggedInUserIsAssignedTeacher($request, $current_school_session_id);
 
-            $academic_setting = $this->academicSettingRepository->getAcademicSetting();
+            $academico_setting = $this->academicoSettingRepository->getAcademicoSetting();
 
             $examRepository = new ExamRepository();
 
@@ -147,7 +147,7 @@ class MarkController extends Controller
             }
 
             $data = [
-                'academic_setting'          => $academic_setting,
+                'academico_setting'          => $academico_setting,
                 'exams'                     => $exams,
                 'students_with_marks'       => $studentsWithMarks,
                 'class_id'                  => $class_id,

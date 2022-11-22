@@ -15,7 +15,7 @@
 
                     <h3><i class="bi bi-compass"></i>
                         Class #{{request()->query('class_name')}}, 
-                        @if ($academic_setting->attendance_type == 'course')
+                        @if ($academico_setting->attendance_type == 'course')
                             Course: {{request()->query('course_name')}}
                         @else
                             Section #{{request()->query('section_name')}}
@@ -28,7 +28,7 @@
                                 @csrf
                                 <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                 <input type="hidden" name="class_id" value="{{request()->query('class_id')}}">
-                                @if ($academic_setting->attendance_type == 'course')
+                                @if ($academico_setting->attendance_type == 'course')
                                     <input type="hidden" name="course_id" value="{{request()->query('course_id')}}">
                                     <input type="hidden" name="section_id" value="0">
                                 @else

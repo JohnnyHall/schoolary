@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use App\Repositories\PromotionRepository;
 use App\Repositories\StudentParentInfoRepository;
-use App\Repositories\StudentAcademicInfoRepository;
+use App\Repositories\StudentAcademicoInfoRepository;
 
 class UserRepository implements UserInterface {
     use Base64ToFile;
@@ -92,9 +92,9 @@ class UserRepository implements UserInterface {
                 $studentParentInfoRepository = new StudentParentInfoRepository();
                 $studentParentInfoRepository->store($request, $student->id);
 
-                // Store Academic information
-                $studentAcademicInfoRepository = new StudentAcademicInfoRepository();
-                $studentAcademicInfoRepository->store($request, $student->id);
+                // Store Academico information
+                $studentAcademicoInfoRepository = new StudentAcademicoInfoRepository();
+                $studentAcademicoInfoRepository->store($request, $student->id);
 
                 // Assign student to a Class and a Section
                 $promotionRepository = new PromotionRepository();
@@ -205,7 +205,7 @@ class UserRepository implements UserInterface {
 
     public function findStudent($id) {
         try {
-            return User::with('parent_info', 'academic_info')->where('id', $id)->first();
+            return User::with('parent_info', 'academico_info')->where('id', $id)->first();
         } catch (\Exception $e) {
             throw new \Exception('Failed to get Student. '.$e->getMessage());
         }

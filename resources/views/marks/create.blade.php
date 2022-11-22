@@ -18,7 +18,7 @@
                         </ol>
                     </nav>
                     @include('session-messages')
-                    @if ($academic_setting['marks_submission_status'] == "on")
+                    @if ($academico_setting['marks_submission_status'] == "on")
                     <p class="text-primary">
                         <i class="bi bi-exclamation-diamond-fill me-2"></i> Marks Submission Window is open now.
                     </p>
@@ -33,7 +33,7 @@
                     @endif
                     <h3><i class="bi bi-diagram-2"></i> Class #{{request()->query('class_name')}}, Section #{{request()->query('section_name')}}</h3>
                     <h3><i class="bi bi-compass"></i> Course: {{request()->query('course_name')}}</h3>
-                    @if (!$final_marks_submitted && count($exams) > 0 && $academic_setting['marks_submission_status'] == "on")
+                    @if (!$final_marks_submitted && count($exams) > 0 && $academico_setting['marks_submission_status'] == "on")
                         <div class="col-3 mt-3">
                             <a type="button" href="{{route('course.final.mark.submit.show', ['class_id' => $class_id, 'class_name' => request()->query('class_name'), 'section_id' => $section_id, 'section_name' => request()->query('section_name'), 'course_id' => $course_id, 'course_name' => request()->query('course_name'), 'semester_id' => $semester_id])}}" class="btn btn-outline-primary" onclick="return confirm('Are you sure, you want to submit final marks?')"><i class="bi bi-check2"></i> Submit Final Marks</a>
                         </div>

@@ -117,14 +117,14 @@
                                     </table>
                                 </div>
                                 <div class="p-3 mb-3 border rounded bg-white">
-                                    <h6>Academic Information</h6>
+                                    <h6>Academico Information</h6>
                                     <table class="table table-responsive mt-3">
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Class:</th>
                                                 <td>{{$promotion_info->section->schoolClass->class_name}}</td>
                                                 <th>Board Reg. No.:</th>
-                                                <td>{{$student->academic_info->board_reg_no}}</td>
+                                                <td>{{$student->academico_info->board_reg_no}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Section:</th>

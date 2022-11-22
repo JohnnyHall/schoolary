@@ -177,7 +177,7 @@ return [
 
         App\Providers\SchoolSessionServiceProvider::class,
         App\Providers\SemesterServiceProvider::class,
-        App\Providers\AcademicSettingServiceProvider::class,
+        App\Providers\AcademicoSettingServiceProvider::class,
         App\Providers\SchoolClassServiceProvider::class,
         App\Providers\SectionServiceProvider::class,
         App\Providers\CourseServiceProvider::class,

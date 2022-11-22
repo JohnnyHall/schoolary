@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAcademicSettingsTable extends Migration
+class CreateStudentAcademicoInfosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateAcademicSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('academic_settings', function (Blueprint $table) {
+        Schema::create('student_academico_infos', function (Blueprint $table) {
             $table->id();
-            $table->string('attendance_type')->default('section');
-            $table->string('marks_submission_status')->default('off');
+            $table->string('board_reg_no')->nullable();
+            $table->unsignedInteger('student_id');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateAcademicSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('academic_settings');
+        Schema::dropIfExists('student_academico_infos');
     }
 }

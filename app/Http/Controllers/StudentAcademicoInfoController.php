@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\StudentAcademicInfo;
+use App\Models\StudentAcademicoInfo;
 use Illuminate\Http\Request;
 
-class StudentAcademicInfoController extends Controller
+class StudentAcademicoInfoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +42,10 @@ class StudentAcademicInfoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\StudentAcademicInfo  $studentAcademicInfo
+     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function show(StudentAcademicInfo $studentAcademicInfo)
+    public function show(StudentAcademicoInfo $studentAcademicoInfo)
     {
         //
     }
@@ -53,10 +53,10 @@ class StudentAcademicInfoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\StudentAcademicInfo  $studentAcademicInfo
+     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function edit(StudentAcademicInfo $studentAcademicInfo)
+    public function edit(StudentAcademicoInfo $studentAcademicoInfo)
     {
         //
     }
@@ -65,10 +65,10 @@ class StudentAcademicInfoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\StudentAcademicInfo  $studentAcademicInfo
+     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, StudentAcademicInfo $studentAcademicInfo)
+    public function update(Request $request, StudentAcademicoInfo $studentAcademicoInfo)
     {
         //
     }
@@ -76,10 +76,10 @@ class StudentAcademicInfoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\StudentAcademicInfo  $studentAcademicInfo
+     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(StudentAcademicInfo $studentAcademicInfo)
+    public function destroy(StudentAcademicoInfo $studentAcademicoInfo)
     {
         //
     }

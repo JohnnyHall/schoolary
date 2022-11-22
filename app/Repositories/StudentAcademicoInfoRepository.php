@@ -2,17 +2,17 @@
 
 namespace App\Repositories;
 
-use App\Models\StudentAcademicInfo;
+use App\Models\StudentAcademicoInfo;
 
-class StudentAcademicInfoRepository {
+class StudentAcademicoInfoRepository {
     public function store($request, $student_id) {
         try {
-            StudentAcademicInfo::create([
+            StudentAcademicoInfo::create([
                 'student_id'        => $student_id,
                 'board_reg_no'      => $request['board_reg_no'],
             ]);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to create Student academic information. '.$e->getMessage());
+            throw new \Exception('Failed to create Student academico information. '.$e->getMessage());
         }
     }
 }

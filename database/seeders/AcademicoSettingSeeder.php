@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\AcademicSetting;
+use App\Models\AcademicoSetting;
 
-class AcademicSettingSeeder extends Seeder
+class AcademicoSettingSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class AcademicSettingSeeder extends Seeder
      */
     public function run()
     {
-        AcademicSetting::factory()->count(1)->create();
+        AcademicoSetting::factory()->count(1)->create();
     }
 }
