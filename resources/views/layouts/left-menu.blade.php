@@ -33,25 +33,25 @@
                         class="ms-auto d-inline d-sm-none d-md-none d-xl-inline">{{ $classCount }}</span></a>
             </li>
             @endcan
-            @if(Auth::user()->role != "student")
+            @if(Auth::user()->role != "aluno")
             <li class="nav-item">
-                <a type="button" href="#student-submenu" data-bs-toggle="collapse"
-                    class="d-flex nav-link {{ request()->is('students*')? 'active' : '' }}"><i
+                <a type="button" href="#aluno-submenu" data-bs-toggle="collapse"
+                    class="d-flex nav-link {{ request()->is('alunos*')? 'active' : '' }}"><i
                         class="bi bi-person-lines-fill"></i> <span
-                        class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Students</span>
+                        class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Alunos</span>
                     <i class="ms-auto d-inline d-sm-none d-md-none d-xl-inline bi bi-chevron-down"></i>
                 </a>
-                <ul class="nav collapse {{ request()->is('students*')? 'show' : 'hide' }} bg-white"
-                    id="student-submenu">
+                <ul class="nav collapse {{ request()->is('alunos*')? 'show' : 'hide' }} bg-white"
+                    id="aluno-submenu">
                     <li class="nav-item w-100"
-                        style="{{ request()->routeIs('student.list.show')? 'font-weight:bold;' : '' }}"><a
-                            class="nav-link" href="{{route('student.list.show')}}"><i
-                                class="bi bi-person-video2 me-2"></i> View Students</a></li>
+                        style="{{ request()->routeIs('aluno.list.show')? 'font-weight:bold;' : '' }}"><a
+                            class="nav-link" href="{{route('aluno.list.show')}}"><i
+                                class="bi bi-person-video2 me-2"></i> Visualizar Alunos</a></li>
                     @if (!session()->has('browse_session_id') && Auth::user()->role == "secretaria")
                     <li class="nav-item w-100"
-                        style="{{ request()->routeIs('student.create.show')? 'font-weight:bold;' : '' }}"><a
-                            class="nav-link" href="{{route('student.create.show')}}"><i
-                                class="bi bi-person-plus me-2"></i> Add Student</a></li>
+                        style="{{ request()->routeIs('aluno.create.show')? 'font-weight:bold;' : '' }}"><a
+                            class="nav-link" href="{{route('aluno.create.show')}}"><i
+                                class="bi bi-person-plus me-2"></i> Adicionar Aluno</a></li>
                     @endif
                 </ul>
             </li>
@@ -85,15 +85,15 @@
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">My Courses</span></a>
             </li>
             @endif
-            @if(Auth::user()->role == "student")
+            @if(Auth::user()->role == "aluno")
             <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('student.attendance.show')? 'active' : '' }}"
-                    href="{{route('student.attendance.show', ['id' => Auth::user()->id])}}"><i
+                <a class="nav-link {{ request()->routeIs('aluno.attendance.show')? 'active' : '' }}"
+                    href="{{route('aluno.attendance.show', ['id' => Auth::user()->id])}}"><i
                         class="bi bi-calendar2-week"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Attendance</span></a>
             <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('course.student.list.show')? 'active' : '' }}"
-                    href="{{route('course.student.list.show', ['student_id' => Auth::user()->id])}}"><i
+                <a class="nav-link {{ request()->routeIs('course.aluno.list.show')? 'active' : '' }}"
+                    href="{{route('course.aluno.list.show', ['aluno_id' => Auth::user()->id])}}"><i
                         class="bi bi-journal-medical"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Courses</span></a>
             </li>
@@ -109,11 +109,11 @@
                 @php
                 if (session()->has('browse_session_id')){
                 $class_info = \App\Models\Promotion::where('session_id',
-                session('browse_session_id'))->where('student_id', Auth::user()->id)->first();
+                session('browse_session_id'))->where('aluno_id', Auth::user()->id)->first();
                 } else {
                 $latest_session = \App\Models\SchoolSession::latest()->first();
                 if($latest_session) {
-                $class_info = \App\Models\Promotion::where('session_id', $latest_session->id)->where('student_id',
+                $class_info = \App\Models\Promotion::where('session_id', $latest_session->id)->where('aluno_id',
                 Auth::user()->id)->first();
                 } else {
                 $class_info = [];
@@ -127,7 +127,7 @@
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Routine</span></a>
             </li>
             @endif
-            @if(Auth::user()->role != "student")
+            @if(Auth::user()->role != "aluno")
             <li class="nav-item border-bottom">
                 <a type="button" href="#exam-grade-submenu" data-bs-toggle="collapse"
                     class="d-flex nav-link {{ request()->is('exams*')? 'active' : '' }}"><i class="bi bi-file-text"></i>

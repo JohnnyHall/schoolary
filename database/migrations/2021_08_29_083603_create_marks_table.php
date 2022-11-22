@@ -16,7 +16,7 @@ class CreateMarksTable extends Migration
         Schema::create('marks', function (Blueprint $table) {
             $table->id();
             $table->float('marks')->default(0);
-            $table->unsignedInteger('student_id');
+            $table->unsignedInteger('aluno_id');
             $table->unsignedInteger('class_id');
             $table->unsignedInteger('section_id');
             $table->unsignedInteger('course_id');

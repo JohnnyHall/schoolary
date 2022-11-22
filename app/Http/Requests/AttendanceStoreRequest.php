@@ -27,8 +27,8 @@ class AttendanceStoreRequest extends FormRequest
             'course_id'             => 'integer',
             'class_id'              => 'integer',
             'section_id'            => 'integer',
-            'student_ids'           => 'required|array|min:1',
-            'student_ids.*'         => 'integer',
+            'aluno_ids'           => 'required|array|min:1',
+            'aluno_ids.*'         => 'integer',
             'status'                => 'required|array|min:1',
             'session_id'            => 'required',
         ];

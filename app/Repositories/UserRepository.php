@@ -10,8 +10,8 @@ use App\Models\Section;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use App\Repositories\PromotionRepository;
-use App\Repositories\StudentParentInfoRepository;
-use App\Repositories\StudentAcademicoInfoRepository;
+use App\Repositories\alunoParentInfoRepository;
+use App\Repositories\alunoAcademicoInfoRepository;
 
 class UserRepository implements UserInterface {
     use Base64ToFile;
@@ -66,10 +66,10 @@ class UserRepository implements UserInterface {
      * @param mixed $request
      * @return string
     */
-    public function createStudent($request) {
+    public function createaluno($request) {
         try {
             DB::transaction(function () use ($request) {
-                $student = User::create([
+                $aluno = User::create([
                     'first_name'    => $request['first_name'],
                     'last_name'     => $request['last_name'],
                     'email'         => $request['email'],
@@ -84,23 +84,23 @@ class UserRepository implements UserInterface {
                     'birthday'      => $request['birthday'],
                     'religion'      => $request['religion'],
                     'blood_type'    => $request['blood_type'],
-                    'role'          => 'student',
+                    'role'          => 'aluno',
                     'password'      => Hash::make($request['password']),
                 ]);
 
                 // Store Parents' information
-                $studentParentInfoRepository = new StudentParentInfoRepository();
-                $studentParentInfoRepository->store($request, $student->id);
+                $alunoParentInfoRepository = new alunoParentInfoRepository();
+                $alunoParentInfoRepository->store($request, $aluno->id);
 
                 // Store Academico information
-                $studentAcademicoInfoRepository = new StudentAcademicoInfoRepository();
-                $studentAcademicoInfoRepository->store($request, $student->id);
+                $alunoAcademicoInfoRepository = new alunoAcademicoInfoRepository();
+                $alunoAcademicoInfoRepository->store($request, $aluno->id);
 
-                // Assign student to a Class and a Section
+                // Assign aluno to a Class and a Section
                 $promotionRepository = new PromotionRepository();
-                $promotionRepository->assignClassSection($request, $student->id);
+                $promotionRepository->assignClassSection($request, $aluno->id);
 
-                $student->givePermissionTo(
+                $aluno->givePermissionTo(
                     'view attendances',
                     'view assignments',
                     'submit assignments',
@@ -114,14 +114,14 @@ class UserRepository implements UserInterface {
                 );
             });
         } catch (\Exception $e) {
-            throw new \Exception('Failed to create Student. '.$e->getMessage());
+            throw new \Exception('Failed to create aluno. '.$e->getMessage());
         }
     }
 
-    public function updateStudent($request) {
+    public function updatealuno($request) {
         try {
             DB::transaction(function () use ($request) {
-                User::where('id', $request['student_id'])->update([
+                User::where('id', $request['aluno_id'])->update([
                     'first_name'    => $request['first_name'],
                     'last_name'     => $request['last_name'],
                     'email'         => $request['email'],
@@ -138,15 +138,15 @@ class UserRepository implements UserInterface {
                 ]);
 
                 // Update Parents' information
-                $studentParentInfoRepository = new StudentParentInfoRepository();
-                $studentParentInfoRepository->update($request, $request['student_id']);
+                $alunoParentInfoRepository = new alunoParentInfoRepository();
+                $alunoParentInfoRepository->update($request, $request['aluno_id']);
 
-                // Update Student's ID card number
+                // Update aluno's ID card number
                 $promotionRepository = new PromotionRepository();
-                $promotionRepository->update($request, $request['student_id']);
+                $promotionRepository->update($request, $request['aluno_id']);
             });
         } catch (\Exception $e) {
-            throw new \Exception('Failed to update Student. '.$e->getMessage());
+            throw new \Exception('Failed to update aluno. '.$e->getMessage());
         }
     }
 
@@ -171,7 +171,7 @@ class UserRepository implements UserInterface {
         }
     }
 
-    public function getAllStudents($session_id, $class_id, $section_id) {
+    public function getAllalunos($session_id, $class_id, $section_id) {
         if($class_id == 0 || $section_id == 0) {
             $schoolClass = SchoolClass::where('session_id', $session_id)
                                     ->first();
@@ -189,25 +189,25 @@ class UserRepository implements UserInterface {
             $promotionRepository = new PromotionRepository();
             return $promotionRepository->getAll($session_id, $class_id, $section_id);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to get all Students. '.$e->getMessage());
+            throw new \Exception('Failed to get all alunos. '.$e->getMessage());
         }
     }
 
-    public function getAllStudentsBySession($session_id) {
+    public function getAllalunosBySession($session_id) {
         $promotionRepository = new PromotionRepository();
-        return $promotionRepository->getAllStudentsBySession($session_id);
+        return $promotionRepository->getAllalunosBySession($session_id);
     }
 
-    public function getAllStudentsBySessionCount($session_id) {
+    public function getAllalunosBySessionCount($session_id) {
         $promotionRepository = new PromotionRepository();
-        return $promotionRepository->getAllStudentsBySessionCount($session_id);
+        return $promotionRepository->getAllalunosBySessionCount($session_id);
     }
 
-    public function findStudent($id) {
+    public function findaluno($id) {
         try {
             return User::with('parent_info', 'academico_info')->where('id', $id)->first();
         } catch (\Exception $e) {
-            throw new \Exception('Failed to get Student. '.$e->getMessage());
+            throw new \Exception('Failed to get aluno. '.$e->getMessage());
         }
     }
 

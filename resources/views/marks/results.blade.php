@@ -51,7 +51,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">Photo</th>
-                                        <th scope="col">Student Name</th>
+                                        <th scope="col">aluno Name</th>
                                         <th scope="col">Total Marks</th>
                                         <th scope="col">Grade Points</th>
                                         <th scope="col">Grade</th>
@@ -62,7 +62,7 @@
                                         @foreach ($marks as $mark)
                                         <tr>
                                             <td><i class="bi bi-person-square"></i></td>
-                                            <td>{{$mark->student->first_name}} {{$mark->student->last_name}}</td>
+                                            <td>{{$mark->aluno->first_name}} {{$mark->aluno->last_name}}</td>
                                             <td>{{$mark->final_marks}}</td>
                                             <td>{{$mark->getAttribute('point')}}</td>
                                             <td>{{$mark->getAttribute('grade')}}</td>

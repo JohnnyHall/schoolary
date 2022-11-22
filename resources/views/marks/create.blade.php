@@ -48,7 +48,7 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                            <th scope="col">Student Name</th>
+                                            <th scope="col">aluno Name</th>
                                             @isset($exams)
                                                 @foreach ($exams as $exam)
                                                 <th scope="col"><a href="{{route('exam.rule.show', ['exam_id' => $exam->id])}}" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{$exam->exam_name}} exam rules">{{$exam->exam_name}}</a></th>
@@ -58,16 +58,16 @@
                                         </thead>
                                         <tbody>
                                             @isset($exams)
-                                                @isset($students_with_marks)
-                                                    @foreach ($students_with_marks as $id => $students_with_mark)
+                                                @isset($alunos_with_marks)
+                                                    @foreach ($alunos_with_marks as $id => $alunos_with_mark)
                                                         @php
                                                             $markedExamCount = 0;
                                                         @endphp
                                                     <tr>
-                                                        <td>{{$students_with_mark[0]->student->first_name}} {{$students_with_mark[0]->student->last_name}}</td>
-                                                        @foreach ($students_with_mark as $st)
+                                                        <td>{{$alunos_with_mark[0]->aluno->first_name}} {{$alunos_with_mark[0]->aluno->last_name}}</td>
+                                                        @foreach ($alunos_with_mark as $st)
                                                             <td>
-                                                                <input type="number" step="0.01" class="form-control" name="student_mark[{{$students_with_mark[0]->student->id}}][{{$exams[$markedExamCount]->id}}]" value="{{$st->marks}}">
+                                                                <input type="number" step="0.01" class="form-control" name="aluno_mark[{{$alunos_with_mark[0]->aluno->id}}][{{$exams[$markedExamCount]->id}}]" value="{{$st->marks}}">
                                                             </td>
                                                             
                                                             @php
@@ -75,16 +75,16 @@
                                                             @endphp
                                                         @endforeach
                                                         @php
-                                                            $students_with_markCount = count($students_with_mark);
+                                                            $alunos_with_markCount = count($alunos_with_mark);
                                                             $examCount = count($exams);
                                                             $gt = 0;
-                                                            if($students_with_markCount < $examCount) {
-                                                                $gt = $examCount - $students_with_markCount;
+                                                            if($alunos_with_markCount < $examCount) {
+                                                                $gt = $examCount - $alunos_with_markCount;
                                                             }
                                                         @endphp
                                                         @for ($i = 0; $i < $gt; $i++)
                                                             <td>
-                                                                <input type="number" step="0.01" class="form-control" name="student_mark[{{$students_with_mark[0]->student->id}}][{{$exams[$markedExamCount]->id}}]">
+                                                                <input type="number" step="0.01" class="form-control" name="aluno_mark[{{$alunos_with_mark[0]->aluno->id}}][{{$exams[$markedExamCount]->id}}]">
                                                             </td>
                                                             @php
                                                                 $markedExamCount++;
@@ -94,21 +94,21 @@
                                                     @endforeach
                                                 @endisset
                                             @endisset
-                                            @if(count($students_with_marks) < 1)
-                                                @foreach ($sectionStudents as $sectionStudent)
+                                            @if(count($alunos_with_marks) < 1)
+                                                @foreach ($sectionalunos as $sectionaluno)
                                                     <tr>
-                                                        <td>{{$sectionStudent->student->first_name}} {{$sectionStudent->student->last_name}}</td>
+                                                        <td>{{$sectionaluno->aluno->first_name}} {{$sectionaluno->aluno->last_name}}</td>
                                                         @isset($exams)
                                                             @foreach ($exams as $exam)
                                                                 <td>
-                                                                    <input type="number" class="form-control" name="student_mark[{{$sectionStudent->student->id}}][{{$exam->id}}]">
+                                                                    <input type="number" class="form-control" name="aluno_mark[{{$sectionaluno->aluno->id}}][{{$exam->id}}]">
                                                                 </td>
                                                             @endforeach
                                                         @endisset
                                                     </tr>
                                                 @endforeach
                                             @endif
-                                            <input type="hidden" name="studentCount" value="{{count($sectionStudents)}}">
+                                            <input type="hidden" name="alunoCount" value="{{count($sectionalunos)}}">
                                             <input type="hidden" name="semester_id" value="{{$semester_id}}">
                                             <input type="hidden" name="class_id" value="{{$class_id}}">
                                             <input type="hidden" name="section_id" value="{{$section_id}}">

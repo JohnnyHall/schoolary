@@ -100,7 +100,7 @@
                                                         'course_name' => $course->course->course_name,
                                                         'semester_id' => $selected_semester_id
                                                     ])}}" role="button" class="dropdown-item"><i class="bi bi-cloud-sun me-2"></i> View Final Results</a></li>
-                                                    <li><a href="#" role="button" class="dropdown-item disabled"  tabindex="-1" aria-disabled="true"><i class="bi bi-chat-left-text me-2"></i> Message Students</a></li>
+                                                    <li><a href="#" role="button" class="dropdown-item disabled"  tabindex="-1" aria-disabled="true"><i class="bi bi-chat-left-text me-2"></i> Message alunos</a></li>
                                                     </ul>
                                                 </div>
                                             </td>

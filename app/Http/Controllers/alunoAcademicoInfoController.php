@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\StudentAcademicoInfo;
+use App\Models\alunoAcademicoInfo;
 use Illuminate\Http\Request;
 
-class StudentAcademicoInfoController extends Controller
+class alunoAcademicoInfoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +42,10 @@ class StudentAcademicoInfoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
+     * @param  \App\Models\alunoAcademicoInfo  $alunoAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function show(StudentAcademicoInfo $studentAcademicoInfo)
+    public function show(alunoAcademicoInfo $alunoAcademicoInfo)
     {
         //
     }
@@ -53,10 +53,10 @@ class StudentAcademicoInfoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
+     * @param  \App\Models\alunoAcademicoInfo  $alunoAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function edit(StudentAcademicoInfo $studentAcademicoInfo)
+    public function edit(alunoAcademicoInfo $alunoAcademicoInfo)
     {
         //
     }
@@ -65,10 +65,10 @@ class StudentAcademicoInfoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
+     * @param  \App\Models\alunoAcademicoInfo  $alunoAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, StudentAcademicoInfo $studentAcademicoInfo)
+    public function update(Request $request, alunoAcademicoInfo $alunoAcademicoInfo)
     {
         //
     }
@@ -76,10 +76,10 @@ class StudentAcademicoInfoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\StudentAcademicoInfo  $studentAcademicoInfo
+     * @param  \App\Models\alunoAcademicoInfo  $alunoAcademicoInfo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(StudentAcademicoInfo $studentAcademicoInfo)
+    public function destroy(alunoAcademicoInfo $alunoAcademicoInfo)
     {
         //
     }

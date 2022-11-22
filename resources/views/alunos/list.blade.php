@@ -8,18 +8,18 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Student List
+                        <i class="bi bi-person-lines-fill"></i> aluno List
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Student List</li>
+                            <li class="breadcrumb-item active" aria-current="page">aluno List</li>
                         </ol>
                     </nav>
                     @include('session-messages')
                     <h6>Filter list by:</h6>
                     <div class="mb-4 mt-4">
-                        <form class="row" action="{{route('student.list.show')}}" method="GET">
+                        <form class="row" action="{{route('aluno.list.show')}}" method="GET">
                             <div class="col">
                                 <select onchange="getSections(this);" class="form-select" aria-label="Class" name="class_id" required>
                                     @isset($school_classes)
@@ -39,9 +39,9 @@
                                 <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Load List</button>
                             </div>
                         </form>
-                        @foreach ($studentList as $student)
+                        @foreach ($alunoList as $aluno)
                             @if ($loop->first)
-                                <p class="mt-3"><b>Section:</b> {{$student->section->section_name}}</p>
+                                <p class="mt-3"><b>Section:</b> {{$aluno->section->section_name}}</p>
                                 @break
                             @endif
                         @endforeach
@@ -59,26 +59,26 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($studentList as $student)
+                                    @foreach ($alunoList as $aluno)
                                     <tr>
-                                        <th scope="row">{{$student->id_card_number}}</th>
+                                        <th scope="row">{{$aluno->id_card_number}}</th>
                                         <td>
-                                            @if (isset($student->student->photo))
-                                                <img src="{{asset('/storage'.$student->student->photo)}}" class="rounded" alt="Profile picture" height="30" width="30">
+                                            @if (isset($aluno->aluno->photo))
+                                                <img src="{{asset('/storage'.$aluno->aluno->photo)}}" class="rounded" alt="Profile picture" height="30" width="30">
                                             @else
                                                 <i class="bi bi-person-square"></i>
                                             @endif
                                         </td>
-                                        <td>{{$student->student->first_name}}</td>
-                                        <td>{{$student->student->last_name}}</td>
-                                        <td>{{$student->student->email}}</td>
-                                        <td>{{$student->student->phone}}</td>
+                                        <td>{{$aluno->aluno->first_name}}</td>
+                                        <td>{{$aluno->aluno->last_name}}</td>
+                                        <td>{{$aluno->aluno->email}}</td>
+                                        <td>{{$aluno->aluno->phone}}</td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <a href="{{route('student.attendance.show', ['id' => $student->student->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Attendance</a>
-                                                <a href="{{url('students/view/profile/'.$student->student->id)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Profile</a>
+                                                <a href="{{route('aluno.attendance.show', ['id' => $aluno->aluno->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Attendance</a>
+                                                <a href="{{url('alunos/view/profile/'.$aluno->aluno->id)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Profile</a>
                                                 @can('edit users')
-                                                <a href="{{route('student.edit.show', ['id' => $student->student->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Edit</a>
+                                                <a href="{{route('aluno.edit.show', ['id' => $aluno->aluno->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Edit</a>
                                                 @endcan
                                                 {{-- <button type="button" class="btn btn-sm btn-primary"><i class="bi bi-trash2"></i> Delete</button> --}}
                                             </div>
