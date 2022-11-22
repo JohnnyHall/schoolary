@@ -8,11 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Promote alunos
+                        <i class="bi bi-person-lines-fill"></i> Promote Students
                     </h1>
                     @include('session-messages')
                     <p class="text-danger">
-                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> alunos must be promoted only once to a new Session. Ususally, secretaria will create a New Session once Academico activity ends for the Current Session.</small>
+                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Students must be promoted only once to a new Session. Ususally, secretaria will create a New Session once Academic activity ends for the Current Session.</small>
                     </p>
                     <div class="mb-4 mt-4">
                         <form action="{{route('promotions.store')}}" method="POST">
@@ -30,14 +30,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @isset($alunos)
-                                        @foreach ($alunos as $index => $aluno)
+                                    @isset($students)
+                                        @foreach ($students as $index => $student)
                                         <tr>
                                             <th scope="row">
-                                                <input type="text" class="form-control" name="id_card_number[{{$aluno->aluno->id}}]" value="{{$aluno->id_card_number}}">
+                                                <input type="text" class="form-control" name="id_card_number[{{$student->student->id}}]" value="{{$student->id_card_number}}">
                                             </th>
-                                            <td>{{$aluno->aluno->first_name}}</td>
-                                            <td>{{$aluno->aluno->last_name}}</td>
+                                            <td>{{$student->student->first_name}}</td>
+                                            <td>{{$student->student->last_name}}</td>
                                             <td>{{$schoolClass->class_name}}</td>
                                             <td>{{$section->section_name}}</td>
                                             <td>

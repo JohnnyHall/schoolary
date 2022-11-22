@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\AcademicoSetting;
+use App\Models\AcademicSetting;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class AcademicoSettingFactory extends Factory
+class AcademicSettingFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = AcademicoSetting::class;
+    protected $model = AcademicSetting::class;
 
     /**
      * Define the model's default state.

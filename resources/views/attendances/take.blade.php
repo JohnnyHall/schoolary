@@ -15,7 +15,7 @@
 
                     <h3><i class="bi bi-compass"></i>
                         Class #{{request()->query('class_name')}}, 
-                        @if ($academico_setting->attendance_type == 'course')
+                        @if ($academic_setting->attendance_type == 'course')
                             Course: {{request()->query('course_name')}}
                         @else
                             Section #{{request()->query('section_name')}}
@@ -28,7 +28,7 @@
                                 @csrf
                                 <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                 <input type="hidden" name="class_id" value="{{request()->query('class_id')}}">
-                                @if ($academico_setting->attendance_type == 'course')
+                                @if ($academic_setting->attendance_type == 'course')
                                     <input type="hidden" name="course_id" value="{{request()->query('course_id')}}">
                                     <input type="hidden" name="section_id" value="0">
                                 @else
@@ -39,24 +39,24 @@
                                     <thead>
                                         <tr>
                                             <th scope="col"># ID Card Number</th>
-                                            <th scope="col">aluno Name</th>
+                                            <th scope="col">Student Name</th>
                                             <th scope="col">Present</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($aluno_list as $aluno)
-                                        <input type="hidden" name="aluno_ids[]" value="{{$aluno->aluno_id}}">
+                                        @foreach ($student_list as $student)
+                                        <input type="hidden" name="student_ids[]" value="{{$student->student_id}}">
                                         <tr>
-                                            <th scope="row">{{$aluno->id_card_number}}</th>
-                                            <td>{{$aluno->aluno->first_name}} {{$aluno->aluno->last_name}}</td>
+                                            <th scope="row">{{$student->id_card_number}}</th>
+                                            <td>{{$student->student->first_name}} {{$student->student->last_name}}</td>
                                             <td>
-                                                <input class="form-check-input" type="checkbox" name="status[{{$aluno->aluno_id}}]" checked>
+                                                <input class="form-check-input" type="checkbox" name="status[{{$student->student_id}}]" checked>
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                @if(count($aluno_list) > 0 && $attendance_count < 1)
+                                @if(count($student_list) > 0 && $attendance_count < 1)
                                 <div class="mb-4">
                                     <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Submit</button>
                                 </div>

@@ -8,93 +8,93 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Edit aluno
+                        <i class="bi bi-person-lines-fill"></i> Edit Student
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">aluno List</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Edit aluno</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Student List</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Edit Student</li>
                         </ol>
                     </nav>
 
                     @include('session-messages')
                     <div class="mb-4">
-                        <form class="row g-3" action="{{route('school.aluno.update')}}" method="POST">
+                        <form class="row g-3" action="{{route('school.student.update')}}" method="POST">
                             @csrf
-                            <input type="hidden" name="aluno_id" value="{{$aluno->id}}">
+                            <input type="hidden" name="student_id" value="{{$student->id}}">
                             <div class="row g-3">
                                 <div class="col-3">
                                     <label for="inputFirstName" class="form-label">First Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="First Name" required value="{{$aluno->first_name}}">
+                                    <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="First Name" required value="{{$student->first_name}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputLastName" class="form-label">Last Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Last Name" required value="{{$aluno->last_name}}">
+                                    <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Last Name" required value="{{$student->last_name}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputEmail4" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="email" class="form-control" id="inputEmail4" name="email" required value="{{$aluno->email}}">
+                                    <input type="email" class="form-control" id="inputEmail4" name="email" required value="{{$student->email}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputBirthday" class="form-label">Birthday<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="date" class="form-control" id="inputBirthday" name="birthday" placeholder="Birthday" required value="{{$aluno->birthday}}">
+                                    <input type="date" class="form-control" id="inputBirthday" name="birthday" placeholder="Birthday" required value="{{$student->birthday}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$aluno->address}}">
+                                    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$student->address}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputAddress2" class="form-label">Address 2</label>
-                                    <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{$aluno->address2}}">
+                                    <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{$student->address2}}">
                                 </div>
                                 <div class="col-2">
                                     <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$aluno->city}}">
+                                    <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$student->city}}">
                                 </div>
                                 <div class="col-2">
                                     <label for="inputZip" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$aluno->zip}}">
+                                    <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$student->zip}}">
                                 </div>
                                 <div class="col-2">
                                     <label for="inputState" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select id="inputState" class="form-select" name="gender" required>
-                                        <option value="Male" {{($aluno->gender == 'Male')?'selected':null}}>Male</option>
-                                        <option value="Female" {{($aluno->gender == 'Female')?'selected':null}}>Female</option>
+                                        <option value="Male" {{($student->gender == 'Male')?'selected':null}}>Male</option>
+                                        <option value="Female" {{($student->gender == 'Female')?'selected':null}}>Female</option>
                                     </select>
                                 </div>
                                 <div class="col-2">
                                     <label for="inputNationality" class="form-label">Nationality<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required value="{{$aluno->nationality}}">
+                                    <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required value="{{$student->nationality}}">
                                 </div>
                                 <div class="col-2">
                                     <label for="inputBloodType" class="form-label">BloodType<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select id="inputBloodType" class="form-select" name="blood_type" required>
-                                        <option value="A+" {{($aluno->blood_type == 'A+')?'selected':null}}>A+</option>
-                                        <option value="A-" {{($aluno->blood_type == 'A-')?'selected':null}}>A-</option>
-                                        <option value="B+" {{($aluno->blood_type == 'B+')?'selected':null}}>B+</option>
-                                        <option value="B-" {{($aluno->blood_type == 'B-')?'selected':null}}>B-</option>
-                                        <option value="O+" {{($aluno->blood_type == 'O+')?'selected':null}}>O+</option>
-                                        <option value="O-" {{($aluno->blood_type == 'O-')?'selected':null}}>O-</option>
-                                        <option value="AB+" {{($aluno->blood_type == 'AB+')?'selected':null}}>AB+</option>
-                                        <option value="AB-" {{($aluno->blood_type == 'AB-')?'selected':null}}>AB-</option>
-                                        <option value="Other" {{($aluno->blood_type == 'Other')?'selected':null}}>Other</option>
+                                        <option value="A+" {{($student->blood_type == 'A+')?'selected':null}}>A+</option>
+                                        <option value="A-" {{($student->blood_type == 'A-')?'selected':null}}>A-</option>
+                                        <option value="B+" {{($student->blood_type == 'B+')?'selected':null}}>B+</option>
+                                        <option value="B-" {{($student->blood_type == 'B-')?'selected':null}}>B-</option>
+                                        <option value="O+" {{($student->blood_type == 'O+')?'selected':null}}>O+</option>
+                                        <option value="O-" {{($student->blood_type == 'O-')?'selected':null}}>O-</option>
+                                        <option value="AB+" {{($student->blood_type == 'AB+')?'selected':null}}>AB+</option>
+                                        <option value="AB-" {{($student->blood_type == 'AB-')?'selected':null}}>AB-</option>
+                                        <option value="Other" {{($student->blood_type == 'Other')?'selected':null}}>Other</option>
                                     </select>
                                 </div>
                                 <div class="col-2">
                                     <label for="inputReligion" class="form-label">Religion<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select id="inputReligion" class="form-select" name="religion" required>
-                                        <option {{($aluno->religion == 'Islam')?'selected':null}}>Islam</option>
-                                        <option {{($aluno->religion == 'Hinduism')?'selected':null}}>Hinduism</option>
-                                        <option {{($aluno->religion == 'Christianity')?'selected':null}}>Christianity</option>
-                                        <option {{($aluno->religion == 'Buddhism')?'selected':null}}>Buddhism</option>
-                                        <option {{($aluno->religion == 'Judaism')?'selected':null}}>Judaism</option>
-                                        <option {{($aluno->religion == 'Other')?'selected':null}}>Other</option>
+                                        <option {{($student->religion == 'Islam')?'selected':null}}>Islam</option>
+                                        <option {{($student->religion == 'Hinduism')?'selected':null}}>Hinduism</option>
+                                        <option {{($student->religion == 'Christianity')?'selected':null}}>Christianity</option>
+                                        <option {{($student->religion == 'Buddhism')?'selected':null}}>Buddhism</option>
+                                        <option {{($student->religion == 'Judaism')?'selected':null}}>Judaism</option>
+                                        <option {{($student->religion == 'Other')?'selected':null}}>Other</option>
                                     </select>
                                 </div>
                                 <div class="col-3">
                                     <label for="inputPhone" class="form-label">Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$aluno->phone}}">
+                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$student->phone}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputIdCardNumber" class="form-label">Id Card Number<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

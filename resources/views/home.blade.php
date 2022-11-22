@@ -16,7 +16,7 @@
                                         <div class="ms-2 me-auto">
                                             <div class="fw-bold"><i class="bi bi-person-lines-fill me-3"></i> Numero de estudantes</div>
                                         </div>
-                                        <span class="badge bg-dark rounded-pill">{{$alunoCount}}</span>
+                                        <span class="badge bg-dark rounded-pill">{{$studentCount}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -58,20 +58,20 @@
                             </div>
                         </div> --}}
                     </div>
-                    @if($alunoCount > 0)
+                    @if($studentCount > 0)
                     <div class="mt-3 d-flex align-items-center">
                         {{-- <div class="col-9 d-flex flex-row" style="height: 10px;">
-                            <div class="bg-dark border text-white" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: {{($malealunosBySession/$alunoCount) * 100}}%"> </div>
-                            <div class="bg-white border text-dark" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: {{(($alunoCount - $malealunosBySession)/$alunoCount) * 100}}%"> </div>
+                            <div class="bg-dark border text-white" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: {{($maleStudentsBySession/$studentCount) * 100}}%"> </div>
+                            <div class="bg-white border text-dark" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: {{(($studentCount - $maleStudentsBySession)/$studentCount) * 100}}%"> </div>
                         </div> --}}
                         <div class="col-3">
-                            <span class="ps-2 me-2">alunos %</span>
+                            <span class="ps-2 me-2">Students %</span>
                             <span class="badge rounded-pill border" style="background-color: #fc053e;">Male</span>
                             <span class="badge rounded-pill border" style="background-color: #49a4fe;">Female</span>
                         </div>
                         <div class="col-9 progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #0678c8; width: {{round(($malealunosBySession/$alunoCount), 2) * 100}}%" aria-valuenow="{{round(($malealunosBySession/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round(($malealunosBySession/$alunoCount), 2) * 100}}%</div>
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #49a4fe; width: {{round((($alunoCount - $malealunosBySession)/$alunoCount), 2) * 100}}%" aria-valuenow="{{round((($alunoCount - $malealunosBySession)/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round((($alunoCount - $malealunosBySession)/$alunoCount), 2) * 100}}%</div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #0678c8; width: {{round(($maleStudentsBySession/$studentCount), 2) * 100}}%" aria-valuenow="{{round(($maleStudentsBySession/$studentCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round(($maleStudentsBySession/$studentCount), 2) * 100}}%</div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #49a4fe; width: {{round((($studentCount - $maleStudentsBySession)/$studentCount), 2) * 100}}%" aria-valuenow="{{round((($studentCount - $maleStudentsBySession)/$studentCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round((($studentCount - $maleStudentsBySession)/$studentCount), 2) * 100}}%</div>
                         </div>
                     </div>
                     @endif
@@ -102,13 +102,13 @@
                     </div>
                     @endif
 
-                    @if(Auth::user()->role == "aluno")
+                    @if(Auth::user()->role == "student")
                     <div class="row align-items-md-stretch mt-4">
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
                                     <h3>Seja bem-vindo de volta!</h3>
-                                    <p>aluno</p>
+                                    <p>student</p>
                                 </div>
                             </div>
                         </div>

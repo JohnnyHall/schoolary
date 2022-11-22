@@ -8,22 +8,22 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Add aluno
+                        <i class="bi bi-person-lines-fill"></i> Add Student
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Add aluno</li>
+                            <li class="breadcrumb-item active" aria-current="page">Add Student</li>
                         </ol>
                     </nav>
 
                     @include('session-messages')
 
                     <p class="text-primary">
-                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Remember to create related "Class" and "Section" before adding aluno</small>
+                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Remember to create related "Class" and "Section" before adding student</small>
                     </p>
                     <div class="mb-4">
-                        <form class="row g-3" action="{{route('school.aluno.create')}}" method="POST">
+                        <form class="row g-3" action="{{route('school.student.create')}}" method="POST">
                             @csrf
                             <div class="row g-3">
                                 <div class="col-3">
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="row mt-4 g-3">
-                                <h6>Academico Information</h6>
+                                <h6>Academic Information</h6>
                                 <div class="col-3">
                                     <label for="inputAssignToClass" class="form-label">Assign to class:<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select onchange="getSections(this);" class="form-select" id="inputAssignToClass" name="class_id" required>

@@ -17,7 +17,7 @@ class Promotion extends Model
      * @var array
      */
     protected $fillable = [
-        'aluno_id',
+        'student_id',
         'class_id',
         'section_id',
         'session_id',
@@ -27,9 +27,9 @@ class Promotion extends Model
     /**
      * Get the sections for the blog post.
      */
-    public function aluno()
+    public function student()
     {
-        return $this->belongsTo(User::class, 'aluno_id');
+        return $this->belongsTo(User::class, 'student_id');
     }
 
     /**

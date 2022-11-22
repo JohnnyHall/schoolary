@@ -18,7 +18,7 @@ class CreateFinalMarksTable extends Migration
             $table->float('calculated_marks')->default(0);
             $table->float('final_marks')->default(0);
             $table->text('note')->nullable();
-            $table->unsignedInteger('aluno_id');
+            $table->unsignedInteger('student_id');
             $table->unsignedInteger('class_id');
             $table->unsignedInteger('section_id');
             $table->unsignedInteger('course_id');

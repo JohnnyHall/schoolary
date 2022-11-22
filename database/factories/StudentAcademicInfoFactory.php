@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\alunoParentInfo;
+use App\Models\StudentAcademicInfo;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class alunoParentInfoFactory extends Factory
+class StudentAcademicInfoFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = alunoParentInfo::class;
+    protected $model = StudentAcademicInfo::class;
 
     /**
      * Define the model's default state.

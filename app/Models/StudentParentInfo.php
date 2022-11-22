@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class alunoParentInfo extends Model
+class StudentParentInfo extends Model
 {
     use HasFactory;
 
@@ -16,7 +16,7 @@ class alunoParentInfo extends Model
      * @var array
      */
     protected $fillable = [
-        'aluno_id',
+        'student_id',
         'father_name',
         'father_phone',
         'mother_name',
@@ -27,8 +27,8 @@ class alunoParentInfo extends Model
     /**
      * Get the sections for the blog post.
      */
-    public function aluno()
+    public function student()
     {
-        return $this->belongsTo(User::class, 'aluno_id');
+        return $this->belongsTo(User::class, 'student_id');
     }
 }

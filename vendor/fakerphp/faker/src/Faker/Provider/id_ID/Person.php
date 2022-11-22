@@ -232,7 +232,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * For academico title
+     * For academic title
      *
      * @see http://id.wikipedia.org/wiki/Gelar_akademik
      */
@@ -282,7 +282,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * For academico title
+     * For academic title
      *
      * @return string suffix
      */

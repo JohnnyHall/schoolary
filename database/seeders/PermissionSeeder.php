@@ -24,7 +24,7 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'edit users']);
         Permission::create(['name' => 'delete users']);
 
-        Permission::create(['name' => 'promote alunos']);
+        Permission::create(['name' => 'promote students']);
 
         Permission::create(['name' => 'create notices']);
         Permission::create(['name' => 'view notices']);
@@ -85,7 +85,7 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'view courses']);
         Permission::create(['name' => 'edit courses']);
 
-        Permission::create(['name' => 'view academico settings']);
+        Permission::create(['name' => 'view academic settings']);
         Permission::create(['name' => 'update marks submission window']);
         Permission::create(['name' => 'update browse by session']);
 
@@ -130,12 +130,12 @@ class PermissionSeeder extends Seeder
             'edit routines',
             'delete routines',
             'view marks',
-            'view academico settings',
+            'view academic settings',
             'update marks submission window',
             'create users',
             'edit users',
             'view users',
-            'promote alunos',
+            'promote students',
             'update attendances type',
             'view attendances',
             'take attendances',//Teacher only

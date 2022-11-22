@@ -13,7 +13,7 @@ class FinalMark extends Model
         'calculated_marks',
         'final_marks',
         'note',
-        'aluno_id',
+        'student_id',
         'class_id',
         'section_id',
         'course_id',
@@ -22,10 +22,10 @@ class FinalMark extends Model
     ];
 
     /**
-     * Get the aluno for attendances.
+     * Get the student for attendances.
      */
-    public function aluno()
+    public function student()
     {
-        return $this->belongsTo(User::class, 'aluno_id');
+        return $this->belongsTo(User::class, 'student_id');
     }
 }

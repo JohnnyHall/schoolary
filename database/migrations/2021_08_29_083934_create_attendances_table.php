@@ -18,7 +18,7 @@ class CreateAttendancesTable extends Migration
             $table->unsignedInteger('course_id')->default(0);
             $table->unsignedInteger('class_id')->default(0);
             $table->unsignedInteger('section_id')->default(0);
-            $table->unsignedInteger('aluno_id');
+            $table->unsignedInteger('student_id');
             $table->string('status');
             $table->unsignedInteger('session_id');
             $table->timestamps();

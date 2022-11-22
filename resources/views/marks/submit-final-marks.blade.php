@@ -23,28 +23,28 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th scope="col">aluno Name</th>
+                                                <th scope="col">Student Name</th>
                                                 <th scope="col">Calculated Marks</th>
                                                 <th scope="col">Final Marks</th>
                                                 <th scope="col">Note</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                                @isset($alunos_with_marks)
-                                                    @foreach ($alunos_with_marks as $id => $alunos_with_mark)
+                                                @isset($students_with_marks)
+                                                    @foreach ($students_with_marks as $id => $students_with_mark)
                                                     <tr>
-                                                        <td>{{$alunos_with_mark[0]->aluno->first_name}} {{$alunos_with_mark[0]->aluno->last_name}}</td>
+                                                        <td>{{$students_with_mark[0]->student->first_name}} {{$students_with_mark[0]->student->last_name}}</td>
                                                         @php
                                                             $calculated_marks = 0;
                                                         @endphp
-                                                        @foreach ($alunos_with_mark as $st)
+                                                        @foreach ($students_with_mark as $st)
                                                             @php
                                                                 $calculated_marks += $st->marks;
                                                             @endphp
                                                         @endforeach
-                                                        <td><input type="number" step="0.01" class="form-control" name="calculated_mark[{{$alunos_with_mark[0]->aluno->id}}]" value="{{$calculated_marks}}" readonly></td>
-                                                        <td><input type="number" step="0.01" class="form-control" name="final_mark[{{$alunos_with_mark[0]->aluno->id}}]" required></td>
-                                                        <td><textarea type="text" class="form-control" rows="1" name="note[{{$alunos_with_mark[0]->aluno->id}}]" placeholder="Counted best 2 Quizes from 3,..."></textarea></td>
+                                                        <td><input type="number" step="0.01" class="form-control" name="calculated_mark[{{$students_with_mark[0]->student->id}}]" value="{{$calculated_marks}}" readonly></td>
+                                                        <td><input type="number" step="0.01" class="form-control" name="final_mark[{{$students_with_mark[0]->student->id}}]" required></td>
+                                                        <td><textarea type="text" class="form-control" rows="1" name="note[{{$students_with_mark[0]->student->id}}]" placeholder="Counted best 2 Quizes from 3,..."></textarea></td>
                                                     </tr>
                                                     @endforeach
                                                 @endisset

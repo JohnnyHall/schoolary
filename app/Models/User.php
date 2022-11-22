@@ -3,8 +3,8 @@
 namespace App\Models;
 
 use App\Models\Mark;
-use App\Models\alunoParentInfo;
-use App\Models\alunoAcademicoInfo;
+use App\Models\StudentParentInfo;
+use App\Models\StudentAcademicInfo;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -63,15 +63,15 @@ class User extends Authenticatable
      */
     public function parent_info()
     {
-        return $this->hasOne(alunoParentInfo::class, 'aluno_id', 'id');
+        return $this->hasOne(StudentParentInfo::class, 'student_id', 'id');
     }
 
     /**
-     * Get the academico_info.
+     * Get the academic_info.
      */
-    public function academico_info()
+    public function academic_info()
     {
-        return $this->hasOne(alunoAcademicoInfo::class, 'aluno_id', 'id');
+        return $this->hasOne(StudentAcademicInfo::class, 'student_id', 'id');
     }
 
     /**
@@ -79,6 +79,6 @@ class User extends Authenticatable
      */
     public function marks()
     {
-        return $this->hasMany(Mark::class, 'aluno_id', 'id');
+        return $this->hasMany(Mark::class, 'student_id', 'id');
     }
 }

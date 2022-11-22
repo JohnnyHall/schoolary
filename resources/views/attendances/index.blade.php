@@ -18,7 +18,7 @@
                                             <i class="bi bi-diagram-2"></i> {{$school_class->class_name}}
                                         </div>
                                         <div class="card-body text-dark">
-                                            @if ($academico_setting->attendance_type == 'course')
+                                            @if ($academic_setting->attendance_type == 'course')
                                                 @foreach ($courses as $course)
                                                     @if ($course->class_id == $school_class->id)
                                                     <h6>

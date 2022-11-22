@@ -6,27 +6,27 @@ use App\Models\User;
 use App\Models\Promotion;
 
 class PromotionRepository {
-    public function assignClassSection($request, $aluno_id) {
+    public function assignClassSection($request, $student_id) {
         try{
             Promotion::create([
-                'aluno_id'    => $aluno_id,
+                'student_id'    => $student_id,
                 'session_id'    => $request['session_id'],
                 'class_id'      => $request['class_id'],
                 'section_id'    => $request['section_id'],
                 'id_card_number'=> $request['id_card_number'],
             ]);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to add aluno. '.$e->getMessage());
+            throw new \Exception('Failed to add Student. '.$e->getMessage());
         }
     }
 
-    public function update($request, $aluno_id) {
+    public function update($request, $student_id) {
         try{
-            Promotion::where('aluno_id', $aluno_id)->update([
+            Promotion::where('student_id', $student_id)->update([
                 'id_card_number'=> $request['id_card_number'],
             ]);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to update aluno. '.$e->getMessage());
+            throw new \Exception('Failed to update Student. '.$e->getMessage());
         }
     }
 
@@ -34,7 +34,7 @@ class PromotionRepository {
         try {
                 foreach($rows as $row){
                     Promotion::updateOrCreate([
-                        'aluno_id' => $row['aluno_id'],
+                        'student_id' => $row['student_id'],
                         'session_id' => $row['session_id'],
                         'class_id' => $row['class_id'],
                         'section_id' => $row['section_id'],
@@ -43,42 +43,42 @@ class PromotionRepository {
                     ]);
                 }
         } catch (\Exception $e) {
-            throw new \Exception('Failed to promote alunos. '.$e->getMessage());
+            throw new \Exception('Failed to promote students. '.$e->getMessage());
         }
     }
 
     public function getAll($session_id, $class_id, $section_id) {
-        return Promotion::with(['aluno', 'section'])
+        return Promotion::with(['student', 'section'])
                 ->where('session_id', $session_id)
                 ->where('class_id', $class_id)
                 ->where('section_id', $section_id)
                 ->get();
     }
 
-    public function getAllalunosBySessionCount($session_id) {
+    public function getAllStudentsBySessionCount($session_id) {
         return Promotion::where('session_id', $session_id)
                 ->count();
     }
 
-    public function getMalealunosBySessionCount($session_id) {
-        $allalunos = Promotion::where('session_id', $session_id)->pluck('aluno_id')->toArray();
+    public function getMaleStudentsBySessionCount($session_id) {
+        $allStudents = Promotion::where('session_id', $session_id)->pluck('student_id')->toArray();
 
         return User::where('gender', 'Male')
-                ->where('role', 'aluno')
-                ->whereIn('id', $allalunos)
+                ->where('role', 'student')
+                ->whereIn('id', $allStudents)
                 ->count();
     }
 
-    public function getAllalunosBySession($session_id) {
-        return Promotion::with(['aluno', 'section'])
+    public function getAllStudentsBySession($session_id) {
+        return Promotion::with(['student', 'section'])
                 ->where('session_id', $session_id)
                 ->get();
     }
 
-    public function getPromotionInfoById($session_id, $aluno_id) {
-        return Promotion::with(['aluno', 'section'])
+    public function getPromotionInfoById($session_id, $student_id) {
+        return Promotion::with(['student', 'section'])
                 ->where('session_id', $session_id)
-                ->where('aluno_id', $aluno_id)
+                ->where('student_id', $student_id)
                 ->first();
     }
 

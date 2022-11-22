@@ -9,10 +9,10 @@ use App\Interfaces\UserInterface;
 use App\Interfaces\SectionInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Repositories\PromotionRepository;
-use App\Http\Requests\alunoStoreRequest;
+use App\Http\Requests\StudentStoreRequest;
 use App\Http\Requests\TeacherStoreRequest;
 use App\Interfaces\SchoolSessionInterface;
-use App\Repositories\alunoParentInfoRepository;
+use App\Repositories\StudentParentInfoRepository;
 
 class UserController extends Controller
 {
@@ -51,7 +51,7 @@ class UserController extends Controller
         }
     }
 
-    public function getalunoList(Request $request) {
+    public function getStudentList(Request $request) {
         $current_school_session_id = $this->getSchoolCurrentSession();
 
         $class_id = $request->query('class_id', 0);
@@ -61,33 +61,33 @@ class UserController extends Controller
 
             $school_classes = $this->schoolClassRepository->getAllBySession($current_school_session_id);
 
-            $alunoList = $this->userRepository->getAllalunos($current_school_session_id, $class_id, $section_id);
+            $studentList = $this->userRepository->getAllStudents($current_school_session_id, $class_id, $section_id);
 
             $data = [
-                'alunoList'       => $alunoList,
+                'studentList'       => $studentList,
                 'school_classes'    => $school_classes,
             ];
 
-            return view('alunos.list', $data);
+            return view('students.list', $data);
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
     }
 
 
-    public function showalunoProfile($id) {
-        $aluno = $this->userRepository->findaluno($id);
+    public function showStudentProfile($id) {
+        $student = $this->userRepository->findStudent($id);
 
         $current_school_session_id = $this->getSchoolCurrentSession();
         $promotionRepository = new PromotionRepository();
         $promotion_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $id);
 
         $data = [
-            'aluno'           => $aluno,
+            'student'           => $student,
             'promotion_info'    => $promotion_info,
         ];
 
-        return view('alunos.profile', $data);
+        return view('students.profile', $data);
     }
 
     public function showTeacherProfile($id) {
@@ -99,7 +99,7 @@ class UserController extends Controller
     }
 
 
-    public function createaluno() {
+    public function createStudent() {
         $current_school_session_id = $this->getSchoolCurrentSession();
 
         $school_classes = $this->schoolClassRepository->getAllBySession($current_school_session_id);
@@ -109,47 +109,47 @@ class UserController extends Controller
             'school_classes'            => $school_classes,
         ];
 
-        return view('alunos.add', $data);
+        return view('students.add', $data);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  alunoStoreRequest $request
+     * @param  StudentStoreRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function storealuno(alunoStoreRequest $request)
+    public function storeStudent(StudentStoreRequest $request)
     {
         try {
-            $this->userRepository->createaluno($request->validated());
+            $this->userRepository->createStudent($request->validated());
 
-            return back()->with('status', 'aluno creation was successful!');
+            return back()->with('status', 'Student creation was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
     }
 
-    public function editaluno($aluno_id) {
-        $aluno = $this->userRepository->findaluno($aluno_id);
-        $alunoParentInfoRepository = new alunoParentInfoRepository();
-        $parent_info = $alunoParentInfoRepository->getParentInfo($aluno_id);
+    public function editStudent($student_id) {
+        $student = $this->userRepository->findStudent($student_id);
+        $studentParentInfoRepository = new StudentParentInfoRepository();
+        $parent_info = $studentParentInfoRepository->getParentInfo($student_id);
         $promotionRepository = new PromotionRepository();
         $current_school_session_id = $this->getSchoolCurrentSession();
-        $promotion_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $aluno_id);
+        $promotion_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $student_id);
 
         $data = [
-            'aluno'       => $aluno,
+            'student'       => $student,
             'parent_info'   => $parent_info,
             'promotion_info'=> $promotion_info,
         ];
-        return view('alunos.edit', $data);
+        return view('students.edit', $data);
     }
 
-    public function updatealuno(Request $request) {
+    public function updateStudent(Request $request) {
         try {
-            $this->userRepository->updatealuno($request->toArray());
+            $this->userRepository->updateStudent($request->toArray());
 
-            return back()->with('status', 'aluno update was successful!');
+            return back()->with('status', 'Student update was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

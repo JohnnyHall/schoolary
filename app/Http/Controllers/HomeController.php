@@ -41,11 +41,11 @@ class HomeController extends Controller
 
         $classCount = $this->schoolClassRepository->getAllBySession($current_school_session_id)->count();
 
-        $alunoCount = $this->userRepository->getAllalunosBySessionCount($current_school_session_id);
+        $studentCount = $this->userRepository->getAllStudentsBySessionCount($current_school_session_id);
 
         $promotionRepository = new PromotionRepository();
 
-        $malealunosBySession = $promotionRepository->getMalealunosBySessionCount($current_school_session_id);
+        $maleStudentsBySession = $promotionRepository->getMaleStudentsBySessionCount($current_school_session_id);
 
         $teacherCount = $this->userRepository->getAllTeachers()->count();
 
@@ -54,10 +54,10 @@ class HomeController extends Controller
 
         $data = [
             'classCount'    => $classCount,
-            'alunoCount'  => $alunoCount,
+            'studentCount'  => $studentCount,
             'teacherCount'  => $teacherCount,
             'notices'       => $notices,
-            'malealunosBySession' => $malealunosBySession,
+            'maleStudentsBySession' => $maleStudentsBySession,
         ];
 
         return view('home', $data);

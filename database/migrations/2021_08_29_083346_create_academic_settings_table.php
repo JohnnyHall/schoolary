@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAcademicoSettingsTable extends Migration
+class CreateAcademicSettingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAcademicoSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('academico_settings', function (Blueprint $table) {
+        Schema::create('academic_settings', function (Blueprint $table) {
             $table->id();
             $table->string('attendance_type')->default('section');
             $table->string('marks_submission_status')->default('off');
@@ -28,6 +28,6 @@ class CreateAcademicoSettingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('academico_settings');
+        Schema::dropIfExists('academic_settings');
     }
 }

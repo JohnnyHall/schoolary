@@ -2,8 +2,8 @@
 
 namespace App\Interfaces;
 
-interface AcademicoSettingInterface {
-    public function getAcademicoSetting();
+interface AcademicSettingInterface {
+    public function getAcademicSetting();
     
     public function updateAttendanceType($request);
 

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\alunoParentInfo;
+use App\Models\StudentParentInfo;
 use Illuminate\Http\Request;
 
-class alunoParentInfoController extends Controller
+class StudentParentInfoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +42,10 @@ class alunoParentInfoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\alunoParentInfo  $alunoParentInfo
+     * @param  \App\Models\StudentParentInfo  $studentParentInfo
      * @return \Illuminate\Http\Response
      */
-    public function show(alunoParentInfo $alunoParentInfo)
+    public function show(StudentParentInfo $studentParentInfo)
     {
         //
     }
@@ -53,10 +53,10 @@ class alunoParentInfoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\alunoParentInfo  $alunoParentInfo
+     * @param  \App\Models\StudentParentInfo  $studentParentInfo
      * @return \Illuminate\Http\Response
      */
-    public function edit(alunoParentInfo $alunoParentInfo)
+    public function edit(StudentParentInfo $studentParentInfo)
     {
         //
     }
@@ -65,10 +65,10 @@ class alunoParentInfoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\alunoParentInfo  $alunoParentInfo
+     * @param  \App\Models\StudentParentInfo  $studentParentInfo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, alunoParentInfo $alunoParentInfo)
+    public function update(Request $request, StudentParentInfo $studentParentInfo)
     {
         //
     }
@@ -76,10 +76,10 @@ class alunoParentInfoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\alunoParentInfo  $alunoParentInfo
+     * @param  \App\Models\StudentParentInfo  $studentParentInfo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(alunoParentInfo $alunoParentInfo)
+    public function destroy(StudentParentInfo $studentParentInfo)
     {
         //
     }

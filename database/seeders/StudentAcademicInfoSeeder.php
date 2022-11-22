@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class alunoParentInfoSeeder extends Seeder
+class StudentAcademicInfoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
