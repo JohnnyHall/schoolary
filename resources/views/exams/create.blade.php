@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>

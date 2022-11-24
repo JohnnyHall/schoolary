@@ -81,8 +81,7 @@
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
-                                    <h3>Seja bem-vindo de volta!</h3>
-                                    <p>secretaria</p>
+                                    <h3> Seja bem vindo a area logada da secretaria!</h3>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +93,7 @@
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
-                                    <h3>Seja bem-vindo de volta!</h3>
+                                    <h3> Seja bem vindo a area logada do professor! </h3>
                                     <p>teacher</p>
                                 </div>
                             </div>
@@ -107,7 +106,7 @@
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
-                                    <h3>Seja bem-vindo de volta!</h3>
+                                    <h3> Seja bem vindo a area logada do aluno! </h3>
                                     <p>student</p>
                                 </div>
                             </div>

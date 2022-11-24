@@ -161,7 +161,7 @@ class HTMLPurifier_LanguageFactory
         // load primary localisation
         if (!file_exists($filename)) {
             // skip the include: will rely solely on fallback
-            $filename = $this->dir . '/Language/messages/en.php';
+            $filename = $this->dir . '/Language/messages/pt_BR.php';
             $cache = array();
         } else {
             include $filename;
