@@ -28,11 +28,10 @@
                             <div class="mb-3">
                                 <label for="course_type" class="form-label">Course Type</label>
                                 <select class="form-select" id="course_type" name="course_type" aria-label="Course type">
-                                    <option value="Bacharelado" {{($course->course_type == 'Bacharelado')? 'selected' : ''}}>Bacharelado</option>
-                                    <option value="Licenciatura" {{($course->course_type == 'Licenciatura')? 'selected' : ''}}>Licenciatura</option>
-                                    <option value="Tecnologo" {{($course->course_type == 'Tecnologo')? 'selected' : ''}}>Tecnologo</option>
-                                    <option value="Mestrado" {{($course->course_type == 'Mestrado')? 'selected' : ''}}>Mestrado</option>
-                                    <option value="Doutorado" {{($course->course_type == 'Doutorado')? 'selected' : ''}}>Doutorado</option>
+                                    <option value="Core" {{($course->course_type == 'Core')? 'selected' : ''}}>Core</option>
+                                    <option value="General" {{($course->course_type == 'General')? 'selected' : ''}}>General</option>
+                                    <option value="Elective" {{($course->course_type == 'Elective')? 'selected' : ''}}>Elective</option>
+                                    <option value="Optional" {{($course->course_type == 'Optional')? 'selected' : ''}}>Optional</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Save</button>

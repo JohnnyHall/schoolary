@@ -81,7 +81,8 @@
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
-                                    <h3> Seja bem vindo a area logada da secretaria!</h3>
+                                    <h3>Seja bem-vindo de volta!</h3>
+                                    <p>secretaria</p>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +94,7 @@
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
-                                    <h3> Seja bem vindo a area logada do professor! </h3>
+                                    <h3>Seja bem-vindo de volta!</h3>
                                     <p>teacher</p>
                                 </div>
                             </div>
@@ -106,7 +107,7 @@
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
-                                    <h3> Seja bem vindo a area logada do aluno! </h3>
+                                    <h3>Seja bem-vindo de volta!</h3>
                                     <p>student</p>
                                 </div>
                             </div>
@@ -117,7 +118,7 @@
                     <div class="row row-cols-2 mt-4">
                         <div class="col">
                             <div class="card mb-3">
-                                <div class="card-header bg-transparent"><i class="bi bi-calendar-event me-2"></i> Calendario acadêmico</div>
+                                <div class="card-header bg-transparent"><i class="bi bi-calendar-event me-2"></i> Events</div>
                                 <div class="card-body text-dark">
                                     @include('components.events.event-calendar', ['editable' => 'false', 'selectable' => 'false'])
                                     {{-- <div class="overflow-auto" style="height: 250px;">
@@ -137,7 +138,7 @@
                         </div>
                         <div class="col">
                             <div class="card mb-3">
-                                <div class="card-header bg-transparent d-flex justify-content-between"><span><i class="bi bi-megaphone me-2"></i> Avisos</span> {{ $notices->links() }}</div>
+                                <div class="card-header bg-transparent d-flex justify-content-between"><span><i class="bi bi-megaphone me-2"></i> Notices</span> {{ $notices->links() }}</div>
                                 <div class="card-body p-0 text-dark">
                                     <div>
                                         @isset($notices)
@@ -156,7 +157,7 @@
                                             @endforeach
                                             @endisset
                                             @if(count($notices) < 1)
-                                                <div class="p-3">Sem avisos por enquanto.</div>
+                                                <div class="p-3">No notices</div>
                                             @endif
                                         </div>
                                     </div>

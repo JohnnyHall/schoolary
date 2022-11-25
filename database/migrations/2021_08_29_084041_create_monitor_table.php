@@ -18,6 +18,7 @@ class CreatemonitorTable extends Migration
             $table->string('monitoria_name');
             $table->string('monitoria_file_path');
             $table->unsignedInteger('class_id');
+            $table->unsignedInteger('course_id');
             $table->unsignedInteger('session_id');
             $table->timestamps();
         });

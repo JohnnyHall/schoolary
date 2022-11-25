@@ -1839,7 +1839,7 @@ trait Date
         return [
             'LT' => $this->getTranslationMessage('formats.LT', $locale, 'h:mm A'),
             'LTS' => $this->getTranslationMessage('formats.LTS', $locale, 'h:mm:ss A'),
-            'L' => $this->getTranslationMessage('formats.L', $locale, 'DD/MM/YYYY'),
+            'L' => $this->getTranslationMessage('formats.L', $locale, 'MM/DD/YYYY'),
             'LL' => $this->getTranslationMessage('formats.LL', $locale, 'MMMM D, YYYY'),
             'LLL' => $this->getTranslationMessage('formats.LLL', $locale, 'MMMM D, YYYY h:mm A'),
             'LLLL' => $this->getTranslationMessage('formats.LLLL', $locale, 'dddd, MMMM D, YYYY h:mm A'),
