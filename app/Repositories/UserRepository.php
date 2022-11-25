@@ -52,7 +52,7 @@ class UserRepository implements UserInterface {
                     'save marks',
                     'view users',
                     'view routines',
-                    'view syllabi',
+                    'view monitor',
                     'view events',
                     'view notices',
                 );
@@ -108,7 +108,7 @@ class UserRepository implements UserInterface {
                     'view marks',
                     'view users',
                     'view routines',
-                    'view syllabi',
+                    'view monitor',
                     'view events',
                     'view notices',
                 );

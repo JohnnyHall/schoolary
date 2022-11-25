@@ -84,7 +84,7 @@
                                                                 <div class="card-body">
                                                                 <div class="float-right">Tue, Jan 10th 2019 8:30 AM</div>
                                                                 <h4 class="card-title">Day 2 Sessions</h4>
-                                                                <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
+                                                                <p class="card-text">Sign-up for the lessons and speakers that coincide with your course monitoria. Meet and greet with instructors.</p>
                                                                 </div>
                                                             </div>
                                                             </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>

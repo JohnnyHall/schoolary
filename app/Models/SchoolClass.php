@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Models\Course;
 use App\Models\Section;
-use App\Models\Syllabus;
+use App\Models\monitoria;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -31,10 +31,10 @@ class SchoolClass extends Model
     }
 
     /**
-     * Get the syllabi for the class.
+     * Get the monitor for the class.
      */
-    public function syllabi()
+    public function monitor()
     {
-        return $this->hasMany(Syllabus::class, 'class_id', 'id');
+        return $this->hasMany(monitoria::class, 'class_id', 'id');
     }
 }
