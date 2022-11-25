@@ -10,7 +10,7 @@ use Throwable;
  * Creates a promise that is resolved using a generator that yields values or
  * promises (somewhat similar to C#'s async keyword).
  *
- * When called, the Coroutine::of method will start an instance of the generator
+ * When called, the Cocronograma::of method will start an instance of the generator
  * and returns a promise that is fulfilled with its final yielded value.
  *
  * Control is returned back to the generator when the yielded promise settles.
@@ -23,7 +23,7 @@ use Throwable;
  *         return new Promise\FulfilledPromise($value);
  *     }
  *
- *     $promise = Promise\Coroutine::of(function () {
+ *     $promise = Promise\Cocronograma::of(function () {
  *         $value = (yield createPromise('a'));
  *         try {
  *             $value = (yield createPromise($value . 'b'));
@@ -42,7 +42,7 @@ use Throwable;
  *
  * @link https://github.com/petkaantonov/bluebird/blob/master/API.md#generators inspiration
  */
-final class Coroutine implements PromiseInterface
+final class Cocronograma implements PromiseInterface
 {
     /**
      * @var PromiseInterface|null
@@ -68,7 +68,7 @@ final class Coroutine implements PromiseInterface
             }
         });
         try {
-            $this->nextCoroutine($this->generator->current());
+            $this->nextCocronograma($this->generator->current());
         } catch (\Exception $exception) {
             $this->result->reject($exception);
         } catch (Throwable $throwable) {
@@ -77,7 +77,7 @@ final class Coroutine implements PromiseInterface
     }
 
     /**
-     * Create a new coroutine.
+     * Create a new cocronograma.
      *
      * @return self
      */
@@ -124,7 +124,7 @@ final class Coroutine implements PromiseInterface
         $this->result->cancel();
     }
 
-    private function nextCoroutine($yielded)
+    private function nextCocronograma($yielded)
     {
         $this->currentPromise = Create::promiseFor($yielded)
             ->then([$this, '_handleSuccess'], [$this, '_handleFailure']);
@@ -139,7 +139,7 @@ final class Coroutine implements PromiseInterface
         try {
             $next = $this->generator->send($value);
             if ($this->generator->valid()) {
-                $this->nextCoroutine($next);
+                $this->nextCocronograma($next);
             } else {
                 $this->result->resolve($value);
             }
@@ -158,8 +158,8 @@ final class Coroutine implements PromiseInterface
         unset($this->currentPromise);
         try {
             $nextYield = $this->generator->throw(Create::exceptionFor($reason));
-            // The throw was caught, so keep iterating on the coroutine
-            $this->nextCoroutine($nextYield);
+            // The throw was caught, so keep iterating on the cocronograma
+            $this->nextCocronograma($nextYield);
         } catch (Exception $exception) {
             $this->result->reject($exception);
         } catch (Throwable $throwable) {

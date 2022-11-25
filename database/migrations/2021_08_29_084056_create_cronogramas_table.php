@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRoutinesTable extends Migration
+class CreatecronogramasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateRoutinesTable extends Migration
      */
     public function up()
     {
-        Schema::create('routines', function (Blueprint $table) {
+        Schema::create('cronogramas', function (Blueprint $table) {
             $table->id();
             $table->string('start');
             $table->string('end');
@@ -33,6 +33,6 @@ class CreateRoutinesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('routines');
+        Schema::dropIfExists('cronogramas');
     }
 }

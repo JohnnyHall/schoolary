@@ -120,11 +120,11 @@
                 }
                 }
                 @endphp
-                <a class="nav-link" href="{{route('section.routine.show', [
+                <a class="nav-link" href="{{route('section.cronograma.show', [
                             'class_id'  => $class_info->class_id,
                             'section_id'=> $class_info->section_id
                         ])}}"><i class="bi bi-calendar4-range"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Routine</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">cronograma</span></a>
             </li>
             @endif
             @if(Auth::user()->role != "student")
@@ -187,9 +187,9 @@
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Monitoria</span></a>
             </li>
             <li class="nav-item border-bottom">
-                <a class="nav-link {{ request()->is('routine*')? 'active' : '' }}"
-                    href="{{route('section.routine.create')}}"><i class="bi bi-calendar4-range"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Routine</span></a>
+                <a class="nav-link {{ request()->is('cronograma*')? 'active' : '' }}"
+                    href="{{route('section.cronograma.create')}}"><i class="bi bi-calendar4-range"></i> <span
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">cronograma</span></a>
             </li>
             @endif
 

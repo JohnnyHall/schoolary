@@ -7,12 +7,12 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-calendar4-range"></i> Routine</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-calendar4-range"></i> cronograma</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
                             <li class="breadcrumb-item"><a href="{{url()->previous()}}">Classes</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Section Routine</li>
+                            <li class="breadcrumb-item active" aria-current="page">Section cronograma</li>
                         </ol>
                     </nav>
                     @php
@@ -36,12 +36,12 @@
                             }
                         }
                     @endphp
-                    @if(count($routines) > 0)
+                    @if(count($cronogramas) > 0)
                     <div class="bg-white p-3 border shadow-sm">
                         <table class="table table-bordered text-center">
                             </thead>
                             <tbody>
-                                @foreach($routines as $day => $courses)
+                                @foreach($cronogramas as $day => $courses)
                                     <tr><th>{{getDayName($day)}}</th>
                                         @php
                                             $courses = $courses->sortBy('start');
@@ -58,7 +58,7 @@
                         </table>
                     </div>
                     @else
-                    <div class="p-3 bg-white border shadow-sm">No routine.</div>
+                    <div class="p-3 bg-white border shadow-sm">No cronograma.</div>
                     @endif
                 </div>
             </div>

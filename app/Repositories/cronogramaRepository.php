@@ -2,14 +2,14 @@
 
 namespace App\Repositories;
 
-use App\Models\Routine;
-use App\Interfaces\RoutineInterface;
+use App\Models\cronograma;
+use App\Interfaces\cronogramaInterface;
 
-class RoutineRepository implements RoutineInterface {
-    public function saveRoutine($request)
+class cronogramaRepository implements cronogramaInterface {
+    public function savecronograma($request)
     {
         try{
-            Routine::create([
+            cronograma::create([
                 'start'         => $request['start'],
                 'end'           => $request['end'],
                 'weekday'       => $request['weekday'],
@@ -19,12 +19,12 @@ class RoutineRepository implements RoutineInterface {
                 'course_id'     => $request['course_id'],
             ]);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to save routine. '.$e->getMessage());
+            throw new \Exception('Failed to save cronograma. '.$e->getMessage());
         }
     }
 
     public function getAll($class_id, $section_id, $session_id) {
-        return Routine::with('course')
+        return cronograma::with('course')
                 ->where('session_id', $session_id)
                 ->where('class_id', $class_id)
                 ->where('section_id', $section_id)

@@ -349,15 +349,15 @@ function is_settled(PromiseInterface $promise)
 }
 
 /**
- * Create a new coroutine.
+ * Create a new cocronograma.
  *
- * @see Coroutine
+ * @see Cocronograma
  *
  * @return PromiseInterface
  *
- * @deprecated coroutine will be removed in guzzlehttp/promises:2.0. Use Coroutine::of instead.
+ * @deprecated cocronograma will be removed in guzzlehttp/promises:2.0. Use Cocronograma::of instead.
  */
-function coroutine(callable $generatorFn)
+function cocronograma(callable $generatorFn)
 {
-    return Coroutine::of($generatorFn);
+    return Cocronograma::of($generatorFn);
 }

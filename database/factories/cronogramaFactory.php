@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Routine;
+use App\Models\cronograma;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class RoutineFactory extends Factory
+class cronogramaFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Routine::class;
+    protected $model = cronograma::class;
 
     /**
      * Define the model's default state.

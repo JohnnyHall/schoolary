@@ -9,7 +9,7 @@ use Illuminate\Validation\ValidationException;
 trait ValidatesRequests
 {
     /**
-     * Run the validation routine against the given validator.
+     * Run the validation cronograma against the given validator.
      *
      * @param  \Illuminate\Contracts\Validation\Validator|array  $validator
      * @param  \Illuminate\Http\Request|null  $request

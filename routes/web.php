@@ -9,7 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\NoticeController;
-use App\Http\Controllers\RoutineController;
+use App\Http\Controllers\cronogramaController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\ExamRuleController;
 use App\Http\Controllers\SemesterController;
@@ -149,10 +149,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('calendar-event', [EventController::class, 'index'])->name('events.show');
     Route::post('calendar-crud-ajax', [EventController::class, 'calendarEvents'])->name('events.crud');
 
-    // Routines
-    Route::get('/routine/create', [RoutineController::class, 'create'])->name('section.routine.create');
-    Route::get('/routine/view', [RoutineController::class, 'show'])->name('section.routine.show');
-    Route::post('/routine/store', [RoutineController::class, 'store'])->name('section.routine.store');
+    // cronogramas
+    Route::get('/cronograma/create', [cronogramaController::class, 'create'])->name('section.cronograma.create');
+    Route::get('/cronograma/view', [cronogramaController::class, 'show'])->name('section.cronograma.show');
+    Route::post('/cronograma/store', [cronogramaController::class, 'store'])->name('section.cronograma.store');
 
     // monitoria
     Route::get('/monitoria/create', [monitoriaController::class, 'create'])->name('class.monitoria.create');

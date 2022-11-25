@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\RoutineStoreRequest;
-use App\Models\Routine;
+use App\Http\Requests\cronogramaStoreRequest;
+use App\Models\cronograma;
 use Illuminate\Http\Request;
 use App\Traits\SchoolSession;
-use App\Repositories\RoutineRepository;
+use App\Repositories\cronogramaRepository;
 use App\Interfaces\SchoolClassInterface;
 use App\Interfaces\SchoolSessionInterface;
 
-class RoutineController extends Controller
+class cronogramaController extends Controller
 {
     use SchoolSession;
     protected $schoolSessionRepository;
@@ -48,22 +48,22 @@ class RoutineController extends Controller
             'classes'                   => $school_classes,
         ];
 
-        return view('routines.create', $data);
+        return view('cronogramas.create', $data);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  RoutineStoreRequest  $request
+     * @param  cronogramaStoreRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(RoutineStoreRequest $request)
+    public function store(cronogramaStoreRequest $request)
     {
         try {
-            $routineRepository = new RoutineRepository();
-            $routineRepository->saveRoutine($request->validated());
+            $cronogramaRepository = new cronogramaRepository();
+            $cronogramaRepository->savecronograma($request->validated());
 
-            return back()->with('status', 'Routine save was successful!');
+            return back()->with('status', 'cronograma save was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -72,7 +72,7 @@ class RoutineController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Illuminate\Http\Request  $routine
+     * @param  \Illuminate\Http\Request  $cronograma
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request)
@@ -80,24 +80,24 @@ class RoutineController extends Controller
         $class_id = $request->query('class_id', 0);
         $section_id = $request->query('section_id', 0);
         $current_school_session_id = $this->getSchoolCurrentSession();
-        $routineRepository = new RoutineRepository();
-        $routines = $routineRepository->getAll($class_id, $section_id, $current_school_session_id);
-        $routines = $routines->sortBy('weekday')->groupBy('weekday');
+        $cronogramaRepository = new cronogramaRepository();
+        $cronogramas = $cronogramaRepository->getAll($class_id, $section_id, $current_school_session_id);
+        $cronogramas = $cronogramas->sortBy('weekday')->groupBy('weekday');
 
         $data = [
-            'routines' => $routines
+            'cronogramas' => $cronogramas
         ];
 
-        return view('routines.show', $data);
+        return view('cronogramas.show', $data);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Routine  $routine
+     * @param  \App\Models\cronograma  $cronograma
      * @return \Illuminate\Http\Response
      */
-    public function edit(Routine $routine)
+    public function edit(cronograma $cronograma)
     {
         //
     }
@@ -106,10 +106,10 @@ class RoutineController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Routine  $routine
+     * @param  \App\Models\cronograma  $cronograma
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Routine $routine)
+    public function update(Request $request, cronograma $cronograma)
     {
         //
     }
@@ -117,10 +117,10 @@ class RoutineController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Routine  $routine
+     * @param  \App\Models\cronograma  $cronograma
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Routine $routine)
+    public function destroy(cronograma $cronograma)
     {
         //
     }

@@ -3103,7 +3103,7 @@ bilieuses, etc., de temps à autre quelques fièvres intermittentes
 spécial à noter, si ce n'est beaucoup d'humeurs froides, et qui
 tiennent sans doute aux déplorables conditions hygiéniques de nos
 logements de paysan. Ah! vous trouverez bien des préjugés à
-combattre, monsieur Bovary; bien des entêtements de la routine, où
+combattre, monsieur Bovary; bien des entêtements de la cronograma, où
 se heurteront quotidiennement tous les efforts de votre science;
 car on a recours encore aux neuvaines, aux reliques, au curé,
 plutôt que de venir naturellement chez le médecin ou chez le
@@ -6019,7 +6019,7 @@ Conseiller qui psalmodiait ses phrases.
 Il disait:
 
 «Continuez! persévérez! n'écoutez ni les suggestions de la
-routine, ni les conseils trop hâtifs d'un empirisme téméraire!
+cronograma, ni les conseils trop hâtifs d'un empirisme téméraire!
 Appliquez-vous surtout à l'amélioration du sol, aux bons engrais,
 au développement des races chevalines, bovines, ovines et
 porcines! Que ces comices soient pour vous comme des arènes

@@ -8,12 +8,6 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3"><i class="bi bi-diagram-3"></i> Classes</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Classes</li>
-                        </ol>
-                    </nav>
                     <div class="row">
                         @isset($school_classes)
                             @foreach ($school_classes as $school_class)
@@ -28,10 +22,10 @@
                                                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}" role="tab" aria-current="true"><i class="bi bi-diagram-3"></i> {{$school_class->class_name}}</button>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-monitoria" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> monitoria</button>
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-monitoria" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> Monitoria</button>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-courses" role="tab" aria-current="false"><i class="bi bi-journal-medical"></i> Courses</button>
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-courses" role="tab" aria-current="false"><i class="bi bi-journal-medical"></i> Cursos</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -54,17 +48,17 @@
                                                                         <div id="accordionClass{{$school_class->id}}Section{{$school_section->id}}" class="accordion-collapse collapse" aria-labelledby="headingClass{{$school_class->id}}Section{{$school_section->id}}" data-bs-parent="#accordionClass{{$school_class->id}}">
                                                                             <div class="accordion-body">
                                                                                 <p class="lead d-flex justify-content-between">
-                                                                                    <span>Room No: {{$school_section->room_no}}</span>
+                                                                                    <span>Sala: {{$school_section->room_no}}</span>
                                                                                     @can('edit sections')
-                                                                                    <span><a href="{{route('section.edit', ['id' => $school_section->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i> Edit</a></span>
+                                                                                    <span><a href="{{route('section.edit', ['id' => $school_section->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i> Editar</a></span>
                                                                                     @endcan
                                                                                 </p>
                                                                                 <div class="list-group">
                                                                                     <a href="{{route('student.list.show', ['class_id' => $school_class->id, 'section_id' => $school_section->id, 'section_name' => $school_section->section_name])}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                                                                        View Students
+                                                                                        Ver Estudantes
                                                                                     </a>
-                                                                                    <a href="{{route('section.routine.show', ['class_id' => $school_class->id, 'section_id' => $school_section->id])}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                                                                        View Routine
+                                                                                    <a href="{{route('section.cronograma.show', ['class_id' => $school_class->id, 'section_id' => $school_section->id])}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                                        View cronograma
                                                                                     </a>
                                                                                 </div>
                                                                             </div>

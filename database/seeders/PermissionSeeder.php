@@ -41,10 +41,10 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'edit monitor']);
         Permission::create(['name' => 'delete monitor']);
 
-        Permission::create(['name' => 'create routines']);
-        Permission::create(['name' => 'view routines']);
-        Permission::create(['name' => 'edit routines']);
-        Permission::create(['name' => 'delete routines']);
+        Permission::create(['name' => 'create cronogramas']);
+        Permission::create(['name' => 'view cronogramas']);
+        Permission::create(['name' => 'edit cronogramas']);
+        Permission::create(['name' => 'delete cronogramas']);
 
         Permission::create(['name' => 'create exams']);
         Permission::create(['name' => 'view exams']);
@@ -125,10 +125,10 @@ class PermissionSeeder extends Seeder
             'edit exams rule',
             'delete exams rule',
             'view exams rule',
-            'create routines',
-            'view routines',
-            'edit routines',
-            'delete routines',
+            'create cronogramas',
+            'view cronogramas',
+            'edit cronogramas',
+            'delete cronogramas',
             'view marks',
             'view academic settings',
             'update marks submission window',
