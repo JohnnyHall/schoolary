@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\monitoria;
+use App\Models\Syllabus;
 use Illuminate\Http\Request;
 use App\Traits\SchoolSession;
 use App\Http\Requests\StoreFileRequest;
 use App\Interfaces\SchoolClassInterface;
-use App\Repositories\monitoriaRepository;
+use App\Repositories\SyllabusRepository;
 use App\Interfaces\SchoolSessionInterface;
 
-class monitoriaController extends Controller
+class SyllabusController extends Controller
 {
     use SchoolSession;
     protected $schoolSessionRepository;
@@ -32,11 +32,15 @@ class monitoriaController extends Controller
      */
     public function index(Request $request)
     {
+        $course_id = $request->query('course_id', 0);
+        $syllabusRepository = new SyllabusRepository();
+        $syllabi = $syllabusRepository->getByCourse($course_id);
+
         $data = [
-            'monitor'   => $monitor
+            'syllabi'   => $syllabi
         ];
 
-        return view('monitor.show', $data);
+        return view('syllabi.show', $data);
     }
 
     /**
@@ -54,7 +58,7 @@ class monitoriaController extends Controller
             'current_school_session_id' => $current_school_session_id,
             'school_classes'    => $school_classes,
         ];
-        return view('monitor.create', $data);
+        return view('syllabi.create', $data);
     }
 
     /**
@@ -67,14 +71,15 @@ class monitoriaController extends Controller
     {
         $validatedRequest = $request->validated();
         $validatedRequest['class_id'] = $request->class_id;
-        $validatedRequest['monitoria_name'] = $request->monitoria_name;
+        $validatedRequest['course_id'] = $request->course_id;
+        $validatedRequest['syllabus_name'] = $request->syllabus_name;
         $validatedRequest['session_id'] = $this->getSchoolCurrentSession();
 
         try {
-            $monitoriaRepository = new monitoriaRepository();
-            $monitoriaRepository->store($validatedRequest);
+            $syllabusRepository = new SyllabusRepository();
+            $syllabusRepository->store($validatedRequest);
 
-            return back()->with('status', 'Creating monitoria was successful!');
+            return back()->with('status', 'Creating syllabus was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -83,10 +88,10 @@ class monitoriaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\monitoria  $monitoria
+     * @param  \App\Models\Syllabus  $syllabus
      * @return \Illuminate\Http\Response
      */
-    public function show(monitoria $monitoria)
+    public function show(Syllabus $syllabus)
     {
         //
     }
@@ -94,10 +99,10 @@ class monitoriaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\monitoria  $monitoria
+     * @param  \App\Models\Syllabus  $syllabus
      * @return \Illuminate\Http\Response
      */
-    public function edit(monitoria $monitoria)
+    public function edit(Syllabus $syllabus)
     {
         //
     }
@@ -106,10 +111,10 @@ class monitoriaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\monitoria  $monitoria
+     * @param  \App\Models\Syllabus  $syllabus
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, monitoria $monitoria)
+    public function update(Request $request, Syllabus $syllabus)
     {
         //
     }
@@ -117,10 +122,10 @@ class monitoriaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\monitoria  $monitoria
+     * @param  \App\Models\Syllabus  $syllabus
      * @return \Illuminate\Http\Response
      */
-    public function destroy(monitoria $monitoria)
+    public function destroy(Syllabus $syllabus)
     {
         //
     }

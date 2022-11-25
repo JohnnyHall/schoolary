@@ -28,7 +28,7 @@
                                                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}" role="tab" aria-current="true"><i class="bi bi-diagram-3"></i> {{$school_class->class_name}}</button>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-monitoria" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> monitoria</button>
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-syllabus" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> Syllabus</button>
                                                 </li>
                                                 <li class="nav-item">
                                                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-courses" role="tab" aria-current="false"><i class="bi bi-journal-medical"></i> Courses</button>
@@ -75,22 +75,22 @@
                                                         @endisset
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="class{{$school_class->id}}-monitoria" role="tabpanel">
-                                                    @isset($school_class->monitor)
+                                                <div class="tab-pane fade" id="class{{$school_class->id}}-syllabus" role="tabpanel">
+                                                    @isset($school_class->syllabi)
                                                     <table class="table table-borderless">
                                                         <thead>
                                                         <tr>
-                                                            <th scope="col">Email do monitor</th>
+                                                            <th scope="col">Syllabus Name</th>
                                                             <th scope="col">Actions</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                        @foreach ($school_class->monitor as $monitoria)
+                                                        @foreach ($school_class->syllabi as $syllabus)
                                                             <tr>
-                                                            <td>{{$monitoria->monitoria_name}}</td>
+                                                            <td>{{$syllabus->syllabus_name}}</td>
                                                             <td>
                                                                 <div class="btn-group" role="group">
-                                                                    <a href="{{asset('storage/'.$monitoria->monitoria_file_path)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-download"></i> Download</a>
+                                                                    <a href="{{asset('storage/'.$syllabus->syllabus_file_path)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-download"></i> Download</a>
                                                                 </div>
                                                             </td>
                                                             </tr>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            
+            @include('layouts.footer')
         </div>
     </div>
 </div>
