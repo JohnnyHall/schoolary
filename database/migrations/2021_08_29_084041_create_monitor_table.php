@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSyllabiTable extends Migration
+class CreatemonitorTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateSyllabiTable extends Migration
      */
     public function up()
     {
-        Schema::create('syllabi', function (Blueprint $table) {
+        Schema::create('monitor', function (Blueprint $table) {
             $table->id();
-            $table->string('syllabus_name');
-            $table->string('syllabus_file_path');
+            $table->string('monitoria_name');
+            $table->string('monitoria_file_path');
             $table->unsignedInteger('class_id');
-            $table->unsignedInteger('course_id');
             $table->unsignedInteger('session_id');
             $table->timestamps();
         });
@@ -31,6 +30,6 @@ class CreateSyllabiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('syllabi');
+        Schema::dropIfExists('monitor');
     }
 }

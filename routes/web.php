@@ -13,7 +13,7 @@ use App\Http\Controllers\RoutineController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\ExamRuleController;
 use App\Http\Controllers\SemesterController;
-use App\Http\Controllers\SyllabusController;
+use App\Http\Controllers\monitoriaController;
 use App\Http\Controllers\GradeRuleController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\AssignmentController;
@@ -154,10 +154,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/routine/view', [RoutineController::class, 'show'])->name('section.routine.show');
     Route::post('/routine/store', [RoutineController::class, 'store'])->name('section.routine.store');
 
-    // Syllabus
-    Route::get('/syllabus/create', [SyllabusController::class, 'create'])->name('class.syllabus.create');
-    Route::post('/syllabus/create', [SyllabusController::class, 'store'])->name('syllabus.store');
-    Route::get('/syllabus/index', [SyllabusController::class, 'index'])->name('course.syllabus.index');
+    // monitoria
+    Route::get('/monitoria/create', [monitoriaController::class, 'create'])->name('class.monitoria.create');
+    Route::post('/monitoria/create', [monitoriaController::class, 'store'])->name('monitoria.store');
+    Route::get('/monitoria/index', [monitoriaController::class, 'index'])->name('course.monitoria.index');
 
     // Notices
     Route::get('/notice/create', [NoticeController::class, 'create'])->name('notice.create');

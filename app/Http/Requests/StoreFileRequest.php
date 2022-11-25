@@ -13,7 +13,7 @@ class StoreFileRequest extends FormRequest
      */
     public function authorize()
     {
-        return (auth()->user()->can('create assignments') || auth()->user()->can('create syllabi'));
+        return (auth()->user()->can('create assignments') || auth()->user()->can('create monitor'));
     }
 
     /**

@@ -26,7 +26,7 @@
                                     <form action="{{route('school.session.store')}}" method="POST">
                                         @csrf
                                         <div class="mb-3">
-                                            <input type="text" class="form-control form-control-sm" placeholder="2021 - 2022" aria-label="Current Session" name="session_name" required>
+                                            <input type="text" class="form-control form-control-sm" placeholder="2022 - 2023" aria-label="Current Session" name="session_name" required>
                                         </div>
                                         <button class="btn btn-sm btn-outline-primary" type="submit"><i class="bi bi-check2"></i> Criar</button>
                                     </form>
@@ -35,11 +35,11 @@
                             @endif
                             <div class="col-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Busca pela secão</h6>
+                                    <h6>Busca pela sessão</h6>
                                     <form action="{{route('school.session.browse')}}" method="POST">
                                         @csrf
                                     <div class="mb-3">
-                                        <p class="mt-2">Selecione uma seção para nevegar:</p>
+                                        <p class="mt-2">Selecione uma sessão para nevegar:</p>
                                         <select class="form-select form-select-sm" aria-label=".form-select-sm" name="session_id" required>
                                             @isset($school_sessions)
                                                 @foreach ($school_sessions as $school_session)
@@ -86,7 +86,7 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="attendance_type" id="attendance_type_section" {{($academic_setting->attendance_type == 'section')?'checked="checked"':null}} value="section">
                                             <label class="form-check-label" for="attendance_type_section">
-                                                Frequencia por seção
+                                                Frequencia por turma
                                             </label>
                                         </div>
                                         <div class="form-check">
@@ -102,12 +102,12 @@
                             </div>
                             <div class="col-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6> Criar classe</h6>
+                                    <h6> Criar materia</h6>
                                     <form action="{{route('school.class.create')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-3">
-                                            <input type="text" class="form-control form-control-sm" name="class_name" placeholder="Nome da classe" aria-label="Class name" required>
+                                            <input type="text" class="form-control form-control-sm" name="class_name" placeholder="Nome da materia" aria-label="Class name" required>
                                         </div>
                                         <button class="btn btn-sm btn-outline-primary" type="submit"><i class="bi bi-check2"></i> Criar</button>
                                     </form>
@@ -115,18 +115,18 @@
                             </div>
                             <div class="col-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                <h6> Criar seção</h6>
+                                <h6> Criar turma</h6>
                                     <form action="{{route('school.section.create')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-3">
-                                            <input class="form-control form-control-sm" name="section_name" type="text" placeholder="Nome da seção" required>
+                                            <input class="form-control form-control-sm" name="section_name" type="text" placeholder="Nome da turma" required>
                                         </div>
                                         <div class="mb-3">
                                             <input class="form-control form-control-sm" name="room_no" type="text" placeholder="Numero do quarto/sala" required>
                                         </div>
                                         <div>
-                                            <p>Atribuir uma seção a uma classe:</p>
+                                            <p>Atribuir uma turma a uma materia:</p>
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm" name="class_id" required>
                                                 @isset($school_classes)
                                                     @foreach ($school_classes as $school_class)
@@ -169,7 +169,7 @@
                                             </select>
                                         </div>
                                         <div class="mb-3">
-                                            <p>Classe:</p>
+                                            <p>Materia:</p>
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm" name="class_id" required>
                                                 @isset($school_classes)
                                                     @foreach ($school_classes as $school_class)
@@ -209,7 +209,7 @@
                                             </select>
                                         </div>
                                         <div>
-                                            <p>Classe:</p>
+                                            <p>Materia:</p>
                                             <select onchange="getSectionsAndCourses(this);" class="form-select form-select-sm" aria-label=".form-select-sm" name="class_id" required>
                                                 @isset($school_classes)
                                                     @foreach ($school_classes as $school_class)
@@ -219,7 +219,7 @@
                                             </select>
                                         </div>
                                         <div>
-                                            <p class="mt-2">Seção:</p>
+                                            <p class="mt-2">Turma:</p>
                                             <select class="form-select form-select-sm" id="section-select" aria-label=".form-select-sm" name="section_id" required>
                                             </select>
                                         </div>

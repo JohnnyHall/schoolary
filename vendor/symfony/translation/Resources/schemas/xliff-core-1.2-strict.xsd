@@ -459,7 +459,7 @@ Jan-10-2006
       </xsd:enumeration>
       <xsd:enumeration value="acronym">
         <xsd:annotation>
-          <xsd:documentation>ISO-12620 2.1.8.4: An abbreviated form of a term made up of letters from the full form of a multiword term strung together into a sequence pronounced only syllabically (e.g. 'radar' for 'radio detecting and ranging').</xsd:documentation>
+          <xsd:documentation>ISO-12620 2.1.8.4: An abbreviated form of a term made up of letters from the full form of a multiword term strung together into a sequence pronounced only monitorcally (e.g. 'radar' for 'radio detecting and ranging').</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="appellation">

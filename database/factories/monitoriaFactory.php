@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Syllabus;
+use App\Models\monitoria;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class SyllabusFactory extends Factory
+class monitoriaFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Syllabus::class;
+    protected $model = monitoria::class;
 
     /**
      * Define the model's default state.

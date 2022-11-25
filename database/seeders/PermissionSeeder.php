@@ -36,10 +36,10 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'edit events']);
         Permission::create(['name' => 'delete events']);
 
-        Permission::create(['name' => 'create syllabi']);
-        Permission::create(['name' => 'view syllabi']);
-        Permission::create(['name' => 'edit syllabi']);
-        Permission::create(['name' => 'delete syllabi']);
+        Permission::create(['name' => 'create monitor']);
+        Permission::create(['name' => 'view monitor']);
+        Permission::create(['name' => 'edit monitor']);
+        Permission::create(['name' => 'delete monitor']);
 
         Permission::create(['name' => 'create routines']);
         Permission::create(['name' => 'view routines']);
@@ -155,10 +155,10 @@ class PermissionSeeder extends Seeder
             'view events',
             'edit events',
             'delete events',
-            'create syllabi',
-            'view syllabi',
-            'edit syllabi',
-            'delete syllabi',
+            'create monitor',
+            'view monitor',
+            'edit monitor',
+            'delete monitor',
             'view assignments'
         );
     }
