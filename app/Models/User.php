@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use App\Models\Mark;
-use App\Models\alunoParentInfo;
 use App\Models\alunoAcademicInfo;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
@@ -29,13 +28,11 @@ class User extends Authenticatable
         'nationality',
         'phone',
         'address',
-        'address2',
         'city',
         'zip',
         'photo',
         'Aniversario',
-        'religion',
-        'blood_type',
+        'lista_filmes',
         'role',
     ];
 
@@ -57,14 +54,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    /**
-     * Get the parent_info.
-     */
-    public function parent_info()
-    {
-        return $this->hasOne(alunoParentInfo::class, 'aluno_id', 'id');
-    }
 
     /**
      * Get the academic_info.

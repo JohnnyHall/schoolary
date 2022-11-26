@@ -38,7 +38,7 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col"># ID Card Number</th>
+                                            <th scope="col"># RA</th>
                                             <th scope="col">aluno Name</th>
                                             <th scope="col">Present</th>
                                         </tr>
@@ -47,7 +47,7 @@
                                         @foreach ($aluno_list as $aluno)
                                         <input type="hidden" name="aluno_ids[]" value="{{$aluno->aluno_id}}">
                                         <tr>
-                                            <th scope="row">{{$aluno->id_card_number}}</th>
+                                            <th scope="row">{{$aluno->RA}}</th>
                                             <td>{{$aluno->aluno->first_name}} {{$aluno->aluno->last_name}}</td>
                                             <td>
                                                 <input class="form-check-input" type="checkbox" name="status[{{$aluno->aluno_id}}]" checked>

@@ -49,7 +49,7 @@
                             <table class="table table-responsive">
                                 <thead>
                                     <tr>
-                                        <th scope="col">ID Card Number</th>
+                                        <th scope="col">RA</th>
                                         <th scope="col">Photo</th>
                                         <th scope="col">Primeiro nome</th>
                                         <th scope="col">Sobrenome</th>
@@ -61,7 +61,7 @@
                                 <tbody>
                                     @foreach ($alunoList as $aluno)
                                     <tr>
-                                        <th scope="row">{{$aluno->id_card_number}}</th>
+                                        <th scope="row">{{$aluno->RA}}</th>
                                         <td>
                                             @if (isset($aluno->aluno->photo))
                                                 <img src="{{asset('/storage'.$aluno->aluno->photo)}}" class="rounded" alt="Profile picture" height="30" width="30">

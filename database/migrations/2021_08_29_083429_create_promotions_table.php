@@ -19,7 +19,7 @@ class CreatePromotionsTable extends Migration
             $table->unsignedInteger('class_id');
             $table->unsignedInteger('section_id');
             $table->unsignedInteger('session_id');
-            $table->string('id_card_number');
+            $table->string('RA');
             $table->timestamps();
         });
     }

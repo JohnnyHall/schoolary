@@ -40,10 +40,7 @@
                                 <label for="inputAddress" class="form-label">Address</label>
                                 <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$teacher->address}}">
                             </div>
-                            <div class="col-3">
-                                <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{$teacher->address2}}">
-                            </div>
+
                             <div class="col-2">
                                 <label for="inputCity" class="form-label">City</label>
                                 <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$teacher->city}}">

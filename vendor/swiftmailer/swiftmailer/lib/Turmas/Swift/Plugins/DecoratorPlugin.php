@@ -41,7 +41,6 @@ class Swift_Plugins_DecoratorPlugin implements Swift_Events_SendListener, Swift_
      * <code>
      * $replacements = array(
      *  "address1@domain.tld" => array("{a}" => "b", "{c}" => "d"),
-     *  "address2@domain.tld" => array("{a}" => "x", "{c}" => "y")
      * )
      * </code>
      *

@@ -12,7 +12,6 @@ use App\Repositories\PromotionRepository;
 use App\Http\Requests\alunoStoreRequest;
 use App\Http\Requests\TeacherStoreRequest;
 use App\Interfaces\SchoolSessionInterface;
-use App\Repositories\alunoParentInfoRepository;
 
 class UserController extends Controller
 {
@@ -131,15 +130,12 @@ class UserController extends Controller
 
     public function editaluno($aluno_id) {
         $aluno = $this->userRepository->findaluno($aluno_id);
-        $alunoParentInfoRepository = new alunoParentInfoRepository();
-        $parent_info = $alunoParentInfoRepository->getParentInfo($aluno_id);
         $promotionRepository = new PromotionRepository();
         $current_school_session_id = $this->getSchoolCurrentSession();
         $promotion_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $aluno_id);
 
         $data = [
             'aluno'       => $aluno,
-            'parent_info'   => $parent_info,
             'promotion_info'=> $promotion_info,
         ];
         return view('alunos.edit', $data);

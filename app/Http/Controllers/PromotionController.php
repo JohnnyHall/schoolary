@@ -123,15 +123,15 @@ class PromotionController extends Controller
      */
     public function store(Request $request)
     {
-        $id_card_numbers = $request->id_card_number;
+        $RAs = $request->RA;
         $latest_school_session = $this->schoolSessionRepository->getLatestSession();
 
         $rows = [];
         $i = 0;
-        foreach($id_card_numbers as $aluno_id => $id_card_number) {
+        foreach($RAs as $aluno_id => $RA) {
             $row = [
                 'aluno_id'    => $aluno_id,
-                'id_card_number'=> $id_card_number,
+                'RA'=> $RA,
                 'class_id'      => $request->class_id[$i],
                 'section_id'    => $request->section_id[$i],
                 'session_id'    => $latest_school_session->id,

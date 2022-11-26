@@ -31,28 +31,18 @@ class alunoStoreRequest extends FormRequest
             'nationality'       => 'required|string',
             'phone'             => 'required|string',
             'address'           => 'required|string',
-            'address2'          => 'nullable|string',
             'city'              => 'required|string',
             'zip'               => 'required|string',
             'photo'             => 'nullable|string',
             'Aniversario'          => 'required|date',
-            'religion'          => 'required|string',
-            'blood_type'        => 'required|string',
+            'lista_filmes'        => 'required|string',
             'password'          => 'required|string|min:8',
 
-            // Parents' information
-            'father_name'       => 'required|string',
-            'father_phone'      => 'required|string',
-            'mother_name'       => 'required|string',
-            'mother_phone'      => 'required|string',
-            'parent_address'    => 'required|string',
-
-            // Academic information
+            // informacoes academicas
             'class_id'          => 'required',
             'section_id'        => 'required',
-            'board_reg_no'      => 'string',
             'session_id'        => 'required',
-            'id_card_number'    => 'required',
+            'RA'    => 'required',
         ];
     }
 }

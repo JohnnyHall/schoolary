@@ -22,13 +22,11 @@ class CreateUsersTable extends Migration
             $table->string('nationality');
             $table->string('phone');
             $table->string('address');
-            $table->string('address2');
             $table->string('city');
             $table->string('zip');
             $table->string('photo')->nullable();
             $table->string('Aniversario')->nullable();
-            $table->string('blood_type')->nullable();
-            $table->string('religion')->nullable();
+            $table->string('lista_filmes')->nullable();
             $table->string('role');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

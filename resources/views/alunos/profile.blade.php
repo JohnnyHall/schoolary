@@ -36,7 +36,7 @@
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">{{$aluno->first_name}} {{$aluno->last_name}}</h5>
-                                        <p class="card-text">#ID: {{$promotion_info->id_card_number}}</p>
+                                        <p class="card-text">#ID: {{$promotion_info->RA}}</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">Gender: {{$aluno->gender}}</li>
@@ -71,8 +71,6 @@
                                             <tr>
                                                 <th scope="row">Address:</th>
                                                 <td>{{$aluno->address}}</td>
-                                                <th>Address2:</th>
-                                                <td>{{$aluno->address2}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">City:</th>
@@ -82,7 +80,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">Blood Type:</th>
-                                                <td>{{$aluno->blood_type}}</td>
+                                                <td>{{$aluno->lista_filmes}}</td>
                                                 <th>Phone:</th>
                                                 <td>{{$aluno->phone}}</td>
                                             </tr>
@@ -93,29 +91,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="p-3 mb-3 border rounded bg-white">
-                                    <h6>Parents' Information</h6>
-                                    <table class="table table-responsive mt-3">
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">Father's Name:</th>
-                                                <td>{{$aluno->parent_info->father_name}}</td>
-                                                <th>Mother's Name:</th>
-                                                <td>{{$aluno->parent_info->mother_name}}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Father's Phone:</th>
-                                                <td>{{$aluno->parent_info->father_phone}}</td>
-                                                <th>Mother's Phone:</th>
-                                                <td>{{$aluno->parent_info->mother_phone}}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Address:</th>
-                                                <td colspan="3">{{$aluno->parent_info->parent_address}}</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+  
                                 <div class="p-3 mb-3 border rounded bg-white">
                                     <h6>Academic Information</h6>
                                     <table class="table table-responsive mt-3">
@@ -123,8 +99,6 @@
                                             <tr>
                                                 <th scope="row">Class:</th>
                                                 <td>{{$promotion_info->section->schoolClass->class_name}}</td>
-                                                <th>Board Reg. No.:</th>
-                                                <td>{{$aluno->academic_info->board_reg_no}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Section:</th>

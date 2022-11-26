@@ -10,7 +10,6 @@ use App\Models\Section;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use App\Repositories\PromotionRepository;
-use App\Repositories\alunoParentInfoRepository;
 use App\Repositories\alunoAcademicInfoRepository;
 
 class UserRepository implements UserInterface {
@@ -31,7 +30,6 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
@@ -77,20 +75,14 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'Aniversario'      => $request['Aniversario'],
-                    'religion'      => $request['religion'],
-                    'blood_type'    => $request['blood_type'],
+                    'lista_filmes'    => $request['lista_filmes'],
                     'role'          => 'aluno',
                     'password'      => Hash::make($request['password']),
                 ]);
-
-                // Store Parents' information
-                $alunoParentInfoRepository = new alunoParentInfoRepository();
-                $alunoParentInfoRepository->store($request, $aluno->id);
 
                 // Store Academic information
                 $alunoAcademicInfoRepository = new alunoAcademicInfoRepository();
@@ -129,19 +121,14 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
                     'Aniversario'      => $request['Aniversario'],
-                    'religion'      => $request['religion'],
-                    'blood_type'    => $request['blood_type'],
+                    'lista_filmes'    => $request['lista_filmes'],
                 ]);
 
-                // Update Parents' information
-                $alunoParentInfoRepository = new alunoParentInfoRepository();
-                $alunoParentInfoRepository->update($request, $request['aluno_id']);
 
-                // Update aluno's ID card number
+                // Update aluno's RA
                 $promotionRepository = new PromotionRepository();
                 $promotionRepository->update($request, $request['aluno_id']);
             });
@@ -161,7 +148,6 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
                 ]);
@@ -205,7 +191,7 @@ class UserRepository implements UserInterface {
 
     public function findaluno($id) {
         try {
-            return User::with('parent_info', 'academic_info')->where('id', $id)->first();
+            return User::with('academic_info')->where('id', $id)->first();
         } catch (\Exception $e) {
             throw new \Exception('Falha ao tentar pegar o aluno. '.$e->getMessage());
         }

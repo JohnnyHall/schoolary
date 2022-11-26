@@ -27,11 +27,11 @@
                             <div class="row g-3">
                                 <div class="col-3">
                                     <label for="inputFirstName" class="form-label">Primeiro nome</label>
-                                    <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="Primeiro nome" required>
+                                    <input type="text" class="form-control" id="inputFirstName" name="first_name" required>
                                 </div>
                                 <div class="col-3">
                                     <label for="inputLastName" class="form-label">Sobrenome</label>
-                                    <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Sobrenome" required>
+                                    <input type="text" class="form-control" id="inputLastName" name="last_name" required>
                                 </div>
                                 <div class="col-3">
                                     <label for="inputEmail4" class="form-label">Email</label>
@@ -57,31 +57,31 @@
                                     <input type="date" class="form-control" id="inputAniversario" name="Aniversario" placeholder="Aniversario" required>
                                 </div>
                                 <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required>
+                                    <label for="inputAddress" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua H.Romeo Pinto" required>
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputCity" class="form-label">City</label>
+                                    <label for="inputCity" class="form-label">Cidade</label>
                                     <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required>
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <label for="inputZip" class="form-label">CEP</label>
                                     <input type="text" class="form-control" id="inputZip" name="zip" required>
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputState" class="form-label">Gender</label>
+                                    <label for="inputState" class="form-label">Sexo</label>
                                     <select id="inputState" class="form-select" name="gender" required>
-                                        <option value="Male" selected>Male</option>
-                                        <option value="Female">Female</option>
+                                        <option value="Male" selected>Masculino</option>
+                                        <option value="Female">Feminino</option>
                                     </select>
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputNationality" class="form-label">Nationality</label>
+                                    <label for="inputNationality" class="form-label">Nacionalidade</label>
                                     <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required>
                                 </div>
                                 <div class="col-2">
                                     <label for="inputFilmes" class="form-label">Filmes</label>
-                                    <select id="inputFilmes" class="form-select" name="blood_type" required>
+                                    <select id="inputFilmes" class="form-select" name="lista_filmes" required>
                                         <option>Zack and Miri Make a Porno-</option>
                                         <option>Youth in Revolt<option>
                                         <option>You Will Meet a Tall Dark Stranger</option>
@@ -98,56 +98,23 @@
                                         <option>The Twilight Saga: New Moon</option>
                                     </select>
                                 </div>
-                                <div class="col-2">
-                                    <label for="inputReligion" class="form-label">Religion</label>
-                                    <select id="inputReligion" class="form-select" name="religion" required>
-                                        <option selected>Islam</option>
-                                        <option>Hinduism</option>
-                                        <option>Christianity</option>
-                                        <option>Buddhism</option>
-                                        <option>Judaism</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
                                 <div class="col-3">
-                                    <label for="inputPhone" class="form-label">Phone</label>
-                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required>
+                                    <label for="inputPhone" class="form-label">Celular</label>
+                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+19 998......" required>
                                 </div>
                                 <div class="col-5">
-                                    <label for="inputIdCardNumber" class="form-label">Id Card Number</label>
-                                    <input type="text" class="form-control" id="inputIdCardNumber" name="id_card_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required>
+                                    <label for="inputRA" class="form-label">RA</label>
+                                    <input type="text" class="form-control" id="inputRA" name="RA" placeholder="22003236" required>
                                 </div>
                             </div>
+                            
                             <div class="row mt-4 g-3">
-                                <h6>Parents' Information</h6>
+                                <h6>Informações Acadêmicas</h6>
                                 <div class="col-3">
-                                    <label for="inputFatherName" class="form-label">Father Name</label>
-                                    <input type="text" class="form-control" id="inputFatherName" name="father_name" placeholder="Father Name" required>
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputFatherPhone" class="form-label">Father's Phone</label>
-                                    <input type="text" class="form-control" id="inputFatherPhone" name="father_phone" placeholder="+880 01......" required>
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputMotherName" class="form-label">Mother Name</label>
-                                    <input type="text" class="form-control" id="inputMotherName" name="mother_name" placeholder="Mother Name" required>
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputMotherPhone" class="form-label">Mother's Phone</label>
-                                    <input type="text" class="form-control" id="inputMotherPhone" name="mother_phone" placeholder="+880 01......" required>
-                                </div>
-                                <div class="col-4">
-                                    <label for="inputParentAddress" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="inputParentAddress" name="parent_address" placeholder="634 Main St" required>
-                                </div>
-                            </div>
-                            <div class="row mt-4 g-3">
-                                <h6>Academic Information</h6>
-                                <div class="col-3">
-                                    <label for="inputAssignToClass" class="form-label">Assign to class:</label>
+                                    <label for="inputAssignToClass" class="form-label">Materia:</label>
                                     <select onchange="getSections(this);" class="form-select" id="inputAssignToClass" name="class_id" required>
                                         @isset($school_classes)
-                                            <option selected disabled>Please select a class</option>
+                                            <option selected disabled>Favor selecionar uma materia.</option>
                                             @foreach ($school_classes as $school_class)
                                                 <option value="{{$school_class->id}}">{{$school_class->class_name}}</option>
                                             @endforeach
@@ -155,14 +122,11 @@
                                     </select>
                                 </div>
                                 <div class="col-3">
-                                    <label for="inputAssignToSection" class="form-label">Assign to section:</label>
+                                    <label for="inputAssignToSection" class="form-label">Turma:</label>
                                     <select class="form-select" id="inputAssignToSection" name="section_id" required>
                                     </select>
                                 </div>
-                                <div class="col-3">
-                                    <label for="inputBoardRegistrationNumber" class="form-label">Board registration No.</label>
-                                    <input type="text" class="form-control" id="inputBoardRegistrationNumber" name="board_reg_no" placeholder="Registration No.">
-                                </div>
+
                                 <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                             </div>
                             <div class="row mt-4">

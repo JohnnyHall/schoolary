@@ -20,7 +20,7 @@
                             <table class="table mt-4">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#ID Card Number</th>
+                                        <th scope="col">#RA</th>
                                         <th scope="col">Primeiro nome</th>
                                         <th scope="col">Sobrenome</th>
                                         <th scope="col">Previous Class</th>
@@ -34,7 +34,7 @@
                                         @foreach ($alunos as $index => $aluno)
                                         <tr>
                                             <th scope="row">
-                                                <input type="text" class="form-control" name="id_card_number[{{$aluno->aluno->id}}]" value="{{$aluno->id_card_number}}">
+                                                <input type="text" class="form-control" name="RA[{{$aluno->aluno->id}}]" value="{{$aluno->RA}}">
                                             </th>
                                             <td>{{$aluno->aluno->first_name}}</td>
                                             <td>{{$aluno->aluno->last_name}}</td>

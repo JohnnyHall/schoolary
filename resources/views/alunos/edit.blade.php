@@ -8,13 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Edit aluno
+                        <i class="bi bi-person-lines-fill"></i> Editar aluno
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">aluno List</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Edit aluno</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
 
@@ -44,10 +42,7 @@
                                     <label for="inputAddress" class="form-label">Address</label>
                                     <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$aluno->address}}">
                                 </div>
-                                <div class="col-3">
-                                    <label for="inputAddress2" class="form-label">Address 2</label>
-                                    <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{$aluno->address2}}">
-                                </div>
+
                                 <div class="col-2">
                                     <label for="inputCity" class="form-label">City</label>
                                     <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$aluno->city}}">
@@ -69,16 +64,16 @@
                                 </div>
                                 <div class="col-2">
                                     <label for="inputFilmes" class="form-label">Filmes</label>
-                                    <select id="inputFilmes" class="form-select" name="blood_type" required>
-                                        <option value="A+" {{($aluno->blood_type == 'A+')?'selected':null}}>A+</option>
-                                        <option value="A-" {{($aluno->blood_type == 'A-')?'selected':null}}>A-</option>
-                                        <option value="B+" {{($aluno->blood_type == 'B+')?'selected':null}}>B+</option>
-                                        <option value="B-" {{($aluno->blood_type == 'B-')?'selected':null}}>B-</option>
-                                        <option value="O+" {{($aluno->blood_type == 'O+')?'selected':null}}>O+</option>
-                                        <option value="O-" {{($aluno->blood_type == 'O-')?'selected':null}}>O-</option>
-                                        <option value="AB+" {{($aluno->blood_type == 'AB+')?'selected':null}}>AB+</option>
-                                        <option value="AB-" {{($aluno->blood_type == 'AB-')?'selected':null}}>AB-</option>
-                                        <option value="Other" {{($aluno->blood_type == 'Other')?'selected':null}}>Other</option>
+                                    <select id="inputFilmes" class="form-select" name="lista_filmes" required>
+                                        <option value="A+" {{($aluno->lista_filmes == 'A+')?'selected':null}}>A+</option>
+                                        <option value="A-" {{($aluno->lista_filmes == 'A-')?'selected':null}}>A-</option>
+                                        <option value="B+" {{($aluno->lista_filmes == 'B+')?'selected':null}}>B+</option>
+                                        <option value="B-" {{($aluno->lista_filmes == 'B-')?'selected':null}}>B-</option>
+                                        <option value="O+" {{($aluno->lista_filmes == 'O+')?'selected':null}}>O+</option>
+                                        <option value="O-" {{($aluno->lista_filmes == 'O-')?'selected':null}}>O-</option>
+                                        <option value="AB+" {{($aluno->lista_filmes == 'AB+')?'selected':null}}>AB+</option>
+                                        <option value="AB-" {{($aluno->lista_filmes == 'AB-')?'selected':null}}>AB-</option>
+                                        <option value="Other" {{($aluno->lista_filmes == 'Other')?'selected':null}}>Other</option>
                                     </select>
                                 </div>
                                 <div class="col-2">
@@ -97,33 +92,11 @@
                                     <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$aluno->phone}}">
                                 </div>
                                 <div class="col-3">
-                                    <label for="inputIdCardNumber" class="form-label">Id Card Number</label>
-                                    <input type="text" class="form-control" id="inputIdCardNumber" name="id_card_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{$promotion_info->id_card_number}}">
+                                    <label for="inputRA" class="form-label">RA</label>
+                                    <input type="text" class="form-control" id="inputRA" name="RA" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{$promotion_info->RA}}">
                                 </div>
                             </div>
-                            <div class="row mt-4 g-3">
-                                <h6>Parents' Information</h6>
-                                <div class="col-3">
-                                    <label for="inputFatherName" class="form-label">Father Name</label>
-                                    <input type="text" class="form-control" id="inputFatherName" name="father_name" placeholder="Father Name" required value="{{$parent_info->father_name}}">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputFatherPhone" class="form-label">Father's Phone</label>
-                                    <input type="text" class="form-control" id="inputFatherPhone" name="father_phone" placeholder="+880 01......" required value="{{$parent_info->father_phone}}">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputMotherName" class="form-label">Mother Name</label>
-                                    <input type="text" class="form-control" id="inputMotherName" name="mother_name" placeholder="Mother Name" required value="{{$parent_info->mother_name}}">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputMotherPhone" class="form-label">Mother's Phone</label>
-                                    <input type="text" class="form-control" id="inputMotherPhone" name="mother_phone" placeholder="+880 01......" required value="{{$parent_info->mother_phone}}">
-                                </div>
-                                <div class="col-4">
-                                    <label for="inputParentAddress" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="inputParentAddress" name="parent_address" placeholder="634 Main St" required value="{{$parent_info->parent_address}}">
-                                </div>
-                            </div>
+
                             <div class="row mt-4">
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Update</button>
