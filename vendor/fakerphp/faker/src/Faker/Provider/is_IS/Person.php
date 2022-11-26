@@ -51,7 +51,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Generate prepared last name for further processing
+     * Generate prepared Sobrenome for further processing
      *
      * @return string
      */
@@ -71,7 +71,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Randomly return a icelandic last name for woman.
+     * Randomly return a icelandic Sobrenome for woman.
      *
      * @return string
      */
@@ -81,7 +81,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Randomly return a icelandic last name for man.
+     * Randomly return a icelandic Sobrenome for man.
      *
      * @return string
      */

@@ -30,7 +30,7 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <p class="mb-2">Select course:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                <p class="mb-2">Select course:</p>
                                 <select class="form-select" id="course-select" name="course_id">
                                 </select>
                             </div>

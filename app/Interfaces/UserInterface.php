@@ -7,17 +7,17 @@ interface UserInterface {
 
     public function updateTeacher($request);
 
-    public function createStudent($request);
+    public function createaluno($request);
 
-    public function updateStudent($request);
+    public function updatealuno($request);
 
-    public function getAllStudents($current_session, $class_id, $section_id);
+    public function getAllalunos($current_session, $class_id, $section_id);
 
-    public function getAllStudentsBySession($session_id);
+    public function getAllalunosBySession($session_id);
 
-    public function getAllStudentsBySessionCount($session_id);
+    public function getAllalunosBySessionCount($session_id);
 
-    public function findStudent($id);
+    public function findaluno($id);
 
     public function findTeacher($id);
 

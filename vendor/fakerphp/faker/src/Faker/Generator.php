@@ -689,9 +689,9 @@ class Generator
      *
      * @example 'AB'
      */
-    public function bloodType(): string
+    public function Filmes(): string
     {
-        return $this->ext(Extension\BloodExtension::class)->bloodType();
+        return $this->ext(Extension\BloodExtension::class)->Filmes();
     }
 
     /**

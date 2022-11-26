@@ -8,11 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Promote Students
+                        <i class="bi bi-person-lines-fill"></i> Promote alunos
                     </h1>
                     @include('session-messages')
                     <p class="text-danger">
-                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Students must be promoted only once to a new Session. Ususally, secretaria will create a New Session once Academic activity ends for the Current Session.</small>
+                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> alunos must be promoted only once to a new Session. Ususally, secretaria will create a New Session once Academic activity ends for the Current Session.</small>
                     </p>
                     <div class="mb-4 mt-4">
                         <form action="{{route('promotions.store')}}" method="POST">
@@ -21,8 +21,8 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#ID Card Number</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Primeiro nome</th>
+                                        <th scope="col">Sobrenome</th>
                                         <th scope="col">Previous Class</th>
                                         <th scope="col">Previous Section</th>
                                         <th scope="col">Promoting to Class</th>
@@ -30,14 +30,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @isset($students)
-                                        @foreach ($students as $index => $student)
+                                    @isset($alunos)
+                                        @foreach ($alunos as $index => $aluno)
                                         <tr>
                                             <th scope="row">
-                                                <input type="text" class="form-control" name="id_card_number[{{$student->student->id}}]" value="{{$student->id_card_number}}">
+                                                <input type="text" class="form-control" name="id_card_number[{{$aluno->aluno->id}}]" value="{{$aluno->id_card_number}}">
                                             </th>
-                                            <td>{{$student->student->first_name}}</td>
-                                            <td>{{$student->student->last_name}}</td>
+                                            <td>{{$aluno->aluno->first_name}}</td>
+                                            <td>{{$aluno->aluno->last_name}}</td>
                                             <td>{{$schoolClass->class_name}}</td>
                                             <td>{{$section->section_name}}</td>
                                             <td>

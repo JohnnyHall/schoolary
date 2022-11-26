@@ -83,7 +83,7 @@ class AttendanceController extends Controller
             $section_id = $request->query('section_id', 0);
             $course_id = $request->query('course_id');
 
-            $student_list = $this->userRepository->getAllStudents($current_school_session_id, $class_id, $section_id);
+            $aluno_list = $this->userRepository->getAllalunos($current_school_session_id, $class_id, $section_id);
 
             $school_class = $this->schoolClassRepository->findById($class_id);
             $school_section = $this->sectionRepository->findById($section_id);
@@ -99,7 +99,7 @@ class AttendanceController extends Controller
             $data = [
                 'current_school_session_id' => $current_school_session_id,
                 'academic_setting'  => $academic_setting,
-                'student_list'      => $student_list,
+                'aluno_list'      => $aluno_list,
                 'school_class'      => $school_class,
                 'school_section'    => $school_section,
                 'attendance_count'  => $attendance_count,
@@ -164,19 +164,19 @@ class AttendanceController extends Controller
         }
     }
 
-    public function showStudentAttendance($id) {
-        if(auth()->user()->role == "student" && auth()->user()->id != $id) {
+    public function showalunoAttendance($id) {
+        if(auth()->user()->role == "aluno" && auth()->user()->id != $id) {
             return abort(404);
         }
         $current_school_session_id = $this->getSchoolCurrentSession();
 
         $attendanceRepository = new AttendanceRepository();
-        $attendances = $attendanceRepository->getStudentAttendance($current_school_session_id, $id);
-        $student = $this->userRepository->findStudent($id);
+        $attendances = $attendanceRepository->getalunoAttendance($current_school_session_id, $id);
+        $aluno = $this->userRepository->findaluno($id);
 
         $data = [
             'attendances'   => $attendances,
-            'student'       => $student,
+            'aluno'       => $aluno,
         ];
 
         return view('attendances.attendance', $data);

@@ -241,11 +241,11 @@ class Person extends \Faker\Provider\Person
         'S.Sos', 'S.Farm', 'M.M.', 'M.Kom.', 'M.TI.', 'M.Pd', 'M.Farm', 'M.Ak', ];
 
     /**
-     * Return last name
+     * Return Sobrenome
      *
      * @param string|null $gender male or female or null for any
      *
-     * @return string last name
+     * @return string Sobrenome
      */
     public function lastName($gender = null)
     {
@@ -262,9 +262,9 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return last name for male
+     * Return Sobrenome for male
      *
-     * @return string last name
+     * @return string Sobrenome
      */
     public static function lastNameMale()
     {
@@ -272,9 +272,9 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return last name for female
+     * Return Sobrenome for female
      *
-     * @return string last name
+     * @return string Sobrenome
      */
     public static function lastNameFemale()
     {

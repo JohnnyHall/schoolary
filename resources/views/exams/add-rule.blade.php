@@ -24,15 +24,15 @@
                                     <input type="hidden" name="exam_id" value="{{$exam_id}}">
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div class="mt-2">
-                                        <label for="inputTotalMarks" class="form-label">Total Marks<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputTotalMarks" class="form-label">Total Marks</label>
                                         <input type="number" class="form-control" id="inputTotalMarks" placeholder="10, 100, ..." name="total_marks" step="0.01">
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputPassMarks" class="form-label">Pass Marks<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputPassMarks" class="form-label">Pass Marks</label>
                                         <input type="number" class="form-control" id="inputPassMarks" placeholder="5, 33, ..." name="pass_marks" step="0.01">
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputMarksDistributionNote" class="form-label">Marks Distribution Note<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputMarksDistributionNote" class="form-label">Marks Distribution Note</label>
                                         <textarea class="form-control" id="inputMarksDistributionNote" rows="3" placeholder="Written: 7, MCQ: 3, ..." name="marks_distribution_note"></textarea>
                                     </div>
                                     <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Add</button>

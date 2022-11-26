@@ -12,7 +12,7 @@ interface BloodExtension extends Extension
      *
      * @example 'AB'
      */
-    public function bloodType(): string;
+    public function Filmes(): string;
 
     /**
      * Get a random resis value

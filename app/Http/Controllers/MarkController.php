@@ -133,10 +133,10 @@ class MarkController extends Controller
             $exams = $examRepository->getAll($current_school_session_id, $semester_id, $class_id);
 
             $markRepository = new MarkRepository();
-            $studentsWithMarks = $markRepository->getAll($current_school_session_id, $semester_id, $class_id, $section_id, $course_id);
-            $studentsWithMarks = $studentsWithMarks->groupBy('student_id');
+            $alunosWithMarks = $markRepository->getAll($current_school_session_id, $semester_id, $class_id, $section_id, $course_id);
+            $alunosWithMarks = $alunosWithMarks->groupBy('aluno_id');
 
-            $sectionStudents = $this->userRepository->getAllStudents($current_school_session_id, $class_id, $section_id);
+            $sectionalunos = $this->userRepository->getAllalunos($current_school_session_id, $class_id, $section_id);
 
             $final_marks_submitted = false;
             
@@ -149,13 +149,13 @@ class MarkController extends Controller
             $data = [
                 'academic_setting'          => $academic_setting,
                 'exams'                     => $exams,
-                'students_with_marks'       => $studentsWithMarks,
+                'alunos_with_marks'       => $alunosWithMarks,
                 'class_id'                  => $class_id,
                 'section_id'                => $section_id,
                 'course_id'                 => $course_id,
                 'semester_id'               => $semester_id,
                 'final_marks_submitted'     => $final_marks_submitted,
-                'sectionStudents'           => $sectionStudents,
+                'sectionalunos'           => $sectionalunos,
                 'current_school_session_id' => $current_school_session_id,
             ];
 
@@ -181,11 +181,11 @@ class MarkController extends Controller
         $current_school_session_id = $this->getSchoolCurrentSession();
 
         $markRepository = new MarkRepository();
-        $studentsWithMarks = $markRepository->getAll($current_school_session_id, $semester_id, $class_id, $section_id, $course_id);
-        $studentsWithMarks = $studentsWithMarks->groupBy('student_id');
+        $alunosWithMarks = $markRepository->getAll($current_school_session_id, $semester_id, $class_id, $section_id, $course_id);
+        $alunosWithMarks = $alunosWithMarks->groupBy('aluno_id');
 
         $data = [
-            'students_with_marks'       => $studentsWithMarks,
+            'alunos_with_marks'       => $alunosWithMarks,
             'class_id'                  => $class_id,
             'class_name'                => $request->query('class_name'),
             'section_id'                => $section_id,
@@ -210,11 +210,11 @@ class MarkController extends Controller
         $current_school_session_id = $this->getSchoolCurrentSession();
         $this->checkIfLoggedInUserIsAssignedTeacher($request, $current_school_session_id);
         $rows = [];
-        foreach($request->student_mark as $id => $stm) {
+        foreach($request->aluno_mark as $id => $stm) {
             foreach($stm as $exam => $mark){
                 $row = [];
                 $row['class_id'] = $request->class_id;
-                $row['student_id'] = $id;
+                $row['aluno_id'] = $id;
                 $row['marks'] = $mark;
                 $row['section_id'] = $request->section_id;
                 $row['course_id'] = $request->course_id;
@@ -248,7 +248,7 @@ class MarkController extends Controller
         foreach($request->calculated_mark as $id => $cmark) {
                 $row = [];
                 $row['class_id'] = $request->class_id;
-                $row['student_id'] = $id;
+                $row['aluno_id'] = $id;
                 $row['calculated_marks'] = $cmark;
                 $row['final_marks'] = $request->final_mark[$id];
                 $row['note'] = $request->note[$id];
@@ -282,10 +282,10 @@ class MarkController extends Controller
         $section_id = $request->query('section_id');
         $course_id = $request->query('course_id');
         $course_name = $request->query('course_name');
-        $student_id = $request->query('student_id');
+        $aluno_id = $request->query('aluno_id');
         $markRepository = new MarkRepository();
-        $marks = $markRepository->getAllByStudentId($session_id, $semester_id, $class_id, $section_id, $course_id, $student_id);
-        $finalMarks = $markRepository->getAllFinalMarksByStudentId($session_id, $student_id, $semester_id, $class_id, $section_id, $course_id);
+        $marks = $markRepository->getAllByalunoId($session_id, $semester_id, $class_id, $section_id, $course_id, $aluno_id);
+        $finalMarks = $markRepository->getAllFinalMarksByalunoId($session_id, $aluno_id, $semester_id, $class_id, $section_id, $course_id);
 
         if(!$finalMarks) {
             return abort(404);
@@ -320,7 +320,7 @@ class MarkController extends Controller
             'course_name' => $course_name,
         ];
 
-        return view('marks.student', $data);
+        return view('marks.aluno', $data);
     }
 
     /**

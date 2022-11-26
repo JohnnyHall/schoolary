@@ -16,7 +16,7 @@
                                     @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div>
-                                        <p class="mt-2">Select class:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Select class:</p>
                                         <select class="form-select" name="class_id" required>
                                             @isset($school_classes)
                                                 @foreach ($school_classes as $school_class)
@@ -26,7 +26,7 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select semester:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Select semester:</p>
                                         <select class="form-select" aria-label=".form-select-sm" name="semester_id" required>
                                             @isset($semesters)
                                                 @foreach ($semesters as $semester)
@@ -36,7 +36,7 @@
                                         </select>
                                     </div>
                                     <div class="mt-2">
-                                        <p>Grading System name<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p>Grading System name</p>
                                         <input type="text" class="form-control" placeholder="Grading System 1" aria-label="Grading System 1" name="system_name" required>
                                     </div>
                                     <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-check2"></i> Create</button>

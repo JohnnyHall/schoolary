@@ -24,7 +24,7 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'edit users']);
         Permission::create(['name' => 'delete users']);
 
-        Permission::create(['name' => 'promote students']);
+        Permission::create(['name' => 'promote alunos']);
 
         Permission::create(['name' => 'create notices']);
         Permission::create(['name' => 'view notices']);
@@ -135,7 +135,7 @@ class PermissionSeeder extends Seeder
             'create users',
             'edit users',
             'view users',
-            'promote students',
+            'promote alunos',
             'update attendances type',
             'view attendances',
             'take attendances',//Teacher only

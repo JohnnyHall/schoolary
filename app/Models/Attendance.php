@@ -19,7 +19,7 @@ class Attendance extends Model
      * @var array
      */
     protected $fillable = [
-        'student_id',
+        'aluno_id',
         'class_id',
         'section_id',
         'session_id',
@@ -28,11 +28,11 @@ class Attendance extends Model
     ];
 
     /**
-     * Get the student for attendances.
+     * Get the aluno for attendances.
      */
-    public function student()
+    public function aluno()
     {
-        return $this->belongsTo(User::class, 'student_id');
+        return $this->belongsTo(User::class, 'aluno_id');
     }
 
     /**

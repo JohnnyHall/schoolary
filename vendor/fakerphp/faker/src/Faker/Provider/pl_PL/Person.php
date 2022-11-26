@@ -3,7 +3,7 @@
 namespace Faker\Provider\pl_PL;
 
 /**
- * Most popular first and last names published by Ministry of the Interior:
+ * Most popular first and Sobrenomes published by Ministry of the Interior:
  *
  * @see https://msw.gov.pl/pl/sprawy-obywatelskie/ewidencja-ludnosci-dowo/statystyki-imion-i-nazw
  */

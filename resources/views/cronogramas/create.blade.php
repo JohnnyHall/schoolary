@@ -22,7 +22,7 @@
                                     @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div>
-                                        <p class="mt-2">Select class:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Select class:</p>
                                         <select onchange="getSectionsAndCourses(this);" class="form-select" name="class_id" required>
                                             @isset($classes)
                                                 <option selected disabled>Please select a class</option>
@@ -33,17 +33,17 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select section:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Select section:</p>
                                         <select class="form-select" id="section-select" name="section_id" required>
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select course:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Select course:</p>
                                         <select class="form-select" id="course-select" name="course_id" required>
                                         </select>
                                     </div>
                                     <div class="mt-2">
-                                        <p>Week Day<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p>Week Day</p>
                                         <select class="form-select" id="course-select" name="weekday" required>
                                             <option value="1">Monday</option>
                                             <option value="2">Tuesday</option>
@@ -55,11 +55,11 @@
                                         </select>
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputStarts" class="form-label">Starts<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputStarts" class="form-label">Starts</label>
                                         <input type="text" class="form-control" id="inputStarts" name="start" placeholder="09:00am" required>
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputEnds" class="form-label">Ends<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputEnds" class="form-label">Ends</label>
                                         <input type="text" class="form-control" id="inputEnds" name="end" placeholder="09:50am" required>
                                     </div>
                                     <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-check2"></i> Create</button>

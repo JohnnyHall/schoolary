@@ -14,16 +14,16 @@ final class Blood implements Extension\BloodExtension
     /**
      * @var string[]
      */
-    private $bloodTypes = ['A', 'AB', 'B', 'O'];
+    private $Filmess = ['A', 'AB', 'B', 'O'];
 
     /**
      * @var string[]
      */
     private $bloodRhFactors = ['+', '-'];
 
-    public function bloodType(): string
+    public function Filmes(): string
     {
-        return Extension\Helper::randomElement($this->bloodTypes);
+        return Extension\Helper::randomElement($this->Filmess);
     }
 
     public function bloodRh(): string
@@ -35,7 +35,7 @@ final class Blood implements Extension\BloodExtension
     {
         return sprintf(
             '%s%s',
-            $this->bloodType(),
+            $this->Filmes(),
             $this->bloodRh()
         );
     }

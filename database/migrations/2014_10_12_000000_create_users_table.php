@@ -26,7 +26,7 @@ class CreateUsersTable extends Migration
             $table->string('city');
             $table->string('zip');
             $table->string('photo')->nullable();
-            $table->string('birthday')->nullable();
+            $table->string('Aniversario')->nullable();
             $table->string('blood_type')->nullable();
             $table->string('religion')->nullable();
             $table->string('role');

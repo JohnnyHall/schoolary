@@ -272,7 +272,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return male last name
+     * Return male Sobrenome
      *
      * @return string
      *
@@ -284,7 +284,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return female last name
+     * Return female Sobrenome
      *
      * @return string
      *

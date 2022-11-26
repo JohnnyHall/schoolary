@@ -17,19 +17,19 @@
                                     <input type="hidden" name="grading_system_id" value="{{$grading_system_id}}">
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div class="mt-2">
-                                        <label for="inputPoint" class="form-label">Point<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputPoint" class="form-label">Point</label>
                                         <input type="number" step="0.01" name="point" class="form-control" id="inputPoint" placeholder="3.5, 4.0, ...">
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputGrade" class="form-label">Grade<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputGrade" class="form-label">Grade</label>
                                         <input type="text" name="grade" class="form-control" id="inputGrade" placeholder="A+, A-, ...">
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputStarts" class="form-label">Starts<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputStarts" class="form-label">Starts</label>
                                         <input type="number" step="0.01" name="start_at" class="form-control" id="inputStarts" placeholder="90, 85, ...">
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputEnds" class="form-label">Ends<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                        <label for="inputEnds" class="form-label">Ends</label>
                                         <input type="number" step="0.01" name="end_at" class="form-control" id="inputEnds" placeholder="100, 89, ...">
                                     </div>
                                     <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Add</button>

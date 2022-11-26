@@ -52,7 +52,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * These last names come from this list of most common family names in Québec (1 to 130)
+     * These Sobrenomes come from this list of most common family names in Québec (1 to 130)
      * http://fr.wikipedia.org/wiki/Liste_des_noms_de_famille_les_plus_courants_au_Québec
      */
     protected static $lastName = [

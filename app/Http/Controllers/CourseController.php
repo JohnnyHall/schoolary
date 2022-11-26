@@ -70,17 +70,17 @@ class CourseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getStudentCourses($student_id) {
+    public function getalunoCourses($aluno_id) {
         $current_school_session_id = $this->getSchoolCurrentSession();
         $promotionRepository = new PromotionRepository();
-        $class_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $student_id);
+        $class_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $aluno_id);
         $courses = $this->schoolCourseRepository->getByClassId($class_info->class_id);
 
         $data = [
             'class_info'    => $class_info,
             'courses'       => $courses,
         ];
-        return view('courses.student', $data);
+        return view('courses.aluno', $data);
     }
 
     /**

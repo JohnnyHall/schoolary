@@ -10,8 +10,8 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * This provider uses wikipedia's 250 top russian last names
-     * That list of MALE last names could be safely extended to FEMALE list just by adding 'a' letter at the end
+     * This provider uses wikipedia's 250 top russian Sobrenomes
+     * That list of MALE Sobrenomes could be safely extended to FEMALE list just by adding 'a' letter at the end
      */
     protected static $femaleNameFormats = [
         '{{firstNameFemale}} {{middleNameFemale}} {{lastName}}а',
@@ -156,12 +156,12 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return last name for the specified gender.
+     * Return Sobrenome for the specified gender.
      *
-     * @param string|null $gender A gender of the last name should be generated
+     * @param string|null $gender A gender of the Sobrenome should be generated
      *                            for. If the argument is skipped a random gender will be used.
      *
-     * @return string Last name
+     * @return string Sobrenome
      */
     public function lastName($gender = null)
     {

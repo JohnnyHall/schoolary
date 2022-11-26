@@ -93,7 +93,7 @@ class PromotionController extends Controller
                 return abort(404);
             }
 
-            $students = $this->userRepository->getAllStudents($session_id, $class_id, $section_id);
+            $alunos = $this->userRepository->getAllalunos($session_id, $class_id, $section_id);
 
             $schoolClass = $this->schoolClassRepository->findById($class_id);
             $section = $this->schoolSectionRepository->findById($section_id);
@@ -103,7 +103,7 @@ class PromotionController extends Controller
             $school_classes = $this->schoolClassRepository->getAllBySession($latest_school_session->id);
 
             $data = [
-                'students'      => $students,
+                'alunos'      => $alunos,
                 'schoolClass'   => $schoolClass,
                 'section'       => $section,
                 'school_classes'=> $school_classes,
@@ -128,9 +128,9 @@ class PromotionController extends Controller
 
         $rows = [];
         $i = 0;
-        foreach($id_card_numbers as $student_id => $id_card_number) {
+        foreach($id_card_numbers as $aluno_id => $id_card_number) {
             $row = [
-                'student_id'    => $student_id,
+                'aluno_id'    => $aluno_id,
                 'id_card_number'=> $id_card_number,
                 'class_id'      => $request->class_id[$i],
                 'section_id'    => $request->section_id[$i],
@@ -144,7 +144,7 @@ class PromotionController extends Controller
             $promotionRepository = new PromotionRepository();
             $promotionRepository->massPromotion($rows);
 
-            return back()->with('status', 'Promoting students was successful!');
+            return back()->with('status', 'Promoting alunos was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

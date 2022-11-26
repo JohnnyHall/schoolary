@@ -21,7 +21,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Swedish female first names
+     * @var array Swedish female Primeiro nomes
      *
      * @see http://spraakbanken.gu.se/statistik/lbfnamnalf.phtml
      */
@@ -54,7 +54,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Swedish male first names
+     * @var array Swedish male Primeiro nomes
      *
      * @see http://spraakbanken.gu.se/statistik/lbfnamnalf.phtml
      */
@@ -87,7 +87,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Swedish common last names
+     * @var array Swedish common Sobrenomes
      *
      * @see http://www.scb.se/sv_/Hitta-statistik/Statistik-efter-amne/Befolkning/Amnesovergripande-statistik/Namnstatistik/30898/2012A01x/Samtliga-folkbokforda--Efternamn-topplistor/Efternamn-topp-100/
      */

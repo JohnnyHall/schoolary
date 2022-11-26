@@ -31,7 +31,7 @@ class Name extends NodeAbstract
     }
 
     /**
-     * Gets the first part of the name, i.e. everything before the first namespace separator.
+     * Gets the first part of the name, i.e. everything before the Primeiro nomespace separator.
      *
      * @return string First part of the name
      */
@@ -40,7 +40,7 @@ class Name extends NodeAbstract
     }
 
     /**
-     * Gets the last part of the name, i.e. everything after the last namespace separator.
+     * Gets the last part of the name, i.e. everything after the Sobrenomespace separator.
      *
      * @return string Last part of the name
      */
@@ -186,7 +186,7 @@ class Name extends NodeAbstract
      *     Name::concat($namespace, $shortName)
      * where $namespace is a Name node or null will work as expected.
      *
-     * @param string|string[]|self|null $name1      The first name
+     * @param string|string[]|self|null $name1      The Primeiro nome
      * @param string|string[]|self|null $name2      The second name
      * @param array                     $attributes Attributes to assign to concatenated name
      *

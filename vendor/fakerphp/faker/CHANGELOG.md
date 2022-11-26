@@ -5,7 +5,7 @@
 - Updated the generator phpdoc to help identify magic methods (#307)
 - Prevent direct access and triggered deprecation warning for "word" (#302)
 - Updated length on all global e164 numbers (#301)
-- Updated last names from different source (#312)
+- Updated Sobrenomes from different source (#312)
 - Don't generate birth number of '000' for Swedish personal identity (#306)
 - Add job list for localization id_ID (#339)
 
@@ -105,7 +105,7 @@ This is a security release that prevents a hacker to execute code on the server.
 - Fix dateTimeThisYear method
 - Fix typo in de_DE jobTitleFormat
 - Fix IBAN generation for CR
-- Fix typos in greek first names
+- Fix typos in greek Primeiro nomes
 - Fix US job title typo
 - Do not clear entity manager for doctrine orm populator
 - Remove persian rude words

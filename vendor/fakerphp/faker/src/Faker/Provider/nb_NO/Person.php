@@ -19,7 +19,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Norwegian female first names
+     * @var array Norwegian female Primeiro nomes
      *
      * @see http://spraakbanken.gu.se/statistik/lbfnamnalf.phtml
      */
@@ -125,7 +125,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Norwegian male first names
+     * @var array Norwegian male Primeiro nomes
      *
      * @see http://www.mammanett.no/navn/leksikon/alle?field_name_sex_value=m&title=
      */
@@ -256,7 +256,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Norwegian common last names (200 first from the link)
+     * @var array Norwegian common Sobrenomes (200 first from the link)
      *
      * @see http://www.ssb.no/befolkning/statistikker/navn/aar/2015-01-27?fane=tabell&sort=nummer&tabell=216066
      */

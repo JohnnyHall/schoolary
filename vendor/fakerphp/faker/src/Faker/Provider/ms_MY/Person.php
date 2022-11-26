@@ -539,7 +539,7 @@ class Person extends \Faker\Provider\Person
     protected static $titleFemale = ['Pn.', 'Cik', 'Dr.', 'Prof.', 'Datin', 'Datin Paduka', 'Datin Paduka Seri', 'Puan Sri', 'Toh Puan'];
 
     /**
-     * Return a Malay male first name
+     * Return a Malay male Primeiro nome
      *
      * @example 'Ahmad'
      *
@@ -551,7 +551,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return a Malay female first name
+     * Return a Malay female Primeiro nome
      *
      * @example 'Adibah'
      *
@@ -563,7 +563,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return a Malay last name
+     * Return a Malay Sobrenome
      *
      * @example 'Abdullah'
      *
@@ -635,7 +635,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return a Chinese last name
+     * Return a Chinese Sobrenome
      *
      * @example 'Lim'
      *
@@ -647,7 +647,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return a Chinese male first name
+     * Return a Chinese male Primeiro nome
      *
      * @example 'Goh Tong'
      *
@@ -659,7 +659,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return a Chinese female first name
+     * Return a Chinese female Primeiro nome
      *
      * @example 'Mew Choo'
      *
@@ -707,7 +707,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return an Indian male first name
+     * Return an Indian male Primeiro nome
      *
      * @example 'Arumugam'
      *
@@ -719,7 +719,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return an Indian female first name
+     * Return an Indian female Primeiro nome
      *
      * @example 'Ambiga'
      *
@@ -731,7 +731,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return an Indian last name
+     * Return an Indian Sobrenome
      *
      * @example 'Subramaniam'
      *
@@ -743,7 +743,7 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return a random last name
+     * Return a random Sobrenome
      *
      * @example 'Lee'
      *

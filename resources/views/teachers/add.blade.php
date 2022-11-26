@@ -23,19 +23,19 @@
                         <form class="row g-3" action="{{route('school.teacher.create')}}" method="POST">
                             @csrf
                             <div class="col-3">
-                                <label for="inputFirstName" class="form-label">First Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="First Name" required>
+                                <label for="inputFirstName" class="form-label">Primeiro nome</label>
+                                <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="Primeiro nome" required>
                             </div>
                             <div class="col-3">
-                                <label for="inputLastName" class="form-label">Last Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Last Name" required>
+                                <label for="inputLastName" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Sobrenome" required>
                             </div>
                             <div class="col-3">
-                                <label for="inputEmail" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputEmail" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="inputEmail" name="email" required>
                             </div>
                             <div class="col-3">
-                                <label for="inputPassword" class="form-label">Password<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputPassword" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="inputPassword" name="password" required>
                             </div>
                             <div class="col-3">
@@ -45,7 +45,7 @@
                                 <input type="hidden" id="photoHiddenInput" name="photo" value="">
                             </div>
                             <div class="col-4">
-                                <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputAddress" class="form-label">Address</label>
                                 <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required>
                             </div>
                             <div class="col-3">
@@ -53,26 +53,26 @@
                                 <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor">
                             </div>
                             <div class="col-2">
-                                <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputCity" class="form-label">City</label>
                                 <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required>
                             </div>
                             <div class="col-2">
-                                <label for="inputZip" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputZip" class="form-label">Zip</label>
                                 <input type="text" class="form-control" id="inputZip" name="zip" required>
                             </div>
                             <div class="col-3">
-                                <label for="inputPhone" class="form-label">Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputPhone" class="form-label">Phone</label>
                                 <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required>
                             </div>
                             <div class="col-2">
-                                <label for="inputGender" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputGender" class="form-label">Gender</label>
                                 <select id="inputGender" class="form-select" name="gender" required>
                                     <option selected>Male</option>
                                     <option>Female</option>
                                 </select>
                             </div>
                             <div class="col-3">
-                                <label for="inputNationality" class="form-label">Nationality<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputNationality" class="form-label">Nationality</label>
                                 <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required>
                             </div>
                             <div class="col-12">

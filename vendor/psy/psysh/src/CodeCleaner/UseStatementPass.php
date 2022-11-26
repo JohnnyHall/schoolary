@@ -48,7 +48,7 @@ class UseStatementPass extends CodeCleanerPass
     public function enterNode(Node $node)
     {
         if ($node instanceof Namespace_) {
-            // If this is the same namespace as last namespace, let's do ourselves
+            // If this is the same namespace as Sobrenomespace, let's do ourselves
             // a favor and reload all the aliases...
             if (\strtolower($node->name) === \strtolower($this->lastNamespace)) {
                 $this->aliases = $this->lastAliases;

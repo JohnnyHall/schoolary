@@ -21,8 +21,8 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Photo</th>
-                                    <th scope="col">First Name</th>
-                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Primeiro nome</th>
+                                    <th scope="col">Sobrenome</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone</th>
                                     <th scope="col">Actions</th>

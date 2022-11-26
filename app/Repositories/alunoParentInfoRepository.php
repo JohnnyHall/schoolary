@@ -2,13 +2,13 @@
 
 namespace App\Repositories;
 
-use App\Models\StudentParentInfo;
+use App\Models\alunoParentInfo;
 
-class StudentParentInfoRepository {
-    public function store($request, $student_id) {
+class alunoParentInfoRepository {
+    public function store($request, $aluno_id) {
         try {
-            StudentParentInfo::create([
-                'student_id'    => $student_id,
+            alunoParentInfo::create([
+                'aluno_id'    => $aluno_id,
                 'father_name'   => $request['father_name'],
                 'father_phone'  => $request['father_phone'],
                 'mother_name'   => $request['mother_name'],
@@ -16,18 +16,18 @@ class StudentParentInfoRepository {
                 'parent_address'=> $request['parent_address'],
             ]);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to create Student Parent information. '.$e->getMessage());
+            throw new \Exception('Failed to create aluno Parent information. '.$e->getMessage());
         }
     }
 
-    public function getParentInfo($student_id) {
-        return StudentParentInfo::where('student_id', $student_id)
+    public function getParentInfo($aluno_id) {
+        return alunoParentInfo::where('aluno_id', $aluno_id)
                 ->first();
     }
 
-    public function update($request, $student_id) {
+    public function update($request, $aluno_id) {
         try {
-            StudentParentInfo::where('student_id', $student_id)->update([
+            alunoParentInfo::where('aluno_id', $aluno_id)->update([
                 'father_name'   => $request['father_name'],
                 'father_phone'  => $request['father_phone'],
                 'mother_name'   => $request['mother_name'],
@@ -35,7 +35,7 @@ class StudentParentInfoRepository {
                 'parent_address'=> $request['parent_address'],
             ]);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to update Student Parent information. '.$e->getMessage());
+            throw new \Exception('Failed to update aluno Parent information. '.$e->getMessage());
         }
     }
 }

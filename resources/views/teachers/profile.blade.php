@@ -31,7 +31,7 @@
                                         @if (isset($teacher->photo))
                                             <img src="{{asset('/storage'.$teacher->photo)}}" class="rounded-3 card-img-top" alt="Profile photo">
                                         @else
-                                            <img src="{{asset('imgs/profile.png')}}" class="rounded-3 card-img-top" alt="Profile photo">
+                                            <img src="{{asset('imgs/no-nothing-480.png')}}" class="rounded-3 card-img-top" alt="Profile photo">
                                         @endif
                                     </div>
                                     <div class="card-body">
@@ -49,9 +49,9 @@
                                     <table class="table table-responsive mt-3">
                                         <tbody>
                                             <tr>
-                                                <th scope="row">First Name:</th>
+                                                <th scope="row">Primeiro nome:</th>
                                                 <td>{{$teacher->first_name}}</td>
-                                                <th>Last Name:</th>
+                                                <th>Sobrenome:</th>
                                                 <td>{{$teacher->last_name}}</td>
                                             </tr>
                                             <tr>

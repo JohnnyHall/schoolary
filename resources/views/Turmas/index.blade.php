@@ -54,7 +54,7 @@
                                                                                     @endcan
                                                                                 </p>
                                                                                 <div class="list-group">
-                                                                                    <a href="{{route('student.list.show', ['class_id' => $school_class->id, 'section_id' => $school_section->id, 'section_name' => $school_section->section_name])}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                                                                    <a href="{{route('aluno.list.show', ['class_id' => $school_class->id, 'section_id' => $school_section->id, 'section_name' => $school_section->section_name])}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                                                                                         Ver Estudantes
                                                                                     </a>
                                                                                     <a href="{{route('section.cronograma.show', ['class_id' => $school_class->id, 'section_id' => $school_section->id])}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">

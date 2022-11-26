@@ -2304,7 +2304,7 @@ Alice.
 of everything I've said as yet.'
 
 'A cheap sort of present!' thought Alice. 'I'm glad they don't give
-birthday presents like that!' But she did not venture to say it out
+Aniversario presents like that!' But she did not venture to say it out
 loud.
 
 'Thinking again?' the Duchess asked, with another dig of her sharp

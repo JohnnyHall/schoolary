@@ -124,7 +124,7 @@ class Internet extends Base
             throw new \Exception('userName failed with the selected locale. Try a different locale or activate the "intl" PHP extension.');
         }
 
-        // clean possible trailing dots from first/last names
+        // clean possible trailing dots from first/Sobrenomes
         $username = str_replace('..', '.', $username);
         $username = rtrim($username, '.');
 
@@ -169,7 +169,7 @@ class Internet extends Base
             throw new \Exception('domainWord failed with the selected locale. Try a different locale or activate the "intl" PHP extension.');
         }
 
-        // clean possible trailing dot from last name
+        // clean possible trailing dot from Sobrenome
         $lastName = rtrim($lastName, '.');
 
         return $lastName;
