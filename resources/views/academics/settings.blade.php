@@ -146,7 +146,7 @@
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-1">
-                                            <input type="text" class="form-control form-control-sm" name="course_name" placeholder="Nome do curso" aria-label="Course name" required>
+                                            <input type="text" class="form-control form-control-sm" name="course_name" placeholder="Nome do curso" aria-label="Nome do curso" required>
                                         </div>
                                         <div class="mb-3">
                                             <p class="mt-2">Tipo de curso:</p>

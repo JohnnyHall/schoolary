@@ -21,8 +21,8 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Course Name</th>
-                                        <th scope="col">Actions</th>
+                                        <th scope="col">Nome do curso</th>
+                                        <th scope="col">Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>

@@ -42,7 +42,7 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'delete monitor']);
 
         Permission::create(['name' => 'create cronogramas']);
-        Permission::create(['name' => 'view cronogramas']);
+        Permission::create(['name' => 'Ver Cronogramas']);
         Permission::create(['name' => 'edit cronogramas']);
         Permission::create(['name' => 'delete cronogramas']);
 
@@ -96,7 +96,7 @@ class PermissionSeeder extends Seeder
         
         Permission::create(['name' => 'create sections']);
         Permission::create(['name' => 'view sections']);
-        Permission::create(['name' => 'edit sections']);
+        Permission::create(['name' => 'Editar Turmas']);
         // Permission::create(['name' => 'delete sections']);
 
         $user = \App\Models\User::factory()->create([
@@ -118,7 +118,7 @@ class PermissionSeeder extends Seeder
             'edit classes',
             'create sections',
             'view sections',
-            'edit sections',
+            'Editar Turmas',
             'create exams',
             'view exams',
             'create exams rule',
@@ -126,7 +126,7 @@ class PermissionSeeder extends Seeder
             'delete exams rule',
             'view exams rule',
             'create cronogramas',
-            'view cronogramas',
+            'Ver Cronogramas',
             'edit cronogramas',
             'delete cronogramas',
             'view marks',

@@ -32,7 +32,7 @@
                         <table class="table mt-4">
                             <thead>
                                 <tr>
-                                    <th scope="col">Section Name</th>
+                                    <th scope="col">Numero da turma</th>
                                     <th scope="col">Promotion Status</th>
                                     <th scope="col">Actions</th>
                                 </tr>

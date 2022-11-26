@@ -39,10 +39,10 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Course Name</th>
-                                        <th scope="col">Class</th>
-                                        <th scope="col">Section</th>
-                                        <th scope="col">Actions</th>
+                                        <th scope="col">Nome do curso</th>
+                                        <th scope="col">Materia</th>
+                                        <th scope="col">Turma</th>
+                                        <th scope="col">Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>

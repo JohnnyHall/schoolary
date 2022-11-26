@@ -49,7 +49,7 @@
                                                                             <div class="accordion-body">
                                                                                 <p class="lead d-flex justify-content-between">
                                                                                     <span>Sala: {{$school_section->room_no}}</span>
-                                                                                    @can('edit sections')
+                                                                                    @can('Editar Turmas')
                                                                                     <span><a href="{{route('section.edit', ['id' => $school_section->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pencil"></i> Editar</a></span>
                                                                                     @endcan
                                                                                 </p>
@@ -58,7 +58,7 @@
                                                                                         Ver Estudantes
                                                                                     </a>
                                                                                     <a href="{{route('section.cronograma.show', ['class_id' => $school_class->id, 'section_id' => $school_section->id])}}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                                                                        View cronograma
+                                                                                        Ver Cronograma
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
@@ -74,8 +74,8 @@
                                                     <table class="table table-borderless">
                                                         <thead>
                                                         <tr>
-                                                            <th scope="col">monitoria Name</th>
-                                                            <th scope="col">Actions</th>
+                                                            <th scope="col">Email do monitor responsavel</th>
+                                                            <th scope="col">Ações</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
@@ -98,9 +98,9 @@
                                                         <table class="table">
                                                             <thead>
                                                             <tr>
-                                                                <th scope="col">Course Name</th>
-                                                                <th scope="col">Type</th>
-                                                                <th scope="col">Actions</th>
+                                                                <th scope="col">Nome do curso</th>
+                                                                <th scope="col">Tipo</th>
+                                                                <th scope="col">Ações</th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
@@ -110,7 +110,7 @@
                                                                 <td>{{$course->course_type}}</td>
                                                                 <td>
                                                                     @can('edit courses')
-                                                                    <a href="{{route('course.edit', ['id' => $course->id])}}" class="btn btn-sm btn-outline-primary" role="button"><i class="bi bi-pencil"></i> Edit</a>
+                                                                    <a href="{{route('course.edit', ['id' => $course->id])}}" class="btn btn-sm btn-outline-primary" role="button"><i class="bi bi-pencil"></i> Editar</a>
                                                                     @endcan
                                                                 </td>
                                                             </tr>
@@ -123,10 +123,10 @@
                                         </div>
                                         <div class="card-footer bg-transparent d-flex justify-content-between">
                                             @isset($total_sections)
-                                                <span>Total Sections: {{$total_sections}}</span>
+                                                <span>Numero de turmas: {{$total_sections}}</span>
                                             @endisset
                                             @can('edit classes')
-                                            <span><a href="{{route('class.edit', ['id' => $school_class->id])}}" class="btn btn-sm btn-outline-primary" role="button"><i class="bi bi-pencil"></i> Edit Class</a></span>
+                                            <span><a href="{{route('class.edit', ['id' => $school_class->id])}}" class="btn btn-sm btn-outline-primary" role="button"><i class="bi bi-pencil"></i> Editar materia</a></span>
                                             @endcan
                                         </div>
                                     </div>

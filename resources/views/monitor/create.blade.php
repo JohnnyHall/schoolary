@@ -7,11 +7,10 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col-6 ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-journal-text"></i> Create monitoria</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-journal-text"></i> Criar monitoria</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Create monitoria</li>
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @include('session-messages')
@@ -36,15 +35,15 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="monitoria-name" class="form-label">monitoria Name</label>
-                                <input type="text" class="form-control" id="monitoria-name" name="monitoria_name" placeholder="monitoria Name" required>
+                                <label for="monitoria-name" class="form-label">Email do monitor responsavel</label>
+                                <input type="text" class="form-control" id="monitoria-name" name="monitoria_name" placeholder="Email do monitor responsavel" required>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="monitoria-file" class="form-label">monitoria File</label>
+                                <label for="monitoria-file" class="form-label">Materia complementar</label>
                                 <input type="file" name="file" class="form-control" id="monitoria-file" accept=".jpg,.jpeg,.bmp,.png,.gif,.doc,.docx,.csv,.rtf,.xlsx,.xls,.txt,.pdf,.zip" required>
                             </div>
                             <div class="mb-4">
-                                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Create</button>
+                                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Criar</button>
                             </div>
                         </form>
                     </div>

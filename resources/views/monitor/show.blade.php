@@ -22,7 +22,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">monitoria Name</th>
+                                        <th scope="col">Email do monitor responsavel</th>
                                         <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
