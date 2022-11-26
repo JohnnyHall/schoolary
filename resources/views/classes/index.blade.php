@@ -7,7 +7,7 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-diagram-3"></i> Classes</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-diagram-3"></i> Materias</h1>
                     <div class="row">
                         @isset($school_classes)
                             @foreach ($school_classes as $school_class)
@@ -125,7 +125,7 @@
                                             @isset($total_sections)
                                                 <span>Numero de turmas: {{$total_sections}}</span>
                                             @endisset
-                                            @can('edit classes')
+                                            @can('Editar turmas')
                                             <span><a href="{{route('class.edit', ['id' => $school_class->id])}}" class="btn btn-sm btn-outline-primary" role="button"><i class="bi bi-pencil"></i> Editar materia</a></span>
                                             @endcan
                                         </div>
