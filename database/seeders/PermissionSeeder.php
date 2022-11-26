@@ -91,7 +91,7 @@ class PermissionSeeder extends Seeder
 
         Permission::create(['name' => 'create classes']);
         Permission::create(['name' => 'view classes']);
-        Permission::create(['name' => 'Editar turmas']);
+        Permission::create(['name' => 'Editar materias']);
         // Permission::create(['name' => 'delete classes']);
         
         Permission::create(['name' => 'create sections']);
@@ -115,7 +115,7 @@ class PermissionSeeder extends Seeder
             'edit courses',
             'create classes',
             'view classes',
-            'Editar turmas',
+            'Editar materias',
             'create sections',
             'view sections',
             'Editar Turmas',
