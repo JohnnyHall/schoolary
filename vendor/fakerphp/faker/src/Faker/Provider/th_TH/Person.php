@@ -6,27 +6,27 @@ use Faker\Provider\Miscellaneous;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'กฤต', 'กฤติพงศ์', 'กฤติเดช', 'กฤษฎา', 'กฤษฎิ์', 'กฤษณะ', 'กฤษณ์', 'กันตพงศ์', 'กันตภณ', 'กำจร', 'กิตติ', 'กิตติภณ', 'กิตติศักดิ์', 'ก้องภพ', 'คมกฤช', 'คมสันต์', 'ครรชิต', 'ครองฤทธิ์', 'คำรณ', 'คึกฤทธิ์', 'จตุภัทร', 'จรัล', 'จรูญ', 'จอมเดช', 'จาตุรนต์', 'จารุกิตติ์', 'จารุวัฒน์',
         'จารุวิทย์', 'จารุเดช', 'จิตรายุธ', 'จิรพัฒน์', 'จิรายุ', 'จิรายุทธ', 'จิรเดช', 'จิรโชติ', 'จีรยุทธ', 'จุมพล', 'ฉันทพล', 'ฉันทพัฒน์', 'ชนกันต์', 'ชนะศึก', 'ชัชชัย', 'ชัชวาลย์', 'ชัยณรงค์', 'ชัยนันท์', 'ชัยมงคล', 'ชัยวุฒิ', 'ชัยโรจน์', 'ชาญชัย', 'ชาญรบ', 'ชาตพล', 'ชานนท์', 'ชิษณุพงศ์', 'ชุติเดช', 'ฐิติพงศ์', 'ฐิติภัทร', 'ณรงค์',
         'ณรงค์กร', 'ณรงค์ชัย', 'ณรงค์ฤทธิ์', 'ณัฏฐกิตติ์', 'ณัฏฐชัย', 'ณัฏฐพล', 'ณัฐกฤต', 'ณัฐชนน', 'ณัฐพงศ์', 'ณัฐภูมิ', 'ณัฐฤกษ์', 'ณัฐวิโรจน์', 'ดนัย', 'ดนุเดช', 'ดลฤทธิ์', 'ดุลยศักดิ์', 'ตรีภพ', 'ติณณภพ', 'ต้นกล้า', 'ทรงกฤต', 'ทรงภพ',
@@ -40,7 +40,7 @@ class Person extends \Faker\Provider\Person
         'เจตน์', 'เจตพล', 'เจนศักดิ์', 'เจษฎา', 'เจิมศักดิ์', 'เชิดชาย', 'เด่นภูมิ', 'เตชภณ', 'เตชินท์', 'เป็นต่อ', 'เผชิญชัย', 'เผด็จ', 'เผ่าเทพ', 'เมธัส', 'เรวัติ', 'เรืองโรจน์', 'เสกข์', 'เหมรัชต์', 'เอกภพ', 'แสงโชติ', 'โกมุท', 'โกเมน', 'โกเมศ', 'โฆษิต', 'โพธิวัฒน์', 'โยธิต', 'โอภาส', 'โอฬาร', 'ไกรยุทธ์', 'ไชยวัฒน์', 'ไตรภพ', 'ไพศาล',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'กชวรรณ', 'กนกกาญจน์', 'กนกทิพย์', 'กนกนุช', 'กนกพรรณ', 'กนกรัตน์', 'กนกวรรณ', 'กนกอร', 'กมลกานต์', 'กมลฉัตร', 'กมลชนก', 'กมลทิพย์', 'กมลรัตน์', 'กมลวรรณ', 'กมลา', 'กมลเนตร', 'กรกนก', 'กรกมล', 'กรรณิกา', 'กรรณิการ์', 'กรวรรณ', 'กรวิกา', 'กรวิภา', 'กรองกาญจน์', 'กรองแก้ว', 'กรุณา', 'กฤตยา', 'กวินทิพย์', 'กัลยรัตน์', 'กัลยา',
         'กัลยาณี', 'กัลยาณี', 'กานต์ธิดา', 'กิตติมา', 'กิรติกา', 'กิ่งกาญจน์', 'กิ่งแก้ว', 'กุสุมา', 'ขจีพรรณ', 'ขวัญจิรา', 'ขวัญตา', 'ขวัญทิพย์', 'ขวัญแก้ว', 'ครองพร', 'คะนึงจิต', 'คะนึงนิตย์', 'คำหยาด', 'จรรยา', 'จรัญพร', 'จรูญพรรณ', 'จันทนา', 'จันทนิภา',
         'จันทร์จิรา',  'จันทร์เพ็ญ',  'จารีรัตน์',  'จารุณี',  'จารุวรรณ',  'จิดาภา',  'จิตตนาถ',  'จิตติมา',  'จิตรลดา',  'จิตรานุช',  'จินดา',  'จินดาพรรณ',  'จินดารัตน์',  'จินตนา',  'จินตพร',  'จินตภา',  'จิรนาถ',  'จิรัชญา',  'จีรพรรณ',  'จุฑาทิพย์',

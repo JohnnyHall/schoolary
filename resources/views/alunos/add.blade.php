@@ -71,8 +71,8 @@
                                 <div class="col-2">
                                     <label for="inputState" class="form-label">Sexo</label>
                                     <select id="inputState" class="form-select" name="gender" required>
-                                        <option value="Male" selected>Masculino</option>
-                                        <option value="Female">Feminino</option>
+                                        <option value="Masculino" selected>Masculino</option>
+                                        <option value="Feminino">Feminino</option>
                                     </select>
                                 </div>
                                 <div class="col-2">

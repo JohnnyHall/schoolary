@@ -5,22 +5,22 @@ namespace Faker\Provider\ro_RO;
 class Person extends \Faker\Provider\Person
 {
     // http://en.wikipedia.org/wiki/Romanian_name, prefixes are for more formal purposes
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
     //http://ro.wikipedia.org/wiki/List%C4%83_de_prenume_rom%C3%A2ne%C8%99ti#Feminine
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ada', 'Adela', 'Adelaida', 'Adelina', 'Adina', 'Adriana', 'Agata', 'Aglaia', 'Agripina', 'Aida', 'Alberta', 'Albertina', 'Alexandra', 'Alexandrina', 'Alida', 'Alina', 'Alice', 'Alis', 'Alma',
         'Amalia', 'Amelia', 'Amanda', 'Ana', 'Anabela', 'Anaida', 'Anamaria', 'Anastasia', 'Anca', 'Ancuța', 'Anda', 'Andra', 'Andrada', 'Andreea', 'Anemona', 'Aneta', 'Angela', 'Anghelina', 'Anica',
         'Anișoara', 'Antoaneta', 'Antonia', 'Antonela', 'Anuța', 'Ariadna', 'Ariana', 'Arina', 'Aristița', 'Artemisa', 'Astrid', 'Atena', 'Augustina', 'Aura', 'Aurelia', 'Aureliana', 'Aurica', 'Aurora',
@@ -45,7 +45,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     //http://ro.wikipedia.org/wiki/List%C4%83_de_prenume_rom%C3%A2ne%C8%99ti#Feminine
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Achim', 'Adam', 'Adelin', 'Adonis', 'Adrian', 'Adi', 'Agnos', 'Albert', 'Alex', 'Alexandru', 'Alexe', 'Aleodor', 'Alin', 'Alistar', 'Amedeu', 'Amza', 'Anatolie', 'Andrei', 'Angel', 'Anghel', 'Antim',
         'Anton', 'Antonie', 'Antoniu', 'Arian', 'Aristide', 'Arsenie', 'Augustin', 'Aurel', 'Aurelian', 'Aurică', 'Avram', 'Axinte', 'Barbu', 'Bartolomeu', 'Basarab', 'Bănel', 'Bebe', 'Beniamin', 'Benone',
         'Bernard', 'Bogdan', 'Brăduț', 'Bucur', 'Caius', 'Camil', 'Cantemir', 'Carol', 'Casian', 'Cazimir', 'Călin', 'Cătălin', 'Cedrin', 'Cezar', 'Ciprian', 'Claudiu', 'Codin', 'Codrin', 'Codruț', 'Cornel',
@@ -86,8 +86,8 @@ class Person extends \Faker\Provider\Person
         'Vintila', 'Visan', 'Vlad', 'Voicu', 'Voinea', 'Zaharia', 'Zamfir',
     ];
 
-    protected static $titleMale = ['dl.', 'ing.', 'dr.'];
-    protected static $titleFemale = ['d-na.', 'd-șoara', 'ing.', 'dr.'];
+    protected static $titleMasculino = ['dl.', 'ing.', 'dr.'];
+    protected static $titleFeminino = ['d-na.', 'd-șoara', 'ing.', 'dr.'];
 
     protected static $cnpCountyCodes = [
         'AB' => '01', 'AR' => '02', 'AG' => '03', 'B' => '40', 'BC' => '04', 'BH' => '05',
@@ -108,7 +108,7 @@ class Person extends \Faker\Provider\Person
      *
      * @example 1111111111118
      *
-     * @param string|null $gender      Person::GENDER_MALE or Person::GENDER_FEMALE
+     * @param string|null $gender      Person::GENDER_Masculino or Person::GENDER_Feminino
      * @param string|null $dateOfBirth (1800-2099) 'Y-m-d', 'Y-m', 'Y'  I.E. '1981-06-16', '2085-03', '1900'
      * @param string|null $county      county code where the CNP was issued
      * @param bool|null   $isResident  flag if the person resides in Romania
@@ -117,12 +117,12 @@ class Person extends \Faker\Provider\Person
      */
     public function cnp($gender = null, $dateOfBirth = null, $county = null, $isResident = true)
     {
-        $genders = [Person::GENDER_MALE, Person::GENDER_FEMALE];
+        $genders = [Person::GENDER_Masculino, Person::GENDER_Feminino];
 
         if (empty($gender)) {
             $gender = static::randomElement($genders);
         } elseif (!in_array($gender, $genders, false)) {
-            throw new \InvalidArgumentException("Gender must be '{Person::GENDER_MALE}' or '{Person::GENDER_FEMALE}'");
+            throw new \InvalidArgumentException("Gender must be '{Person::GENDER_Masculino}' or '{Person::GENDER_Feminino}'");
         }
 
         $date = $this->getDateOfBirth($dateOfBirth);
@@ -205,7 +205,7 @@ class Person extends \Faker\Provider\Person
         }
 
         if ($dateOfBirth->format('Y') < 1900) {
-            if ($gender == Person::GENDER_MALE) {
+            if ($gender == Person::GENDER_Masculino) {
                 return 3;
             }
 
@@ -213,14 +213,14 @@ class Person extends \Faker\Provider\Person
         }
 
         if ($dateOfBirth->format('Y') < 2000) {
-            if ($gender == Person::GENDER_MALE) {
+            if ($gender == Person::GENDER_Masculino) {
                 return 1;
             }
 
             return 2;
         }
 
-        if ($gender == Person::GENDER_MALE) {
+        if ($gender == Person::GENDER_Masculino) {
             return 5;
         }
 

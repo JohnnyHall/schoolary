@@ -29,7 +29,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
-            'gender'        => $this->faker->randomElement(['Male', 'Female']),
+            'gender'        => $this->faker->randomElement(['Masculino', 'Feminino']),
             'nacionalidade'   => 'Bangladeshi',
             'phone'         => 'Ex: 325 43657 7554',
             'address'       => '568, Dhaka',

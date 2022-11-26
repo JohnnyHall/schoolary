@@ -60,10 +60,10 @@ class PromotionRepository {
                 ->count();
     }
 
-    public function getMalealunosBySessionCount($session_id) {
+    public function getMasculinoalunosBySessionCount($session_id) {
         $allalunos = Promotion::where('session_id', $session_id)->pluck('aluno_id')->toArray();
 
-        return User::where('gender', 'Male')
+        return User::where('gender', 'Masculino')
                 ->where('role', 'aluno')
                 ->whereIn('id', $allalunos)
                 ->count();

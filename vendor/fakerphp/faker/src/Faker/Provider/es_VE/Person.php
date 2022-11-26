@@ -9,13 +9,13 @@ class Person extends \Faker\Provider\Person
      *
      * @see http://www.cne.gob.ve/web/registro_electoral/ciudadanos_111_129_2011.php
      */
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{firstNameMale}} {{lastName}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{firstNameMasculino}} {{lastName}} {{suffix}}',
     ];
 
     /**
@@ -23,13 +23,13 @@ class Person extends \Faker\Provider\Person
      *
      * @see http://www.cne.gob.ve/web/registro_electoral/ciudadanos_111_129_2011.php
      */
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
     ];
 
     /**
@@ -37,7 +37,7 @@ class Person extends \Faker\Provider\Person
      *
      * @see http://www.cne.gob.ve/web/registro_electoral/ciudadanos_111_129_2011.php
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aaron', 'Adam', 'Adria', 'Adrian', 'Alberto', 'Aleix', 'Alejandro', 'Alex', 'Alonso', 'Alvaro', 'Ander', 'Andres',
         'Angel', 'Antonio', 'Bruno', 'Carlos', 'Cesar', 'Cristian', 'Daniel', 'Dario', 'David', 'Domingo',
         'Diego', 'Eduardo', 'Enrique', 'Eric', 'Erik', 'Fernando', 'Francisco', 'Francisco Javier', 'Gabriel', 'Gonzalo',
@@ -53,7 +53,7 @@ class Person extends \Faker\Provider\Person
      *
      * @see http://www.cne.gob.ve/web/registro_electoral/ciudadanos_111_129_2011.php
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Abril', 'Adriana', 'Africa', 'Ainara', 'Antonia', 'Alba', 'Alejandra', 'Alexandra', 'Alexia', 'Alicia', 'Alma',
         'Ana', 'Andrea', 'Ane', 'Angela', 'Anna', 'Ariadna', 'Aroa', 'Bella', 'Beatriz', 'Berta', 'Blanca', 'Candela',
         'Carla', 'Carlota', 'Carmen', 'Carolina', 'Celia', 'Clara', 'Claudia', 'Cristina', 'Daniela', 'Diana', 'Elena', 'Elsa',
@@ -137,9 +137,9 @@ class Person extends \Faker\Provider\Person
         'Zaragoza', 'Zarate', 'Zavala', 'Zayas', 'Zelaya', 'Zepeda', 'Zúñiga', 'de Anda', 'de Jesús', 'Águilar', 'Álvarez', 'Ávalos', 'Ávila',
     ];
 
-    protected static $titleMale = ['Sr.', 'Dn.', 'Dr.', 'Lcdo.', 'Ing.'];
+    protected static $titleMasculino = ['Sr.', 'Dn.', 'Dr.', 'Lcdo.', 'Ing.'];
 
-    protected static $titleFemale = ['Sra.', 'Srita.', 'Dra.', 'Lcda.', 'Ing.'];
+    protected static $titleFeminino = ['Sra.', 'Srita.', 'Dra.', 'Lcda.', 'Ing.'];
 
     private static $suffix = ['Hijo'];
 

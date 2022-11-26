@@ -6,21 +6,21 @@ use Faker\Calculator\Luhn;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Abraham', 'Adriaan', 'Adrian', 'Ahmed', 'Alan', 'Albert', 'Alex', 'Alexander', 'Alfred', 'Allan', 'Andile', 'Andre', 'Andrew',
         'André', 'Anthony', 'Anton', 'Arnold', 'Arthur', 'Ayanda', 'Barry', 'Ben', 'Benjamin', 'Bernard', 'Bongani', 'Bradley',
         'Brandon', 'Brent', 'Brett', 'Brian', 'Bruce', 'Bryan', 'Carel', 'Carl', 'Charl', 'Charles', 'Chris', 'Christiaan',
@@ -51,7 +51,7 @@ class Person extends \Faker\Provider\Person
         'Thulani', 'Tumelo', 'Unathi', 'Vusi', 'Vuyokazi', 'Yolandi', 'Your', 'Zandile',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Abigail', 'Adele', 'Alicia', 'Alison', 'Amanda', 'Andiswa', 'Andrea', 'Angela', 'Angelique', 'Anita', 'Anna', 'Anne', 'Anthea',
         'Antoinette', 'Asanda', 'Ashley', 'Aubrey', 'Barbara', 'Belinda', 'Beverley', 'Bianca', 'Boitumelo', 'Bongiwe', 'Brenda', 'Bronwyn',
         'Busisiwe', 'Candice', 'Carla', 'Carmen', 'Carol', 'Caroline', 'Catherine', 'Cecilia', 'Celeste', 'Chantal', 'Chantel', 'Chantelle',
@@ -117,7 +117,7 @@ class Person extends \Faker\Provider\Person
         'Mokone', 'Moosa', 'Neethling', 'September', 'Madonsela', 'Willemse', 'Mashigo', 'Simpson', 'Otto', 'Legodi', 'Mlangeni',
         'Mokwena', 'Andrews', 'Mashele', 'Gounden', 'Zuma', 'Msomi', 'Ngema', 'Bennett', 'Baker', 'Ntshangase', 'Nene',
         'Magagula', 'Tladi', 'Xulu', 'Müller', 'Laubscher', 'Maluleka', 'May', 'Rautenbach', 'Ndebele', 'Grobbelaar', 'Henning',
-        'Carstens', 'Maleka', 'Odendaal', 'Kok', 'Oliver', 'Cassim', 'Van Eeden', 'Lottering', 'Mavuso', 'Mashinini', 'Kumalo',
+        'Carstens', 'Masculinoka', 'Odendaal', 'Kok', 'Oliver', 'Cassim', 'Van Eeden', 'Lottering', 'Mavuso', 'Mashinini', 'Kumalo',
         'Mathe', 'Taljaard', 'Molepo', 'David', 'Shezi', 'Turner', 'Oberholzer', 'Motsepe', 'Alberts', 'Adonis', 'van den Heever',
         'van der Linde', 'Marshall', 'Hugo', 'Thwala', 'Park', 'Cooper', 'Nelson', 'John', 'Anthony', 'Adam', 'Naudé', 'Harrison',
         'Mulder', 'Enslin', 'Truter', 'Khuzwayo', 'Makhanya', 'Harmse', 'Loubser', 'Kleynhans', 'Paul', 'Nieuwoudt', 'Horn',
@@ -126,9 +126,9 @@ class Person extends \Faker\Provider\Person
         'Pule', 'Hlophe', 'Miya', 'Moagi',
     ];
 
-    protected static $titleMale = ['Mr.', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
+    protected static $titleMasculino = ['Mr.', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
 
-    protected static $titleFemale = ['Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
+    protected static $titleFeminino = ['Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
 
     protected static $licenceCodes = ['A', 'A1', 'B', 'C', 'C1', 'C2', 'EB', 'EC', 'EC1', 'I', 'L', 'L1'];
 
@@ -149,12 +149,12 @@ class Person extends \Faker\Provider\Person
         $birthDateString = $birthdate->format('ymd');
 
         switch (strtolower($gender)) {
-            case static::GENDER_FEMALE:
+            case static::GENDER_Feminino:
                 $genderDigit = self::numberBetween(0, 4);
 
                 break;
 
-            case static::GENDER_MALE:
+            case static::GENDER_Masculino:
                 $genderDigit = self::numberBetween(5, 9);
 
                 break;

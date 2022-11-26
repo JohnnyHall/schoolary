@@ -21,11 +21,11 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Swedish female Primeiro nomes
+     * @var array Swedish Feminino Primeiro nomes
      *
      * @see http://spraakbanken.gu.se/statistik/lbfnamnalf.phtml
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
 
         'Ada', 'Adela', 'Adele', 'Adéle', 'Adelia', 'Adina', 'Adolfina', 'Agda', 'Agnes', 'Agneta', 'Aina', 'Aino', 'Albertina', 'Alexandra', 'Alfhild', 'Alfrida', 'Alice', 'Alida', 'Ally', 'Alma', 'Alva', 'Amalia', 'Amanda', 'Andrea', 'Anette', 'Angela', 'Anita', 'Anja', 'Ann', 'Anna', 'Anna-Carin', 'Anna-Greta', 'Anna-Karin', 'Anna-Lena', 'Anna-Lisa', 'Anna-Maria', 'Anna-Stina', 'Anne', 'Anneli', 'Annelie', 'Annette', 'Anne-Charlotte', 'Anne-Marie', 'Anni', 'Annica', 'Annie', 'Annika', 'Annikki', 'Anny', 'Ann-Britt', 'Ann-Charlott', 'Ann-Charlotte', 'Ann-Christin', 'Ann-Christine', 'Ann-Katrin', 'Ann-Kristin', 'Ann-Louise', 'Ann-Margret', 'Ann-Mari', 'Ann-Marie', 'Ann-Sofi', 'Ann-Sofie', 'Antonia', 'Arvida', 'Asta', 'Astrid', 'Augusta', 'Aurora', 'Axelia', 'Axelina',
         'Barbro', 'Beata', 'Beatrice', 'Beda', 'Berit', 'Bernhardina', 'Berta', 'Betty', 'Birgit', 'Birgitta', 'Blenda', 'Bodil', 'Boel', 'Borghild', 'Brita', 'Britt', 'Britta', 'Britt-Inger', 'Britt-Louise', 'Britt-Mari', 'Britt-Marie',
@@ -54,11 +54,11 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Swedish male Primeiro nomes
+     * @var array Swedish Masculino Primeiro nomes
      *
      * @see http://spraakbanken.gu.se/statistik/lbfnamnalf.phtml
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Abraham', 'Adam', 'Adolf', 'Adrian', 'Agaton', 'Agne', 'Albert', 'Albin', 'Aldor', 'Alex', 'Alexander', 'Alexis', 'Alexius', 'Alf', 'Alfons', 'Alfred', 'Algot', 'Allan', 'Alrik', 'Alvar', 'Alve', 'Amandus', 'Anders', 'André', 'Andreas', 'Anselm', 'Anshelm', 'Antero', 'Anton', 'Antonius', 'Arne', 'Arnold', 'Aron', 'Arthur', 'Artur', 'Arvid', 'Assar', 'Astor', 'August', 'Augustin', 'Axel',
         'Bengt', 'Bengt-Göran', 'Bengt-Olof', 'Bengt-Åke', 'Benny', 'Berndt', 'Berne', 'Bernhard', 'Bernt', 'Bert', 'Berth', 'Berthold', 'Bertil', 'Bill', 'Billy', 'Birger', 'Bjarne', 'Björn', 'Bo', 'Boris', 'Bror', 'Bruno', 'Brynolf', 'Börje',
         'Carl', 'Carl-Axel', 'Carl-Erik', 'Carl-Gustaf', 'Carl-Gustav', 'Carl-Johan', 'Charles', 'Christer', 'Christian', 'Claes', 'Claes-Göran', 'Clarence', 'Clas', 'Conny', 'Crister', 'Curt',
@@ -122,7 +122,7 @@ class Person extends \Faker\Provider\Person
      * @see http://en.wikipedia.org/wiki/Personal_identity_number_(Sweden)
      *
      * @param \DateTime $birthdate
-     * @param string    $gender    Person::GENDER_MALE || Person::GENDER_FEMALE
+     * @param string    $gender    Person::GENDER_Masculino || Person::GENDER_Feminino
      *
      * @return string on format XXXXXX-XXXX
      */
@@ -140,13 +140,13 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * @param string $gender Person::GENDER_MALE || Person::GENDER_FEMALE
+     * @param string $gender Person::GENDER_Masculino || Person::GENDER_Feminino
      *
      * @return string of three digits
      */
     protected function getBirthNumber($gender = null)
     {
-        if ($gender && $gender === static::GENDER_MALE) {
+        if ($gender && $gender === static::GENDER_Masculino) {
             return (string) static::numerify('##') . static::randomElement([1, 3, 5, 7, 9]);
         }
 
@@ -158,7 +158,7 @@ class Person extends \Faker\Provider\Person
             return $randomDigits;
         };
 
-        if ($gender && $gender === static::GENDER_FEMALE) {
+        if ($gender && $gender === static::GENDER_Feminino) {
             return $zeroCheck(static function () {
                 return (string) static::numerify('##') . static::randomElement([0, 2, 4, 6, 8]);
             });

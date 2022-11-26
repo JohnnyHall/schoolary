@@ -5,27 +5,27 @@ namespace Faker\Provider\cs_CZ;
 class Person extends \Faker\Provider\Person
 {
     protected static $lastNameFormat = [
-        '{{lastNameMale}}',
-        '{{lastNameFemale}}',
+        '{{lastNameMasculino}}',
+        '{{lastNameFeminino}}',
     ];
 
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{titleMale}} {{firstNameMale}} {{lastNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastNameFeminino}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Adam', 'Aleš', 'Alois', 'Antonín', 'Bohumil', 'Bohuslav', 'Dagmar',
         'Dalibor', 'Daniel', 'David', 'Dominik', 'Dušan', 'Eduard', 'Emil',
         'Filip', 'František', 'Ilona', 'Ivan', 'Ivo', 'Jakub', 'Jan', 'Ján',
@@ -40,7 +40,7 @@ class Person extends \Faker\Provider\Person
         'Vladislav', 'Vlastimil', 'Vojtěch', 'Zbyněk', 'Zdeněk',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Adéla', 'Alena', 'Alžběta', 'Andrea', 'Aneta', 'Anežka', 'Anna',
         'Barbora', 'Blanka', 'Božena', 'Dana', 'Daniela', 'Denisa', 'Dominika',
         'Eliška', 'Emilie', 'Eva', 'Františka', 'Gabriela', 'Hana', 'Helena',
@@ -56,7 +56,7 @@ class Person extends \Faker\Provider\Person
         'Zuzana',
     ];
 
-    protected static $lastNameMale = [
+    protected static $lastNameMasculino = [
         'Adam', 'Adamec', 'Adámek', 'Albrecht', 'Ambrož', 'Anděl', 'Andrle',
         'Antoš', 'Bajer', 'Baláž', 'Balcar', 'Balog', 'Baloun', 'Barák',
         'Baran', 'Bareš', 'Bárta', 'Barták', 'Bartoň', 'Bartoš',
@@ -133,7 +133,7 @@ class Person extends \Faker\Provider\Person
         'Lebeda', 'Levý', 'Líbal', 'Linhart', 'Liška', 'Lorenc', 'Louda',
         'Ludvík', 'Lukáč', 'Lukášek', 'Lukáš', 'Lukeš', 'Macák', 'Macek',
         'Macura', 'Macháček', 'Machač', 'Macháč', 'Machala', 'Machálek',
-        'Mácha', 'Mach', 'Majer', 'Maleček', 'Málek', 'Malík', 'Malina',
+        'Mácha', 'Mach', 'Majer', 'Masculinoček', 'Málek', 'Malík', 'Malina',
         'Malý', 'Maňák', 'Mareček', 'Marek', 'Mareš', 'Maršálek',
         'Maršík', 'Martinec', 'Martinek', 'Martínek', 'Mařík', 'Masopust',
         'Mašek', 'Matějíček', 'Matějka', 'Matoušek', 'Matouš', 'Matula',
@@ -214,7 +214,7 @@ class Person extends \Faker\Provider\Person
         'Žídek', 'Žižka', 'Žůrek',
     ];
 
-    protected static $lastNameFemale = [
+    protected static $lastNameFeminino = [
         'Adamová', 'Adamcová', 'Adámková', 'Albrechtová', 'Ambrožová',
         'Andělová', 'Andrlová', 'Antošová', 'Bajerová', 'Balážová',
         'Balcarová', 'Balogová', 'Balounová', 'Baráková', 'Baranová',
@@ -315,7 +315,7 @@ class Person extends \Faker\Provider\Person
         'Lišková', 'Lorencová', 'Loudová', 'Ludvíková', 'Lukáčová',
         'Lukášková', 'Lukášová', 'Lukešová', 'Macáková', 'Macková',
         'Macurová', 'Macháčková', 'Machačová', 'Macháčová', 'Machalová',
-        'Machálková', 'Máchová', 'Machová', 'Majerová', 'Malečková',
+        'Machálková', 'Máchová', 'Machová', 'Majerová', 'Masculinočková',
         'Málková', 'Malíková', 'Malinová', 'Malá', 'Maňáková',
         'Marečková', 'Marková', 'Marešová', 'Maršálková',
         'Maršíková', 'Martincová', 'Martinková', 'Martínková',
@@ -426,7 +426,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $gender 'Masculino', 'Feminino' or null for any
      * @param int         $minAge minimal age of "generated person" in years
      * @param int         $maxAge maximal age of "generated person" in years
      *
@@ -435,7 +435,7 @@ class Person extends \Faker\Provider\Person
     public function birthNumber($gender = null, $minAge = 0, $maxAge = 100, $slashProbability = 50)
     {
         if ($gender === null) {
-            $gender = $this->generator->boolean() ? static::GENDER_MALE : static::GENDER_FEMALE;
+            $gender = $this->generator->boolean() ? static::GENDER_Masculino : static::GENDER_Feminino;
         }
 
         $startTimestamp = strtotime("-${maxAge} year");
@@ -448,7 +448,7 @@ class Person extends \Faker\Provider\Person
         $suffix = self::numberBetween(0, 999);
 
         // women has +50 to month
-        if ($gender == static::GENDER_FEMALE) {
+        if ($gender == static::GENDER_Feminino) {
             $month += 50;
         }
         // from year 2004 everyone has +20 to month when birth numbers in one day are exhausted
@@ -476,25 +476,25 @@ class Person extends \Faker\Provider\Person
         return $birthNumber;
     }
 
-    public static function birthNumberMale()
+    public static function birthNumberMasculino()
     {
-        return static::birthNumber(static::GENDER_MALE);
+        return static::birthNumber(static::GENDER_Masculino);
     }
 
-    public static function birthNumberFemale()
+    public static function birthNumberFeminino()
     {
-        return static::birthNumber(static::GENDER_FEMALE);
+        return static::birthNumber(static::GENDER_Feminino);
     }
 
     public function title($gender = null)
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**
      * replaced by specific unisex Czech title
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
         return static::randomElement(static::$title);
     }
@@ -502,36 +502,36 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex Czech title
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $gender 'Masculino', 'Feminino' or null for any
      *
      * @example 'Albrecht'
      */
     public function lastName($gender = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::lastNameMale();
+        if ($gender === static::GENDER_Masculino) {
+            return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::lastNameFemale();
+        if ($gender === static::GENDER_Feminino) {
+            return static::lastNameFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$lastNameFormat));
     }
 
-    public static function lastNameMale()
+    public static function lastNameMasculino()
     {
-        return static::randomElement(static::$lastNameMale);
+        return static::randomElement(static::$lastNameMasculino);
     }
 
-    public static function lastNameFemale()
+    public static function lastNameFeminino()
     {
-        return static::randomElement(static::$lastNameFemale);
+        return static::randomElement(static::$lastNameFeminino);
     }
 }

@@ -7,18 +7,18 @@ class Person extends \Faker\Provider\Person
     /**
      * @var array Turkish person name formats.
      */
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
     /**
@@ -26,7 +26,7 @@ class Person extends \Faker\Provider\Person
      *
      * @var array Turkish Primeiro nomes.
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Ahmet', 'Ali', 'Alp', 'Armağan', 'Atakan', 'Aşkın', 'Baran', 'Bartu', 'Berk', 'Berkay', 'Berke', 'Bora', 'Burak', 'Canberk',
         'Cem', 'Cihan', 'Deniz', 'Efe', 'Ege', 'Ege', 'Emir', 'Emirhan', 'Emre', 'Ferid', 'Göktürk', 'Görkem', 'Güney',
         'Kağan', 'Kerem', 'Koray', 'Kutay', 'Mert', 'Onur', 'Ogün', 'Polat', 'Rüzgar', 'Sarp', 'Serhan', 'Toprak', 'Tuna',
@@ -38,7 +38,7 @@ class Person extends \Faker\Provider\Person
      *
      * @var array Turkish Primeiro nomes.
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ada', 'Esma', 'Emel', 'Ebru', 'Şahnur', 'Ümran', 'Sinem', 'İrem', 'Rüya', 'Ece', 'Burcu',
     ];
 
@@ -76,13 +76,13 @@ class Person extends \Faker\Provider\Person
 
     public function title($gender = null)
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**
      * replaced by specific unisex Turkish title
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
         return static::randomElement(static::$title);
     }
@@ -90,9 +90,9 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex Turkish title
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**

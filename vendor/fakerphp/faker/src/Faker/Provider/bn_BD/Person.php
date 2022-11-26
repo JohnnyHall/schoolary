@@ -4,25 +4,25 @@ namespace Faker\Provider\bn_BD;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'অনন্ত', 'আব্দুল্লাহ', 'আহসান',  'ইমরুল', 'করিম', 'জলিল', 'বরকত', 'মাসনুন', 'রহিম',  'রিফাত', 'হাসনাত', 'হাসান',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'জারিন', 'জেরিন', 'ফারহানা', 'ফাহমেদা', 'মাহজাবিন', 'মেহনাজ', 'রহিমা', 'লাবনী', 'সাবরিন', 'সাবরিনা', 'হাসিন', 'রহমত',
     ];
 
@@ -30,7 +30,7 @@ class Person extends \Faker\Provider\Person
         'খান', 'শেখ', 'শিকদার', 'আলী', 'তাসনীম', 'তাবাসসুম',
     ];
 
-    protected static $titleMale = ['মি.'];
+    protected static $titleMasculino = ['মি.'];
 
-    protected static $titleFemale = ['মিসেস.', 'মিস.'];
+    protected static $titleFeminino = ['মিসেস.', 'মিস.'];
 }

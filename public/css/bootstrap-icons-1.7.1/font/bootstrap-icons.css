@@ -1365,8 +1365,8 @@ url("./fonts/bootstrap-icons.woff?a74547b2f0863226942ff8ded57db345") format("wof
 .bi-file-pdf-fill::before { content: "\f63f"; }
 .bi-file-pdf::before { content: "\f640"; }
 .bi-gender-ambiguous::before { content: "\f641"; }
-.bi-gender-female::before { content: "\f642"; }
-.bi-gender-male::before { content: "\f643"; }
+.bi-gender-Feminino::before { content: "\f642"; }
+.bi-gender-Masculino::before { content: "\f643"; }
 .bi-gender-trans::before { content: "\f644"; }
 .bi-headset-vr::before { content: "\f645"; }
 .bi-info-lg::before { content: "\f646"; }

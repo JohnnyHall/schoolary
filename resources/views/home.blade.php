@@ -9,7 +9,7 @@
                 <div class="col ps-4">
                     <!-- <h1 class="display-6 mb-3"><i class="ms-auto bi bi-grid"></i> {{ __('Central') }}</h1> -->
                     <div class="row Central">
-                        
+
                         <div class="col">
                             <div class="card rounded-pill">
                                 <div class="card-body">
@@ -89,16 +89,16 @@
                     @if($alunoCount > 0)
                     <div class="mt-3 d-flex align-items-center">
                         {{-- <div class="col-9 d-flex flex-row" style="height: 10px;">
-                            <div class="bg-dark border text-white" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: {{($malealunosBySession/$alunoCount) * 100}}%"> </div>
-                            <div class="bg-white border text-dark" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: {{(($alunoCount - $malealunosBySession)/$alunoCount) * 100}}%"> </div>
+                            <div class="bg-dark border text-white" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: {{($MasculinoalunosBySession/$alunoCount) * 100}}%"> </div>
+                            <div class="bg-white border text-dark" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: {{(($alunoCount - $MasculinoalunosBySession)/$alunoCount) * 100}}%"> </div>
                         </div> --}}
                         <div class="col-3">
                             <span class="badge rounded-pill border" style="background-color: #fc053e;">Masculino</span>
                             <span class="badge rounded-pill border" style="background-color: #49a4fe;">Feminino</span>
                         </div>
                         <div class="col-9 progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #0678c8; width: {{round(($malealunosBySession/$alunoCount), 2) * 100}}%" aria-valuenow="{{round(($malealunosBySession/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round(($malealunosBySession/$alunoCount), 2) * 100}}%</div>
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #49a4fe; width: {{round((($alunoCount - $malealunosBySession)/$alunoCount), 2) * 100}}%" aria-valuenow="{{round((($alunoCount - $malealunosBySession)/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round((($alunoCount - $malealunosBySession)/$alunoCount), 2) * 100}}%</div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #0678c8; width: {{round(($MasculinoalunosBySession/$alunoCount), 2) * 100}}%" aria-valuenow="{{round(($MasculinoalunosBySession/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round(($MasculinoalunosBySession/$alunoCount), 2) * 100}}%</div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #49a4fe; width: {{round((($alunoCount - $MasculinoalunosBySession)/$alunoCount), 2) * 100}}%" aria-valuenow="{{round((($alunoCount - $MasculinoalunosBySession)/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round((($alunoCount - $MasculinoalunosBySession)/$alunoCount), 2) * 100}}%</div>
                         </div>
                     </div>
                     @endif

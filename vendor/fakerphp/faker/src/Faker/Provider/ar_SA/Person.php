@@ -6,29 +6,29 @@ use Faker\Calculator\Luhn;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{firstNameMale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameMale}} {{firstNameMale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
     /**
      * @see http://muslim-names.us/
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
 
         'آدم', 'أبراهيم', 'أحمد', 'أدهم', 'أسامة', 'أسعد', 'أشرف', 'أكثم', 'أكرم', 'أمجد', 'أمين', 'أنس', 'أنور', 'أواس', 'أوس', 'أيمن', 'أيهم', 'أيوب', 'إبراهيم', 'إسلام', 'إسماعيل', 'إلياس', 'إياد', 'إيهاب', 'ابان', 'ابراهيم', 'اثير', 'احسان', 'احمد', 'ادريس', 'ادم', 'ادهم', 'اديب', 'اسامة',
         'اسحاق', 'اسحق', 'اسعد', 'اسلام', 'اسماعيل', 'اسيد', 'اشراف', 'اشرف', 'اصلان', 'اكثم', 'اكرم', 'البراء', 'البشر', 'الحارث', 'الحسين', 'الطفيل', 'العزم', 'الليث', 'المثنى', 'المنصور', 'الياس', 'اليمان', 'امجد', 'امير', 'امين', 'أنس', 'انور', 'انيس', 'اوس', 'اوسم', 'اويس', 'اياد', 'اياس',
@@ -51,7 +51,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://muslim-names.us/
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'آثار', 'آلاء', 'آناء', 'آية', 'أبرار', 'أحلام', 'أروى', 'أريج', 'أسماء', 'أسيل', 'أصاله', 'أفنان', 'ألاء', 'أماني', 'أمل', 'أميرة', 'أنسام', 'أنوار', 'إباء', 'إخلاص', 'إسراء', 'إسلام', 'إكرام', 'إنعام', 'إيمان', 'إيناس', 'ابتهاج', 'ابتهال', 'أبرار', 'إخلاص', 'ارجوان', 'أروى', 'أريج',
         'أزهار', 'أسحار', 'اسراء', 'اسرار', 'اسيل', 'اشراق', 'أصالة', 'اعتدال', 'أفراح', 'أفنان', 'إكرام', 'آلاء', 'العنود', 'إلهام', 'آمال', 'أمنة', 'أميرة', 'أمينة', 'أناهيد', 'انتظار', 'أنعام', 'أنوار', 'آيات', 'إيمان', 'إيناس', 'آية', 'باسمة', 'بتول', 'بثينة', 'بدور', 'براء', 'براءة', 'بسمة',
         'بشائر', 'بشرى', 'بلسم', 'بنان', 'بهجة', 'بيان', 'بيداء', 'بيسان', 'تالا', 'تالة', 'تالين', 'تحرير', 'تسنيم', 'تغريد', 'تقوى', 'تقى', 'تمارا', 'تماضر', 'تمام', 'تهاني', 'تولين', 'ثريا', 'جمانة', 'جميلة', 'جنى', 'جهاد', 'جود', 'حبيبة', 'حسناء', 'حصة', 'حلا', 'حليمة', 'حنان', 'حنين', 'حياة',
@@ -75,8 +75,8 @@ class Person extends \Faker\Provider\Person
         'الجهني', 'الفريدي', 'برماوي', 'هوساوي', 'السعيد', 'الداوود', 'السليم', 'السماري',
     ];
 
-    protected static $titleMale = ['السيد', 'الأستاذ', 'الدكتور', 'المهندس'];
-    protected static $titleFemale = ['السيدة', 'الآنسة', 'الدكتورة', 'المهندسة'];
+    protected static $titleMasculino = ['السيد', 'الأستاذ', 'الدكتور', 'المهندس'];
+    protected static $titleFeminino = ['السيدة', 'الآنسة', 'الدكتورة', 'المهندسة'];
     private static $prefix = ['أ.', 'د.', 'أ.د', 'م.'];
 
     /**

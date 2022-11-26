@@ -466,13 +466,13 @@ use Psr\Container\ContainerInterface;
  *
  * @method string firstName($gender = null)
  *
- * @property string $firstNameMale
+ * @property string $firstNameMasculino
  *
- * @method string firstNameMale()
+ * @method string firstNameMasculino()
  *
- * @property string $firstNameFemale
+ * @property string $firstNameFeminino
  *
- * @method string firstNameFemale()
+ * @method string firstNameFeminino()
  *
  * @property string $lastName
  *
@@ -482,13 +482,13 @@ use Psr\Container\ContainerInterface;
  *
  * @method string title($gender = null)
  *
- * @property string $titleMale
+ * @property string $titleMasculino
  *
- * @method string titleMale()
+ * @method string titleMasculino()
  *
- * @property string $titleFemale
+ * @property string $titleFeminino
  *
- * @method string titleFemale()
+ * @method string titleFeminino()
  *
  * @property string $phoneNumber
  *

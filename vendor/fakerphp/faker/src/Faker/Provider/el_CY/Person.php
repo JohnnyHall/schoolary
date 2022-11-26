@@ -9,7 +9,7 @@ class Person extends \Faker\Provider\Person
      *
      * @see http://www.mof.gov.cy/mof/cystat/statistics.nsf/populationcondition_22main_gr/populationcondition_22main_gr?OpenForm&sub=2&sel=2
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Άγγελος', 'Άδωνης', 'Άκης', 'Άνθιμος', 'Άρης',
         'Έκτορας',
         'Αβραάμ', 'Αγάπιος', 'Αγαθοκλής', 'Αδαμάντιος', 'Αθανάσιος', 'Αιμίλιος', 'Αλέκος', 'Αλέξανδρος', 'Αλέξης', 'Αλκιβιάδης', 'Αναστάσιος', 'Ανδρέας', 'Ανδρόνικος', 'Ανθούλης', 'Αντώνης', 'Απόστολος', 'Αρέστης', 'Αργύρης', 'Αριστείδης', 'Αριστόδημος', 'Αυγουστής', 'Αυξέντης', 'Αχιλλέας',
@@ -41,7 +41,7 @@ class Person extends \Faker\Provider\Person
      *
      * @see http://www.mof.gov.cy/mof/cystat/statistics.nsf/populationcondition_22main_gr/populationcondition_22main_gr?OpenForm&sub=2&sel=2
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ελση',
         'Άλκηστις', 'Άννα', 'Άννα Μαρία', 'Έφη', 'Ήβη', 'Αίγλη', 'Αίμιλη', 'Αγάθη', 'Αγάπη', 'Αγγέλα', 'Αγλαϊα', 'Αγνή', 'Αδαμάντια', 'Αθανασία', 'Αθηνά', 'Αλέξια', 'Αλίκη', 'Αλεξάνδρα', 'Αμαλία', 'Αναστασία', 'Ανδρομάχη', 'Ανδρονίκη', 'Ανδρούλα', 'Ανθή', 'Ανθούλα', 'Αννέτα', 'Αννίτα', 'Αντιγόνη', 'Αντωνία', 'Αποστολία', 'Αργυρώ', 'Αρετή', 'Αριάδνη', 'Αριστη', 'Αριστοτέλης', 'Αρτεμισία', 'Ασπασία', 'Αστέρω', 'Αυγή', 'Αυγούστα', 'Αφροδίτη',
         'Βέρα', 'Βίκη', 'Βαλέρια', 'Βαλεντίνα', 'Βανθούλα', 'Βαρβάρα', 'Βασιλική', 'Βερονίκη', 'Βικτώρια', 'Βιολέτα',
@@ -95,6 +95,6 @@ class Person extends \Faker\Provider\Person
         'Χαραλάμπους', 'Χαριλάου', 'Χρίστου', 'Χριστοδούλου', 'Χριστοφή', 'Χριστοφόρου', 'Χρυσόστομος', 'Χρύσανθου',
     ];
 
-    protected static $titleMale = ['κος.', 'κ.'];
-    protected static $titleFemale = ['δις.', 'δνις.', 'κα.'];
+    protected static $titleMasculino = ['κος.', 'κ.'];
+    protected static $titleFeminino = ['δις.', 'δνις.', 'κα.'];
 }

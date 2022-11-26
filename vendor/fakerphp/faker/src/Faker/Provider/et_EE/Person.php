@@ -8,7 +8,7 @@ class Person extends \Faker\Provider\Person
      * @see https://news.err.ee/114745/most-popular-baby-names-of-2014
      * @see https://www.stat.ee/public/apps/nimed/TOP
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Andrei', 'Aleksei', 'Andres', 'Alexander', 'Aivar', 'Aleksander', 'Artur', 'Andrus', 'Ants', 'Artjom', 'Anatoli', 'Anton', 'Arvo', 'Aare', 'Ain', 'Aleksandr',
         'Dmitri', 'Daniil', 'Daniel',
         'Eduard', 'Erik', 'Enn',
@@ -34,7 +34,7 @@ class Person extends \Faker\Provider\Person
      * @see https://news.err.ee/114745/most-popular-baby-names-of-2014
      * @see https://www.stat.ee/public/apps/nimed/TOP
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Aino', 'Aleksandra', 'Alisa', 'Anastasia', 'Anna', 'Anne', 'Anneli', 'Anu', 'Arina', 'Annika', 'Anastassia', 'Alla', 'Aili', 'Alina', 'Aime', 'Antonina',
         'Darja', 'Diana',
         'Elena', 'Eliise', 'Elisabeth', 'Emma', 'Ene', 'Eve', 'Eha', 'Evi',

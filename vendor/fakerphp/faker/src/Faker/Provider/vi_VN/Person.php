@@ -4,29 +4,29 @@ namespace Faker\Provider\vi_VN;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{lastName}} {{firstNameMale}}',
-        '{{titleMale}}. {{lastName}} {{firstNameMale}}',
-        '{{lastName}} {{middleNameMale}} {{firstNameMale}}',
-        '{{titleMale}}. {{lastName}} {{middleNameMale}} {{firstNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{lastName}} {{firstNameMasculino}}',
+        '{{titleMasculino}}. {{lastName}} {{firstNameMasculino}}',
+        '{{lastName}} {{middleNameMasculino}} {{firstNameMasculino}}',
+        '{{titleMasculino}}. {{lastName}} {{middleNameMasculino}} {{firstNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{lastName}} {{firstNameFemale}}',
-        '{{titleFemale}}. {{lastName}} {{firstNameFemale}}',
-        '{{lastName}} {{middleNameFemale}} {{firstNameFemale}}',
-        '{{titleFemale}}. {{lastName}} {{middleNameFemale}} {{firstNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{lastName}} {{firstNameFeminino}}',
+        '{{titleFeminino}}. {{lastName}} {{firstNameFeminino}}',
+        '{{lastName}} {{middleNameFeminino}} {{firstNameFeminino}}',
+        '{{titleFeminino}}. {{lastName}} {{middleNameFeminino}} {{firstNameFeminino}}',
     ];
 
     protected static $middleNameFormat = [
-        '{{firstNameMale}}',
-        '{{firstNameFemale}}',
+        '{{firstNameMasculino}}',
+        '{{firstNameFeminino}}',
     ];
 
     /**
      * @see http://www.dattenhay.vn/1001-ten-cho-be-trai.htm
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'An', 'Anh',
         'Bào', 'Bình', 'Bạch', 'Bảo', 'Bắc', 'Bằng', 'Bổng', 'Bửu',
         'Ca', 'Canh', 'Chiến', 'Chiểu', 'Châu', 'Chính', 'Chương', 'Chưởng', 'Chấn', 'Công', 'Cơ', 'Cương', 'Cường', 'Cảnh', 'Cần', 'Cẩn',
@@ -53,7 +53,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://www.dattenhay.vn/1001-ten-cho-be-trai.htm
      */
-    protected static $middleNameMale = [
+    protected static $middleNameMasculino = [
         'An', 'Anh',
         'Bá', 'Bách', 'Bình', 'Bích', 'Bảo', 'Bằng', 'Bửu', 'Bữu',
         'Cao', 'Chiêu', 'Chiến', 'Chung', 'Chuẩn', 'Chánh', 'Chí', 'Chính', 'Chấn', 'Chế', 'Cát', 'Công', 'Cương', 'Cường', 'Cảnh',
@@ -75,7 +75,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://www.dattenhay.vn/1001-ten-cho-be-gai.htm
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'An', 'Anh',
         'Bình', 'Bích', 'Băng', 'Bạch', 'Bảo',
         'Ca', 'Chi', 'Chinh', 'Chiêu', 'Chung', 'Châu', 'Cát', 'Cúc', 'Cương', 'Cầm',
@@ -105,7 +105,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://www.dattenhay.vn/1001-ten-cho-be-gai.htm
      */
-    protected static $middleNameFemale = [
+    protected static $middleNameFeminino = [
         'An', 'Anh',
         'Ban', 'Bích', 'Băng', 'Bạch', 'Bảo', 'Bội',
         'Cam', 'Chi', 'Chiêu', 'Cát', 'Cẩm',
@@ -157,30 +157,30 @@ class Person extends \Faker\Provider\Person
         'Yên',
     ];
 
-    protected static $titleMale = ['Cụ', 'Ông', 'Bác', 'Chú', 'Anh', 'Em'];
+    protected static $titleMasculino = ['Cụ', 'Ông', 'Bác', 'Chú', 'Anh', 'Em'];
 
-    protected static $titleFemale = ['Cụ', 'Bà', 'Bác', 'Cô', 'Chị', 'Em'];
+    protected static $titleFeminino = ['Cụ', 'Bà', 'Bác', 'Cô', 'Chị', 'Em'];
 
     public function middleName($gender = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::middleNameMale();
+        if ($gender === static::GENDER_Masculino) {
+            return static::middleNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::middleNameFemale();
+        if ($gender === static::GENDER_Feminino) {
+            return static::middleNameFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$middleNameFormat));
     }
 
-    public static function middleNameMale()
+    public static function middleNameMasculino()
     {
-        return static::randomElement(static::$middleNameMale);
+        return static::randomElement(static::$middleNameMasculino);
     }
 
-    public static function middleNameFemale()
+    public static function middleNameFeminino()
     {
-        return static::randomElement(static::$middleNameFemale);
+        return static::randomElement(static::$middleNameFeminino);
     }
 }

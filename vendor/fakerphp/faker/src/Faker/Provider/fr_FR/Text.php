@@ -11556,7 +11556,7 @@ Elle baissa la tête; il reprit:
 -- Mais, si vous n'avez pas d'espèces, vous avez du bien.
 
 Et il indiqua une méchante masure sise à Barneville, près
-d'Aumale, qui ne rapportait pas grand-chose. Cela dépendait
+d'AuMasculino, qui ne rapportait pas grand-chose. Cela dépendait
 autrefois d'une petite ferme vendue par M. Bovary père, car
 Lheureux savait tout, jusqu'à la contenance d'hectares, avec le
 nom des voisins.

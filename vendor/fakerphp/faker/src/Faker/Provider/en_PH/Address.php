@@ -314,7 +314,7 @@ class Address extends \Faker\Provider\en_US\Address
         'Santa Ana', 'Santa Rita', 'Santo Tomas', 'Sasmuan', 'Alaminos City',
         'Dagupan City', 'San Carlos City', 'Urdaneta City', 'Agno',
         'Aguilar', 'Alcala', 'Anda', 'Asingan', 'Balungao', 'Bani',
-        'Basista', 'Bautista', 'Bayambang', 'Binalonan', 'Binmaley',
+        'Basista', 'Bautista', 'Bayambang', 'Binalonan', 'BinMasculinoy',
         'Bolinao', 'Bugallon', 'Burgos', 'Calasiao', 'Dasol', 'Infanta',
         'Labrador', 'Laoac', 'Lingayen', 'Mabini', 'Malasiqui', 'Manaoag',
         'Mangaldan', 'Mangatarem', 'Mapandan', 'Natividad', 'Pozzorubio',

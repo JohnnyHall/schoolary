@@ -70,7 +70,7 @@ class Address extends \Faker\Provider\Address
         'Islandija', 'Italija', 'Izrael', 'Jamajka', 'Japonska', 'Jemen', 'Jordanija', 'Južna Afrika', 'Južna Koreja', 'Kambodža', 'Kamerun',
         'Kanada', 'Katar', 'Kazahstan', 'Kenija', 'Kirgizistan', 'Kiribati', 'Kitajska', 'Kolumbija', 'Komori', 'Kongo', 'Demokratična republika Kongo',
         'Kostarika', 'Kuba', 'Kuvajt', 'Laos', 'Latvija', 'Lesoto', 'Libanon', 'Liberija', 'Libija', 'Lihtenštajn', 'Litva', 'Luksemburg', 'Madagaskar',
-        'Madžarska', 'Makedonija', 'Malavi', 'Maldivi', 'Malezija', 'Mali', 'Malta', 'Maroko', 'Marshallovi otoki', 'Mauritius', 'Mavretanija', 'Mehika',
+        'Madžarska', 'Makedonija', 'Malavi', 'Maldivi', 'Masculinozija', 'Mali', 'Malta', 'Maroko', 'Marshallovi otoki', 'Mauritius', 'Mavretanija', 'Mehika',
         'Mikronezija', 'Mjanmar', 'Moldavija', 'Monako', 'Mongolija', 'Mozambik', 'Namibija', 'Nauru', 'Nemčija', 'Nepal', 'Niger', 'Nigerija',
         'Nikaragva', 'Nizozemska', 'Norveška', 'Nova Zelandija', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua Nova Gvineja', 'Paragvaj', 'Peru',
         'Poljska', 'Portugalska', 'Romunija', 'Ruanda', 'Rusija', 'Saint Kitts in Nevis', 'Saint Lucia', 'Saint Vincent in Grenadine',

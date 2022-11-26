@@ -5,12 +5,12 @@ namespace Faker\Provider\lt_LT;
 class Internet extends \Faker\Provider\Internet
 {
     protected static $userNameFormats = [
-        '{{lastNameMale}}.{{firstNameMale}}',
-        '{{lastNameFemale}}.{{firstNameFemale}}',
-        '{{firstNameMale}}##',
-        '{{firstNameFemale}}##',
-        '?{{lastNameFemale}}',
-        '?{{lastNameMale}}',
+        '{{lastNameMasculino}}.{{firstNameMasculino}}',
+        '{{lastNameFeminino}}.{{firstNameFeminino}}',
+        '{{firstNameMasculino}}##',
+        '{{firstNameFeminino}}##',
+        '?{{lastNameFeminino}}',
+        '?{{lastNameMasculino}}',
     ];
 
     protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com'];

@@ -8,25 +8,25 @@ class Person extends \Faker\Provider\Person
      * It is very common in Uganda for people to arrange their names as
      * lastname(surname) firstname
      */
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{lastName}} {{firstNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{lastNameMale}} {{firstNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{lastName}} {{firstNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{lastNameMasculino}} {{firstNameMasculino}}',
     ];
 
     /**
      * It is very common in Uganda for people to arrange their names as
      * lastname(surname) firstname
      */
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{lastName}} {{firstNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{lastNameFemale}} {{firstNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{lastName}} {{firstNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{lastNameFeminino}} {{firstNameFeminino}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aaron', 'Abdul', 'Abdullah', 'Abraham', 'Adam', 'Agustin', 'Ahmad', 'Ahmed', 'Akeem', 'Albert', 'Alex', 'Alfred', 'Ali', 'Allan', 'Allen', 'Alvin', 'Amani', 'Ambrose', 'Amos', 'Anderson', 'Andrew', 'Angel', 'Anthony', 'Arnold', 'Arthur', 'Austin',
         'Barnet', 'Barry', 'Ben', 'Benjamin', 'Bennie', 'Benny', 'Bernard', 'Berry', 'Berta', 'Bertha', 'Bill', 'Billy', 'Bobby', 'Boyd', 'Bradley', 'Brian', 'Bruce',
         'Caesar', 'Caleb', 'Carol', 'Cecil', 'Charles', 'Charlie', 'Chris', 'Christian', 'Christopher', 'Cleveland', 'Clifford', 'Clinton', 'Collin', 'Conrad',
@@ -50,7 +50,7 @@ class Person extends \Faker\Provider\Person
         'Walter', 'Warren', 'Wilford', 'Wilfred', 'Will', 'William', 'Willis', 'Willy', 'Wilson',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Abigail', 'Adela', 'Adrianna', 'Adrienne', 'Aisha', 'Alice', 'Alisha', 'Alison', 'Amanda', 'Amelia', 'Amina', 'Amy', 'Anabel', 'Anabelle', 'Angela', 'Angelina', 'Angie', 'Anita', 'Anna', 'Annamarie', 'Anne', 'Annette', 'April', 'Arianna', 'Ariela', 'Asha', 'Ashley', 'Ashly', 'Audrey', 'Aurelia',
         'Barbara', 'Beatrice', 'Bella', 'Bernadette', 'Beth', 'Bethany', 'Bethel', 'Betsy', 'Bette', 'Bettie', 'Betty', 'Blanche', 'Bonita', 'Bonnie', 'Brenda', 'Bridget', 'Bridgette', 'Carissa', 'Carol', 'Carole', 'Carolina', 'Caroline', 'Carolyn', 'Carolyne', 'Catharine', 'Catherine', 'Cathrine', 'Cathryn', 'Cathy', 'Cecelia', 'Cecile', 'Cecilia', 'Charity', 'Charlotte', 'Chloe', 'Christina', 'Christine', 'Cindy', 'Claire', 'Clara', 'Clarissa', 'Claudine', 'Cristal', 'Crystal', 'Cynthia',
         'Dahlia', 'Daisy', 'Daniela', 'Daniella', 'Danielle', 'Daphne', 'Daphnee', 'Daphney', 'Darlene', 'Deborah', 'Destiny', 'Diana', 'Dianna', 'Dina', 'Dolly', 'Dolores', 'Donna', 'Dora', 'Dorothy', 'Dorris',
@@ -75,14 +75,14 @@ class Person extends \Faker\Provider\Person
         'Zita', 'Zoe',
     ];
 
-    protected static $lastNameMale = [
+    protected static $lastNameMasculino = [
         'Mubiru', 'Muwanguzi', 'Muwonge',
         'Nsamba',
         'Obol', 'Odeke', 'Okumu', 'Okumuringa', 'Opega', 'Opio', 'Orishaba', 'Osiki', 'Ouma',
         'Sekandi', 'Semande', 'Serwanga', 'Ssebatta', 'Ssebugulu', 'Ssebunya', 'Ssebuuma', 'Ssebyala', 'Ssegawa', 'Ssekabira', 'Ssekanjako', 'Ssekate', 'Ssekibuule', 'Ssekidde', 'Ssekiranda', 'Ssekitooleko', 'Ssekubulwa', 'Ssempija', 'Ssempungu', 'Ssemwezi', 'Ssendege', 'Ssenjovu', 'Ssenkaali', 'Ssentezza', 'Ssentongo', 'Sserubiri', 'Sseruyinda', 'Ssettende',
     ];
 
-    protected static $lastNameFemale = [
+    protected static $lastNameFeminino = [
         'Abol', 'Adeke', 'Aketch', 'Akoth', 'Akumu', 'Aol', 'Apega', 'Apio', 'Auma', 'Awori', 'Ayo',
         'Babirye',
         'Chandiru',
@@ -104,30 +104,30 @@ class Person extends \Faker\Provider\Person
         'Nabasa', 'Nabimanya', 'Nankunda', 'Natukunda', 'Nayebare', 'Nimukunda', 'Ninsiima', 'Nkoojo', 'Nkurunungi', 'Nuwagaba', 'Nuwamanya', 'Nyeko',
         'Obol', 'Odeke', 'Okumu', 'Okumuringa', 'Opega', 'Orishaba', 'Osiki', 'Ouma',
         'Rubalema', 'Rusiimwa', 'Rwabyoma',
-        'Tamale', 'Tendo', 'Tizikara', 'Tuhame', 'Tumusiime', 'Tumwebaze', 'Tumwesigye', 'Tumwiine', 'Turyasingura', 'Tusiime', 'Twasiima', 'Twesigomwe',
+        'TaMasculino', 'Tendo', 'Tizikara', 'Tuhame', 'Tumusiime', 'Tumwebaze', 'Tumwesigye', 'Tumwiine', 'Turyasingura', 'Tusiime', 'Twasiima', 'Twesigomwe',
         'Wasswa', 'Wavamuno', 'Were',
     ];
 
     public function lastName($gender = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::lastNameMale();
+        if ($gender === static::GENDER_Masculino) {
+            return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::lastNameFemale();
+        if ($gender === static::GENDER_Feminino) {
+            return static::lastNameFeminino();
         }
 
         return static::randomElement(static::$lastName);
     }
 
-    public static function lastNameMale()
+    public static function lastNameMasculino()
     {
-        return static::randomElement(static::$lastNameMale);
+        return static::randomElement(static::$lastNameMasculino);
     }
 
-    public static function lastNameFemale()
+    public static function lastNameFeminino()
     {
-        return static::randomElement(static::$lastNameFemale);
+        return static::randomElement(static::$lastNameFeminino);
     }
 }

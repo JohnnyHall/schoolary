@@ -19,11 +19,11 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Norwegian female Primeiro nomes
+     * @var array Norwegian Feminino Primeiro nomes
      *
      * @see http://spraakbanken.gu.se/statistik/lbfnamnalf.phtml
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Abida', 'Abigail', 'Abir', 'Ada', 'Adel', 'Adelaine', 'Adele', 'Adelen', 'Adelin', 'Adelina', 'Adeline',
         'Adiba', 'Adila', 'Adile', 'Adina', 'Adine', 'Adisa', 'Admira', 'Adna', 'Adriana', 'Aferdita', 'Afshan',
         'Agata', 'Agate', 'Agathe', 'Agda', 'Agne', 'Agnes', 'Agnete', 'Agnethe', 'Agnieszka', 'Agny', 'Ahlam', 'Aicha',
@@ -90,7 +90,7 @@ class Person extends \Faker\Provider\Person
         'Linea', 'Linh', 'Linn', 'Linnea', 'Lisa', 'Lisbeth', 'Lise', 'Liss', 'Liv', 'Live', 'Liza', 'Loma', 'Lone',
         'Lotta', 'Lotte', 'Louise', 'Lovise', 'Lucia', 'Ludmila', 'Luna', 'Lydia', 'Lykke', 'Mabel', 'Madeleine',
         'Magda', 'Magdalena', 'Magdalene', 'Magna', 'Magnhild', 'Magni', 'Mai', 'Maia', 'Maiken', 'Mailen', 'Maj',
-        'Maja', 'Malene', 'Mali', 'Malin', 'Maren', 'Margareta', 'Margareth', 'Margarita', 'Marge', 'Margit', 'Margot',
+        'Maja', 'Masculinone', 'Mali', 'Malin', 'Maren', 'Margareta', 'Margareth', 'Margarita', 'Marge', 'Margit', 'Margot',
         'Margrete', 'Margrethe', 'Marguerite', 'Margy', 'Mari', 'Maria', 'Marianne', 'Marie', 'Mariell', 'Marilyn',
         'Marina', 'Marion', 'Marit', 'Marlene', 'Marta', 'Marte', 'Martha', 'Martine', 'Mary', 'Mathea', 'Mathilde',
         'Maud', 'May', 'Maya', 'Maylen', 'Melanie', 'Melina', 'Melinda', 'Melissa', 'Melita', 'Mercedes', 'Merete',
@@ -125,11 +125,11 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Norwegian male Primeiro nomes
+     * @var array Norwegian Masculino Primeiro nomes
      *
      * @see http://www.mammanett.no/navn/leksikon/alle?field_name_sex_value=m&title=
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Abbas', 'Abdallah', 'Abdelaziz', 'Abdelkader', 'Abdi', 'Abdiasis', 'Abdifatah', 'Abdikadir', 'Abdinasir',
         'Abdirahim', 'Abdirahman', 'Abdirashid', 'Abdirizak', 'Abdul', 'Abdulahi', 'Abdulkadir', 'Abdullah',
         'Abdullahi', 'Abdulqadir', 'Abdurahman', 'Abed', 'Abel', 'Abid', 'Abraham', 'Absalon', 'Abu', 'Abubakar',
@@ -289,7 +289,7 @@ class Person extends \Faker\Provider\Person
      * @see https://no.wikipedia.org/wiki/Personnummer
      *
      * @param \DateTime $birthdate
-     * @param string    $gender    Person::GENDER_MALE || Person::GENDER_FEMALE
+     * @param string    $gender    Person::GENDER_Masculino || Person::GENDER_Feminino
      *
      * @return string on format DDMMYY#####
      */
@@ -308,12 +308,12 @@ class Person extends \Faker\Provider\Person
         $randomDigits = (string) static::numerify('##');
 
         switch ($gender) {
-            case static::GENDER_MALE:
+            case static::GENDER_Masculino:
                 $genderDigit = static::randomElement([1, 3, 5, 7, 9]);
 
                 break;
 
-            case static::GENDER_FEMALE:
+            case static::GENDER_Feminino:
                 $genderDigit = static::randomElement([0, 2, 4, 6, 8]);
 
                 break;

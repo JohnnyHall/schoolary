@@ -10,29 +10,29 @@ namespace Faker\Provider\pl_PL;
 class Person extends \Faker\Provider\Person
 {
     protected static $lastNameFormat = [
-        '{{lastNameMale}}',
-        '{{lastNameFemale}}',
+        '{{lastNameMasculino}}',
+        '{{lastNameFeminino}}',
     ];
 
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{title}} {{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{title}} {{title}} {{firstNameMale}} {{lastNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{title}} {{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{title}} {{title}} {{firstNameMasculino}} {{lastNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{title}} {{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{title}} {{title}} {{firstNameFemale}} {{lastNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{title}} {{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{title}} {{title}} {{firstNameFeminino}} {{lastNameFeminino}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Adam', 'Adrian', 'Alan', 'Albert', 'Aleks', 'Aleksander', 'Alex', 'Andrzej', 'Antoni', 'Arkadiusz', 'Artur',
         'Bartek', 'Błażej', 'Borys', 'Bruno', 'Cezary', 'Cyprian', 'Damian', 'Daniel', 'Dariusz', 'Dawid', 'Dominik',
         'Emil', 'Ernest', 'Eryk', 'Fabian', 'Filip', 'Franciszek', 'Fryderyk', 'Gabriel', 'Grzegorz', 'Gustaw', 'Hubert',
@@ -44,7 +44,7 @@ class Person extends \Faker\Provider\Person
         'Tadeusz', 'Tomasz', 'Tymon', 'Tymoteusz', 'Wiktor', 'Witold', 'Wojciech',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ada', 'Adrianna', 'Agata', 'Agnieszka', 'Aleksandra', 'Alicja', 'Amelia', 'Anastazja', 'Angelika', 'Aniela', 'Anita',
         'Anna', 'Anna', 'Antonina', 'Apolonia', 'Aurelia', 'Barbara', 'Bianka', 'Blanka', 'Dagmara', 'Daria', 'Dominika', 'Dorota',
         'Eliza', 'Elżbieta', 'Emilia', 'Ewa', 'Ewelina', 'Gabriela', 'Hanna', 'Helena', 'Ida', 'Iga', 'Inga', 'Izabela',
@@ -56,7 +56,7 @@ class Person extends \Faker\Provider\Person
         'Tola', 'Urszula', 'Weronika', 'Wiktoria', 'Zofia', 'Zuzanna',
     ];
 
-    protected static $lastNameMale = [
+    protected static $lastNameMasculino = [
         'Adamczyk', 'Adamski', 'Andrzejewski', 'Baran', 'Baranowski', 'Bąk', 'Błaszczyk', 'Borkowski', 'Borowski', 'Brzeziński',
         'Chmielewski', 'Cieślak', 'Czarnecki', 'Czerwiński', 'Dąbrowski', 'Duda', 'Dudek', 'Gajewski', 'Głowacki', 'Górski', 'Grabowski',
         'Jabłoński', 'Jakubowski', 'Jankowski', 'Jasiński', 'Jaworski', 'Kaczmarczyk', 'Kaczmarek', 'Kalinowski', 'Kamiński', 'Kaźmierczak',
@@ -68,7 +68,7 @@ class Person extends \Faker\Provider\Person
         'Woźniak', 'Wójcik', 'Wróbel', 'Wróblewski', 'Wysocki', 'Zając', 'Zakrzewski', 'Zalewski', 'Zawadzki', 'Zieliński', 'Ziółkowski',
     ];
 
-    protected static $lastNameFemale = [
+    protected static $lastNameFeminino = [
         'Adamczyk', 'Adamska', 'Andrzejewska', 'Baran', 'Baranowska', 'Bąk', 'Błaszczyk', 'Borkowska', 'Borowska', 'Brzezińska',
         'Chmielewska', 'Cieślak', 'Czarnecka', 'Czerwińska', 'Dąbrowska', 'Duda', 'Dudek', 'Gajewska', 'Głowacka', 'Górecka', 'Górska', 'Grabowska',
         'Jabłońska', 'Jakubowska', 'Jankowska', 'Jasińska', 'Jaworska', 'Kaczmarczyk', 'Kaczmarek', 'Kalinowska', 'Kamińska', 'Kaźmierczak',
@@ -88,31 +88,31 @@ class Person extends \Faker\Provider\Person
     protected static $title = ['mgr', 'inż.', 'dr', 'doc.'];
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $gender 'Masculino', 'Feminino' or null for any
      *
      * @example 'Adamczyk'
      */
     public function lastName($gender = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::lastNameMale();
+        if ($gender === static::GENDER_Masculino) {
+            return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::lastNameFemale();
+        if ($gender === static::GENDER_Feminino) {
+            return static::lastNameFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$lastNameFormat));
     }
 
-    public static function lastNameMale()
+    public static function lastNameMasculino()
     {
-        return static::randomElement(static::$lastNameMale);
+        return static::randomElement(static::$lastNameMasculino);
     }
 
-    public static function lastNameFemale()
+    public static function lastNameFeminino()
     {
-        return static::randomElement(static::$lastNameFemale);
+        return static::randomElement(static::$lastNameFeminino);
     }
 
     public function title($gender = null)
@@ -123,7 +123,7 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex Polish title
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
         return static::randomElement(static::$title);
     }
@@ -131,7 +131,7 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex Polish title
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
         return static::randomElement(static::$title);
     }
@@ -142,7 +142,7 @@ class Person extends \Faker\Provider\Person
      * @see http://en.wikipedia.org/wiki/PESEL
      *
      * @param DateTime $birthdate
-     * @param string   $sex       M for male or F for female
+     * @param string   $sex       M for Masculino or F for Feminino
      *
      * @return string 11 digit number, like 44051401358
      */

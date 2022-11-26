@@ -4,25 +4,25 @@ namespace Faker\Provider\it_IT;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aaron', 'Abramo', 'Adriano', 'Akira', 'Alan', 'Alberto', 'Albino', 'Alessandro', 'Alessio', 'Amedeo', 'Amos', 'Anastasio', 'Anselmo',
         'Antimo', 'Antonino', 'Antonio', 'Ariel', 'Armando', 'Aroldo', 'Arturo', 'Augusto', 'Battista', 'Bernardo', 'Boris', 'Caio',
         'Carlo', 'Carmelo', 'Ciro', 'Damiano', 'Danny', 'Dante', 'Davide', 'Davis', 'Demis', 'Dimitri', 'Domingo', 'Dylan',
@@ -46,7 +46,7 @@ class Person extends \Faker\Provider\Person
         'Tolomeo',  'Trevis', 'Tristano', 'Ulrico', 'Valdo', 'Zaccaria', 'Dindo', 'Serse',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Assia', 'Benedetta', 'Bibiana', 'Brigitta', 'Carmela', 'Celeste', 'Cira', 'Claudia', 'Concetta', 'Cristyn', 'Deborah', 'Demi', 'Diana',
         'Donatella', 'Doriana', 'Edvige', 'Elda', 'Elga', 'Elsa', 'Emilia', 'Enrica', 'Erminia', 'Evita', 'Fatima', 'Felicia',
         'Filomena', 'Fortunata', 'Gilda', 'Giovanna', 'Giulietta', 'Grazia', 'Helga', 'Ileana', 'Ingrid', 'Ione', 'Irene', 'Isabel',
@@ -72,9 +72,9 @@ class Person extends \Faker\Provider\Person
         'Milani', 'Pagano', 'Ruggiero', 'Sorrentino', 'D\'amico', 'Orlando', 'Damico', 'Negri',
     ];
 
-    protected static $titleMale = ['Sig.', 'Dott.', 'Dr.', 'Ing.'];
+    protected static $titleMasculino = ['Sig.', 'Dott.', 'Dr.', 'Ing.'];
 
-    protected static $titleFemale = ['Sig.ra', 'Dott.', 'Dr.', 'Ing.'];
+    protected static $titleFeminino = ['Sig.ra', 'Dott.', 'Dr.', 'Ing.'];
 
     private static $suffix = [];
 

@@ -89,7 +89,7 @@ class Inflectible
         yield new Substitution(new Word('hífen'), new Word('hífens'));
         yield new Substitution(new Word('irmão'), new Word('irmãos'));
         yield new Substitution(new Word('liquens'), new Word('liquen'));
-        yield new Substitution(new Word('mal'), new Word('males'));
+        yield new Substitution(new Word('mal'), new Word('Masculinos'));
         yield new Substitution(new Word('mão'), new Word('mãos'));
         yield new Substitution(new Word('orfão'), new Word('orfãos'));
         yield new Substitution(new Word('país'), new Word('países'));

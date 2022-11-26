@@ -81,7 +81,7 @@ class Address extends \Faker\Provider\Address
         'Jamajka', 'Japan', 'Jemen', 'Jordan', 'Južna Džordžija i Južna Sendvič Ostrva', 'Južna Koreja', 'Južnoafrička Republika',
         'Kajmanska Ostrva', 'Kambodža', 'Kamerun', 'Kanada', 'Kanarska ostrva', 'Kape Verde', 'Katar', 'Kazahstan', 'Kenija', 'Kina', 'Kipar', 'Kirgizstan', 'Kiribati', 'Kokos (Keling) Ostrva', 'Kolumbija', 'Komorska Ostrva', 'Kongo', 'Kostarika', 'Kuba', 'Kukova Ostrva', 'Kuvajt',
         'Laos', 'Lesoto', 'Letonija', 'Liban', 'Liberija', 'Libija', 'Lihtenštajn', 'Litvanija', 'Luksemburg',
-        'Madagaskar', 'Mađarska', 'Majote', 'Makao (S. A. R. Kina)', 'Makedonija', 'Malavi', 'Maldivi', 'Malezija', 'Mali', 'Malta', 'Manja Udaljena Ostrva SAD', 'Maroko', 'Maršalska Ostrva', 'Martinik', 'Mauricius', 'Mauritanija', 'Meksiko', 'Mijanmar', 'Mikronezija', 'Moldavija', 'Monako', 'Mongolija', 'Monserat', 'Mozambik',
+        'Madagaskar', 'Mađarska', 'Majote', 'Makao (S. A. R. Kina)', 'Makedonija', 'Malavi', 'Maldivi', 'Masculinozija', 'Mali', 'Malta', 'Manja Udaljena Ostrva SAD', 'Maroko', 'Maršalska Ostrva', 'Martinik', 'Mauricius', 'Mauritanija', 'Meksiko', 'Mijanmar', 'Mikronezija', 'Moldavija', 'Monako', 'Mongolija', 'Monserat', 'Mozambik',
         'Namibija', 'Nauru', 'Nemačka', 'Nepal', 'Niger', 'Nigerija', 'Nikaragva', 'Niue', 'Norfolk Ostrvo', 'Norveška', 'Nova Kaledonija', 'Novi Zeland',
         'Obala Slonovače', 'Oman', 'Ostala okeanija', 'Ostrvo Asension', 'Ostrvo Kliperton', 'Ostrvo Man',
         'Pakistan', 'Palau', 'Palestinska Teritorija', 'Panama', 'Papua Nova Gvineja', 'Paragvaj', 'Peru', 'Pitcairn', 'Poljska', 'Porto Riko', 'Portugal',

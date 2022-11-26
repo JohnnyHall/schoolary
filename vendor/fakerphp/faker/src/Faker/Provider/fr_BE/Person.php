@@ -4,7 +4,7 @@ namespace Faker\Provider\fr_BE;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aaron', 'Adam', 'Adrien', 'Alessio', 'Alexander', 'Alexandre', 'Antoine', 'Arne', 'Arthur', 'Axel', 'Ayoub', 'Baptiste', 'Benjamin',
         'Bo', 'Clément', 'Daan', 'David', 'Diego', 'Dylan', 'Elias', 'Emiel', 'Emile', 'Enzo', 'Ethan', 'Finn',
         'Florian', 'Gabriel', 'Gilles', 'Guillaume', 'Hamza', 'Hugo', 'Ilias', 'Janne', 'Jasper', 'Jelle', 'Jonas', 'Jules',
@@ -15,7 +15,7 @@ class Person extends \Faker\Provider\Person
         'Vince', 'Wout', 'Xander', 'Yanis', 'Jarne', 'Lowie', 'Mathys', 'Senne', 'Seppe', 'Siebe', 'Tuur', 'Warre',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Alexia', 'Alexis', 'Alice', 'Alicia', 'Alyssa', 'Amber', 'Amy', 'Amélie', 'Anaïs', 'Anna', 'Anouk', 'Axelle', 'Aya',
         'Camille', 'Charlotte', 'Chiara', 'Chloé', 'Clara', 'Clémence', 'Célia', 'Elena', 'Eline', 'Elisa', 'Elise', 'Ella',
         'Eloïse', 'Emilie', 'Emma', 'Estelle', 'Eva', 'Febe', 'Femke', 'Fien', 'Fleur', 'Giulia', 'Hajar', 'Hanne',
@@ -43,7 +43,7 @@ class Person extends \Faker\Provider\Person
         'Verhoeven', 'Verlinden', 'Vermeersch', 'Vermeiren', 'Vermeulen', 'Verschueren', 'Verstraete', 'Verstraeten', 'Vervoort', 'Wauters', 'Willems', 'Wouters', 'Wuyts', 'Yildirim', 'Yilmaz',
     ];
 
-    protected static $titleMale = ['M.', 'Dr.', 'Pr.', 'Me.', 'Mgr'];
+    protected static $titleMasculino = ['M.', 'Dr.', 'Pr.', 'Me.', 'Mgr'];
 
-    protected static $titleFemale = ['Mme.', 'Mlle', 'Dr.', 'Pr.', 'Me.'];
+    protected static $titleFeminino = ['Mme.', 'Mlle', 'Dr.', 'Pr.', 'Me.'];
 }

@@ -56,8 +56,8 @@
                             <div class="col-2">
                                 <label for="inputState" class="form-label">Gender</label>
                                 <select id="inputState" class="form-select" name="gender" required>
-                                    <option value="Male" {{($teacher->gender == 'Male')?'selected':null}}>Male</option>
-                                    <option value="Female" {{($teacher->gender == 'Female')?'selected':null}}>Female</option>
+                                    <option value="Masculino" {{($teacher->gender == 'Masculino')?'selected':null}}>Masculino</option>
+                                    <option value="Feminino" {{($teacher->gender == 'Feminino')?'selected':null}}>Feminino</option>
                                 </select>
                             </div>
                             <div class="col-3">

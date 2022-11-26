@@ -1369,8 +1369,8 @@ $bootstrap-icons-map: (
   "file-pdf-fill": "\f63f",
   "file-pdf": "\f640",
   "gender-ambiguous": "\f641",
-  "gender-female": "\f642",
-  "gender-male": "\f643",
+  "gender-Feminino": "\f642",
+  "gender-Masculino": "\f643",
   "gender-trans": "\f644",
   "headset-vr": "\f645",
   "info-lg": "\f646",
@@ -2906,8 +2906,8 @@ $bootstrap-icons-map: (
 .bi-file-pdf-fill::before { content: map-get($bootstrap-icons-map, "file-pdf-fill"); }
 .bi-file-pdf::before { content: map-get($bootstrap-icons-map, "file-pdf"); }
 .bi-gender-ambiguous::before { content: map-get($bootstrap-icons-map, "gender-ambiguous"); }
-.bi-gender-female::before { content: map-get($bootstrap-icons-map, "gender-female"); }
-.bi-gender-male::before { content: map-get($bootstrap-icons-map, "gender-male"); }
+.bi-gender-Feminino::before { content: map-get($bootstrap-icons-map, "gender-Feminino"); }
+.bi-gender-Masculino::before { content: map-get($bootstrap-icons-map, "gender-Masculino"); }
 .bi-gender-trans::before { content: map-get($bootstrap-icons-map, "gender-trans"); }
 .bi-headset-vr::before { content: map-get($bootstrap-icons-map, "headset-vr"); }
 .bi-info-lg::before { content: map-get($bootstrap-icons-map, "info-lg"); }

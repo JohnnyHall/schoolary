@@ -4,33 +4,33 @@ namespace Faker\Provider\de_DE;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}-{{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}-{{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}-{{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}-{{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
     ];
 
     /**
      * Top 500 Names from a phone directory (6. January 2005)
      * {@link} From https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Achim', 'Adalbert', 'Adam', 'Adolf', 'Adrian', 'Ahmed', 'Ahmet', 'Albert', 'Albin', 'Albrecht', 'Alex', 'Alexander', 'Alfons', 'Alfred', 'Ali', 'Alois', 'Aloys', 'Alwin', 'Anatoli', 'Andre', 'Andreas', 'Andree', 'Andrej', 'Andrzej', 'André', 'Andy', 'Angelo', 'Ansgar', 'Anton', 'Antonio', 'Antonius', 'Armin', 'Arnd', 'Arndt', 'Arne', 'Arno', 'Arnold', 'Arnulf', 'Arthur', 'Artur', 'August', 'Axel',
         'Bastian', 'Benedikt', 'Benjamin', 'Benno', 'Bernard', 'Bernd', 'Berndt', 'Bernhard', 'Bert', 'Berthold', 'Bertram', 'Björn', 'Bodo', 'Bogdan', 'Boris', 'Bruno', 'Burghard', 'Burkhard',
         'Carl', 'Carlo', 'Carlos', 'Carsten', 'Christian', 'Christof', 'Christoph', 'Christopher', 'Christos', 'Claudio', 'Claus', 'Claus-Dieter', 'Claus-Peter', 'Clemens', 'Cornelius',
@@ -61,7 +61,7 @@ class Person extends \Faker\Provider\Person
      * Top 500 Names from a phone directory (6. January 2005)
      * {@link} From https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Adele', 'Adelheid', 'Agathe', 'Agnes', 'Alexandra', 'Alice', 'Alma', 'Almut', 'Aloisia', 'Alwine', 'Amalie', 'Ana', 'Anastasia', 'Andrea', 'Anett', 'Anette', 'Angela', 'Angelika', 'Anika', 'Anita', 'Anja', 'Anke', 'Anna', 'Anna-Maria', 'Anne', 'Annegret', 'Annelie', 'Annelies', 'Anneliese', 'Annelore', 'Annemarie', 'Annerose', 'Annett', 'Annette', 'Anni', 'Annika', 'Anny', 'Antje', 'Antonia', 'Antonie', 'Ariane', 'Astrid', 'Auguste', 'Ayse',
         'Babette', 'Barbara', 'Beate', 'Beatrice', 'Beatrix', 'Bernadette', 'Berta', 'Bettina', 'Betty', 'Bianca', 'Bianka', 'Birgit', 'Birgitt', 'Birgitta', 'Birte', 'Brigitta', 'Brigitte', 'Britta', 'Brunhild', 'Brunhilde', 'Bärbel',
         'Carina', 'Carla', 'Carmen', 'Carola', 'Carolin', 'Caroline', 'Cathrin', 'Catrin', 'Centa', 'Charlotte', 'Christa', 'Christel', 'Christiane', 'Christin', 'Christina', 'Christine', 'Christl', 'Cindy', 'Claudia', 'Conny', 'Constanze', 'Cordula', 'Corina', 'Corinna', 'Cornelia', 'Cäcilia', 'Cäcilie',
@@ -117,8 +117,8 @@ class Person extends \Faker\Provider\Person
         'Zander', 'Zeller', 'Ziegler', 'Zimmer', 'Zimmermann',
     ];
 
-    protected static $titleMale = ['Herr', 'Herr Dr.', 'Herr Prof.', 'Herr Prof. Dr.'];
-    protected static $titleFemale = ['Frau', 'Frau Dr.', 'Frau Prof.', 'Frau Prof. Dr.'];
+    protected static $titleMasculino = ['Herr', 'Herr Dr.', 'Herr Prof.', 'Herr Prof. Dr.'];
+    protected static $titleFeminino = ['Frau', 'Frau Dr.', 'Frau Prof.', 'Frau Prof. Dr.'];
 
     protected static $suffix = ['B.Sc.', 'B.A.', 'B.Eng.', 'MBA.'];
 

@@ -24,9 +24,9 @@ return array_replace_recursive(require __DIR__.'/en.php', [
     'weekdays_min' => ['Son', 'Mus', 'Bir', 'Har', 'Ne', 'Tlh', 'Mug'],
     'day_of_first_week_of_year' => 1,
 
-    'year' => 'malembe ya :count',
-    'y' => 'malembe ya :count',
-    'a_year' => 'malembe ya :count',
+    'year' => 'Masculinombe ya :count',
+    'y' => 'Masculinombe ya :count',
+    'a_year' => 'Masculinombe ya :count',
 
     'month' => 'tin’hweti ta :count',
     'm' => 'tin’hweti ta :count',

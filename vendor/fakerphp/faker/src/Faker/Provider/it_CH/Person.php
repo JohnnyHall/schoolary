@@ -7,7 +7,7 @@ class Person extends \Faker\Provider\it_IT\Person
     /**
      * @see http://www.bfs.admin.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aaron', 'Adriano', 'Alain', 'Alan', 'Alberto', 'Aldo', 'Alessandro', 'Alessio', 'Alex', 'Alexander', 'Alfredo', 'Andrea', 'Andreas', 'André', 'Angelo', 'Antonino', 'Antonio', 'Aris', 'Armando', 'Arturo', 'Athos', 'Attilio', 'Augusto', 'Aurelio',
         'Boris', 'Bruno',
         'Carlo', 'Carlos', 'Carmelo', 'Carmine', 'Cesare', 'Christian', 'Claudio', 'Corrado', 'Cristian', 'Cristiano',
@@ -34,7 +34,7 @@ class Person extends \Faker\Provider\it_IT\Person
     /**
      * @see http://www.bfs.admin.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ada', 'Adele', 'Adriana', 'Agnese', 'Alessandra', 'Alessia', 'Alexandra', 'Alice', 'Aline', 'Ana', 'Andrea', 'Angela', 'Angelina', 'Anita', 'Anna', 'Annamaria', 'Antonella', 'Antonia', 'Antonietta', 'Arianna', 'Asia', 'Aurora',
         'Barbara', 'Beatrice', 'Bianca', 'Brigitte', 'Bruna',
         'Camilla', 'Carla', 'Carmela', 'Carmen', 'Carolina', 'Caterina', 'Cecilia', 'Chantal', 'Chiara', 'Christine', 'Cinzia', 'Clara', 'Claudia', 'Cristina',

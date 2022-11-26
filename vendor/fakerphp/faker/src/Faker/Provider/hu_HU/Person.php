@@ -4,38 +4,38 @@ namespace Faker\Provider\hu_HU;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{lastName}} {{firstNameMale}}',
-        '{{title}} {{lastName}} {{firstNameMale}}',
-        '{{lastName}} {{firstNameMale}} {{suffix}}',
-        '{{title}} {{lastName}} {{firstNameMale}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{lastName}} {{firstNameMasculino}}',
+        '{{title}} {{lastName}} {{firstNameMasculino}}',
+        '{{lastName}} {{firstNameMasculino}} {{suffix}}',
+        '{{title}} {{lastName}} {{firstNameMasculino}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{lastName}} {{firstNameFemale}}',
-        '{{title}} {{lastName}} {{firstNameFemale}}',
-        '{{lastName}} {{firstNameFemale}} {{suffix}}',
-        '{{title}} {{lastName}} {{firstNameFemale}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{lastName}} {{firstNameFeminino}}',
+        '{{title}} {{lastName}} {{firstNameFeminino}}',
+        '{{lastName}} {{firstNameFeminino}} {{suffix}}',
+        '{{title}} {{lastName}} {{firstNameFeminino}} {{suffix}}',
         // ..né
-        '{{lastName}} {{firstNameMaleNe}}',
-        '{{title}} {{lastName}} {{firstNameMaleNe}}',
+        '{{lastName}} {{firstNameMasculinoNe}}',
+        '{{title}} {{lastName}} {{firstNameMasculinoNe}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Albert', 'Attila', 'Balázs', 'Bence', 'Botond', 'Dorián', 'Endre', 'Ernő', 'Gábor', 'Géza', 'Imre', 'István',
         'Kevin', 'Kornél', 'Kristóf', 'László', 'Milán', 'Noel', 'Olivér', 'Ottó', 'Patrik', 'Péter', 'Richárd', 'Rudolf',
         'Sándor', 'Vilmos', 'Vince', 'Zoltán', 'Zsolt', 'Ádám', 'Ármin', 'Áron', 'Antal', 'Barna', 'Barnabás', 'Bendegúz',
         'Benedek', 'Hunor', 'Jenő', 'János', 'Mihály', 'Mátyás', 'Szervác', 'Zsombor', 'Zétény', 'Árpád',
     ];
 
-    protected static $firstNameMaleNe = [
+    protected static $firstNameMasculinoNe = [
         'Albertné', 'Attiláné', 'Balázsné', 'Bencéné', 'Botondné', 'Doriánné', 'Endrené', 'Ernőné', 'Gáborné', 'Gézané', 'Imréné', 'Istvánné',
         'Kevinné', 'Kornélné', 'Kristófné', 'Lászlóné', 'Milánné', 'Noelné', 'Olivérné', 'Ottóné', 'Patrikné', 'Péterné', 'Richárdné', 'Rudolfné',
         'Sándorné', 'Vilmosné', 'Vincéné', 'Zoltánné', 'Zsoltné', 'Ádámné', 'Árminné', 'Áronné', 'Antalné', 'Barnáné', 'Barnabásné', 'Bendegúz',
         'Benedekné', 'Hunorné', 'Jenőné', 'Jánosné', 'Mihályné', 'Mátyásné', 'Szervácné', 'Zsomborné', 'Zétényné', 'Árpádné',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Adél', 'Alexa', 'Andrea', 'Angéla', 'Anikó', 'Beatrix', 'Bettina', 'Dalma', 'Dorina', 'Dorottya', 'Evelin', 'Fanni', 'Flóra', 'Gabriella',
         'Georgina', 'Gitta', 'Gizella', 'Gréta', 'Henrietta', 'Izabella', 'Johanna', 'Judit', 'Julianna', 'Jázmin', 'Kata', 'Katalin',
         'Katinka', 'Klaudia', 'Kíra', 'Liliána', 'Linda', 'Liza', 'Léna', 'Lívia', 'Maja', 'Marianna', 'Marietta', 'Martina',
@@ -54,31 +54,31 @@ class Person extends \Faker\Provider\Person
 
     public function title($gender = null)
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**
      * replaced by specific unisex hungarian title
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
         return static::randomElement(static::$title);
     }
 
     /**
-     * specific Hungarian name format for females after marriage
+     * specific Hungarian name format for Femininos after marriage
      */
-    public static function firstNameMaleNe()
+    public static function firstNameMasculinoNe()
     {
-        return static::randomElement(static::$firstNameMaleNe);
+        return static::randomElement(static::$firstNameMasculinoNe);
     }
 
     /**
      * replaced by specific unisex hungarian title
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**

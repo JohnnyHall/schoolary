@@ -38,7 +38,7 @@ class Address extends \Faker\Provider\Address
         'Jamajka', 'Japonia', 'Jemen', 'Jordania', 'Kambodża', 'Kamerun', 'Kanada', 'Katar', 'Kazachstan', 'Kenia',
         'Kirgistan', 'Kiribati', 'Kolumbia', 'Komory', 'Kongo', 'Korea Południowa', 'Korea Północna', 'Kostaryka',
         'Kuba', 'Kuwejt', 'Laos', 'Lesotho', 'Liban', 'Liberia', 'Libia', 'Liechtenstein', 'Litwa', 'Luksemburg',
-        'Łotwa', 'Macedonia Północna', 'Madagaskar', 'Malawi', 'Malediwy', 'Malezja', 'Mali', 'Malta', 'Maroko', 'Mauretania',
+        'Łotwa', 'Macedonia Północna', 'Madagaskar', 'Malawi', 'Masculinodiwy', 'Masculinozja', 'Mali', 'Malta', 'Maroko', 'Mauretania',
         'Mauritius', 'Meksyk', 'Mikronezja', 'Mołdawia', 'Monako', 'Mongolia', 'Mozambik', 'Namibia', 'Nauru', 'Nepal',
         'Niemcy', 'Niger', 'Nigeria', 'Nikaragua', 'Norwegia', 'Nowa Zelandia', 'Oman', 'Pakistan', 'Palau', 'Panama',
         'Papua-Nowa Gwinea', 'Paragwaj', 'Peru', 'Polska', 'Portugalia', 'Republika Południowej Afryki',

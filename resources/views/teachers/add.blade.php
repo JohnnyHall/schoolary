@@ -63,8 +63,8 @@
                             <div class="col-2">
                                 <label for="inputGender" class="form-label">Gender</label>
                                 <select id="inputGender" class="form-select" name="gender" required>
-                                    <option selected>Male</option>
-                                    <option>Female</option>
+                                    <option selected>Masculino</option>
+                                    <option>Feminino</option>
                                 </select>
                             </div>
                             <div class="col-3">

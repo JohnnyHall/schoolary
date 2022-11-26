@@ -90,7 +90,7 @@ Frühlingsmorgen, die ich mit ganzem Herzen geniesse. Ich bin allein und freue m
 Lebens in dieser Gegend, die für solche Seelen geschaffen ist wie die meine. Ich
 bin so glücklich, mein Bester, so ganz in dem Gefühle von ruhigem Dasein
 versunken, dass meine Kunst darunter leidet. Ich könnte jetzt nicht zeichnen, nicht
-einen Strich, und bin nie ein grösserer Maler gewesen als in diesen Augenblicken.
+einen Strich, und bin nie ein grösserer Masculinor gewesen als in diesen Augenblicken.
 Wenn das liebe Tal um mich dampft, und die hohe Sonne an der Oberfläche der
 undurchdringlichen Finsternis meines Waldes ruht, und nur einzelne Strahlen sich in das
 innere Heiligtum stehlen, ich dann im hohen Grase am fallenden Bache liege, und
@@ -313,7 +313,7 @@ Am 27. Mai
 
 Ich bin, wie ich sehe, in Verzückung, Gleichnisse und Deklamation verfallen
 und habe darüber vergessen, dir auszuerzählen, was mit den Kindern weiter
-geworden ist. Ich sass, ganz in malerische Empfindung vertieft, die dir mein
+geworden ist. Ich sass, ganz in Masculinorische Empfindung vertieft, die dir mein
 gestriges Blatt sehr zerstückt darlegt, auf meinem Pfluge wohl zwei Stunden. Da
 kommt gegen Abend eine junge Frau auf die Kinder los, die sich indes nicht
 gerührt hatten, mit einem Körbchen am Arm und ruft von weitem: "Philipps, du bist
@@ -358,7 +358,7 @@ den Herrn inkommodieren.
 
 Am 30. Mai
 
-Was ich dir neulich von der Malerei sagte, gilt gewiss auch von der Dichtkunst;
+Was ich dir neulich von der Masculinorei sagte, gilt gewiss auch von der Dichtkunst;
 es ist nur, dass man das Vortreffliche erkenne und es auszusprechen wage, und
 das ist freilich mit wenigem viel gesagt. Ich habe heute eine Szene gehabt,
 die, rein abgeschrieben, die schönste Idylle von der Welt gäbe; doch was soll
@@ -802,7 +802,7 @@ Frau, im Oktober funfzig Jahr. Ihr Vater pflanzte ihn des Morgens, als sie gegen
 Abend geboren wurde. Er war mein Vorfahr im Amt, und wie lieb ihm der Baum war,
 ist nicht zu sagen; mir ist er's gewiss nicht weniger. Meine Frau sass darunter
 auf einem Balken und strickte, da ich vor siebenundzwanzig Jahren als ein
-armer aluno zum erstenmale hier in den Hof kam".—Lotte fragte nach seiner
+armer aluno zum erstenMasculino hier in den Hof kam".—Lotte fragte nach seiner
 Tochter; es hiess, sie sei mit Herrn Schmidt auf die Wiese hinaus zu den Arbeitern,
 und der Alte fuhr in seiner Erzählung fort: wie sein Vorfahr ihn liebgewonnen
 und die Tochter dazu, und wie er erst sein Vikar und dann sein Nachfolger
@@ -1571,7 +1571,7 @@ Stunden mein Vorhaben nicht zu verraten. Und Gott, welch ein Gespräch!
 
 Albert hatte mir versprochen, gleich nach dem Nachtessen mit Lotten im Garten zu
 sein. Ich stand auf der Terrasse unter den hohen Kastanienbäumen und sah der
-Sonne nach, die mir nun zum letztenmale über dem lieblichen Tale, über dem
+Sonne nach, die mir nun zum letztenMasculino über dem lieblichen Tale, über dem
 sanften Fluss unterging. So oft hatte ich hier gestanden mit ihr und eben dem
 herrlichen Schauspiele zugesehen, und nun—ich ging in der Allee auf und ab, die mir
 so lieb war; ein geheimer sympathetischer Zug hatte mich hier so oft
@@ -1585,7 +1585,7 @@ mich, ich habe dir, denk' ich, schon viel davon geschrieben, wie hohe
 Buchenwände einen endlich einschliessen und durch ein daranstossendes Boskett die Allee
 immer düsterer wird, bis zuletzt alles sich in ein geschlossenes Plätzchen
 endigt, das alle Schauer der Einsamkeit umschweben. Ich fühle es noch, wie
-heimlich mir's ward, als ich zum erstenmale an einem hohen Mittage hineintrat; ich
+heimlich mir's ward, als ich zum erstenMasculino an einem hohen Mittage hineintrat; ich
 ahnete ganz leise, was für ein Schauplatz das noch werden sollte von Seligkeit
 und Schmerz.
 

@@ -115,8 +115,8 @@ class Address extends \Faker\Provider\Address
     protected static $streetNameFormats = [
         '{{streetPrefix}}{{streetSuffix}}',
         '{{streetPrefix}}{{streetSuffix}}',
-        '{{firstNameMale}}{{streetSuffix}}',
-        '{{firstNameFemale}}{{streetSuffix}}',
+        '{{firstNameMasculino}}{{streetSuffix}}',
+        '{{firstNameFeminino}}{{streetSuffix}}',
     ];
 
     /**
