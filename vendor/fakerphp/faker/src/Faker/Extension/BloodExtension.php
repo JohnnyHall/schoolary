@@ -8,7 +8,7 @@ namespace Faker\Extension;
 interface BloodExtension extends Extension
 {
     /**
-     * Get an actual blood type
+     * Get an actual Filme
      *
      * @example 'AB'
      */

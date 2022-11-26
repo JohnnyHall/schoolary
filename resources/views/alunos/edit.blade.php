@@ -59,8 +59,8 @@
                                     </select>
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputNationality" class="form-label">Nacionalidade</label>
-                                    <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="Brasileiro, Alemão, ..." required value="{{$aluno->nationality}}">
+                                    <label for="inputnacionalidade" class="form-label">Nacionalidade</label>
+                                    <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="Brasileiro, Alemão..." required value="{{$aluno->nacionalidade}}">
                                 </div>
                                 <div class="col-2">
                                     <label for="inputFilmes" class="form-label">Filmes</label>

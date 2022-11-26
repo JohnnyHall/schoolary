@@ -43,7 +43,7 @@
                                             <td>
                                                 <select onchange="getSections(this, {{$index}});" class="form-select form-select-sm" id="inputAssignToClass{{$index}}" name="class_id[{{$index}}]" required>
                                                     @isset($school_classes)
-                                                        <option selected disabled>Please select a class</option>
+                                                        <option selected disabled>Favor selecionar uma materia</option>
                                                         @foreach ($school_classes as $school_class)
                                                             <option value="{{$school_class->id}}">{{$school_class->class_name}}</option>
                                                         @endforeach
@@ -79,7 +79,7 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('inputAssignToSection'+index);
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Favor selecionar uma turma'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });

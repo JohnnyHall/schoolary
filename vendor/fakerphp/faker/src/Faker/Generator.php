@@ -685,7 +685,7 @@ class Generator
     }
 
     /**
-     * Get an actual blood type
+     * Get an actual Filme
      *
      * @example 'AB'
      */

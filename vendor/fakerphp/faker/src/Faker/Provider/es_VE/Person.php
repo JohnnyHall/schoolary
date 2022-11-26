@@ -143,7 +143,7 @@ class Person extends \Faker\Provider\Person
 
     private static $suffix = ['Hijo'];
 
-    private static $nationalityId = ['V', 'E'];
+    private static $nacionalidadeId = ['V', 'E'];
 
     /**
      * @example 'Hijo'
@@ -165,7 +165,7 @@ class Person extends \Faker\Provider\Person
      */
     public function nationalId($separator = '')
     {
-        $id = static::randomElement(static::$nationalityId);
+        $id = static::randomElement(static::$nacionalidadeId);
 
         if ($id == 'V') {
             return $id . $separator . $this->numberBetween(10000, 100000000);

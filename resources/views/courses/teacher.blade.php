@@ -16,7 +16,6 @@
                             <li class="breadcrumb-item active" aria-current="page">My courses</li>
                         </ol>
                     </nav>
-                    <h6>Filter list by:</h6>
                     <div class="mb-4 mt-4">
                         <form action="{{route('course.teacher.list.show')}}" method="GET">
                             <input type="hidden" name="teacher_id" value="{{Auth::user()->id}}">
@@ -31,7 +30,7 @@
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Load List</button>
+                                    <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Recarregar</button>
                                 </div>
                             </div>
                         </form>

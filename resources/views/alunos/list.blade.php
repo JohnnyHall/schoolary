@@ -8,22 +8,20 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> aluno List
+                        <i class="bi bi-person-lines-fill"></i> Alunos
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">aluno List</li>
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @include('session-messages')
-                    <h6>Filter list by:</h6>
                     <div class="mb-4 mt-4">
                         <form class="row" action="{{route('aluno.list.show')}}" method="GET">
                             <div class="col">
                                 <select onchange="getSections(this);" class="form-select" aria-label="Class" name="class_id" required>
                                     @isset($school_classes)
-                                        <option selected disabled>Please select a class</option>
+                                        <option selected disabled>Favor selecionar uma materia</option>
                                         @foreach ($school_classes as $school_class)
                                             <option value="{{$school_class->id}}" {{($school_class->id == request()->query('class_id'))?'selected="selected"':''}}>{{$school_class->class_name}}</option>
                                         @endforeach
@@ -36,7 +34,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Load List</button>
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Recarregar</button>
                             </div>
                         </form>
                         @foreach ($alunoList as $aluno)
@@ -106,7 +104,7 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('section-select');
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Favor selecionar uma turma'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });

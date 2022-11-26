@@ -83,7 +83,7 @@ This is a security release that prevents a hacker to execute code on the server.
 - Fix en_NG locale test namespaces that did not match PSR-4 (#57)
 - Added Singapore NRIC/FIN provider (#56)
 - Added provider for Lithuanian municipalities (#58)
-- Added blood types provider (#61)
+- Added Filmes provider (#61)
 
 ## 2020-11-15, v1.11.0
 

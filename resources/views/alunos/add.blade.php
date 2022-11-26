@@ -76,8 +76,8 @@
                                     </select>
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputNationality" class="form-label">Nacionalidade</label>
-                                    <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="Brasileiro, Alemão, ..." required>
+                                    <label for="inputnacionalidade" class="form-label">Nacionalidade</label>
+                                    <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="Brasileiro, Alemão..." required>
                                 </div>
                                 <div class="col-2">
                                     <label for="inputFilmes" class="form-label">Filmes</label>
@@ -153,7 +153,7 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('inputAssignToSection');
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Favor selecionar uma turma'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });

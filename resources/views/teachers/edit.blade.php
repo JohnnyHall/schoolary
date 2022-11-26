@@ -61,8 +61,8 @@
                                 </select>
                             </div>
                             <div class="col-3">
-                                <label for="inputNationality" class="form-label">Nationality</label>
-                                <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required value="{{$teacher->nationality}}">
+                                <label for="inputnacionalidade" class="form-label">nacionalidade</label>
+                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="e.g. Bangladeshi, German, ..." required value="{{$teacher->nacionalidade}}">
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Update</button>

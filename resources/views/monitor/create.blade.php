@@ -22,7 +22,7 @@
                                 <p>Add monitoria to class:</p>
                                 <select onchange="getCourses(this);" class="form-select" name="class_id" required>
                                     @isset($school_classes)
-                                        <option selected disabled>Please select a class</option>
+                                        <option selected disabled>Favor selecionar uma materia</option>
                                         @foreach ($school_classes as $school_class)
                                         <option value="{{$school_class->id}}">{{$school_class->class_name}}</option>
                                         @endforeach
@@ -65,7 +65,7 @@
 
             var courseSelect = document.getElementById('course-select');
             courseSelect.options.length = 0;
-            data.courses.unshift({'id': 0,'course_name': 'Please select a course'})
+            data.courses.unshift({'id': 0,'course_name': 'Favor selecionar um curso'})
             data.courses.forEach(function(course, key) {
                 courseSelect[key] = new Option(course.course_name, course.id);
             });

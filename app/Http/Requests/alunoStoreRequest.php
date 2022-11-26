@@ -28,7 +28,7 @@ class alunoStoreRequest extends FormRequest
             'sobrenome'         => 'required|string',
             'email'             => 'required|string|email|max:255|unique:users',
             'gender'            => 'required|string',
-            'nationality'       => 'required|string',
+            'nacionalidade'       => 'required|string',
             'phone'             => 'required|string',
             'address'           => 'required|string',
             'city'              => 'required|string',
