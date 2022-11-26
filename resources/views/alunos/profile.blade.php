@@ -26,10 +26,10 @@
                             <div class="col-sm-4 col-md-3">
                                 <div class="card bg-light">
                                     <div class="px-5 pt-2">
-                                        @if (isset($aluno->photo))
-                                            <img src="{{asset('/storage'.$aluno->photo)}}" class="rounded-3 card-img-top" alt="Profile photo">
+                                        @if (isset($aluno->Foto))
+                                            <img src="{{asset('/storage'.$aluno->Foto)}}" class="rounded-3 card-img-top" alt="Profile Foto">
                                         @else
-                                            <img src="{{asset('imgs/no-nothing-480.png')}}" class="rounded-3 card-img-top" alt="Profile photo">
+                                            <img src="{{asset('imgs/no-nothing-480.png')}}" class="rounded-3 card-img-top" alt="Profile Foto">
                                         @endif
                                     </div>
                                     <div class="card-body">
@@ -74,7 +74,7 @@
                                             <tr>
                                                 <th scope="row">Filme:</th>
                                                 <td>{{$aluno->lista_filmes}}</td>
-                                                <th>Phone:</th>
+                                                <th>Celular:</th>
                                                 <td>{{$aluno->phone}}</td>
                                             </tr>
                                             <tr>

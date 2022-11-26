@@ -20,7 +20,7 @@
                         <table class="table table-responsive">
                             <thead>
                                 <tr>
-                                    <th scope="col">Photo</th>
+                                    <th scope="col">Foto</th>
                                     <th scope="col">Primeiro nome</th>
                                     <th scope="col">Sobrenome</th>
                                     <th scope="col">Email</th>
@@ -32,8 +32,8 @@
                                 @foreach ($teachers as $teacher)
                                 <tr>
                                     <td>
-                                        @if (isset($teacher->photo))
-                                            <img src="{{asset('/storage'.$teacher->photo)}}" class="rounded" alt="Profile picture" height="30" width="30">
+                                        @if (isset($teacher->Foto))
+                                            <img src="{{asset('/storage'.$teacher->Foto)}}" class="rounded" alt="Profile picture" height="30" width="30">
                                         @else
                                             <i class="bi bi-person-square"></i>
                                         @endif

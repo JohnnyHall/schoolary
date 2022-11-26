@@ -338,7 +338,7 @@
 .phpdebugbar-fa-video-camera:before {
   content: "\f03d";
 }
-.phpdebugbar-fa-photo:before,
+.phpdebugbar-fa-Foto:before,
 .phpdebugbar-fa-image:before,
 .phpdebugbar-fa-picture-o:before {
   content: "\f03e";
@@ -1442,7 +1442,7 @@
 .phpdebugbar-fa-file-powerpoint-o:before {
   content: "\f1c4";
 }
-.phpdebugbar-fa-file-photo-o:before,
+.phpdebugbar-fa-file-Foto-o:before,
 .phpdebugbar-fa-file-picture-o:before,
 .phpdebugbar-fa-file-image-o:before {
   content: "\f1c5";

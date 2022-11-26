@@ -112,7 +112,7 @@ class ExamController extends Controller
             $examRepository = new ExamRepository();
             $examRepository->create($request->validated());
 
-            return back()->with('status', 'Exam creation was successful!');
+            return back()->with('status', 'Avaliação foi criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -164,7 +164,7 @@ class ExamController extends Controller
             $examRepository = new ExamRepository();
             $examRepository->delete($request->exam_id);
 
-            return back()->with('status', 'Exam deletion was successful!');
+            return back()->with('status', 'Avaliação foi excluída com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

@@ -39,10 +39,10 @@
                                 <input type="password" class="form-control" id="inputPassword" name="password" required>
                             </div>
                             <div class="col-3">
-                                <label for="formFile" class="form-label">Photo</label>
+                                <label for="formFile" class="form-label">Foto</label>
                                 <input class="form-control" type="file" id="formFile" onchange="previewFile()">
-                                <div id="previewPhoto"></div>
-                                <input type="hidden" id="photoHiddenInput" name="photo" value="">
+                                <div id="previewFoto"></div>
+                                <input type="hidden" id="FotoHiddenInput" name="Foto" value="">
                             </div>
                             <div class="col-4">
                                 <label for="inputAddress" class="form-label">Address</label>
@@ -83,5 +83,5 @@
     </div>
 </div>
 
-@include('components.photos.photo-input')
+@include('components.Fotos.Foto-input')
 @endsection

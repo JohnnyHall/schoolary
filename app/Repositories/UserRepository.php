@@ -32,7 +32,7 @@ class UserRepository implements UserInterface {
                     'address'       => $request['address'],
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
-                    'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
+                    'Foto'         => (!empty($request['Foto']))?$this->convert($request['Foto']):null,
                     'role'          => 'teacher',
                     'password'      => Hash::make($request['password']),
                 ]);
@@ -77,7 +77,7 @@ class UserRepository implements UserInterface {
                     'address'       => $request['address'],
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
-                    'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
+                    'Foto'         => (!empty($request['Foto']))?$this->convert($request['Foto']):null,
                     'Aniversario'      => $request['Aniversario'],
                     'lista_filmes'    => $request['lista_filmes'],
                     'role'          => 'aluno',

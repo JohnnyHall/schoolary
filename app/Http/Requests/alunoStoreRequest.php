@@ -33,7 +33,7 @@ class alunoStoreRequest extends FormRequest
             'address'           => 'required|string',
             'city'              => 'required|string',
             'zip'               => 'required|string',
-            'photo'             => 'nullable|string',
+            'Foto'             => 'nullable|string',
             'Aniversario'          => 'required|date',
             'lista_filmes'        => 'required|string',
             'password'          => 'required|string|min:8',

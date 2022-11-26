@@ -30,7 +30,7 @@ class User extends Authenticatable
         'address',
         'city',
         'zip',
-        'photo',
+        'Foto',
         'Aniversario',
         'lista_filmes',
         'role',

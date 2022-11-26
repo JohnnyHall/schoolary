@@ -1,9 +1,9 @@
 <script>
     function previewFile() {
-        const preview = document.querySelector('#previewPhoto');
+        const preview = document.querySelector('#previewFoto');
         preview.innerHTML = '';
 
-        const photoHiddenInput = document.querySelector('#photoHiddenInput');
+        const FotoHiddenInput = document.querySelector('#FotoHiddenInput');
         const file = document.querySelector('input[type=file]').files[0];
         
         if ( /\.(jpe?g|png)$/i.test(file.name) ) {
@@ -22,7 +22,7 @@
                     // convert image file to base64 string
                     image.src = this.result;
                     preview.appendChild( image );
-                    photoHiddenInput.value = this.result;
+                    FotoHiddenInput.value = this.result;
                 }, false);
 
                 if (file) {

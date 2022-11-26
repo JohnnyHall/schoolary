@@ -33,7 +33,7 @@ class TeacherStoreRequest extends FormRequest
             'address'       => 'required|string',
             'city'          => 'required|string',
             'zip'           => 'required|string',
-            'photo'         => 'nullable|string',
+            'Foto'         => 'nullable|string',
             'password'      => 'required|string|min:8',
         ];
     }

@@ -28,10 +28,10 @@
                             <div class="col-sm-4 col-md-3">
                                 <div class="card bg-light">
                                     <div class="px-5 pt-2">
-                                        @if (isset($teacher->photo))
-                                            <img src="{{asset('/storage'.$teacher->photo)}}" class="rounded-3 card-img-top" alt="Profile photo">
+                                        @if (isset($teacher->Foto))
+                                            <img src="{{asset('/storage'.$teacher->Foto)}}" class="rounded-3 card-img-top" alt="Profile Foto">
                                         @else
-                                            <img src="{{asset('imgs/no-nothing-480.png')}}" class="rounded-3 card-img-top" alt="Profile photo">
+                                            <img src="{{asset('imgs/no-nothing-480.png')}}" class="rounded-3 card-img-top" alt="Profile Foto">
                                         @endif
                                     </div>
                                     <div class="card-body">

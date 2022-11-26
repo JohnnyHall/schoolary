@@ -381,7 +381,7 @@ class Company extends \Faker\Provider\Company
         'Parfumeur',
         'Parqueteur',
         'Percepteur',
-        'Photographe d\'art',
+        'Fotographe d\'art',
         'Pilote automobile',
         'Pilote de soutireuse',
         'Pilote fluvial',

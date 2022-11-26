@@ -49,7 +49,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Photo</th>
+                                        <th scope="col">Foto</th>
                                         <th scope="col">aluno Name</th>
                                         <th scope="col">Total Marks</th>
                                         <th scope="col">Grade Points</th>

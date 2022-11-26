@@ -45,10 +45,10 @@
 
                                 <!-- 
                                 <div class="col-3">
-                                    <label for="formFile" class="form-label">Photo</label>
+                                    <label for="formFile" class="form-label">Foto</label>
                                     <input class="form-control" type="file" id="formFile" onchange="previewFile()">
-                                    <div id="previewPhoto"></div>
-                                    <input type="hidden" id="photoHiddenInput" name="photo" value="">
+                                    <div id="previewFoto"></div>
+                                    <input type="hidden" id="FotoHiddenInput" name="Foto" value="">
                                 </div>
                                 -->
 
@@ -131,7 +131,7 @@
                             </div>
                             <div class="row mt-4">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-plus"></i> Add</button>
+                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-plus"></i> Adicionar</button>
                                 </div>
                             </div>
                         </form>
@@ -163,5 +163,5 @@
         });
     }
 </script>
-@include('components.photos.photo-input')
+@include('components.Fotos.Foto-input')
 @endsection

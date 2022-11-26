@@ -44,7 +44,7 @@ class UserController extends Controller
         try {
             $this->userRepository->createTeacher($request->validated());
 
-            return back()->with('status', 'Teacher creation was successful!');
+            return back()->with('status', 'Teacher foi criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -122,7 +122,7 @@ class UserController extends Controller
         try {
             $this->userRepository->createaluno($request->validated());
 
-            return back()->with('status', 'aluno creation was successful!');
+            return back()->with('status', 'Aluno foi criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -145,7 +145,7 @@ class UserController extends Controller
         try {
             $this->userRepository->updatealuno($request->toArray());
 
-            return back()->with('status', 'aluno update was successful!');
+            return back()->with('status', 'Aluno atualizado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -164,7 +164,7 @@ class UserController extends Controller
         try {
             $this->userRepository->updateTeacher($request->toArray());
 
-            return back()->with('status', 'Teacher update was successful!');
+            return back()->with('status', 'Teacher atualizado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

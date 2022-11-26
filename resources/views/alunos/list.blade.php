@@ -39,21 +39,22 @@
                         </form>
                         @foreach ($alunoList as $aluno)
                             @if ($loop->first)
-                                <p class="mt-3"><b>Section:</b> {{$aluno->section->section_name}}</p>
+                                <p class="mt-3"><b>Turma:</b> {{$aluno->section->section_name}}</p>
                                 @break
                             @endif
                         @endforeach
+
                         <div class="bg-white border shadow-sm p-3 mt-4">
                             <table class="table table-responsive">
                                 <thead>
                                     <tr>
                                         <th scope="col">RA</th>
-                                        <th scope="col">Photo</th>
+                                        <th scope="col">Foto</th>
                                         <th scope="col">Primeiro nome</th>
                                         <th scope="col">Sobrenome</th>
                                         <th scope="col">Email</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Actions</th>
+                                        <th scope="col">Celular</th>
+                                        <th scope="col">Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -61,8 +62,8 @@
                                     <tr>
                                         <th scope="row">{{$aluno->RA}}</th>
                                         <td>
-                                            @if (isset($aluno->aluno->photo))
-                                                <img src="{{asset('/storage'.$aluno->aluno->photo)}}" class="rounded" alt="Profile picture" height="30" width="30">
+                                            @if (isset($aluno->aluno->Foto))
+                                                <img src="{{asset('/storage'.$aluno->aluno->Foto)}}" class="rounded" alt="Profile picture" height="30" width="30">
                                             @else
                                                 <i class="bi bi-person-square"></i>
                                             @endif

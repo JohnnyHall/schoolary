@@ -76,5 +76,5 @@
     </div>
 </div>
 
-@include('components.photos.photo-input')
+@include('components.Fotos.Foto-input')
 @endsection

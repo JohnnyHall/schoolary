@@ -83,7 +83,7 @@
                                 </div>
 
                                 <div class="col-3">
-                                    <label for="inputPhone" class="form-label">Phone</label>
+                                    <label for="inputPhone" class="form-label">Celular</label>
                                     <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$aluno->phone}}">
                                 </div>
                                 <div class="col-3">
@@ -105,5 +105,5 @@
         </div>
     </div>
 </div>
-@include('components.photos.photo-input')
+@include('components.Fotos.Foto-input')
 @endsection
