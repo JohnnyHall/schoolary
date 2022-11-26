@@ -48,7 +48,7 @@
                                         <input type="hidden" name="aluno_ids[]" value="{{$aluno->aluno_id}}">
                                         <tr>
                                             <th scope="row">{{$aluno->RA}}</th>
-                                            <td>{{$aluno->aluno->first_name}} {{$aluno->aluno->last_name}}</td>
+                                            <td>{{$aluno->aluno->primeiro_nome}} {{$aluno->aluno->sobrenome}}</td>
                                             <td>
                                                 <input class="form-check-input" type="checkbox" name="status[{{$aluno->aluno_id}}]" checked>
                                             </td>

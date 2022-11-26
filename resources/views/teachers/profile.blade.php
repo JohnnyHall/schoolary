@@ -35,7 +35,7 @@
                                         @endif
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">{{$teacher->first_name}} {{$teacher->last_name}}</h5>
+                                        <h5 class="card-title">{{$teacher->primeiro_nome}} {{$teacher->sobrenome}}</h5>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">Gender: {{$teacher->gender}}</li>
@@ -50,9 +50,9 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Primeiro nome:</th>
-                                                <td>{{$teacher->first_name}}</td>
+                                                <td>{{$teacher->primeiro_nome}}</td>
                                                 <th>Sobrenome:</th>
-                                                <td>{{$teacher->last_name}}</td>
+                                                <td>{{$teacher->sobrenome}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Email:</th>

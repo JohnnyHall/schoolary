@@ -23,8 +23,8 @@ class UserRepository implements UserInterface {
         try {
             DB::transaction(function () use ($request) {
                 $user = User::create([
-                    'first_name'    => $request['first_name'],
-                    'last_name'     => $request['last_name'],
+                    'primeiro_nome'    => $request['primeiro_nome'],
+                    'sobrenome'     => $request['sobrenome'],
                     'email'         => $request['email'],
                     'gender'        => $request['gender'],
                     'nationality'   => $request['nationality'],
@@ -68,8 +68,8 @@ class UserRepository implements UserInterface {
         try {
             DB::transaction(function () use ($request) {
                 $aluno = User::create([
-                    'first_name'    => $request['first_name'],
-                    'last_name'     => $request['last_name'],
+                    'primeiro_nome'    => $request['primeiro_nome'],
+                    'sobrenome'     => $request['sobrenome'],
                     'email'         => $request['email'],
                     'gender'        => $request['gender'],
                     'nationality'   => $request['nationality'],
@@ -114,8 +114,8 @@ class UserRepository implements UserInterface {
         try {
             DB::transaction(function () use ($request) {
                 User::where('id', $request['aluno_id'])->update([
-                    'first_name'    => $request['first_name'],
-                    'last_name'     => $request['last_name'],
+                    'primeiro_nome'    => $request['primeiro_nome'],
+                    'sobrenome'     => $request['sobrenome'],
                     'email'         => $request['email'],
                     'gender'        => $request['gender'],
                     'nationality'   => $request['nationality'],
@@ -141,8 +141,8 @@ class UserRepository implements UserInterface {
         try {
             DB::transaction(function () use ($request) {
                 User::where('id', $request['teacher_id'])->update([
-                    'first_name'    => $request['first_name'],
-                    'last_name'     => $request['last_name'],
+                    'primeiro_nome'    => $request['primeiro_nome'],
+                    'sobrenome'     => $request['sobrenome'],
                     'email'         => $request['email'],
                     'gender'        => $request['gender'],
                     'nationality'   => $request['nationality'],

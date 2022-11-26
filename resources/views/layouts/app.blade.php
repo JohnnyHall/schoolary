@@ -73,7 +73,7 @@
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="badge bg-light text-dark">{{ ucfirst(Auth::user()->role) }}</span>
-                                    {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
+                                    {{ Auth::user()->primeiro_nome }} {{ Auth::user()->sobrenome }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

@@ -33,7 +33,7 @@
                                                 @isset($alunos_with_marks)
                                                     @foreach ($alunos_with_marks as $id => $alunos_with_mark)
                                                     <tr>
-                                                        <td>{{$alunos_with_mark[0]->aluno->first_name}} {{$alunos_with_mark[0]->aluno->last_name}}</td>
+                                                        <td>{{$alunos_with_mark[0]->aluno->primeiro_nome}} {{$alunos_with_mark[0]->aluno->sobrenome}}</td>
                                                         @php
                                                             $calculated_marks = 0;
                                                         @endphp

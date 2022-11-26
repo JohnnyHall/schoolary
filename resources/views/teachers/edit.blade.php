@@ -26,11 +26,11 @@
                             <input type="hidden" name="teacher_id" value="{{$teacher->id}}">
                             <div class="col-3">
                                 <label for="inputFirstName" class="form-label">Primeiro nome</label>
-                                <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="Primeiro nome" required value="{{$teacher->first_name}}">
+                                <input type="text" class="form-control" id="inputFirstName" name="primeiro_nome" placeholder="Primeiro nome" required value="{{$teacher->primeiro_nome}}">
                             </div>
                             <div class="col-3">
                                 <label for="inputLastName" class="form-label">Sobrenome</label>
-                                <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Sobrenome" required value="{{$teacher->last_name}}">
+                                <input type="text" class="form-control" id="inputLastName" name="sobrenome" placeholder="Sobrenome" required value="{{$teacher->sobrenome}}">
                             </div>
                             <div class="col-3">
                                 <label for="inputEmail" class="form-label">Email</label>

@@ -64,7 +64,7 @@
                                                             $markedExamCount = 0;
                                                         @endphp
                                                     <tr>
-                                                        <td>{{$alunos_with_mark[0]->aluno->first_name}} {{$alunos_with_mark[0]->aluno->last_name}}</td>
+                                                        <td>{{$alunos_with_mark[0]->aluno->primeiro_nome}} {{$alunos_with_mark[0]->aluno->sobrenome}}</td>
                                                         @foreach ($alunos_with_mark as $st)
                                                             <td>
                                                                 <input type="number" step="0.01" class="form-control" name="aluno_mark[{{$alunos_with_mark[0]->aluno->id}}][{{$exams[$markedExamCount]->id}}]" value="{{$st->marks}}">
@@ -97,7 +97,7 @@
                                             @if(count($alunos_with_marks) < 1)
                                                 @foreach ($sectionalunos as $sectionaluno)
                                                     <tr>
-                                                        <td>{{$sectionaluno->aluno->first_name}} {{$sectionaluno->aluno->last_name}}</td>
+                                                        <td>{{$sectionaluno->aluno->primeiro_nome}} {{$sectionaluno->aluno->sobrenome}}</td>
                                                         @isset($exams)
                                                             @foreach ($exams as $exam)
                                                                 <td>

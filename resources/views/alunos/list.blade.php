@@ -69,8 +69,8 @@
                                                 <i class="bi bi-person-square"></i>
                                             @endif
                                         </td>
-                                        <td>{{$aluno->aluno->first_name}}</td>
-                                        <td>{{$aluno->aluno->last_name}}</td>
+                                        <td>{{$aluno->aluno->primeiro_nome}}</td>
+                                        <td>{{$aluno->aluno->sobrenome}}</td>
                                         <td>{{$aluno->aluno->email}}</td>
                                         <td>{{$aluno->aluno->phone}}</td>
                                         <td>

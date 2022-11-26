@@ -36,8 +36,8 @@
                                             <th scope="row">
                                                 <input type="text" class="form-control" name="RA[{{$aluno->aluno->id}}]" value="{{$aluno->RA}}">
                                             </th>
-                                            <td>{{$aluno->aluno->first_name}}</td>
-                                            <td>{{$aluno->aluno->last_name}}</td>
+                                            <td>{{$aluno->aluno->primeiro_nome}}</td>
+                                            <td>{{$aluno->aluno->sobrenome}}</td>
                                             <td>{{$schoolClass->class_name}}</td>
                                             <td>{{$section->section_name}}</td>
                                             <td>

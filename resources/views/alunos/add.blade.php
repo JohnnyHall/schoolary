@@ -27,11 +27,11 @@
                             <div class="row g-3">
                                 <div class="col-3">
                                     <label for="inputFirstName" class="form-label">Primeiro nome</label>
-                                    <input type="text" class="form-control" id="inputFirstName" name="first_name" required>
+                                    <input type="text" class="form-control" id="inputFirstName" name="primeiro_nome" required>
                                 </div>
                                 <div class="col-3">
                                     <label for="inputLastName" class="form-label">Sobrenome</label>
-                                    <input type="text" class="form-control" id="inputLastName" name="last_name" required>
+                                    <input type="text" class="form-control" id="inputLastName" name="sobrenome" required>
                                 </div>
                                 <div class="col-3">
                                     <label for="inputEmail4" class="form-label">Email</label>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="col-2">
                                     <label for="inputCity" class="form-label">Cidade</label>
-                                    <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required>
+                                    <input type="text" class="form-control" id="inputCity" name="city" placeholder="Paulinia" required>
                                 </div>
                                 <div class="col-2">
                                     <label for="inputZip" class="form-label">CEP</label>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="col-2">
                                     <label for="inputNationality" class="form-label">Nacionalidade</label>
-                                    <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required>
+                                    <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="Brasileiro, Alemão, ..." required>
                                 </div>
                                 <div class="col-2">
                                     <label for="inputFilmes" class="form-label">Filmes</label>

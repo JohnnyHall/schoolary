@@ -38,8 +38,8 @@
                                             <i class="bi bi-person-square"></i>
                                         @endif
                                     </td>
-                                    <td>{{$teacher->first_name}}</td>
-                                    <td>{{$teacher->last_name}}</td>
+                                    <td>{{$teacher->primeiro_nome}}</td>
+                                    <td>{{$teacher->sobrenome}}</td>
                                     <td>{{$teacher->email}}</td>
                                     <td>{{$teacher->phone}}</td>
                                     <td>

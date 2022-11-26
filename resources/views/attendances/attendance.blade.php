@@ -13,7 +13,7 @@
                         <i class="bi bi-calendar2-week"></i> View Attendance
                     </h1>
 
-                    <h5><i class="bi bi-person"></i> aluno Name: {{$aluno->first_name}} {{$aluno->last_name}}</h5>
+                    <h5><i class="bi bi-person"></i> aluno Name: {{$aluno->primeiro_nome}} {{$aluno->sobrenome}}</h5>
                     <div class="row mt-3">
                         <div class="col bg-white p-3 border shadow-sm">
                             <div id="attendanceCalendar"></div>

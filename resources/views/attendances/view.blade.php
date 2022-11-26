@@ -39,7 +39,7 @@
                                             $total_attended = \App\Models\Attendance::where('aluno_id', $attendance->aluno_id)->where('session_id', $attendance->session_id)->count();
                                         @endphp
                                         <tr>
-                                            <td>{{$attendance->aluno->first_name}} {{$attendance->aluno->last_name}}</td>
+                                            <td>{{$attendance->aluno->primeiro_nome}} {{$attendance->aluno->sobrenome}}</td>
                                             <td>
                                                 @if ($attendance->status == "on")
                                                     <span class="badge bg-success">PRESENT</span>

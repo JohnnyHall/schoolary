@@ -35,7 +35,7 @@
                                         @endif
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">{{$aluno->first_name}} {{$aluno->last_name}}</h5>
+                                        <h5 class="card-title">{{$aluno->primeiro_nome}} {{$aluno->sobrenome}}</h5>
                                         <p class="card-text">#ID: {{$promotion_info->RA}}</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -52,9 +52,9 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Primeiro nome:</th>
-                                                <td>{{$aluno->first_name}}</td>
+                                                <td>{{$aluno->primeiro_nome}}</td>
                                                 <th>Sobrenome:</th>
-                                                <td>{{$aluno->last_name}}</td>
+                                                <td>{{$aluno->sobrenome}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Email:</th>
@@ -65,8 +65,6 @@
                                             <tr>
                                                 <th scope="row">Nationality:</th>
                                                 <td>{{$aluno->nationality}}</td>
-                                                <th>Religion:</th>
-                                                <td>{{$aluno->religion}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Address:</th>

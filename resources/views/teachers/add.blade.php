@@ -24,11 +24,11 @@
                             @csrf
                             <div class="col-3">
                                 <label for="inputFirstName" class="form-label">Primeiro nome</label>
-                                <input type="text" class="form-control" id="inputFirstName" name="first_name" placeholder="Primeiro nome" required>
+                                <input type="text" class="form-control" id="inputFirstName" name="primeiro_nome" placeholder="Primeiro nome" required>
                             </div>
                             <div class="col-3">
                                 <label for="inputLastName" class="form-label">Sobrenome</label>
-                                <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Sobrenome" required>
+                                <input type="text" class="form-control" id="inputLastName" name="sobrenome" placeholder="Sobrenome" required>
                             </div>
                             <div class="col-3">
                                 <label for="inputEmail" class="form-label">Email</label>

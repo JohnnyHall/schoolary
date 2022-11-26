@@ -101,8 +101,8 @@ class PermissionSeeder extends Seeder
 
         $user = \App\Models\User::factory()->create([
             'email' => 'secretaria@puccampinas.edu.br',
-            'first_name' => 'Deus',
-            'last_name' => 'Supremo'
+            'primeiro_nome' => 'Deus',
+            'sobrenome' => 'Supremo'
         ]);
         $user->givePermissionTo(
             'create school sessions',

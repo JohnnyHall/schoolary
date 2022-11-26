@@ -62,7 +62,7 @@
                                         @foreach ($marks as $mark)
                                         <tr>
                                             <td><i class="bi bi-person-square"></i></td>
-                                            <td>{{$mark->aluno->first_name}} {{$mark->aluno->last_name}}</td>
+                                            <td>{{$mark->aluno->primeiro_nome}} {{$mark->aluno->sobrenome}}</td>
                                             <td>{{$mark->final_marks}}</td>
                                             <td>{{$mark->getAttribute('point')}}</td>
                                             <td>{{$mark->getAttribute('grade')}}</td>

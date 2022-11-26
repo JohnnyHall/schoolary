@@ -193,7 +193,7 @@
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm" name="teacher_id" required>
                                                 @isset($teachers)
                                                     @foreach ($teachers as $teacher)
-                                                    <option value="{{$teacher->id}}">{{$teacher->first_name}} {{$teacher->last_name}}</option>
+                                                    <option value="{{$teacher->id}}">{{$teacher->primeiro_nome}} {{$teacher->sobrenome}}</option>
                                                     @endforeach
                                                 @endisset
                                             </select>
