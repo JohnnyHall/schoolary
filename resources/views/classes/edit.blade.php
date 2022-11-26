@@ -10,9 +10,7 @@
                     <h1 class="display-6 mb-3"><i class="bi bi-diagram-2"></i> Editar materia</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Classes</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Editar materia</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @include('session-messages')
@@ -22,10 +20,10 @@
                             <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                             <input type="hidden" name="class_id" value="{{$class_id}}">
                             <div class="mb-3">
-                                <label for="class_name" class="form-label">Class Name</label>
+                                <label for="class_name" class="form-label">Nome da materia</label>
                                 <input class="form-control" id="class_name" name="class_name" type="text" value="{{$schoolClass->class_name}}">
                             </div>
-                            <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Save</button>
+                            <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Salvar</button>
                         </form>
                     </div>
                 </div>
