@@ -74,12 +74,11 @@
                                         <td>{{$aluno->aluno->phone}}</td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <a href="{{route('aluno.attendance.show', ['id' => $aluno->aluno->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Attendance</a>
-                                                <a href="{{url('alunos/view/profile/'.$aluno->aluno->id)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Profile</a>
+                                                <a href="{{route('aluno.attendance.show', ['id' => $aluno->aluno->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Presença</a>
+                                                <a href="{{url('alunos/view/profile/'.$aluno->aluno->id)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Perfil</a>
                                                 @can('edit users')
-                                                <a href="{{route('aluno.edit.show', ['id' => $aluno->aluno->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Edit</a>
+                                                <a href="{{route('aluno.edit.show', ['id' => $aluno->aluno->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Editar</a>
                                                 @endcan
-                                                {{-- <button type="button" class="btn btn-sm btn-primary"><i class="bi bi-trash2"></i> Delete</button> --}}
                                             </div>
                                         </td>
                                     </tr>

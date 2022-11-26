@@ -24,7 +24,7 @@
                                     <th scope="col">Total Marks</th>
                                     <th scope="col">Pass Marks</th>
                                     <th scope="col">Marks Distribution Note</th>
-                                    <th scope="col">Actions</th>
+                                    <th scope="col">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -37,8 +37,7 @@
                                         <div class="btn-group" role="group">
                                             <a type="button" href="{{route('exam.rule.edit', [
                                                 'exam_rule_id' => $exam_rule->id
-                                            ])}}" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Edit</a>
-                                            {{-- <button type="button" class="btn btn-sm btn-primary"><i class="bi bi-trash2"></i> Delete</button> --}}
+                                            ])}}" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Editar</a>
                                         </div>
                                     </td>
                                 </tr>
