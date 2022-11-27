@@ -174,7 +174,7 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('notice*')? 'active' : '' }}" href="{{route('notice.create')}}"><i
                         class="bi bi-megaphone"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Notice</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Avisos</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('calendar-event*')? 'active' : '' }}"
