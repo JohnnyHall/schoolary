@@ -19,7 +19,7 @@
                             @csrf
                             <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                             <div class="mb-3">
-                                <p>Add monitoria to class:</p>
+                                <p>Adicionar um monitor a uma materia:</p>
                                 <select onchange="getCourses(this);" class="form-select" name="class_id" required>
                                     @isset($school_classes)
                                         <option selected disabled>Favor selecionar uma materia</option>
@@ -30,7 +30,7 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <p class="mb-2">Select course:</p>
+                                <p class="mb-2">Selecione um curso:</p>
                                 <select class="form-select" id="course-select" name="course_id">
                                 </select>
                             </div>

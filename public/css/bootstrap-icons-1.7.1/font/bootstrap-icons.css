@@ -61,7 +61,6 @@ url("./fonts/bootstrap-icons.woff?a74547b2f0863226942ff8ded57db345") format("wof
 .bi-arrow-down-up::before { content: "\f127"; }
 .bi-arrow-down::before { content: "\f128"; }
 .bi-arrow-left-circle-fill::before { content: "\f129"; }
-.bi-arrow-left-circle::before { content: "\f12a"; }
 .bi-arrow-left-right::before { content: "\f12b"; }
 .bi-arrow-left-short::before { content: "\f12c"; }
 .bi-arrow-left-square-fill::before { content: "\f12d"; }

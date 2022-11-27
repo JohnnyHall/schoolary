@@ -7,11 +7,10 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-plus"></i> Create cronograma</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-plus"></i> Criar cronograma</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Create cronograma</li>
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @include('session-messages')
@@ -33,33 +32,33 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select section:</p>
+                                        <p class="mt-2">Selecione uma turma:</p>
                                         <select class="form-select" id="section-select" name="section_id" required>
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select course:</p>
+                                        <p class="mt-2">Selecione um curso:</p>
                                         <select class="form-select" id="course-select" name="course_id" required>
                                         </select>
                                     </div>
                                     <div class="mt-2">
                                         <p>Week Day</p>
                                         <select class="form-select" id="course-select" name="weekday" required>
-                                            <option value="1">Monday</option>
-                                            <option value="2">Tuesday</option>
-                                            <option value="3">Wednesday</option>
-                                            <option value="4">Thursday</option>
-                                            <option value="5">Friday</option>
-                                            <option value="6">Saturday</option>
-                                            <option value="7">Sunday</option>
+                                            <option value="1">Segunda</option>
+                                            <option value="2">Terça</option>
+                                            <option value="3">Quarta</option>
+                                            <option value="4">Quinta</option>
+                                            <option value="5">Sexta</option>
+                                            <option value="6">Sabado</option>
+                                            <option value="7">Domingo</option>
                                         </select>
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputStarts" class="form-label">Starts</label>
+                                        <label for="inputStarts" class="form-label">Horario de inicio</label>
                                         <input type="text" class="form-control" id="inputStarts" name="start" placeholder="09:00am" required>
                                     </div>
                                     <div class="mt-2">
-                                        <label for="inputEnds" class="form-label">Ends</label>
+                                        <label for="inputEnds" class="form-label">Horario de termino</label>
                                         <input type="text" class="form-control" id="inputEnds" name="end" placeholder="09:50am" required>
                                     </div>
                                     <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-check2"></i> Create</button>

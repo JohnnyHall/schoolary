@@ -987,9 +987,6 @@
 .phpdebugbar-fa-info:before {
   content: "\f129";
 }
-.phpdebugbar-fa-exclamation:before {
-  content: "\f12a";
-}
 .phpdebugbar-fa-superscript:before {
   content: "\f12b";
 }

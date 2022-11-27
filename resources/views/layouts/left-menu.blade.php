@@ -189,7 +189,7 @@
             <li class="nav-item border-bottom">
                 <a class="nav-link {{ request()->is('cronograma*')? 'active' : '' }}"
                     href="{{route('section.cronograma.create')}}"><i class="bi bi-calendar4-range"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">cronograma</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Cronograma</span></a>
             </li>
             @endif
 

@@ -13,7 +13,7 @@ class cronogramaStoreRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('create cronogramas');
+        return auth()->user()->can('criar cronogramas');
     }
 
     /**
