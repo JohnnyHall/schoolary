@@ -95,7 +95,7 @@ class AssignedTeacherController extends Controller
             $assignedTeacherRepository = new AssignedTeacherRepository();
             $assignedTeacherRepository->assign($request->validated());
 
-            return back()->with('status', 'Assigning teacher com sucesso!');
+            return back()->with('status', 'Professor relacionado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
