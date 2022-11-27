@@ -2,8 +2,7 @@
     <div class="d-flex flex-column align-items-center align-items-sm-start min-vh-100">
         <ul class="nav flex-column pt-2 w-100">
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('home')? 'active' : '' }}" href="{{url('home')}}"><i
-                        class="ms-auto bi bi-grid"></i> <span
+                <a class="nav-link {{ request()->is('home')? 'active' : '' }}" href="{{url('home')}}"><i class="bi bi-easel-fill"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">{{ __('Central') }}</span></a>
             </li>
             {{-- @if (Auth::user()->role == "teacher")
@@ -27,8 +26,7 @@
                 }
                 }
                 @endphp
-                <a class="nav-link d-flex {{ request()->is('classes')? 'active' : '' }}" href="{{url('classes')}}"><i
-                        class="bi bi-diagram-3"></i> <span
+                <a class="nav-link d-flex {{ request()->is('classes')? 'active' : '' }}" href="{{url('classes')}}"><i class="bi bi-book-fill"></i></i> <span
                         class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Materias</span> <span
                         class="ms-auto d-inline d-sm-none d-md-none d-xl-inline">{{ $classCount }}</span></a>
             </li>
@@ -185,7 +183,7 @@
             @if (Auth::user()->role == "secretaria")
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('academics*')? 'active' : '' }}"
-                    href="{{url('academics/settings')}}"><i class="bi bi-tools"></i> <span
+                    href="{{url('academics/settings')}}"><i class="bi bi-gear-fill"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Academico</span></a>
             </li>
             @endif

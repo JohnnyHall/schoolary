@@ -15,7 +15,7 @@
                                 <div class="col-12">
                                     <div class="card my-3">
                                         <div class="card-header bg-transparent">
-                                            <i class="bi bi-diagram-2"></i> {{$school_class->class_name}}
+                                            <i class="bi bi-book-fill"></i> {{$school_class->class_name}}
                                         </div>
                                         <div class="card-body text-dark">
                                             @if ($academic_setting->attendance_type == 'course')

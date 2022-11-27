@@ -31,7 +31,7 @@
                         <i class="bi bi-exclamation-diamond-fill me-2"></i> Marks are submitted.
                     </p>
                     @endif
-                    <h3><i class="bi bi-diagram-2"></i> Class #{{request()->query('class_name')}}, Section #{{request()->query('section_name')}}</h3>
+                    <h3><i class="bi bi-book-fill"></i> Class #{{request()->query('class_name')}}, Section #{{request()->query('section_name')}}</h3>
                     <h3><i class="bi bi-compass"></i> Course: {{request()->query('course_name')}}</h3>
                     @if (!$final_marks_submitted && count($exams) > 0 && $academic_setting['marks_submission_status'] == "on")
                         <div class="col-3 mt-3">

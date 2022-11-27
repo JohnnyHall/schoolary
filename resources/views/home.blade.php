@@ -7,7 +7,6 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-3">
                 <div class="col ps-4">
-                    <!-- <h1 class="display-6 mb-3"><i class="ms-auto bi bi-grid"></i> {{ __('Central') }}</h1> -->
                     <div class="row Central">
 
                         <div class="col">
@@ -39,7 +38,7 @@
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="ms-2 me-auto">
-                                            <div class="fw-bold"><i class="bi bi-diagram-3 me-3"></i> Numero de matérias</div>
+                                            <div class="fw-bold"><i class="bi bi-book-fill"></i> Numero de matérias</div>
                                         </div>
                                         <span class="badge bg-dark rounded-pill">{{ $classCount }}</span>
                                     </div>

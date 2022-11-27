@@ -7,7 +7,7 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-diagram-3"></i> Materias</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-book-fill"></i></i> Materias</h1>
                     <div class="row">
                         @isset($school_classes)
                             @foreach ($school_classes as $school_class)
@@ -19,7 +19,7 @@
                                         <div class="card-header bg-transparent">
                                             <ul class="nav nav-tabs card-header-tabs">
                                                 <li class="nav-item">
-                                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}" role="tab" aria-current="true"><i class="bi bi-diagram-3"></i> {{$school_class->class_name}}</button>
+                                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}" role="tab" aria-current="true"><i class="bi bi-book-fill"></i></i> {{$school_class->class_name}}</button>
                                                 </li>
                                                 <li class="nav-item">
                                                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-monitoria" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> Monitoria</button>

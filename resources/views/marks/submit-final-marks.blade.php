@@ -11,7 +11,7 @@
                         <i class="bi bi-cloud-sun"></i> Give Final Marks
                     </h1>
                     @include('session-messages')
-                    <h5><i class="bi bi-diagram-2"></i> Class {{$class_name}}, Section #{{$section_name}}</h5>
+                    <h5><i class="bi bi-book-fill"></i> Class {{$class_name}}, Section #{{$section_name}}</h5>
                     <h5><i class="bi bi-compass"></i> Course: {{$course_name}}</h5>
                     <form action="{{route('course.final.mark.submit.store')}}" method="POST">
                         @csrf

@@ -12,7 +12,7 @@
                         <div class="col-12">
                             <div class="card border-dark my-3">
                                 <div class="card-header bg-transparent border-dark">
-                                    <i class="bi bi-diagram-2"></i> Class 1
+                                    <i class="bi bi-book-fill"></i> Class 1
                                 </div>
                                 <div class="card-body text-dark">
                                     <div class="accordion" id="accordionExample">
