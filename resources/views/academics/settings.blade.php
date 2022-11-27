@@ -26,7 +26,7 @@
                                     <form action="{{route('school.session.store')}}" method="POST">
                                         @csrf
                                         <div class="mb-3">
-                                            <input type="text" class="form-control form-control-sm" placeholder="2022 - 2023" aria-label="Current Session" name="session_name" required>
+                                            <input type="text" class="form-control form-control-sm" placeholder="2022" aria-label="Current Session" name="session_name" required>
                                         </div>
                                         <button class="btn btn-sm btn-outline-primary" type="submit"><i class="bi bi-check2"></i> Criar</button>
                                     </form>

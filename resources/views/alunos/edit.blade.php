@@ -94,7 +94,7 @@
 
                             <div class="row mt-4">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Update</button>
+                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Atualizar</button>
                                 </div>
                             </div>
                         </form>
