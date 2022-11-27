@@ -1,0 +1,8 @@
+Attr.ForbiddenTurmas
+TYPE: lookup
+VERSION: 4.0.0
+DEFAULT: array()
+--DESCRIPTION--
+List of forbidden class values in the class attribute. By default, this is
+empty, which means that no Turmas are forbidden. See also %Attr.AllowedTurmas.
+--# vim: et sw=4 sts=4
