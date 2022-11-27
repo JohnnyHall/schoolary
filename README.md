@@ -2,30 +2,49 @@
   <img src="https://i.imgur.com/T1xCI92.png" height='300'/>
 </p>
 
-# ✍️ [Project name]
-> [Project description]
+# ✍️ [Schoolary]
+> Projeto de gestão escolar
 
 ## 🎯 Objective
-
+Criação de sistema capaz de gerenciar matrículas, cursos, professores e alunos
 ## 📜 Requirements
-1. [Requirements]
-2. [Requirements]
+1. Laravel 8 or newer
+2. Bootstrap 5 or newer
+3. PHP >= 7.4 
+4. OpenSSL PHP Extension
+5. PDO PHP Extension
+6. Laravel-debugbar 3.7 or newer
+7. Mbstring PHP Extension
+8. Tokenizer PHP Extension
+9. XML PHP Extension
 
 ## ⚙️ Installation
 
 ```
+docker-compose up -d
 
+docker exec -it db sh
+↳mysql -u root -p      senha:root
+   ↳SHOW DATABASES;
+   ↳GRANT ALL ON schoolary.* TO 'schoolary'@'%' IDENTIFIED BY 'secret';
+   ↳FLUSH PRIVILEGES;
+   ↳EXIT;
+
+docker exec -it app sh
+↳composer install
+↳php artisan key:generate
+↳php artisan config:cache
+↳php artisan migrate:fresh --seed 
+
+
+login: admin@puccampinas.edu.br
+senha: password
 
 ```
 
-## 📝 Features & Commands
-
-- [Command]
-- [Command]
-- [Command]
-- [Command]
-
 ## 🖼️ Some Examples
+  <img src="https://i.imgur.com/T1xCI92.png" height='200'/><br>
+  <img src="https://i.imgur.com/T1xCI92.png" height='200'/><br>
   <img src="https://i.imgur.com/T1xCI92.png" height='200'/><br>
   
 ## 🌎 Locales
@@ -45,6 +64,9 @@ Currently available locales are:
 
 ## 👤 Developers
  - João Victor Rokemback Tápparo
+ - Felipe Yabiko Nogueira
+ - Tiago Gontijo Merighi
+ - Lucas Bertola
 
 <p align="center">
   Created on <br>
