@@ -66,7 +66,7 @@ Currently available locales are:
  - João Victor Rokemback Tápparo
  - Felipe Yabiko Nogueira
  - Tiago Gontijo Merighi
- - Lucas Bertola
+ - Lucas Bertola da Silva
 
 <p align="center">
   Created on <br>
