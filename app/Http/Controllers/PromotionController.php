@@ -144,7 +144,7 @@ class PromotionController extends Controller
             $promotionRepository = new PromotionRepository();
             $promotionRepository->massPromotion($rows);
 
-            return back()->with('status', 'Promoting alunos was successful!');
+            return back()->with('status', 'Alunos promovidos com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

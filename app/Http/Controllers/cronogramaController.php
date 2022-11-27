@@ -63,7 +63,7 @@ class cronogramaController extends Controller
             $cronogramaRepository = new cronogramaRepository();
             $cronogramaRepository->savecronograma($request->validated());
 
-            return back()->with('status', 'cronograma save was successful!');
+            return back()->with('status', 'Cronograma salvo com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

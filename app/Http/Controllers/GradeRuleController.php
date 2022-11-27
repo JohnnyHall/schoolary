@@ -62,7 +62,7 @@ class GradeRuleController extends Controller
             $gradeRuleRepository = new GradeRuleRepository();
             $gradeRuleRepository->store($request->validated());
 
-            return back()->with('status', 'Creating grading system rule was successful!');
+            return back()->with('status', 'Creating grading system rule com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -114,7 +114,7 @@ class GradeRuleController extends Controller
             $gradeRuleRepository = new GradeRuleRepository();
             $gradeRuleRepository->delete($request->id);
 
-            return back()->with('status', 'Deleting grading system rule was successful!');
+            return back()->with('status', 'Deleting grading system rule com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

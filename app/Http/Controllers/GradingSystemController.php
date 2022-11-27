@@ -80,7 +80,7 @@ class GradingSystemController extends Controller
             $gradingSystemRepository = new GradingSystemRepository();
             $gradingSystemRepository->store($request->validated());
 
-            return back()->with('status', 'Creating grading system was successful!');
+            return back()->with('status', 'Creating grading system com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

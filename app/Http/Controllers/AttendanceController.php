@@ -123,7 +123,7 @@ class AttendanceController extends Controller
             $attendanceRepository = new AttendanceRepository();
             $attendanceRepository->saveAttendance($request->validated());
 
-            return back()->with('status', 'Attendance save was successful!');
+            return back()->with('status', 'Attendance save com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

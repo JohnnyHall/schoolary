@@ -79,7 +79,7 @@ class monitoriaController extends Controller
             $monitoriaRepository = new monitoriaRepository();
             $monitoriaRepository->store($validatedRequest);
 
-            return back()->with('status', 'Creating monitoria was successful!');
+            return back()->with('status', 'Creating monitoria com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
