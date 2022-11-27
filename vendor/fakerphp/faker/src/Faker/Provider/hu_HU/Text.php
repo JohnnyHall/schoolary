@@ -1291,7 +1291,7 @@ A lakáj elment. A rendőr habozva nézett St. Antonio hercegre.
 "Bárcsak uralkodó lenne" - gondolta a rendőr, mert szomjas volt.
 De a Gondviselés ezen a napon úgy akarta, hogy a tikkadt rendőr ne igyék a St. Antonio hercegek angol söréből. A lakáj visszatért, és egy ősz hajú, nyájas arcú urat előrebocsátott a kapuszárnyak között.
 - Itt van az a bizonyos fiatalember, Mr. Greenwood.
-- Halló! My teacher! - kiáltotta boldogan a herceg, és tárt karokkal közeledett a tisztes külsejű tanárhoz. - I am happy, Mr. Greenwood!
+- Halló! My professor! - kiáltotta boldogan a herceg, és tárt karokkal közeledett a tisztes külsejű tanárhoz. - I am happy, Mr. Greenwood!
 De a tanár nem viszonozta az örömkitörést, hátrahökkenten nyújtotta ki a karját.
 - Mit óhajt, kérem?!...
 - De... Mr. Greenwood... Mit jelentsen ez...

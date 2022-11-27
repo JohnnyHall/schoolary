@@ -15,7 +15,7 @@ class Assignment extends Model
      * @var array
      */
     protected $fillable = [
-        'teacher_id',
+        'professor_id',
         'semester_id',
         'class_id',
         'section_id',
@@ -26,11 +26,11 @@ class Assignment extends Model
     ];
 
     /**
-     * Get the teacher.
+     * Get the professor.
      */
-    public function teacher()
+    public function professor()
     {
-        return $this->belongsTo(User::class, 'teacher_id');
+        return $this->belongsTo(User::class, 'professor_id');
     }
 
     /**

@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 use App\Models\SchoolClass;
 use App\Interfaces\SchoolClassInterface;
-use App\Models\AssignedTeacher;
+use App\Models\Assignedprofessor;
 
 class SchoolClassRepository implements SchoolClassInterface {
     public function create($request) {
@@ -19,8 +19,8 @@ class SchoolClassRepository implements SchoolClassInterface {
         return SchoolClass::where('session_id', $session_id)->get();
     }
 
-    public function getAllBySessionAndTeacher($session_id, $teacher_id) {
-        return AssignedTeacher::with('schoolClass')->where('teacher_id', $teacher_id)
+    public function getAllBySessionAndprofessor($session_id, $professor_id) {
+        return Assignedprofessor::with('schoolClass')->where('professor_id', $professor_id)
                 ->where('session_id', $session_id)
                 ->get();
     }

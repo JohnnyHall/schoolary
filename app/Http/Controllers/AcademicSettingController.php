@@ -64,7 +64,7 @@ class AcademicSettingController extends Controller
 
         $school_sections = $this->schoolSectionRepository->getAllBySession($current_school_session_id);
 
-        $teachers = $this->userRepository->getAllTeachers();
+        $professores = $this->userRepository->getAllprofessores();
 
         $courses = $this->courseRepository->getAll($current_school_session_id);
 
@@ -77,7 +77,7 @@ class AcademicSettingController extends Controller
             'school_sessions'           => $school_sessions,
             'school_classes'            => $school_classes,
             'school_sections'           => $school_sections,
-            'teachers'                  => $teachers,
+            'professores'                  => $professores,
             'courses'                   => $courses,
             'semesters'                 => $semesters,
         ];

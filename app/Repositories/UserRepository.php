@@ -19,7 +19,7 @@ class UserRepository implements UserInterface {
      * @param mixed $request
      * @return string
     */
-    public function createTeacher($request) {
+    public function createprofessor($request) {
         try {
             DB::transaction(function () use ($request) {
                 $user = User::create([
@@ -33,7 +33,7 @@ class UserRepository implements UserInterface {
                     'city'          => $request['city'],
                     'zip'           => $request['zip'],
                     'Foto'         => (!empty($request['Foto']))?$this->convert($request['Foto']):null,
-                    'role'          => 'teacher',
+                    'role'          => 'professor',
                     'password'      => Hash::make($request['password']),
                 ]);
                 $user->givePermissionTo(
@@ -137,10 +137,10 @@ class UserRepository implements UserInterface {
         }
     }
 
-    public function updateTeacher($request) {
+    public function updateprofessor($request) {
         try {
             DB::transaction(function () use ($request) {
-                User::where('id', $request['teacher_id'])->update([
+                User::where('id', $request['professor_id'])->update([
                     'primeiro_nome'    => $request['primeiro_nome'],
                     'sobrenome'     => $request['sobrenome'],
                     'email'         => $request['email'],
@@ -197,17 +197,17 @@ class UserRepository implements UserInterface {
         }
     }
 
-    public function findTeacher($id) {
+    public function findprofessor($id) {
         try {
-            return User::where('id', $id)->where('role', 'teacher')->first();
+            return User::where('id', $id)->where('role', 'professor')->first();
         } catch (\Exception $e) {
             throw new \Exception('Falha ao tentar pegar o professor. '.$e->getMessage());
         }
     }
 
-    public function getAllTeachers() {
+    public function getAllprofessores() {
         try {
-            return User::where('role', 'teacher')->get();
+            return User::where('role', 'professor')->get();
         } catch (\Exception $e) {
             throw new \Exception('Falha ao tentar pegar todos os professores. '.$e->getMessage());
         }

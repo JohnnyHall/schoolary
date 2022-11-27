@@ -11,7 +11,7 @@ use App\Interfaces\CourseInterface;
 use App\Interfaces\SectionInterface;
 use App\Repositories\ExamRepository;
 use App\Repositories\MarkRepository;
-use App\Traits\AssignedTeacherCheck;
+use App\Traits\AssignedprofessorCheck;
 use App\Interfaces\SemesterInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Repositories\GradeRuleRepository;
@@ -21,7 +21,7 @@ use App\Repositories\GradingSystemRepository;
 
 class MarkController extends Controller
 {
-    use SchoolSession, AssignedTeacherCheck;
+    use SchoolSession, AssignedprofessorCheck;
 
     protected $academicSettingRepository;
     protected $userRepository;
@@ -124,7 +124,7 @@ class MarkController extends Controller
         try{
 
             $current_school_session_id = $this->getSchoolCurrentSession();
-            $this->checkIfLoggedInUserIsAssignedTeacher($request, $current_school_session_id);
+            $this->checkIfLoggedInUserIsAssignedprofessor($request, $current_school_session_id);
 
             $academic_setting = $this->academicSettingRepository->getAcademicSetting();
 
@@ -208,7 +208,7 @@ class MarkController extends Controller
     public function store(Request $request)
     {
         $current_school_session_id = $this->getSchoolCurrentSession();
-        $this->checkIfLoggedInUserIsAssignedTeacher($request, $current_school_session_id);
+        $this->checkIfLoggedInUserIsAssignedprofessor($request, $current_school_session_id);
         $rows = [];
         foreach($request->aluno_mark as $id => $stm) {
             foreach($stm as $exam => $mark){
@@ -243,7 +243,7 @@ class MarkController extends Controller
     public function storeFinalMark(Request $request) {
         $current_school_session_id = $this->getSchoolCurrentSession();
 
-        $this->checkIfLoggedInUserIsAssignedTeacher($request, $current_school_session_id);
+        $this->checkIfLoggedInUserIsAssignedprofessor($request, $current_school_session_id);
         $rows = [];
         foreach($request->calculated_mark as $id => $cmark) {
                 $row = [];

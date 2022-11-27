@@ -29,7 +29,7 @@
                                         <div class="ms-2 me-auto">
                                             <div class="fw-bold"><i class="bi bi-person-lines-fill me-3"></i> Numero de professores</div>
                                         </div>
-                                        <span class="badge bg-dark rounded-pill">{{$teacherCount}}</span>
+                                        <span class="badge bg-dark rounded-pill">{{$professorCount}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -60,13 +60,13 @@
                     </div>
                     @endif  
                     
-                    @if(Auth::user()->role == "teacher")
+                    @if(Auth::user()->role == "professor")
                     <div class="row align-items-md-stretch mt-4">
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
                                     <h3> Seja bem vindo a area logada do professor! </h3>
-                                    <p>teacher</p>
+                                    <p>professor</p>
                                 </div>
                             </div>
                         </div>

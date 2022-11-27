@@ -10,7 +10,7 @@ use App\Interfaces\SectionInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Repositories\PromotionRepository;
 use App\Http\Requests\alunoStoreRequest;
-use App\Http\Requests\TeacherStoreRequest;
+use App\Http\Requests\professorestoreRequest;
 use App\Interfaces\SchoolSessionInterface;
 
 class UserController extends Controller
@@ -36,15 +36,15 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  TeacherStoreRequest $request
+     * @param  professorestoreRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function storeTeacher(TeacherStoreRequest $request)
+    public function storeprofessor(professorestoreRequest $request)
     {
         try {
-            $this->userRepository->createTeacher($request->validated());
+            $this->userRepository->createprofessor($request->validated());
 
-            return back()->with('status', 'Teacher foi criado com sucesso!');
+            return back()->with('status', 'professor foi criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -89,12 +89,12 @@ class UserController extends Controller
         return view('alunos.profile', $data);
     }
 
-    public function showTeacherProfile($id) {
-        $teacher = $this->userRepository->findTeacher($id);
+    public function showprofessorProfile($id) {
+        $professor = $this->userRepository->findprofessor($id);
         $data = [
-            'teacher'   => $teacher,
+            'professor'   => $professor,
         ];
-        return view('teachers.profile', $data);
+        return view('professores.profile', $data);
     }
 
 
@@ -151,32 +151,32 @@ class UserController extends Controller
         }
     }
 
-    public function editTeacher($teacher_id) {
-        $teacher = $this->userRepository->findTeacher($teacher_id);
+    public function editprofessor($professor_id) {
+        $professor = $this->userRepository->findprofessor($professor_id);
 
         $data = [
-            'teacher'   => $teacher,
+            'professor'   => $professor,
         ];
 
-        return view('teachers.edit', $data);
+        return view('professores.edit', $data);
     }
-    public function updateTeacher(Request $request) {
+    public function updateprofessor(Request $request) {
         try {
-            $this->userRepository->updateTeacher($request->toArray());
+            $this->userRepository->updateprofessor($request->toArray());
 
-            return back()->with('status', 'Teacher atualizado com sucesso!');
+            return back()->with('status', 'professor atualizado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
     }
 
-    public function getTeacherList(){
-        $teachers = $this->userRepository->getAllTeachers();
+    public function getprofessorList(){
+        $professores = $this->userRepository->getAllprofessores();
 
         $data = [
-            'teachers' => $teachers,
+            'professores' => $professores,
         ];
 
-        return view('teachers.list', $data);
+        return view('professores.list', $data);
     }
 }

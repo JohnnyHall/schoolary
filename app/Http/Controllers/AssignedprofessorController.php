@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 use App\Traits\SchoolSession;
 use App\Interfaces\SemesterInterface;
 use App\Interfaces\SchoolSessionInterface;
-use App\Http\Requests\TeacherAssignRequest;
-use App\Repositories\AssignedTeacherRepository;
+use App\Http\Requests\professorAssignRequest;
+use App\Repositories\AssignedprofessorRepository;
 
-class AssignedTeacherController extends Controller
+class AssignedprofessorController extends Controller
 {
     use SchoolSession;
     protected $schoolSessionRepository;
@@ -43,12 +43,12 @@ class AssignedTeacherController extends Controller
      * @param  CourseStoreRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function getTeacherCourses(Request $request)
+    public function getprofessorCourses(Request $request)
     {
-        $teacher_id = $request->query('teacher_id');
+        $professor_id = $request->query('professor_id');
         $semester_id = $request->query('semester_id');
 
-        if($teacher_id == null) {
+        if($professor_id == null) {
             abort(404);
         }
         
@@ -56,12 +56,12 @@ class AssignedTeacherController extends Controller
 
         $semesters = $this->semesterRepository->getAll($current_school_session_id);
 
-        $assignedTeacherRepository = new AssignedTeacherRepository();
+        $assignedprofessorRepository = new AssignedprofessorRepository();
 
         if($semester_id == null) {
             $courses = [];
         } else {
-            $courses = $assignedTeacherRepository->getTeacherCourses($current_school_session_id, $teacher_id, $semester_id);
+            $courses = $assignedprofessorRepository->getprofessorCourses($current_school_session_id, $professor_id, $semester_id);
         }
         
         $data = [
@@ -70,7 +70,7 @@ class AssignedTeacherController extends Controller
             'selected_semester_id'  => $semester_id,
         ];
 
-        return view('courses.teacher', $data);
+        return view('courses.professor', $data);
     }
 
     /**
@@ -86,16 +86,16 @@ class AssignedTeacherController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  TeacherAssignRequest  $request
+     * @param  professorAssignRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(TeacherAssignRequest $request)
+    public function store(professorAssignRequest $request)
     {
         try {
-            $assignedTeacherRepository = new AssignedTeacherRepository();
-            $assignedTeacherRepository->assign($request->validated());
+            $assignedprofessorRepository = new AssignedprofessorRepository();
+            $assignedprofessorRepository->assign($request->validated());
 
-            return back()->with('status', 'Assigning teacher was successful!');
+            return back()->with('status', 'Assigning professor was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

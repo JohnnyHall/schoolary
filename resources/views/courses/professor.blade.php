@@ -17,8 +17,8 @@
                         </ol>
                     </nav>
                     <div class="mb-4 mt-4">
-                        <form action="{{route('course.teacher.list.show')}}" method="GET">
-                            <input type="hidden" name="teacher_id" value="{{Auth::user()->id}}">
+                        <form action="{{route('course.professor.list.show')}}" method="GET">
+                            <input type="hidden" name="professor_id" value="{{Auth::user()->id}}">
                             <div class="row">
                                 <div class="col">
                                     <select class="form-select" aria-label=".form-select-sm" name="semester_id" required>

@@ -3,9 +3,9 @@
 namespace App\Interfaces;
 
 interface UserInterface {
-    public function createTeacher($request);
+    public function createprofessor($request);
 
-    public function updateTeacher($request);
+    public function updateprofessor($request);
 
     public function createaluno($request);
 
@@ -19,9 +19,9 @@ interface UserInterface {
 
     public function findaluno($id);
 
-    public function findTeacher($id);
+    public function findprofessor($id);
 
-    public function getAllTeachers();
+    public function getAllprofessores();
 
     public function changePassword($new_password);
 }

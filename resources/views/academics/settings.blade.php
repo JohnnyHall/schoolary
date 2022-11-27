@@ -123,7 +123,7 @@
                                             <input class="form-control form-control-sm" name="section_name" type="text" placeholder="Nome da turma" required>
                                         </div>
                                         <div class="mb-3">
-                                            <input class="form-control form-control-sm" name="room_no" type="text" placeholder="Numero do quarto/sala" required>
+                                            <input class="form-control form-control-sm" name="room_no" type="text" placeholder="Sala de aula" required>
                                         </div>
                                         <div>
                                             <p>Atribuir uma turma a uma materia:</p>
@@ -185,15 +185,15 @@
                             <div class="col-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
                                     <h6>Atribuir uma materia a um professor</h6>
-                                    <form action="{{route('school.teacher.assign')}}" method="POST">
+                                    <form action="{{route('school.professor.assign')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-3">
                                             <p class="mt-2">Professor:</p>
-                                            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="teacher_id" required>
-                                                @isset($teachers)
-                                                    @foreach ($teachers as $teacher)
-                                                    <option value="{{$teacher->id}}">{{$teacher->primeiro_nome}} {{$teacher->sobrenome}}</option>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="professor_id" required>
+                                                @isset($professores)
+                                                    @foreach ($professores as $professor)
+                                                    <option value="{{$professor->id}}">{{$professor->primeiro_nome}} {{$professor->sobrenome}}</option>
                                                     @endforeach
                                                 @endisset
                                             </select>

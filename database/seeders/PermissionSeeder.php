@@ -80,7 +80,7 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'create semesters']);
         Permission::create(['name' => 'view semesters']);
         Permission::create(['name' => 'edit semesters']);
-        Permission::create(['name' => 'assign teachers']);
+        Permission::create(['name' => 'assign professores']);
         Permission::create(['name' => 'create courses']);
         Permission::create(['name' => 'view courses']);
         Permission::create(['name' => 'edit courses']);
@@ -109,7 +109,7 @@ class PermissionSeeder extends Seeder
             'update browse by session',
             'create semesters',
             'edit semesters',
-            'assign teachers',
+            'assign professores',
             'create courses',
             'view courses',
             'edit courses',
@@ -138,7 +138,7 @@ class PermissionSeeder extends Seeder
             'promote alunos',
             'update attendances type',
             'view attendances',
-            'take attendances',//Teacher only
+            'take attendances',//professor only
             'create grading systems',
             'view grading systems',
             'edit grading systems',

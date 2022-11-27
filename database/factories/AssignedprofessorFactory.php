@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\AssignedTeacher;
+use App\Models\Assignedprofessor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class AssignedTeacherFactory extends Factory
+class AssignedprofessorFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = AssignedTeacher::class;
+    protected $model = Assignedprofessor::class;
 
     /**
      * Define the model's default state.

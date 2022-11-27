@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class AssignedTeacherSeeder extends Seeder
+class Assignedprofessoreseeder extends Seeder
 {
     /**
      * Run the database seeds.

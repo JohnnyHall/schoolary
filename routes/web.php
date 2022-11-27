@@ -22,7 +22,7 @@ use App\Http\Controllers\SchoolClassController;
 use App\Http\Controllers\GradingSystemController;
 use App\Http\Controllers\SchoolSessionController;
 use App\Http\Controllers\AcademicSettingController;
-use App\Http\Controllers\AssignedTeacherController;
+use App\Http\Controllers\AssignedprofessorController;
 use App\Http\Controllers\Auth\UpdatePasswordController;
 
 /*
@@ -65,10 +65,10 @@ Route::middleware(['auth'])->group(function () {
         Route::post('course/create', [CourseController::class, 'store'])->name('course.create');
         Route::post('course/update', [CourseController::class, 'update'])->name('course.update');
 
-        // Teacher
-        Route::post('teacher/create', [UserController::class, 'storeTeacher'])->name('teacher.create');
-        Route::post('teacher/update', [UserController::class, 'updateTeacher'])->name('teacher.update');
-        Route::post('teacher/assign', [AssignedTeacherController::class, 'store'])->name('teacher.assign');
+        // professor
+        Route::post('professor/create', [UserController::class, 'storeprofessor'])->name('professor.create');
+        Route::post('professor/update', [UserController::class, 'updateprofessor'])->name('professor.update');
+        Route::post('professor/assign', [AssignedprofessorController::class, 'store'])->name('professor.assign');
 
         // aluno
         Route::post('aluno/create', [UserController::class, 'storealuno'])->name('aluno.create');
@@ -90,13 +90,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/sections', [SectionController::class, 'getByClassId'])->name('get.sections.courses.by.classId');
     Route::get('/section/edit/{id}', [SectionController::class, 'edit'])->name('section.edit');
 
-    // Teachers
-    Route::get('/teachers/add', function () {
-        return view('teachers.add');
-    })->name('teacher.create.show');
-    Route::get('/teachers/edit/{id}', [UserController::class, 'editTeacher'])->name('teacher.edit.show');
-    Route::get('/teachers/view/list', [UserController::class, 'getTeacherList'])->name('teacher.list.show');
-    Route::get('/teachers/view/profile/{id}', [UserController::class, 'showTeacherProfile'])->name('teacher.profile.show');
+    // professores
+    Route::get('/professores/add', function () {
+        return view('professores.add');
+    })->name('professor.create.show');
+    Route::get('/professores/edit/{id}', [UserController::class, 'editprofessor'])->name('professor.edit.show');
+    Route::get('/professores/view/list', [UserController::class, 'getprofessorList'])->name('professor.list.show');
+    Route::get('/professores/view/profile/{id}', [UserController::class, 'showprofessorProfile'])->name('professor.profile.show');
 
     //alunos
     Route::get('/alunos/add', [UserController::class, 'createaluno'])->name('aluno.create.show');
@@ -164,7 +164,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/notice/create', [NoticeController::class, 'store'])->name('notice.store');
 
     // Courses
-    Route::get('courses/teacher/index', [AssignedTeacherController::class, 'getTeacherCourses'])->name('course.teacher.list.show');
+    Route::get('courses/professor/index', [AssignedprofessorController::class, 'getprofessorCourses'])->name('course.professor.list.show');
     Route::get('courses/aluno/index/{aluno_id}', [CourseController::class, 'getalunoCourses'])->name('course.aluno.list.show');
     Route::get('course/edit/{id}', [CourseController::class, 'edit'])->name('course.edit');
 

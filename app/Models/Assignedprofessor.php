@@ -9,7 +9,7 @@ use App\Models\SchoolClass;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class AssignedTeacher extends Model
+class Assignedprofessor extends Model
 {
     use HasFactory;
 
@@ -19,7 +19,7 @@ class AssignedTeacher extends Model
      * @var array
      */
     protected $fillable = [
-        'teacher_id',
+        'professor_id',
         'semester_id',
         'class_id',
         'section_id',
@@ -28,11 +28,11 @@ class AssignedTeacher extends Model
     ];
 
     /**
-     * Get the teacher.
+     * Get the professor.
      */
-    public function teacher()
+    public function professor()
     {
-        return $this->belongsTo(User::class, 'teacher_id');
+        return $this->belongsTo(User::class, 'professor_id');
     }
 
     /**

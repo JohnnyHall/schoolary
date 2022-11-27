@@ -28,24 +28,24 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($teachers as $teacher)
+                                @foreach ($professores as $professor)
                                 <tr>
                                     <td>
-                                        @if (isset($teacher->Foto))
-                                            <img src="{{asset('/storage'.$teacher->Foto)}}" class="rounded" alt="Profile picture" height="30" width="30">
+                                        @if (isset($professor->Foto))
+                                            <img src="{{asset('/storage'.$professor->Foto)}}" class="rounded" alt="Profile picture" height="30" width="30">
                                         @else
                                             <i class="bi bi-person-square"></i>
                                         @endif
                                     </td>
-                                    <td>{{$teacher->primeiro_nome}}</td>
-                                    <td>{{$teacher->sobrenome}}</td>
-                                    <td>{{$teacher->email}}</td>
-                                    <td>{{$teacher->phone}}</td>
+                                    <td>{{$professor->primeiro_nome}}</td>
+                                    <td>{{$professor->sobrenome}}</td>
+                                    <td>{{$professor->email}}</td>
+                                    <td>{{$professor->phone}}</td>
                                     <td>
                                         <div class="btn-group" role="group">
-                                            <a href="{{url('teachers/view/profile/'.$teacher->id)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Perfil</a>
+                                            <a href="{{url('professores/view/profile/'.$professor->id)}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> Perfil</a>
                                             @can('edit users')
-                                            <a href="{{route('teacher.edit.show', ['id' => $teacher->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Editar</a>
+                                            <a href="{{route('professor.edit.show', ['id' => $professor->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Editar</a>
                                             @endcan
                                         </div>
                                     </td>

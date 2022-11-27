@@ -47,7 +47,7 @@ class HomeController extends Controller
 
         $MasculinoalunosBySession = $promotionRepository->getMasculinoalunosBySessionCount($current_school_session_id);
 
-        $teacherCount = $this->userRepository->getAllTeachers()->count();
+        $professorCount = $this->userRepository->getAllprofessores()->count();
 
         $noticeRepository = new NoticeRepository();
         $notices = $noticeRepository->getAll($current_school_session_id);
@@ -55,7 +55,7 @@ class HomeController extends Controller
         $data = [
             'classCount'    => $classCount,
             'alunoCount'  => $alunoCount,
-            'teacherCount'  => $teacherCount,
+            'professorCount'  => $professorCount,
             'notices'       => $notices,
             'MasculinoalunosBySession' => $MasculinoalunosBySession,
         ];

@@ -7,7 +7,7 @@ interface SchoolClassInterface {
 
     public function getAllBySession($session_id);
 
-    public function getAllBySessionAndTeacher($session_id, $teacher_id);
+    public function getAllBySessionAndprofessor($session_id, $professor_id);
 
     public function getAllWithCoursesBySession($session_id);
 

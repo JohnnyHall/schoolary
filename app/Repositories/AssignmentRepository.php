@@ -14,7 +14,7 @@ class AssignmentRepository {
             Assignment::create([
                 'assignment_name'           => $request['assignment_name'],
                 'assignment_file_path'      => $path,
-                'teacher_id'                => auth()->user()->id,
+                'professor_id'                => auth()->user()->id,
                 'class_id'                  => $request['class_id'],
                 'section_id'                => $request['section_id'],
                 'course_id'                 => $request['course_id'],

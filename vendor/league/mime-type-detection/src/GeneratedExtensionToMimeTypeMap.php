@@ -954,7 +954,7 @@ class GeneratedExtensionToMimeTypeMap implements ExtensionToMimeTypeMap
         'tcap' => 'application/vnd.3gpp2.tcap',
         'tcl' => 'application/x-tcl',
         'td' => 'application/urc-targetdesc+xml',
-        'teacher' => 'application/vnd.smart.teacher',
+        'professor' => 'application/vnd.smart.professor',
         'tei' => 'application/tei+xml',
         'teicorpus' => 'application/tei+xml',
         'tex' => 'application/x-tex',

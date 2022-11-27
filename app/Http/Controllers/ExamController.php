@@ -10,7 +10,7 @@ use App\Traits\SchoolSession;
 use App\Interfaces\SemesterInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Interfaces\SchoolSessionInterface;
-use App\Repositories\AssignedTeacherRepository;
+use App\Repositories\AssignedprofessorRepository;
 use App\Repositories\ExamRepository;
 
 class ExamController extends Controller
@@ -48,18 +48,18 @@ class ExamController extends Controller
 
         $exams = $examRepository->getAll($current_school_session_id, $semester_id, $class_id);
 
-        $assignedTeacherRepository = new AssignedTeacherRepository();
+        $assignedprofessorRepository = new AssignedprofessorRepository();
 
-        $teacher_id = (auth()->user()->role == "teacher")?auth()->user()->id : 0;
+        $professor_id = (auth()->user()->role == "professor")?auth()->user()->id : 0;
 
-        $teacherCourses = $assignedTeacherRepository->getTeacherCourses($current_school_session_id, $teacher_id, $semester_id);
+        $professorCourses = $assignedprofessorRepository->getprofessorCourses($current_school_session_id, $professor_id, $semester_id);
 
         $data = [
             'current_school_session_id' => $current_school_session_id,
             'semesters'                 => $semesters,
             'classes'                   => $school_classes,
             'exams'                     => $exams,
-            'teacher_courses'           => $teacherCourses,
+            'professor_courses'           => $professorCourses,
         ];
 
         return view('exams.index', $data);
@@ -76,9 +76,9 @@ class ExamController extends Controller
 
         $semesters = $this->semesterRepository->getAll($current_school_session_id);
 
-        if(auth()->user()->role == "teacher") {
-            $teacher_id = auth()->user()->id;
-            $assigned_classes = $this->schoolClassRepository->getAllBySessionAndTeacher($current_school_session_id, $teacher_id);
+        if(auth()->user()->role == "professor") {
+            $professor_id = auth()->user()->id;
+            $assigned_classes = $this->schoolClassRepository->getAllBySessionAndprofessor($current_school_session_id, $professor_id);
 
             $school_classes = [];
             $i = 0;

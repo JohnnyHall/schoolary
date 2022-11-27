@@ -77,9 +77,9 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        @elseif(Auth::user()->role == "teacher")
-                                            @foreach ($teacher_courses as $teacher_course)
-                                                @if ($exam->course->id != $teacher_course->course_id)
+                                        @elseif(Auth::user()->role == "professor")
+                                            @foreach ($professor_courses as $professor_course)
+                                                @if ($exam->course->id != $professor_course->course_id)
                                                     @continue
                                                 @else
                                                 <tr>

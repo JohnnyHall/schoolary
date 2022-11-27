@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAssignedTeachersTable extends Migration
+class CreateAssignedprofessoresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateAssignedTeachersTable extends Migration
      */
     public function up()
     {
-        Schema::create('assigned_teachers', function (Blueprint $table) {
+        Schema::create('assigned_professores', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('teacher_id');
+            $table->unsignedInteger('professor_id');
             $table->unsignedInteger('semester_id');
             $table->unsignedInteger('class_id');
             $table->unsignedInteger('section_id');
@@ -32,6 +32,6 @@ class CreateAssignedTeachersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('assigned_teachers');
+        Schema::dropIfExists('assigned_professores');
     }
 }

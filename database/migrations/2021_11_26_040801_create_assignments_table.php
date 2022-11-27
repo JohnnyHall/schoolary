@@ -15,7 +15,7 @@ class CreateAssignmentsTable extends Migration
     {
         Schema::create('assignments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('teacher_id');
+            $table->unsignedInteger('professor_id');
             $table->unsignedInteger('semester_id');
             $table->unsignedInteger('class_id');
             $table->unsignedInteger('section_id');

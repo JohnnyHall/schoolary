@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TeacherAssignRequest extends FormRequest
+class professorAssignRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class TeacherAssignRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('assign teachers');
+        return auth()->user()->can('assign professores');
     }
 
     /**
@@ -28,7 +28,7 @@ class TeacherAssignRequest extends FormRequest
             'semester_id'           => 'required|integer',
             'class_id'              => 'required|integer',
             'section_id'            => 'required|integer',
-            'teacher_id'            => 'required|integer',
+            'professor_id'            => 'required|integer',
             'session_id'            => 'required|integer',
         ];
     }
