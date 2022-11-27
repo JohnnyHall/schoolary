@@ -187,14 +187,6 @@
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Academico</span></a>
             </li>
             @endif
-
-            @if (!session()->has('browse_session_id') && Auth::user()->role == "secretaria")
-            <li class="nav-item">
-                <a class="nav-link {{ request()->is('promotions*')? 'active' : '' }}"
-                    href="{{url('promotions/index')}}"><i class="bi bi-sort-numeric-up-alt"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Promotion</span></a>
-            </li>
-            @endif
         </ul>
     </div>
 </div>
