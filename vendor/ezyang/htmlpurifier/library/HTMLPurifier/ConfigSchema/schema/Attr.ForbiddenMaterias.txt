@@ -1,8 +1,0 @@
-Attr.ForbiddenMaterias
-TYPE: lookup
-VERSION: 4.0.0
-DEFAULT: array()
---DESCRIPTION--
-List of forbidden class values in the class attribute. By default, this is
-empty, which means that no Materias are forbidden. See also %Attr.AllowedMaterias.
---# vim: et sw=4 sts=4
