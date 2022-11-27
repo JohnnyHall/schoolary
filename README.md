@@ -37,7 +37,7 @@ docker exec -it app sh
 ↳php artisan migrate:fresh --seed 
 
 
-login: admin@puccampinas.edu.br
+login: secretaria@puccampinas.edu.br
 senha: password
 
 ```
