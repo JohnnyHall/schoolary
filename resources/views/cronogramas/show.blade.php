@@ -7,12 +7,10 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-calendar4-range"></i> cronograma</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-calendar4-range"></i> Cronograma</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Classes</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Section cronograma</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @php
@@ -58,7 +56,7 @@
                         </table>
                     </div>
                     @else
-                    <div class="p-3 bg-white border shadow-sm">No cronograma.</div>
+                    <div class="p-3 bg-white border shadow-sm">Sem cronograma.</div>
                     @endif
                 </div>
             </div>

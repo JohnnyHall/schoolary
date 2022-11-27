@@ -10,10 +10,10 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-calendar2-week"></i> View Attendance
+                        <i class="bi bi-calendar-week"></i> Ver frequencia
                     </h1>
 
-                    <h5><i class="bi bi-person"></i> aluno Name: {{$aluno->primeiro_nome}} {{$aluno->sobrenome}}</h5>
+                    <h5><i class="bi bi-person"></i> Nome: {{$aluno->primeiro_nome}} {{$aluno->sobrenome}}</h5>
                     <div class="row mt-3">
                         <div class="col bg-white p-3 border shadow-sm">
                             <div id="attendanceCalendar"></div>
@@ -24,9 +24,9 @@
                             <table class="table table-sm">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Status</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Context</th>
+                                        <th scope="col">Situação</th>
+                                        <th scope="col">Data</th>
+                                        <th scope="col">Turma</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -34,9 +34,9 @@
                                         <tr>
                                             <td>
                                                 @if ($attendance->status == "on")
-                                                    <span class="badge bg-success">PRESENT</span>
+                                                    <span class="badge bg-success">Presente</span>
                                                 @else
-                                                    <span class="badge bg-danger">ABSENT</span>
+                                                    <span class="badge bg-danger">Faltante</span>
                                                 @endif
                                                 
                                             </td>
@@ -59,9 +59,9 @@ $events = array();
 if(count($attendances) > 0){
     foreach ($attendances as $attendance){
         if($attendance->status == "on"){
-            $events[] = ['title'=> "Present", 'start' => $attendance->created_at, 'color'=>'green'];
+            $events[] = ['title'=> "Presente", 'start' => $attendance->created_at, 'color'=>'green'];
         } else {
-            $events[] = ['title'=> "Absent", 'start' => $attendance->created_at, 'color'=>'red'];
+            $events[] = ['title'=> "Faltante", 'start' => $attendance->created_at, 'color'=>'red'];
         }
     }
 }

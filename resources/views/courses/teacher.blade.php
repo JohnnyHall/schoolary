@@ -8,7 +8,7 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-journal-medical"></i> My Courses
+                        <i class="bi bi-journal-medical"></i> Meus Cursos
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -72,7 +72,7 @@
                                                         'class_name' => $course->schoolClass->class_name,
                                                         'section_name' => $course->section->section_name,
                                                         'course_name' => $course->course->course_name
-                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-calendar2-week-fill me-2"></i> View Attendance</a></li>
+                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-calendar2-week-fill me-2"></i>Ver frequencia</a></li>
                                                     <li><a href="{{route('course.monitoria.index', ['course_id' => $course->course->id])}}" role="button" class="dropdown-item"><i class="bi bi-journal-text me-2"></i> View monitoria</a></li>
                                                       <li><a href="{{route('assignment.create', [
                                                         'class_id' => $course->schoolClass->id,

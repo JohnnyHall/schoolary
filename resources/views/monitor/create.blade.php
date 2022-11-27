@@ -39,7 +39,7 @@
                                 <input type="text" class="form-control" id="monitoria-name" name="monitoria_name" placeholder="Email do monitor responsavel" required>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="monitoria-file" class="form-label">Materia complementar</label>
+                                <label for="monitoria-file" class="form-label">Material complementar</label>
                                 <input type="file" name="file" class="form-control" id="monitoria-file" accept=".jpg,.jpeg,.bmp,.png,.gif,.doc,.docx,.csv,.rtf,.xlsx,.xls,.txt,.pdf,.zip" required>
                             </div>
                             <div class="mb-4">
