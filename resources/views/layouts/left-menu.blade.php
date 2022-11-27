@@ -179,7 +179,7 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('calendar-event*')? 'active' : '' }}"
                     href="{{route('events.show')}}"><i class="bi bi-calendar-event"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Event</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline"> Calendario acadêmico</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('monitoria*')? 'active' : '' }}"
