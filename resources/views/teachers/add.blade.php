@@ -43,18 +43,27 @@
                                 <div id="previewFoto"></div>
                                 <input type="hidden" id="FotoHiddenInput" name="Foto" value="">
                             </div>
-                            <div class="col-4">
-                                <label for="inputAddress" class="form-label">Endereço</label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua H.Romeo Pinto" required>
-                            </div>
+
                             <div class="col-2">
-                                <label for="inputCity" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Paulinia" required>
-                            </div>
-                            <div class="col-2">
-                                <label for="inputZip" class="form-label">CEP</label>
-                                <input type="text" class="form-control" id="inputZip" name="zip" required>
-                            </div>
+                                    <label for="inputZip" class="form-label">CEP<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputZip" name="zip" required onblur="pesquisacep(this.value);" /></label><br />
+                                </div>
+
+
+                                <div class="col-3">
+                                    <label for="inputAddress" class="form-label">Rua<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua da puc..." required>
+
+
+                                </div>
+
+                                <div class="col-2">
+                                    <label for="inputCity" class="form-label">Cidade<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputCity" name="city" placeholder="Rolim de Moura..." required>
+
+                                </div>
+
+
                             <div class="col-3">
                                 <label for="inputPhone" class="form-label">Celular</label>
                                 <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+19 998......" required>
@@ -81,6 +90,75 @@
         </div>
     </div>
 </div>
+
+<script>
+    
+    function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('inputAddress').value=("");
+            document.getElementById('inputCity').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('inputAddress').value=(conteudo.logradouro);
+            document.getElementById('inputCity').value=(conteudo.localidade);
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('inputAddress').value="...";
+                document.getElementById('inputCity').value="..."; 
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+    </script>
+
+
+
+
+
+
 
 @include('components.Fotos.Foto-input')
 @endsection
