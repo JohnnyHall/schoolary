@@ -4,8 +4,8 @@ namespace Faker\Provider;
 
 class Person extends Base
 {
-    public const GENDER_Masculino = 'Masculino';
-    public const GENDER_Feminino = 'Feminino';
+    public const Sexo_Masculino = 'Masculino';
+    public const Sexo_Feminino = 'Feminino';
 
     protected static $titleFormat = [
         '{{titleMasculino}}',
@@ -40,17 +40,17 @@ class Person extends Base
     protected static $titleFeminino = ['Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.'];
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      *
      * @example 'John Doe'
      */
-    public function name($gender = null)
+    public function name($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             $format = static::randomElement(static::$MasculinoNameFormats);
-        } elseif ($gender === static::GENDER_Feminino) {
+        } elseif ($Sexo === static::Sexo_Feminino) {
             $format = static::randomElement(static::$FemininoNameFormats);
         } else {
             $format = static::randomElement(array_merge(static::$MasculinoNameFormats, static::$FemininoNameFormats));
@@ -60,19 +60,19 @@ class Person extends Base
     }
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      *
      * @example 'John'
      */
-    public function firstName($gender = null)
+    public function firstName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::firstNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::firstNameFeminino();
         }
 
@@ -108,17 +108,17 @@ class Person extends Base
     /**
      * @example 'Mrs.'
      *
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      */
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::titleMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::titleFeminino();
         }
 

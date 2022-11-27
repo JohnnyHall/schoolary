@@ -37,7 +37,7 @@
                                         <p class="card-text">RA: {{$promotion_info->RA}}</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Sexo: {{$aluno->gender}}</li>
+                                        <li class="list-group-item">Sexo: {{$aluno->Sexo}}</li>
                                         <li class="list-group-item">Celular: {{$aluno->phone}}</li>
                                     </ul>
                                 </div>
@@ -79,7 +79,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">Sexo:</th>
-                                                <td colspan="3">{{$aluno->gender}}</td>
+                                                <td colspan="3">{{$aluno->Sexo}}</td>
                                             </tr>
                                         </tbody>
                                     </table>

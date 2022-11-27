@@ -161,13 +161,13 @@ class Person extends \Faker\Provider\Person
 
     protected static $titleFeminino = ['Cụ', 'Bà', 'Bác', 'Cô', 'Chị', 'Em'];
 
-    public function middleName($gender = null)
+    public function middleName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::middleNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::middleNameFeminino();
         }
 

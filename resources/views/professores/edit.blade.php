@@ -54,10 +54,10 @@
                                 <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$professor->phone}}">
                             </div>
                             <div class="col-2">
-                                <label for="inputState" class="form-label">Gender</label>
-                                <select id="inputState" class="form-select" name="gender" required>
-                                    <option value="Masculino" {{($professor->gender == 'Masculino')?'selected':null}}>Masculino</option>
-                                    <option value="Feminino" {{($professor->gender == 'Feminino')?'selected':null}}>Feminino</option>
+                                <label for="inputState" class="form-label">Sexo</label>
+                                <select id="inputState" class="form-select" name="Sexo" required>
+                                    <option value="Masculino" {{($professor->Sexo == 'Masculino')?'selected':null}}>Masculino</option>
+                                    <option value="Feminino" {{($professor->Sexo == 'Feminino')?'selected':null}}>Feminino</option>
                                 </select>
                             </div>
                             <div class="col-3">

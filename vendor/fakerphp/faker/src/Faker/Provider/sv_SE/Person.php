@@ -122,17 +122,17 @@ class Person extends \Faker\Provider\Person
      * @see http://en.wikipedia.org/wiki/Personal_identity_number_(Sweden)
      *
      * @param \DateTime $birthdate
-     * @param string    $gender    Person::GENDER_Masculino || Person::GENDER_Feminino
+     * @param string    $Sexo    Person::Sexo_Masculino || Person::Sexo_Feminino
      *
      * @return string on format XXXXXX-XXXX
      */
-    public function personalIdentityNumber(\DateTime $birthdate = null, $gender = null)
+    public function personalIdentityNumber(\DateTime $birthdate = null, $Sexo = null)
     {
         if (!$birthdate) {
             $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
         }
         $datePart = $birthdate->format('ymd');
-        $randomDigits = $this->getBirthNumber($gender);
+        $randomDigits = $this->getBirthNumber($Sexo);
 
         $checksum = Luhn::computeCheckDigit($datePart . $randomDigits);
 
@@ -140,13 +140,13 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * @param string $gender Person::GENDER_Masculino || Person::GENDER_Feminino
+     * @param string $Sexo Person::Sexo_Masculino || Person::Sexo_Feminino
      *
      * @return string of three digits
      */
-    protected function getBirthNumber($gender = null)
+    protected function getBirthNumber($Sexo = null)
     {
-        if ($gender && $gender === static::GENDER_Masculino) {
+        if ($Sexo && $Sexo === static::Sexo_Masculino) {
             return (string) static::numerify('##') . static::randomElement([1, 3, 5, 7, 9]);
         }
 
@@ -158,7 +158,7 @@ class Person extends \Faker\Provider\Person
             return $randomDigits;
         };
 
-        if ($gender && $gender === static::GENDER_Feminino) {
+        if ($Sexo && $Sexo === static::Sexo_Feminino) {
             return $zeroCheck(static function () {
                 return (string) static::numerify('##') . static::randomElement([0, 2, 4, 6, 8]);
             });

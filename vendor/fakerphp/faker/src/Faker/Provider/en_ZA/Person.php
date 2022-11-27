@@ -44,7 +44,7 @@ class Person extends \Faker\Provider\Person
         'Xolani', 'Yusuf', 'andries', 'barend', 'contact', 'dumisani', 'jacobus', 'kabelo', 'kagiso', 'karabo', 'lesego', 'marthinus',
         'mashudu', 'next', 'nhlanhla', 'nicolaas', 'nkosinathi', 'personal', 'sello', 'sifiso', 'takalani', 'teboho', 'thulani', 'tumelo',
         'vusi', 'your',
-        // below are unknown gender firstnames
+        // below are unknown Sexo firstnames
         'Andries', 'Babalwa', 'Barend', 'Bulelwa', 'Contact ', 'Dumisani', 'Fikile', 'Jacobus', 'Kabelo', 'Kagiso', 'Karabo', 'Kelebogile', 'Lesego',
         'Lindiwe', 'Marthinus', 'Mashudu', 'Next', 'Nhlanhla', 'Nicolaas', 'Nkosinathi', 'Nompumelelo', 'Nonhlanhla', 'Nonkululeko', 'Nosipho', 'Nozipho',
         'Personal', 'Phumzile', 'Refiloe', 'Sello', 'Sibongile', 'Sifiso', 'Siphokazi', 'Takalani', 'Teboho', 'Thandeka', 'Thandi', 'Thembi',
@@ -70,7 +70,7 @@ class Person extends \Faker\Provider\Person
         'Tracy', 'Tshegofatso', 'Tshepiso', 'Ursula', 'Vanessa', 'Veronica', 'Victoria', 'Wendy', 'Yolanda', 'Yvette', 'Yvonne', 'Zama',
         'Zanele', 'Zelda', 'babalwa', 'bulelwa', 'fikile', 'kelebogile', 'lindiwe', 'nompumelelo', 'nonhlanhla', 'nonkululeko', 'nosipho', 'nozipho',
         'phumzile', 'refiloe', 'sibongile', 'siphokazi', 'thandeka', 'thandi', 'thembi', 'unathi', 'vuyokazi', 'yolandi', 'zandile',
-        // below are unknown gender firstnames
+        // below are unknown Sexo firstnames
         'Andries', 'Babalwa', 'Barend', 'Bulelwa', 'Contact ', 'Dumisani', 'Fikile', 'Jacobus', 'Kabelo', 'Kagiso', 'Karabo', 'Kelebogile', 'Lesego',
         'Lindiwe', 'Marthinus', 'Mashudu', 'Next', 'Nhlanhla', 'Nicolaas', 'Nkosinathi', 'Nompumelelo', 'Nonhlanhla', 'Nonkululeko', 'Nosipho', 'Nozipho',
         'Personal', 'Phumzile', 'Refiloe', 'Sello', 'Sibongile', 'Sifiso', 'Siphokazi', 'Takalani', 'Teboho', 'Thandeka', 'Thandi', 'Thembi',
@@ -137,36 +137,36 @@ class Person extends \Faker\Provider\Person
      *
      * @param \DateTime $birthdate
      * @param bool      $citizen
-     * @param string    $gender
+     * @param string    $Sexo
      *
      * @return string
      */
-    public function idNumber(\DateTime $birthdate = null, $citizen = true, $gender = null)
+    public function idNumber(\DateTime $birthdate = null, $citizen = true, $Sexo = null)
     {
         if (!$birthdate) {
             $birthdate = $this->generator->dateTimeThisCentury();
         }
         $birthDateString = $birthdate->format('ymd');
 
-        switch (strtolower($gender)) {
-            case static::GENDER_Feminino:
-                $genderDigit = self::numberBetween(0, 4);
+        switch (strtolower($Sexo)) {
+            case static::Sexo_Feminino:
+                $SexoDigit = self::numberBetween(0, 4);
 
                 break;
 
-            case static::GENDER_Masculino:
-                $genderDigit = self::numberBetween(5, 9);
+            case static::Sexo_Masculino:
+                $SexoDigit = self::numberBetween(5, 9);
 
                 break;
 
             default:
-                $genderDigit = self::numberBetween(0, 9);
+                $SexoDigit = self::numberBetween(0, 9);
         }
         $sequenceDigits = str_pad(self::randomNumber(3), 3, 0, STR_PAD_BOTH);
         $citizenDigit = ($citizen === true) ? '0' : '1';
         $raceDigit = self::numberBetween(8, 9);
 
-        $partialIdNumber = $birthDateString . $genderDigit . $sequenceDigits . $citizenDigit . $raceDigit;
+        $partialIdNumber = $birthDateString . $SexoDigit . $sequenceDigits . $citizenDigit . $raceDigit;
 
         return $partialIdNumber . Luhn::computeCheckDigit($partialIdNumber);
     }

@@ -82,17 +82,17 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      *
      * @example 'アオタ アキラ'
      */
-    public function kanaName($gender = null)
+    public function kanaName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             $format = static::randomElement(static::$MasculinoKanaNameFormats);
-        } elseif ($gender === static::GENDER_Feminino) {
+        } elseif ($Sexo === static::Sexo_Feminino) {
             $format = static::randomElement(static::$FemininoKanaNameFormats);
         } else {
             $format = static::randomElement(array_merge(static::$MasculinoKanaNameFormats, static::$FemininoKanaNameFormats));
@@ -102,19 +102,19 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      *
      * @example 'アキラ'
      */
-    public function firstKanaName($gender = null)
+    public function firstKanaName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::firstKanaNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::firstKanaNameFeminino();
         }
 

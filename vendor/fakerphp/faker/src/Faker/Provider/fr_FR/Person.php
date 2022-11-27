@@ -75,12 +75,12 @@ class Person extends \Faker\Provider\Person
      *
      * @return string
      */
-    public function nir($gender = null, $formatted = false)
+    public function nir($Sexo = null, $formatted = false)
     {
-        // Gender
-        if ($gender === static::GENDER_Masculino) {
+        // Sexo
+        if ($Sexo === static::Sexo_Masculino) {
             $nir = 1;
-        } elseif ($gender === static::GENDER_Feminino) {
+        } elseif ($Sexo === static::Sexo_Feminino) {
             $nir = 2;
         } else {
             $nir = $this->numberBetween(1, 2);

@@ -81,17 +81,17 @@ class Person extends \Faker\Provider\Person
      *
      *  @see https://nl.wikipedia.org/wiki/Rijksregisternummer
      *
-     *  @param string|null $gender 'Masculino', 'Feminino' or null for any
+     *  @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      *  @return string
      */
-    public static function rrn($gender = null)
+    public static function rrn($Sexo = null)
     {
         $middle = self::numberBetween(1, 997);
 
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             $middle = $middle % 2 === 1 ? $middle : $middle + 1;
-        } elseif ($gender === static::GENDER_Feminino) {
+        } elseif ($Sexo === static::Sexo_Feminino) {
             $middle = $middle % 2 === 0 ? $middle : $middle + 1;
         }
         $middle = sprintf('%03d', $middle);

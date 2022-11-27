@@ -767,12 +767,12 @@ class Person extends \Faker\Provider\Person
      *
      * @see https://en.wikipedia.org/wiki/Malaysian_identity_card#Structure_of_the_National_Registration_Identity_Card_Number_(NRIC)
      *
-     * @param string|null      $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null      $Sexo 'Masculino', 'Feminino' or null for any
      * @param bool|string|null $hyphen true, false, or any separator characters
      *
      * @return string
      */
-    public static function myKadNumber($gender = null, $hyphen = false)
+    public static function myKadNumber($Sexo = null, $hyphen = false)
     {
         // year of birth
         $yy = self::numberBetween(0, 99);
@@ -790,12 +790,12 @@ class Person extends \Faker\Provider\Person
         // random number
         $nnn = self::numberBetween(0, 999);
 
-        // gender digit. Odd = Masculino, Even = Feminino
+        // Sexo digit. Odd = Masculino, Even = Feminino
         $g = self::numberBetween(0, 9);
         //Credit: https://gist.github.com/mauris/3629548
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             $g = $g | 1;
-        } elseif ($gender === static::GENDER_Feminino) {
+        } elseif ($Sexo === static::Sexo_Feminino) {
             $g = $g & ~1;
         }
 

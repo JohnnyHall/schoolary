@@ -132,46 +132,46 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return middle name for the specified gender.
+     * Return middle name for the specified Sexo.
      *
-     * @param string|null $gender A gender the middle name should be generated
-     *                            for. If the argument is skipped a random gender will be used.
+     * @param string|null $Sexo A Sexo the middle name should be generated
+     *                            for. If the argument is skipped a random Sexo will be used.
      *
      * @return string Middle name
      */
-    public function middleName($gender = null)
+    public function middleName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return $this->middleNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return $this->middleNameFeminino();
         }
 
         return $this->middleName(static::randomElement([
-            static::GENDER_Masculino,
-            static::GENDER_Feminino,
+            static::Sexo_Masculino,
+            static::Sexo_Feminino,
         ]));
     }
 
     /**
-     * Return Sobrenome for the specified gender.
+     * Return Sobrenome for the specified Sexo.
      *
-     * @param string|null $gender A gender of the Sobrenome should be generated
-     *                            for. If the argument is skipped a random gender will be used.
+     * @param string|null $Sexo A Sexo of the Sobrenome should be generated
+     *                            for. If the argument is skipped a random Sexo will be used.
      *
      * @return string Sobrenome
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
         $lastName = static::randomElement(static::$lastName);
 
-        if (static::GENDER_Feminino === $gender) {
+        if (static::Sexo_Feminino === $Sexo) {
             return $lastName . 'а';
         }
 
-        if (static::GENDER_Masculino === $gender) {
+        if (static::Sexo_Masculino === $Sexo) {
             return $lastName;
         }
 

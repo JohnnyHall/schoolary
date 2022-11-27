@@ -38,7 +38,7 @@
                                         <h5 class="card-title">{{$professor->primeiro_nome}} {{$professor->sobrenome}}</h5>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Gender: {{$professor->gender}}</li>
+                                        <li class="list-group-item">Sexo: {{$professor->Sexo}}</li>
                                         <li class="list-group-item">Phone: {{$professor->phone}}</li>
                                     </ul>
                                 </div>
@@ -75,8 +75,8 @@
                                             <tr>
                                                 <th scope="row">Phone:</th>
                                                 <td>{{$professor->phone}}</td>
-                                                <th>Gender:</th>
-                                                <td>{{$professor->gender}}</td>
+                                                <th>Sexo:</th>
+                                                <td>{{$professor->Sexo}}</td>
                                             </tr>
                                             <tr>
                                             </tr>

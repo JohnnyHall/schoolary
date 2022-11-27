@@ -25,7 +25,7 @@ class Person extends \Faker\Provider\Person
         'Todor', 'Tomaš', 'Tomica', 'Tomislav', 'Tomo', 'Trpko', 'Uroš', 'Vasko', 'Velibor', 'Velimir', 'Veselin', 'Viktor',
         'Vlada', 'Vladan', 'Vladimir', 'Vladislav', 'Vlado', 'Vlastimir', 'Vlatko', 'Vuk', 'Vukan', 'Zdravko', 'Zlatko', 'Zoran',
         'Zvonimir', 'Zvonko', 'Ćirilo', 'Ćiro', 'Želimir', 'Željko',
-        // below are unknown gender firstnames
+        // below are unknown Sexo firstnames
         'Agnica', 'Agnija', 'Aksentije', 'Aleksandron', 'Aleksija', 'Aleksije', 'Alimpije', 'Anastasija', 'Andrijaš', 'Ankica', 'Anđa', 'Anđela', 'Anđelija',
         'Anđelka', 'Anđelko', 'Aranđel', 'Arsa', 'Arsenije', 'Arso', 'Atanacko', 'Atanasije', 'Avakum', 'Avram', 'Aćim', 'Bajko',
         'Bajo', 'Bajčeta', 'Batrić', 'Berisav', 'Berislav', 'Beriša', 'Biljan', 'Bisenija', 'Biserka', 'Biserko', 'Blagica', 'Blaginja',
@@ -124,7 +124,7 @@ class Person extends \Faker\Provider\Person
         'Veliša', 'Vera', 'Verica', 'Verka', 'Veronika', 'Vesela', 'Vesna', 'Vida', 'Viktorija', 'Violeta', 'Višnja', 'Vladanka',
         'Vlasta', 'Zaga', 'Zdravka', 'Zlatka', 'Zora', 'Zorana', 'Zorica', 'Ćira', 'Đurđa', 'Šana', 'Žaklina', 'Željka',
         'Živa',
-        // below are unknown gender firstnames
+        // below are unknown Sexo firstnames
         'Agnica', 'Agnija', 'Aksentije', 'Aleksandron', 'Aleksija', 'Aleksije', 'Alimpije', 'Anastasija', 'Andrijaš', 'Ankica', 'Anđa', 'Anđela', 'Anđelija',
         'Anđelka', 'Anđelko', 'Aranđel', 'Arsa', 'Arsenije', 'Arso', 'Atanacko', 'Atanasije', 'Avakum', 'Avram', 'Aćim', 'Bajko',
         'Bajo', 'Bajčeta', 'Batrić', 'Berisav', 'Berislav', 'Beriša', 'Biljan', 'Bisenija', 'Biserka', 'Biserko', 'Blagica', 'Blaginja',

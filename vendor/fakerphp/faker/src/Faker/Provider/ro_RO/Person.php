@@ -108,21 +108,21 @@ class Person extends \Faker\Provider\Person
      *
      * @example 1111111111118
      *
-     * @param string|null $gender      Person::GENDER_Masculino or Person::GENDER_Feminino
+     * @param string|null $Sexo      Person::Sexo_Masculino or Person::Sexo_Feminino
      * @param string|null $dateOfBirth (1800-2099) 'Y-m-d', 'Y-m', 'Y'  I.E. '1981-06-16', '2085-03', '1900'
      * @param string|null $county      county code where the CNP was issued
      * @param bool|null   $isResident  flag if the person resides in Romania
      *
      * @return string 13 digits CNP code
      */
-    public function cnp($gender = null, $dateOfBirth = null, $county = null, $isResident = true)
+    public function cnp($Sexo = null, $dateOfBirth = null, $county = null, $isResident = true)
     {
-        $genders = [Person::GENDER_Masculino, Person::GENDER_Feminino];
+        $Sexos = [Person::Sexo_Masculino, Person::Sexo_Feminino];
 
-        if (empty($gender)) {
-            $gender = static::randomElement($genders);
-        } elseif (!in_array($gender, $genders, false)) {
-            throw new \InvalidArgumentException("Gender must be '{Person::GENDER_Masculino}' or '{Person::GENDER_Feminino}'");
+        if (empty($Sexo)) {
+            $Sexo = static::randomElement($Sexos);
+        } elseif (!in_array($Sexo, $Sexos, false)) {
+            throw new \InvalidArgumentException("Sexo must be '{Person::Sexo_Masculino}' or '{Person::Sexo_Feminino}'");
         }
 
         $date = $this->getDateOfBirth($dateOfBirth);
@@ -135,7 +135,7 @@ class Person extends \Faker\Provider\Person
             $countyCode = static::$cnpCountyCodes[$county];
         }
 
-        $cnp = (string) $this->getGenderDigit($date, $gender, $isResident)
+        $cnp = (string) $this->getSexoDigit($date, $Sexo, $isResident)
             . $date->format('ymd')
             . $countyCode
             . static::numerify('##%')
@@ -194,18 +194,18 @@ class Person extends \Faker\Provider\Person
      * https://ro.wikipedia.org/wiki/Cod_numeric_personal#S
      *
      * @param bool   $isResident
-     * @param string $gender
+     * @param string $Sexo
      *
      * @return int
      */
-    protected static function getGenderDigit(\DateTime $dateOfBirth, $gender, $isResident)
+    protected static function getSexoDigit(\DateTime $dateOfBirth, $Sexo, $isResident)
     {
         if (!$isResident) {
             return 9;
         }
 
         if ($dateOfBirth->format('Y') < 1900) {
-            if ($gender == Person::GENDER_Masculino) {
+            if ($Sexo == Person::Sexo_Masculino) {
                 return 3;
             }
 
@@ -213,14 +213,14 @@ class Person extends \Faker\Provider\Person
         }
 
         if ($dateOfBirth->format('Y') < 2000) {
-            if ($gender == Person::GENDER_Masculino) {
+            if ($Sexo == Person::Sexo_Masculino) {
                 return 1;
             }
 
             return 2;
         }
 
-        if ($gender == Person::GENDER_Masculino) {
+        if ($Sexo == Person::Sexo_Masculino) {
             return 5;
         }
 

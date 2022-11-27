@@ -60,8 +60,8 @@
                                 <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required>
                             </div>
                             <div class="col-2">
-                                <label for="inputGender" class="form-label">Gender</label>
-                                <select id="inputGender" class="form-select" name="gender" required>
+                                <label for="inputSexo" class="form-label">Sexo</label>
+                                <select id="inputSexo" class="form-select" name="Sexo" required>
                                     <option selected>Masculino</option>
                                     <option>Feminino</option>
                                 </select>

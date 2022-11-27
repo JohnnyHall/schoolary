@@ -27,7 +27,7 @@ class professorestoreRequest extends FormRequest
             'primeiro_nome'    => 'required|string',
             'sobrenome'     => 'required|string',
             'email'         => 'required|string|email|max:255|unique:users',
-            'gender'        => 'required|string',
+            'Sexo'        => 'required|string',
             'nacionalidade'   => 'required|string',
             'phone'         => 'required|string',
             'address'       => 'required|string',
