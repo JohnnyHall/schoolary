@@ -8,12 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Add Teacher
+                        <i class="bi bi-person-lines-fill"></i> Adicionar professor
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Add Teacher</li>
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Voltar</a></li>
                         </ol>
                     </nav>
 
@@ -35,7 +34,7 @@
                                 <input type="email" class="form-control" id="inputEmail" name="email" required>
                             </div>
                             <div class="col-3">
-                                <label for="inputPassword" class="form-label">Password</label>
+                                <label for="inputPassword" class="form-label">Senha</label>
                                 <input type="password" class="form-control" id="inputPassword" name="password" required>
                             </div>
                             <div class="col-3">
@@ -45,34 +44,34 @@
                                 <input type="hidden" id="FotoHiddenInput" name="Foto" value="">
                             </div>
                             <div class="col-4">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required>
+                                <label for="inputAddress" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua H.Romeo Pinto" required>
                             </div>
                             <div class="col-2">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required>
+                                <label for="inputCity" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Paulinia" required>
                             </div>
                             <div class="col-2">
-                                <label for="inputZip" class="form-label">Zip</label>
+                                <label for="inputZip" class="form-label">CEP</label>
                                 <input type="text" class="form-control" id="inputZip" name="zip" required>
                             </div>
                             <div class="col-3">
-                                <label for="inputPhone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required>
+                                <label for="inputPhone" class="form-label">Celular</label>
+                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+19 998......" required>
                             </div>
                             <div class="col-2">
-                                <label for="inputGender" class="form-label">Gender</label>
-                                <select id="inputGender" class="form-select" name="gender" required>
+                                <label for="inputSexo" class="form-label">Sexo</label>
+                                <select id="inputSexo" class="form-select" name="Sexo" required>
                                     <option selected>Masculino</option>
                                     <option>Feminino</option>
                                 </select>
                             </div>
                             <div class="col-3">
-                                <label for="inputnacionalidade" class="form-label">nacionalidade</label>
-                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="e.g. Bangladeshi, German, ..." required>
+                                <label for="inputnacionalidade" class="form-label">Nacionalidade</label>
+                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="Brasileiro, Alemão..." required>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-plus"></i> Add</button>
+                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-plus"></i> Adicionar</button>
                             </div>
                         </form>
                     </div>

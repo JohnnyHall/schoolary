@@ -146,17 +146,17 @@ class Person extends \Faker\Provider\Person
     protected static $titleFeminino = ['δις.', 'δνις.', 'κα.'];
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Αγγελόπουλος'
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::lastNameFeminino();
         }
 

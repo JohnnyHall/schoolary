@@ -28,7 +28,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @see http://www.nama.web.id/search.php?gender=Masculino&origin=Indonesia+-+Jawa&letter=&submit=Search
+     * @see http://www.nama.web.id/search.php?Sexo=Masculino&origin=Indonesia+-+Jawa&letter=&submit=Search
      */
     protected static $firstNameMasculino = [
         'Abyasa', 'Ade', 'Adhiarja', 'Adiarja', 'Adika', 'Adikara', 'Adinata',
@@ -243,17 +243,17 @@ class Person extends \Faker\Provider\Person
     /**
      * Return Sobrenome
      *
-     * @param string|null $gender Masculino or Feminino or null for any
+     * @param string|null $Sexo Masculino or Feminino or null for any
      *
      * @return string Sobrenome
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::lastNameFeminino();
         }
         $lastNameRandomElement = static::randomElement(static::$lastNameFormat);
@@ -296,12 +296,12 @@ class Person extends \Faker\Provider\Person
      *
      * @see https://en.wikipedia.org/wiki/National_identification_number#Indonesia
      *
-     * @param string|null    $gender
+     * @param string|null    $Sexo
      * @param \DateTime|null $birthDate
      *
      * @return string
      */
-    public function nik($gender = null, $birthDate = null)
+    public function nik($Sexo = null, $birthDate = null)
     {
         // generate first numbers (region data)
         $nik = $this->birthPlaceCode();
@@ -311,12 +311,12 @@ class Person extends \Faker\Provider\Person
             $birthDate = $this->generator->dateTimeBetween();
         }
 
-        if (!$gender) {
-            $gender = $this->generator->randomElement([self::GENDER_Masculino, self::GENDER_Feminino]);
+        if (!$Sexo) {
+            $Sexo = $this->generator->randomElement([self::Sexo_Masculino, self::Sexo_Feminino]);
         }
 
-        // if gender is Feminino, add 40 to days
-        if ($gender == self::GENDER_Feminino) {
+        // if Sexo is Feminino, add 40 to days
+        if ($Sexo == self::Sexo_Feminino) {
             $nik .= $birthDate->format('d') + 40;
         } else {
             $nik .= $birthDate->format('d');

@@ -122,17 +122,17 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex slovenian title
      */
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
         return static::randomElement(static::$title);
     }
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Novak'
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
         return static::randomElement(static::$lastName);
     }

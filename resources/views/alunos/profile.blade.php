@@ -75,7 +75,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">Sexo:</th>
-                                                <td colspan="3">{{$aluno->gender}}</td>
+                                                <td colspan="3">{{$aluno->Sexo}}</td>
                                             </tr>
                                         </tbody>
                                     </table>

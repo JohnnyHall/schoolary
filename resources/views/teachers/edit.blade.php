@@ -8,13 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Edit Teacher
+                        <i class="bi bi-person-lines-fill"></i> Editar Professor
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Teacher List</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Edit Teacher</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
 
@@ -37,35 +35,35 @@
                                 <input type="email" class="form-control" id="inputEmail" name="email" required value="{{$teacher->email}}">
                             </div>
                             <div class="col-4">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$teacher->address}}">
+                                <label for="inputAddress" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua H.Romeo Pinto" required value="{{$teacher->address}}">
                             </div>
 
                             <div class="col-2">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$teacher->city}}">
+                                <label for="inputCity" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Paulinia" required value="{{$teacher->city}}">
                             </div>
                             <div class="col-2">
-                                <label for="inputZip" class="form-label">Zip</label>
+                                <label for="inputZip" class="form-label">CEP</label>
                                 <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$teacher->zip}}">
                             </div>
                             <div class="col-3">
-                                <label for="inputPhone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$teacher->phone}}">
+                                <label for="inputPhone" class="form-label">Celular</label>
+                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+19 998......" required value="{{$teacher->phone}}">
                             </div>
                             <div class="col-2">
-                                <label for="inputState" class="form-label">Gender</label>
-                                <select id="inputState" class="form-select" name="gender" required>
-                                    <option value="Masculino" {{($teacher->gender == 'Masculino')?'selected':null}}>Masculino</option>
-                                    <option value="Feminino" {{($teacher->gender == 'Feminino')?'selected':null}}>Feminino</option>
+                                <label for="inputState" class="form-label">Sexo</label>
+                                <select id="inputState" class="form-select" name="Sexo" required>
+                                    <option value="Masculino" {{($teacher->Sexo == 'Masculino')?'selected':null}}>Masculino</option>
+                                    <option value="Feminino" {{($teacher->Sexo == 'Feminino')?'selected':null}}>Feminino</option>
                                 </select>
                             </div>
                             <div class="col-3">
-                                <label for="inputnacionalidade" class="form-label">nacionalidade</label>
-                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="e.g. Bangladeshi, German, ..." required value="{{$teacher->nacionalidade}}">
+                                <label for="inputnacionalidade" class="form-label">Nacionalidade</label>
+                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="Brasileiro, Alemão..." required value="{{$teacher->nacionalidade}}">
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Update</button>
+                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Atualizar</button>
                             </div>
                         </form>
                     </div>

@@ -1368,10 +1368,10 @@ $bootstrap-icons-map: (
   "file-earmark-pdf": "\f63e",
   "file-pdf-fill": "\f63f",
   "file-pdf": "\f640",
-  "gender-ambiguous": "\f641",
-  "gender-Feminino": "\f642",
-  "gender-Masculino": "\f643",
-  "gender-trans": "\f644",
+  "Sexo-ambiguous": "\f641",
+  "Sexo-Feminino": "\f642",
+  "Sexo-Masculino": "\f643",
+  "Sexo-trans": "\f644",
   "headset-vr": "\f645",
   "info-lg": "\f646",
   "mastodon": "\f647",
@@ -2905,10 +2905,10 @@ $bootstrap-icons-map: (
 .bi-file-earmark-pdf::before { content: map-get($bootstrap-icons-map, "file-earmark-pdf"); }
 .bi-file-pdf-fill::before { content: map-get($bootstrap-icons-map, "file-pdf-fill"); }
 .bi-file-pdf::before { content: map-get($bootstrap-icons-map, "file-pdf"); }
-.bi-gender-ambiguous::before { content: map-get($bootstrap-icons-map, "gender-ambiguous"); }
-.bi-gender-Feminino::before { content: map-get($bootstrap-icons-map, "gender-Feminino"); }
-.bi-gender-Masculino::before { content: map-get($bootstrap-icons-map, "gender-Masculino"); }
-.bi-gender-trans::before { content: map-get($bootstrap-icons-map, "gender-trans"); }
+.bi-Sexo-ambiguous::before { content: map-get($bootstrap-icons-map, "Sexo-ambiguous"); }
+.bi-Sexo-Feminino::before { content: map-get($bootstrap-icons-map, "Sexo-Feminino"); }
+.bi-Sexo-Masculino::before { content: map-get($bootstrap-icons-map, "Sexo-Masculino"); }
+.bi-Sexo-trans::before { content: map-get($bootstrap-icons-map, "Sexo-trans"); }
 .bi-headset-vr::before { content: map-get($bootstrap-icons-map, "headset-vr"); }
 .bi-info-lg::before { content: map-get($bootstrap-icons-map, "info-lg"); }
 .bi-mastodon::before { content: map-get($bootstrap-icons-map, "mastodon"); }

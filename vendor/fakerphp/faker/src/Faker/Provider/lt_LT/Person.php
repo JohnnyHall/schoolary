@@ -252,19 +252,19 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Doe'
      *
      * @return string
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::lastNameFeminino();
         }
 
@@ -325,20 +325,20 @@ class Person extends \Faker\Provider\Person
      * @see https://en.wikipedia.org/wiki/National_identification_number#Lithuania
      * @see https://lt.wikipedia.org/wiki/Asmens_kodas
      *
-     * @param string    $gender       [Masculino|Feminino]
+     * @param string    $Sexo       [Masculino|Feminino]
      * @param \DateTime $birthdate
      * @param string    $randomNumber three integers
      *
      * @return string on format XXXXXXXXXXX
      */
-    public function personalIdentityNumber($gender = 'Masculino', \DateTime $birthdate = null, $randomNumber = '')
+    public function personalIdentityNumber($Sexo = 'Masculino', \DateTime $birthdate = null, $randomNumber = '')
     {
         if (!$birthdate) {
             $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
         }
 
-        $genderNumber = ($gender == 'Masculino') ? 1 : 0;
-        $firstNumber = (int) floor($birthdate->format('Y') / 100) * 2 - 34 - $genderNumber;
+        $SexoNumber = ($Sexo == 'Masculino') ? 1 : 0;
+        $firstNumber = (int) floor($birthdate->format('Y') / 100) * 2 - 34 - $SexoNumber;
 
         $datePart = $birthdate->format('ymd');
         $randomDigits = (string) (!$randomNumber || strlen($randomNumber) < 3) ? static::numerify('###') : substr($randomNumber, 0, 3);

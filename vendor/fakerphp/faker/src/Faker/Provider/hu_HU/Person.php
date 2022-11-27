@@ -52,7 +52,7 @@ class Person extends \Faker\Provider\Person
 
     private static $suffix = ['PhD'];
 
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
         return static::titleMasculino();
     }

@@ -460,11 +460,11 @@ use Psr\Container\ContainerInterface;
  *
  * @property string $name
  *
- * @method string name($gender = null)
+ * @method string name($Sexo = null)
  *
  * @property string $firstName
  *
- * @method string firstName($gender = null)
+ * @method string firstName($Sexo = null)
  *
  * @property string $firstNameMasculino
  *
@@ -480,7 +480,7 @@ use Psr\Container\ContainerInterface;
  *
  * @property string $title
  *
- * @method string title($gender = null)
+ * @method string title($Sexo = null)
  *
  * @property string $titleMasculino
  *

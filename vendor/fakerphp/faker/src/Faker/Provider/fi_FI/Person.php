@@ -92,11 +92,11 @@ class Person extends \Faker\Provider\Person
      * @see http://www.finlex.fi/fi/laki/ajantasa/2010/20100128
      *
      * @param \DateTime $birthdate
-     * @param string    $gender    Person::GENDER_Masculino || Person::GENDER_Feminino
+     * @param string    $Sexo    Person::Sexo_Masculino || Person::Sexo_Feminino
      *
      * @return string on format DDMMYYCZZZQ, where DDMMYY is the date of birth, C the century sign, ZZZ the individual number and Q the control character (checksum)
      */
-    public function personalIdentityNumber(\DateTime $birthdate = null, $gender = null)
+    public function personalIdentityNumber(\DateTime $birthdate = null, $Sexo = null)
     {
         $checksumCharacters = '0123456789ABCDEFHJKLMNPRSTUVWXY';
 
@@ -127,13 +127,13 @@ class Person extends \Faker\Provider\Person
 
         $randomDigits = self::numberBetween(0, 89);
 
-        if ($gender && $gender == static::GENDER_Masculino) {
+        if ($Sexo && $Sexo == static::Sexo_Masculino) {
             if ($randomDigits === 0) {
                 $randomDigits .= static::randomElement([3, 5, 7, 9]);
             } else {
                 $randomDigits .= static::randomElement([1, 3, 5, 7, 9]);
             }
-        } elseif ($gender && $gender == static::GENDER_Feminino) {
+        } elseif ($Sexo && $Sexo == static::Sexo_Feminino) {
             if ($randomDigits === 0) {
                 $randomDigits .= static::randomElement([2, 4, 6, 8]);
             } else {

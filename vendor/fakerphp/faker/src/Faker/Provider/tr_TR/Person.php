@@ -74,7 +74,7 @@ class Person extends \Faker\Provider\Person
 
     protected static $title = ['Doç. Dr.', 'Dr.', 'Prof. Dr.'];
 
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
         return static::titleMasculino();
     }

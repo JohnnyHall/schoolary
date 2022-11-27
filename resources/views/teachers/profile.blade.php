@@ -14,13 +14,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Teacher
+                        <i class="bi bi-person-lines-fill"></i> Professor
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                          <li class="breadcrumb-item"><a href="{{route('teacher.list.show')}}">Teacher List</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                            <li class="breadcrumb-item"><a href="{{route('teacher.list.show')}}">Voltar</a></li>                        </ol>
                         </ol>
                     </nav>
                     <div class="mb-4">
@@ -37,15 +35,12 @@
                                     <div class="card-body">
                                         <h5 class="card-title">{{$teacher->primeiro_nome}} {{$teacher->sobrenome}}</h5>
                                     </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Gender: {{$teacher->gender}}</li>
-                                        <li class="list-group-item">Phone: {{$teacher->phone}}</li>
-                                    </ul>
+                
                                 </div>
                             </div>
                             <div class="col-sm-8 col-md-9">
                                 <div class="p-3 mb-3 border rounded bg-white">
-                                    <h6>Teacher Information</h6>
+                                    <h4>Informações do professor</h4>
                                     <table class="table table-responsive mt-3">
                                         <tbody>
                                             <tr>
@@ -57,26 +52,26 @@
                                             <tr>
                                                 <th scope="row">Email:</th>
                                                 <td>{{$teacher->email}}</td>
-                                                <th scope="row">nacionalidade:</th>
+                                                <th scope="row">Nacionalidade:</th>
                                                 <td>{{$teacher->nacionalidade}}</td>
                                             </tr>
                                             <tr>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Address:</th>
+                                                <th scope="row">Endereço:</th>
                                                 <td>{{$teacher->address}}</td>
+                                                <th>Sexo:</th>
+                                                <td>{{$teacher->Sexo}}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">City:</th>
+                                                <th scope="row">Cidade:</th>
                                                 <td>{{$teacher->city}}</td>
-                                                <th>Zip:</th>
+                                                <th>CEP:</th>
                                                 <td>{{$teacher->zip}}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Phone:</th>
+                                                <th scope="row">Celular:</th>
                                                 <td>{{$teacher->phone}}</td>
-                                                <th>Gender:</th>
-                                                <td>{{$teacher->gender}}</td>
                                             </tr>
                                             <tr>
                                             </tr>

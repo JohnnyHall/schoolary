@@ -426,16 +426,16 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      * @param int         $minAge minimal age of "generated person" in years
      * @param int         $maxAge maximal age of "generated person" in years
      *
      * @return czech birth number
      */
-    public function birthNumber($gender = null, $minAge = 0, $maxAge = 100, $slashProbability = 50)
+    public function birthNumber($Sexo = null, $minAge = 0, $maxAge = 100, $slashProbability = 50)
     {
-        if ($gender === null) {
-            $gender = $this->generator->boolean() ? static::GENDER_Masculino : static::GENDER_Feminino;
+        if ($Sexo === null) {
+            $Sexo = $this->generator->boolean() ? static::Sexo_Masculino : static::Sexo_Feminino;
         }
 
         $startTimestamp = strtotime("-${maxAge} year");
@@ -448,7 +448,7 @@ class Person extends \Faker\Provider\Person
         $suffix = self::numberBetween(0, 999);
 
         // women has +50 to month
-        if ($gender == static::GENDER_Feminino) {
+        if ($Sexo == static::Sexo_Feminino) {
             $month += 50;
         }
         // from year 2004 everyone has +20 to month when birth numbers in one day are exhausted
@@ -478,15 +478,15 @@ class Person extends \Faker\Provider\Person
 
     public static function birthNumberMasculino()
     {
-        return static::birthNumber(static::GENDER_Masculino);
+        return static::birthNumber(static::Sexo_Masculino);
     }
 
     public static function birthNumberFeminino()
     {
-        return static::birthNumber(static::GENDER_Feminino);
+        return static::birthNumber(static::Sexo_Feminino);
     }
 
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
         return static::titleMasculino();
     }
@@ -508,17 +508,17 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * @param string|null $gender 'Masculino', 'Feminino' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Albrecht'
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_Masculino) {
+        if ($Sexo === static::Sexo_Masculino) {
             return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_Feminino) {
+        if ($Sexo === static::Sexo_Feminino) {
             return static::lastNameFeminino();
         }
 

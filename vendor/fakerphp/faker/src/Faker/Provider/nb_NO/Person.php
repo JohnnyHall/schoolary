@@ -289,11 +289,11 @@ class Person extends \Faker\Provider\Person
      * @see https://no.wikipedia.org/wiki/Personnummer
      *
      * @param \DateTime $birthdate
-     * @param string    $gender    Person::GENDER_Masculino || Person::GENDER_Feminino
+     * @param string    $Sexo    Person::Sexo_Masculino || Person::Sexo_Feminino
      *
      * @return string on format DDMMYY#####
      */
-    public function personalIdentityNumber(\DateTime $birthdate = null, $gender = null)
+    public function personalIdentityNumber(\DateTime $birthdate = null, $Sexo = null)
     {
         if (!$birthdate) {
             $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
@@ -307,22 +307,22 @@ class Person extends \Faker\Provider\Person
          */
         $randomDigits = (string) static::numerify('##');
 
-        switch ($gender) {
-            case static::GENDER_Masculino:
-                $genderDigit = static::randomElement([1, 3, 5, 7, 9]);
+        switch ($Sexo) {
+            case static::Sexo_Masculino:
+                $SexoDigit = static::randomElement([1, 3, 5, 7, 9]);
 
                 break;
 
-            case static::GENDER_Feminino:
-                $genderDigit = static::randomElement([0, 2, 4, 6, 8]);
+            case static::Sexo_Feminino:
+                $SexoDigit = static::randomElement([0, 2, 4, 6, 8]);
 
                 break;
 
             default:
-                $genderDigit = (string) static::numerify('#');
+                $SexoDigit = (string) static::numerify('#');
         }
 
-        $digits = $datePart . $randomDigits . $genderDigit;
+        $digits = $datePart . $randomDigits . $SexoDigit;
 
         /**
          * @todo Calculate modulo 11 of $digits

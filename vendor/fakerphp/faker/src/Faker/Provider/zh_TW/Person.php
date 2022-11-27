@@ -166,24 +166,24 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * @param string $gender Person::GENDER_Masculino || Person::GENDER_Feminino
+     * @param string $Sexo Person::Sexo_Masculino || Person::Sexo_Feminino
      *
      * @see https://en.wikipedia.org/wiki/National_Identification_Card_(Republic_of_China)
      *
      * @return string Length 10 alphanumeric characters, begins with 1 latin character (birthplace),
-     *                1 number (gender) and then 8 numbers (the last one is check digit).
+     *                1 number (Sexo) and then 8 numbers (the last one is check digit).
      */
-    public function personalIdentityNumber($gender = null)
+    public function personalIdentityNumber($Sexo = null)
     {
         $birthPlace = self::randomKey(self::$idBirthplaceCode);
         $birthPlaceCode = self::$idBirthplaceCode[$birthPlace];
 
-        $gender = ($gender != null) ? $gender : self::randomElement([self::GENDER_Feminino, self::GENDER_Masculino]);
-        $genderCode = ($gender === self::GENDER_Masculino) ? 1 : 2;
+        $Sexo = ($Sexo != null) ? $Sexo : self::randomElement([self::Sexo_Feminino, self::Sexo_Masculino]);
+        $SexoCode = ($Sexo === self::Sexo_Masculino) ? 1 : 2;
 
         $randomNumberCode = self::randomNumber(7, true);
 
-        $codes = str_split($birthPlaceCode . $genderCode . $randomNumberCode);
+        $codes = str_split($birthPlaceCode . $SexoCode . $randomNumberCode);
         $total = 0;
 
         foreach ($codes as $key => $code) {
@@ -196,6 +196,6 @@ class Person extends \Faker\Provider\Person
             $checkSumDigit = 0;
         }
 
-        return $birthPlace . $genderCode . $randomNumberCode . $checkSumDigit;
+        return $birthPlace . $SexoCode . $randomNumberCode . $checkSumDigit;
     }
 }

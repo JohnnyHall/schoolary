@@ -786,7 +786,7 @@ rivieren, die 't rijkst zijn aan visch, zijn niet die, waarin het
 meeste water is.
 
 Nadat Zijne Heilige Majesteit zijn raad bijeengeroepen had, besloot
-hij, dat de vangst volgenderwijze geschieden zou:
+hij, dat de vangst volSexowijze geschieden zou:
 
 De genadige infant zou rond negen of tien uren ten doop gebracht
 worden; ten blijke van groote vreugde, zouden de inwoners van

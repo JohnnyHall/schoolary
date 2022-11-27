@@ -181,8 +181,8 @@
       <code>czech</code>
     </InvalidReturnType>
     <NonStaticSelfCall occurrences="2">
-      <code>static::birthNumber(static::GENDER_Feminino)</code>
-      <code>static::birthNumber(static::GENDER_Masculino)</code>
+      <code>static::birthNumber(static::Sexo_Feminino)</code>
+      <code>static::birthNumber(static::Sexo_Masculino)</code>
     </NonStaticSelfCall>
     <UndefinedDocblockClass occurrences="1">
       <code>czech</code>

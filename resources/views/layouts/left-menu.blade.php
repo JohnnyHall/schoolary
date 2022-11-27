@@ -51,7 +51,7 @@
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('aluno.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('aluno.create.show')}}"><i
-                                class="bi bi-person-plus me-2"></i> Adicionar Aluno</a></li>
+                                class="bi bi-person-plus me-2"></i>Adicionar Aluno</a></li>
                     @endif
                 </ul>
             </li>
@@ -59,7 +59,7 @@
                 <a type="button" href="#teacher-submenu" data-bs-toggle="collapse"
                     class="d-flex nav-link {{ request()->is('teachers*')? 'active' : '' }}"><i
                         class="bi bi-person-lines-fill"></i> <span
-                        class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Teachers</span>
+                        class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Professores</span>
                     <i class="ms-auto d-inline d-sm-none d-md-none d-xl-inline bi bi-chevron-down"></i>
                 </a>
                 <ul class="nav collapse {{ request()->is('teachers*')? 'show' : 'hide' }} bg-white"
@@ -67,12 +67,12 @@
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('teacher.list.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('teacher.list.show')}}"><i
-                                class="bi bi-person-video2 me-2"></i> View Teachers</a></li>
+                                class="bi bi-person-video2 me-2"></i>Vizualizar Professores</a></li>
                     @if (!session()->has('browse_session_id') && Auth::user()->role == "secretaria")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('teacher.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('teacher.create.show')}}"><i
-                                class="bi bi-person-plus me-2"></i> Add Teacher</a></li>
+                                class="bi bi-person-plus me-2"></i>Adicionar Professores</a></li>
                     @endif
                 </ul>
             </li>
@@ -124,7 +124,7 @@
                             'class_id'  => $class_info->class_id,
                             'section_id'=> $class_info->section_id
                         ])}}"><i class="bi bi-calendar4-range"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">cronograma</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Cronograma</span></a>
             </li>
             @endif
             @if(Auth::user()->role != "aluno")
