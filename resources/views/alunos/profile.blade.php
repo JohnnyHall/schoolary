@@ -36,10 +36,6 @@
                                         <h5 class="card-title">{{$aluno->primeiro_nome}} {{$aluno->sobrenome}}</h5>
                                         <p class="card-text">RA: {{$promotion_info->RA}}</p>
                                     </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Sexo: {{$aluno->Sexo}}</li>
-                                        <li class="list-group-item">Celular: {{$aluno->phone}}</li>
-                                    </ul>
                                 </div>
                             </div>
                             <div class="col-sm-8 col-md-9">

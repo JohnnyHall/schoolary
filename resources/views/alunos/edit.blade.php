@@ -84,7 +84,7 @@
 
                                 <div class="col-3">
                                     <label for="inputPhone" class="form-label">Celular</label>
-                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$aluno->phone}}">
+                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+19 998......" required value="{{$aluno->phone}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputRA" class="form-label">RA</label>
@@ -94,7 +94,7 @@
 
                             <div class="row mt-4">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Update</button>
+                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Atualizar</button>
                                 </div>
                             </div>
                         </form>

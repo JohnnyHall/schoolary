@@ -8,13 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Edit professor
+                        <i class="bi bi-person-lines-fill"></i> Editar professor
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">professor List</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Edit professor</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
 
@@ -37,21 +35,21 @@
                                 <input type="email" class="form-control" id="inputEmail" name="email" required value="{{$professor->email}}">
                             </div>
                             <div class="col-4">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$professor->address}}">
+                                <label for="inputAddress" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua H.Romeo Pinto" required value="{{$professor->address}}">
                             </div>
 
                             <div class="col-2">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$professor->city}}">
+                                <label for="inputCity" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Paulinia" required value="{{$professor->city}}">
                             </div>
                             <div class="col-2">
-                                <label for="inputZip" class="form-label">Zip</label>
+                                <label for="inputZip" class="form-label">CEP</label>
                                 <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$professor->zip}}">
                             </div>
                             <div class="col-3">
-                                <label for="inputPhone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{$professor->phone}}">
+                                <label for="inputPhone" class="form-label">Celular</label>
+                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+19 998......" required value="{{$professor->phone}}">
                             </div>
                             <div class="col-2">
                                 <label for="inputState" class="form-label">Sexo</label>
@@ -61,11 +59,11 @@
                                 </select>
                             </div>
                             <div class="col-3">
-                                <label for="inputnacionalidade" class="form-label">nacionalidade</label>
-                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="e.g. Bangladeshi, German, ..." required value="{{$professor->nacionalidade}}">
+                                <label for="inputnacionalidade" class="form-label">Nacionalidade</label>
+                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="Brasileiro, Alemão..." required value="{{$professor->nacionalidade}}">
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Update</button>
+                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-check"></i> Atualizar</button>
                             </div>
                         </form>
                     </div>

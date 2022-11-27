@@ -45,11 +45,11 @@
                             </div>
                             <div class="col-4">
                                 <label for="inputAddress" class="form-label">Endereço</label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required>
+                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua H.Romeo Pinto" required>
                             </div>
                             <div class="col-2">
                                 <label for="inputCity" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required>
+                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Paulinia" required>
                             </div>
                             <div class="col-2">
                                 <label for="inputZip" class="form-label">CEP</label>
@@ -57,7 +57,7 @@
                             </div>
                             <div class="col-3">
                                 <label for="inputPhone" class="form-label">Celular</label>
-                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required>
+                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+19 998......" required>
                             </div>
                             <div class="col-2">
                                 <label for="inputSexo" class="form-label">Sexo</label>
@@ -67,11 +67,11 @@
                                 </select>
                             </div>
                             <div class="col-3">
-                                <label for="inputnacionalidade" class="form-label">nacionalidade</label>
-                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="e.g. Bangladeshi, German, ..." required>
+                                <label for="inputnacionalidade" class="form-label">Nacionalidade</label>
+                                <input type="text" class="form-control" id="inputnacionalidade" name="nacionalidade" placeholder="Brasileiro, Alemão..." required>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-plus"></i> Add</button>
+                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-plus"></i> Adicionar</button>
                             </div>
                         </form>
                     </div>
