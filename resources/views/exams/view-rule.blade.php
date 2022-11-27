@@ -8,13 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-file-text"></i> Exam Rules
+                        <i class="bi bi-file-text"></i> Regras da prova
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Exams</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Exam Rules</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     <div class="mb-4 bg-white border shadow-sm p-3">

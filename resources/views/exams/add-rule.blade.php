@@ -7,12 +7,10 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-file-plus"></i> Add Exam Rule</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-file-plus"></i> Adicionar regra a prova</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Exams</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Add Exam Rule</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @include('session-messages')
@@ -35,7 +33,7 @@
                                         <label for="inputMarksDistributionNote" class="form-label">Marks Distribution Note</label>
                                         <textarea class="form-control" id="inputMarksDistributionNote" rows="3" placeholder="Written: 7, MCQ: 3, ..." name="marks_distribution_note"></textarea>
                                     </div>
-                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Add</button>
+                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Adicionar</button>
                                 </form>
                             </div>
                         </div>

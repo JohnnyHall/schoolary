@@ -9,7 +9,7 @@ class GradeRuleRepository {
         try {
             GradeRule::create($request);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to create grading system rule. '.$e->getMessage());
+            throw new \Exception('Falha ao criar a Grade. '.$e->getMessage());
         }
     }
 
@@ -17,7 +17,7 @@ class GradeRuleRepository {
         try {
             GradeRule::destroy($id);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to delete grading system rule. '.$e->getMessage());
+            throw new \Exception('Falha ao deletar a Grade. '.$e->getMessage());
         }
     }
 

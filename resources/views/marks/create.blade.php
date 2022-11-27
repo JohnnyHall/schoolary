@@ -51,7 +51,7 @@
                                             <th scope="col">aluno Name</th>
                                             @isset($exams)
                                                 @foreach ($exams as $exam)
-                                                <th scope="col"><a href="{{route('exam.rule.show', ['exam_id' => $exam->id])}}" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{$exam->exam_name}} exam rules">{{$exam->exam_name}}</a></th>
+                                                <th scope="col"><a href="{{route('exam.rule.show', ['exam_id' => $exam->id])}}" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver {{$exam->exam_name}} regras da prova">{{$exam->exam_name}}</a></th>
                                                 @endforeach
                                             @endisset
                                             </tr>

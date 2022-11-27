@@ -82,7 +82,7 @@
                 <a class="nav-link {{ (request()->is('courses/teacher*') || request()->is('courses/assignments*'))? 'active' : '' }}"
                     href="{{route('course.teacher.list.show', ['teacher_id' => Auth::user()->id])}}"><i
                         class="bi bi-journal-medical"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">My Courses</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Meus cursos</span></a>
             </li>
             @endif
             @if(Auth::user()->role == "aluno")
@@ -90,17 +90,17 @@
                 <a class="nav-link {{ request()->routeIs('aluno.attendance.show')? 'active' : '' }}"
                     href="{{route('aluno.attendance.show', ['id' => Auth::user()->id])}}"><i
                         class="bi bi-calendar2-week"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Attendance</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Presença</span></a>
             <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('course.aluno.list.show')? 'active' : '' }}"
                     href="{{route('course.aluno.list.show', ['aluno_id' => Auth::user()->id])}}"><i
                         class="bi bi-journal-medical"></i> <span
-                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Courses</span></a>
+                        class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Curso</span></a>
             </li>
             {{-- <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-file-post"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Assignments</span></a>
+                        <a class="nav-link" href="#"><i class="bi bi-file-post"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Envios</span></a>
                     </li><li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-cloud-sun"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Marks</span></a>
+                        <a class="nav-link" href="#"><i class="bi bi-cloud-sun"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Nota</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-journal-text"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Monitoria</span></a>
@@ -131,43 +131,32 @@
             <li class="nav-item border-bottom">
                 <a type="button" href="#exam-grade-submenu" data-bs-toggle="collapse"
                     class="d-flex nav-link {{ request()->is('exams*')? 'active' : '' }}"><i class="bi bi-file-text"></i>
-                    <span class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Exams / Grades</span>
+                    <span class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Provas</span>
                     <i class="ms-auto d-inline d-sm-none d-md-none d-xl-inline bi bi-chevron-down"></i>
                 </a>
                 <ul class="nav collapse {{ request()->is('exams*')? 'show' : 'hide' }} bg-white"
                     id="exam-grade-submenu">
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.list.show')? 'font-weight:bold;' : '' }}"><a class="nav-link"
-                            href="{{route('exam.list.show')}}"><i class="bi bi-file-text me-2"></i> View Exams</a></li>
+                            href="{{route('exam.list.show')}}"><i class="bi bi-file-text me-2"></i> Ver Provas</a></li>
                     @if (Auth::user()->role == "secretaria" || Auth::user()->role == "teacher")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('exam.create.show')}}"><i class="bi bi-file-plus me-2"></i>
-                            Create Exams</a></li>
+                            Criar Prova</a></li>
                     @endif
                     @if (Auth::user()->role == "secretaria")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.grade.system.create')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('exam.grade.system.create')}}"><i
-                                class="bi bi-file-plus me-2"></i> Add Grade Systems</a></li>
+                                class="bi bi-file-plus me-2"></i> Adicionar Grade</a></li>
                     @endif
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.grade.system.index')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('exam.grade.system.index')}}"><i
-                                class="bi bi-file-ruled me-2"></i> View Grade Systems</a></li>
+                                class="bi bi-file-ruled me-2"></i> Ver grade</a></li>
                 </ul>
             </li>
-            {{-- <li class="nav-item border-bottom">
-                        <a type="button" href="#" class="d-flex nav-link {{ request()->is('marks*')? 'active' : '' }}
-            dropdown-toggle caret-off" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-cloud-sun"></i>
-            <span class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Marks / Results</span>
-            <i class="ms-auto d-inline d-sm-none d-md-none d-xl-inline bi bi-chevron-down"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="{{url('marks/view')}}">View Marks</a></li>
-                <li><a class="dropdown-item" href="{{url('marks/results')}}">View Results</a></li>
-            </ul>
-            </li> --}}
             @endif
             
             @if (Auth::user()->role == "secretaria")
