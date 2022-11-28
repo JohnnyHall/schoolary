@@ -45,20 +45,20 @@
                             </div>
 
                             <div class="col-2">
-                                    <label for="inputZip" class="form-label">CEP<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <label for="inputZip" class="form-label">CEP</label>
                                     <input type="text" class="form-control" id="inputZip" name="zip" required onblur="pesquisacep(this.value);" /></label><br />
                                 </div>
 
 
                                 <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Rua<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <label for="inputAddress" class="form-label">Rua</label>
                                     <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua da puc..." required>
 
 
                                 </div>
 
                                 <div class="col-2">
-                                    <label for="inputCity" class="form-label">Cidade<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <label for="inputCity" class="form-label">Cidade</label>
                                     <input type="text" class="form-control" id="inputCity" name="city" placeholder="Rolim de Moura..." required>
 
                                 </div>
