@@ -21,6 +21,8 @@ Criação de sistema capaz de gerenciar matrículas, cursos, professores e aluno
 ## ⚙️ Installation
 
 ```
+git clone https://github.com/JohnnyHall/schoolary
+
 docker-compose up -d
 
 docker exec -it db sh
