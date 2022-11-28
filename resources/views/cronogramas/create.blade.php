@@ -21,7 +21,7 @@
                                     @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div>
-                                        <p class="mt-2">Select class:</p>
+                                        <p class="mt-2">Selecione a classe:</p>
                                         <select onchange="getSectionsAndCourses(this);" class="form-select" name="class_id" required>
                                             @isset($classes)
                                                 <option selected disabled>Favor selecionar uma materia</option>
@@ -42,7 +42,7 @@
                                         </select>
                                     </div>
                                     <div class="mt-2">
-                                        <p>Week Day</p>
+                                        <p>Dia da Semana</p>
                                         <select class="form-select" id="course-select" name="weekday" required>
                                             <option value="1">Segunda</option>
                                             <option value="2">Terça</option>
