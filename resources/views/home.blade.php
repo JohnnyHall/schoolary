@@ -14,7 +14,7 @@
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="ms-2 me-auto">
-                                            <div class="fw-bold"><i class="bi-person-circle me-3"></i> Numero de estudantes</div>
+                                            <i class="bi-person-circle me-3"></i> Numero de estudantes
                                         </div>
                                         <span class="badge bg-dark rounded-pill">{{$alunoCount}}</span>
                                     </div>
@@ -79,23 +79,6 @@
                                     <h3> Seja bem vindo a area logada do aluno! </h3>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    @endif
-                    
-                    @if($alunoCount > 0)
-                    <div class="mt-3 d-flex align-items-center">
-                        {{-- <div class="col-9 d-flex flex-row" style="height: 10px;">
-                            <div class="bg-dark border text-white" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: {{($MasculinoalunosBySession/$alunoCount) * 100}}%"> </div>
-                            <div class="bg-white border text-dark" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: {{(($alunoCount - $MasculinoalunosBySession)/$alunoCount) * 100}}%"> </div>
-                        </div> --}}
-                        <div class="col-3">
-                            <span class="badge rounded-pill border" style="background-color: #fc053e;">Masculino</span>
-                            <span class="badge rounded-pill border" style="background-color: #49a4fe;">Feminino</span>
-                        </div>
-                        <div class="col-9 progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #0678c8; width: {{round(($MasculinoalunosBySession/$alunoCount), 2) * 100}}%" aria-valuenow="{{round(($MasculinoalunosBySession/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round(($MasculinoalunosBySession/$alunoCount), 2) * 100}}%</div>
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="background-color: #49a4fe; width: {{round((($alunoCount - $MasculinoalunosBySession)/$alunoCount), 2) * 100}}%" aria-valuenow="{{round((($alunoCount - $MasculinoalunosBySession)/$alunoCount), 2) * 100}}" aria-valuemin="0" aria-valuemax="100">{{round((($alunoCount - $MasculinoalunosBySession)/$alunoCount), 2) * 100}}%</div>
                         </div>
                     </div>
                     @endif
