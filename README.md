@@ -41,19 +41,14 @@ login: secretaria@puccampinas.edu.br
 senha: password
 
 ```
-
-## 🖼️ Some Examples
-  <img src="https://i.imgur.com/T1xCI92.png" height='200'/><br>
-  <img src="https://i.imgur.com/T1xCI92.png" height='200'/><br>
-  <img src="https://i.imgur.com/T1xCI92.png" height='200'/><br>
   
 ## 🌎 Locales
 Currently available locales are:
 - Brazilian Portuguese (pt_br)
 
 ## 🤝 Contributing
-1. [Fork the repository](https://github.com/JohnnyHall/readme-markdown-template/fork)
-2. Clone your fork: `git clone https://github.com/JohnnyHall/readme-markdown-template.git`
+1. [Fork the repository](https://github.com/JohnnyHall/schoolary/fork)
+2. Clone your fork: `git clone https://github.com/JohnnyHall/schoolary.git`
 3. Stage changes `git add .`
 4. Commit your changes: `cz` OR use `git commit`
 5. Submit a pull request
@@ -70,7 +65,7 @@ Currently available locales are:
 
 <p align="center">
   Created on <br>
-  dd/mm/yyyy
+  15/11/2022 
 </p>
 
 https://github.com/barryvdh/laravel-debugbar
