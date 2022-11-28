@@ -8,20 +8,19 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-calendar2-week"></i> Take Attendance
+                        <i class="bi bi-calendar2-week"></i> Pegar Presença
                     </h1>
 
                     @include('session-messages')
 
-                    <h3><i class="bi bi-compass"></i>
-                        Class #{{request()->query('class_name')}}, 
+                    <h3>
+                        Materia: {{request()->query('class_name')}}, 
                         @if ($academic_setting->attendance_type == 'course')
                             Course: {{request()->query('course_name')}}
                         @else
-                            Section #{{request()->query('section_name')}}
+                            Turma: {{request()->query('section_name')}}
                         @endif
                     </h3>
-                    <div class="mt-4">Current Date and Time: {{ date('Y-m-d H:i:s') }}</div>
                     <div class="row mt-4">
                         <div class="col-10 bg-white border p-3 shadow-sm">
                             <form action="{{route('attendances.store')}}" method="POST">
