@@ -40,6 +40,8 @@ docker exec -it app sh
 login: secretaria@puccampinas.edu.br
 senha: password
 
+Utilizar: http://localhost:8080/
+
 ```
   
 ## 🌎 Locales
