@@ -289,7 +289,7 @@ This allows to convert any `BigNumber` to a `BigDecimal` with a given scale, usi
   - `compareTo()` and derived methods (`isEqualTo()`, `isGreaterThan()`, ...) that work across different `BigNumber` types
   - `toBigInteger()`, `toBigDecimal()`, `toBigRational`() conversion methods
   - `toInteger()` and `toFloat()` conversion methods to native types
-- Unified `of()` behaviour: every class now accepts any type of number, provided that it can be safely converted to the current type
+- schoolary `of()` behaviour: every class now accepts any type of number, provided that it can be safely converted to the current type
 - New method: `BigDecimal::exactlyDividedBy()`; this method automatically computes the scale of the result, provided that the division yields a finite number of digits
 - New methods: `BigRational::quotient()` and `remainder()`
 - Fine-grained exceptions: `DivisionByZeroException`, `RoundingNecessaryException`, `NumberFormatException`

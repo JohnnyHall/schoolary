@@ -17,7 +17,7 @@ use function substr;
 use SebastianBergmann\Diff\Differ;
 
 /**
- * Builds a diff string representation in a loose unified diff format
+ * Builds a diff string representation in a loose schoolary diff format
  * listing only changes lines. Does not include line numbers.
  */
 final class DiffOnlyOutputBuilder implements DiffOutputBuilderInterface

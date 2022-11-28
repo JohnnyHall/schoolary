@@ -44,7 +44,7 @@ The code above yields the output below:
 
 There are three output builders available in this package:
 
-#### UnifiedDiffOutputBuilder
+#### schoolaryDiffOutputBuilder
 
 This is default builder, which generates the output close to udiff and is used by PHPUnit.
 
@@ -52,9 +52,9 @@ This is default builder, which generates the output close to udiff and is used b
 <?php
 
 use SebastianBergmann\Diff\Differ;
-use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
+use SebastianBergmann\Diff\Output\schoolaryDiffOutputBuilder;
 
-$builder = new UnifiedDiffOutputBuilder(
+$builder = new schoolaryDiffOutputBuilder(
     "--- Original\n+++ New\n", // custom header
     false                      // do not add line numbers to the diff 
 );
@@ -63,21 +63,21 @@ $differ = new Differ($builder);
 print $differ->diff('foo', 'bar');
 ```
 
-#### StrictUnifiedDiffOutputBuilder
+#### StrictschoolaryDiffOutputBuilder
 
-Generates (strict) Unified diff's (unidiffs) with hunks,
+Generates (strict) schoolary diff's (unidiffs) with hunks,
 similar to `diff -u` and compatible with `patch` and `git apply`.
 
 ```php
 <?php
 
 use SebastianBergmann\Diff\Differ;
-use SebastianBergmann\Diff\Output\StrictUnifiedDiffOutputBuilder;
+use SebastianBergmann\Diff\Output\StrictschoolaryDiffOutputBuilder;
 
-$builder = new StrictUnifiedDiffOutputBuilder([
+$builder = new StrictschoolaryDiffOutputBuilder([
     'collapseRanges'      => true, // ranges of length one are rendered with the trailing `,1`
     'commonLineThreshold' => 6,    // number of same lines before ending a new hunk and creating a new one (if needed)
-    'contextLines'        => 3,    // like `diff:  -u, -U NUM, --unified[=NUM]`, for patch/git apply compatibility best to keep at least @ 3
+    'contextLines'        => 3,    // like `diff:  -u, -U NUM, --schoolary[=NUM]`, for patch/git apply compatibility best to keep at least @ 3
     'fromFile'            => null,
     'fromFileDate'        => null,
     'toFile'              => null,
@@ -112,7 +112,7 @@ You can pass any output builder to the `Differ` class as longs as it implements 
 
 #### Parsing diff
 
-The `Parser` class can be used to parse a unified diff into an object graph:
+The `Parser` class can be used to parse a schoolary diff into an object graph:
 
 ```php
 use SebastianBergmann\Diff\Parser;
