@@ -22,7 +22,6 @@
                     @elseif(request()->query('section_name'))
                         <h3><i class="bi bi-book-fill"></i> Section: {{request()->query('section_name')}} </h3>
                     @endif
-                    <div class="mt-4">Current Date and Time: {{ date('Y-m-d H:i:s') }}</div>
                     <div class="row mt-4">
                         <div class="col bg-white border shadow-sm pt-2">
                             <table class="table">

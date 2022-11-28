@@ -150,6 +150,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mt-4">Utlimo login: {{ date('Y-m-d H:i:s') }}</div>
                 </div>
             </div>
         </div>

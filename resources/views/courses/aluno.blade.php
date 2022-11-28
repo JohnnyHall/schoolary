@@ -40,8 +40,8 @@
                                                         'section_id' => $class_info->section_id,
                                                         'aluno_id' => Auth::user()->id
                                                         ])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-cloud-sun"></i> Ver Marks</a>
-                                                    <a href="{{route('course.monitoria.index', ['course_id'  => $course->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-info-circle-fill"></i> Ver monitoria</a>
-                                                    <a href="{{route('assignment.list.show', ['course_id' => $course->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-file-post"></i> Ver Assignments</a>
+                                                    <a href="{{route('course.monitoria.index', ['course_id'  => $course->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-info-circle-fill"></i> Ver Monitoria</a>
+                                                    <a href="{{route('assignment.list.show', ['course_id' => $course->id])}}" role="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-file-post"></i> Ver Comentarios</a>
                                                 </div>
                                             </td>
                                         </tr>
