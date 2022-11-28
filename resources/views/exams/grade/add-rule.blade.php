@@ -32,7 +32,7 @@
                                         <label for="inputEnds" class="form-label">Data de termino</label>
                                         <input type="number" step="0.01" name="end_at" class="form-control" id="inputData de termino" placeholder="100, 89, ...">
                                     </div>
-                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Adicionar</button>
+                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-arrow-repeat"></i> Adicionar</button>
                                 </form>
                             </div>
                         </div>

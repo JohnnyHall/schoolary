@@ -77,31 +77,6 @@
                             </div>
                             <div class="col-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Tipo de frequencia</h6>
-                                    <p class="text-danger">
-                                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i>Não trocar no meio do semestre.</small>
-                                    </p>
-                                    <form action="{{route('school.attendance.type.update')}}" method="POST">
-                                        @csrf
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="attendance_type" id="attendance_type_section" {{($academic_setting->attendance_type == 'section')?'checked="checked"':null}} value="section">
-                                            <label class="form-check-label" for="attendance_type_section">
-                                                Frequencia por turma
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="attendance_type" id="attendance_type_course" {{($academic_setting->attendance_type == 'course')?'checked="checked"':null}} value="course">
-                                            <label class="form-check-label" for="attendance_type_course">
-                                                Frequencia pelo curso
-                                            </label>
-                                        </div>
-
-                                        <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-check2"></i> Salvar</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-4 mb-4">
-                                <div class="p-3 border bg-light shadow-sm">
                                     <h6> Criar materia</h6>
                                     <form action="{{route('school.class.create')}}" method="POST">
                                         @csrf

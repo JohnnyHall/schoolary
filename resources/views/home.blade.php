@@ -14,7 +14,7 @@
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="ms-2 me-auto">
-                                            <div class="fw-bold"><i class="bi bi-person-lines-fill me-3"></i> Numero de estudantes</div>
+                                            <div class="fw-bold"><i class="bi-person-circle me-3"></i> Numero de estudantes</div>
                                         </div>
                                         <span class="badge bg-dark rounded-pill">{{$alunoCount}}</span>
                                     </div>
@@ -26,7 +26,7 @@
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="ms-2 me-auto">
-                                            <div class="fw-bold"><i class="bi bi-person-lines-fill me-3"></i> Numero de professores</div>
+                                            <div class="fw-bold"><i class="bi-person-circle me-3"></i> Numero de professores</div>
                                         </div>
                                         <span class="badge bg-dark rounded-pill">{{$teacherCount}}</span>
                                     </div>
@@ -103,7 +103,7 @@
                     <div class="row row-cols-2 mt-4">
                         <div class="col">
                             <div class="card mb-3">
-                                <div class="card-header bg-transparent"><i class="bi bi-calendar-event me-2"></i> Calendario acadêmico</div>
+                                <div class="card-header bg-transparent"><i class="bi bi-calendar-date-fill me-2"></i> Calendario acadêmico</div>
                                 <div class="card-body text-dark">
                                     @include('components.events.event-calendar', ['editable' => 'false', 'selectable' => 'false'])
                                     {{-- <div class="overflow-auto" style="height: 250px;">
@@ -123,7 +123,7 @@
                         </div>
                         <div class="col">
                             <div class="card mb-3">
-                                <div class="card-header bg-transparent d-flex justify-content-between"><span><i class="bi bi-megaphone me-2"></i> Avisos</span> {{ $notices->links() }}</div>
+                                <div class="card-header bg-transparent d-flex justify-content-between"><span><i class="bi-bell-fill me-2"></i> Avisos</span> {{ $notices->links() }}</div>
                                 <div class="card-body p-0 text-dark">
                                     <div>
                                         @isset($notices)

@@ -14,7 +14,7 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Perfil do aluno
+                        <i class="bi-person-circle"></i> Perfil do aluno
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">

@@ -8,7 +8,7 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-person-lines-fill"></i> Adicionar aluno
+                        <i class="bi-person-circle"></i> Adicionar aluno
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -19,7 +19,7 @@
                     @include('session-messages')
 
                     <p class="text-primary">
-                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Lembre-se de criar "Turma" e "Seção" relacionadas antes de adicionar aluno</small>
+                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Lembre-se de criar um "Materia" e "Turma" relacionadas antes de adicionar aluno</small>
                     </p>
                     <div class="mb-4">
                         <form class="row g-3" action="{{route('school.aluno.create')}}" method="POST">

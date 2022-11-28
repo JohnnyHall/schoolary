@@ -72,7 +72,7 @@
                                                         'section_name' => $course->section->section_name,
                                                         'course_name' => $course->course->course_name
                                                     ])}}" role="button" class="dropdown-item"><i class="bi bi-calendar2-week-fill me-2"></i>Ver Presença</a></li>
-                                                    <li><a href="{{route('course.monitoria.index', ['course_id' => $course->course->id])}}" role="button" class="dropdown-item"><i class="bi bi-journal-text me-2"></i> Ver Monitoria</a></li>
+                                                    <li><a href="{{route('course.monitoria.index', ['course_id' => $course->course->id])}}" role="button" class="dropdown-item"><i class="bi bi-info-circle-fill me-2"></i> Ver Monitoria</a></li>
                                                       <li><a href="{{route('assignment.create', [
                                                         'class_id' => $course->schoolClass->id,
                                                         'section_id' => $course->section->id,

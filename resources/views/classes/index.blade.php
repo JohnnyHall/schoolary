@@ -22,7 +22,7 @@
                                                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}" role="tab" aria-current="true"><i class="bi bi-book-fill"></i></i> {{$school_class->class_name}}</button>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-monitoria" role="tab" aria-current="false"><i class="bi bi-journal-text"></i> Monitoria</button>
+                                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-monitoria" role="tab" aria-current="false"><i class="bi bi-info-circle-fill"></i> Monitoria</button>
                                                 </li>
                                                 <li class="nav-item">
                                                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#class{{$school_class->id}}-courses" role="tab" aria-current="false"><i class="bi bi-journal-medical"></i> Cursos</button>

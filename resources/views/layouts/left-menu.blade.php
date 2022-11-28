@@ -35,7 +35,7 @@
             <li class="nav-item">
                 <a type="button" href="#aluno-submenu" data-bs-toggle="collapse"
                     class="d-flex nav-link {{ request()->is('alunos*')? 'active' : '' }}"><i
-                        class="bi bi-person-lines-fill"></i> <span
+                        class="bi bi-person-circle"></i> <span
                         class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Alunos</span>
                     <i class="ms-auto d-inline d-sm-none d-md-none d-xl-inline bi bi-chevron-down"></i>
                 </a>
@@ -44,19 +44,19 @@
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('aluno.list.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('aluno.list.show')}}"><i
-                                class="bi bi-person-video2 me-2"></i>Vizualizar Alunos</a></li>
+                                class="bi bi-person-bounding-box me-2"></i>Vizualizar Alunos</a></li>
                     @if (!session()->has('browse_session_id') && Auth::user()->role == "secretaria")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('aluno.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('aluno.create.show')}}"><i
-                                class="bi bi-person-plus me-2"></i>Adicionar Aluno</a></li>
+                                class="bi bi-person-check me-2"></i>Adicionar Aluno</a></li>
                     @endif
                 </ul>
             </li>
             <li class="nav-item">
                 <a type="button" href="#teacher-submenu" data-bs-toggle="collapse"
                     class="d-flex nav-link {{ request()->is('teachers*')? 'active' : '' }}"><i
-                        class="bi bi-person-lines-fill"></i> <span
+                        class="bi bi-person-circle"></i> <span
                         class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Professores</span>
                     <i class="ms-auto d-inline d-sm-none d-md-none d-xl-inline bi bi-chevron-down"></i>
                 </a>
@@ -65,12 +65,12 @@
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('teacher.list.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('teacher.list.show')}}"><i
-                                class="bi bi-person-video2 me-2"></i>Vizualizar Professores</a></li>
+                                class="bi bi-person-bounding-box me-2"></i>Vizualizar Professores</a></li>
                     @if (!session()->has('browse_session_id') && Auth::user()->role == "secretaria")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('teacher.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('teacher.create.show')}}"><i
-                                class="bi bi-person-plus me-2"></i>Adicionar Professores</a></li>
+                                class="bi bi-person-check me-2"></i>Adicionar Professores</a></li>
                     @endif
                 </ul>
             </li>
@@ -101,7 +101,7 @@
                         <a class="nav-link" href="#"><i class="bi bi-cloud-sun"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Nota</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-journal-text"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Monitoria</span></a>
+                        <a class="nav-link" href="#"><i class="bi bi-info-circle-fill"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Monitoria</span></a>
                     </li> --}}
             <li class="nav-item border-bottom">
                 @php
@@ -121,14 +121,14 @@
                 <a class="nav-link" href="{{route('section.cronograma.show', [
                             'class_id'  => $class_info->class_id,
                             'section_id'=> $class_info->section_id
-                        ])}}"><i class="bi bi-calendar4-range"></i> <span
+                        ])}}"><i class="bi bi-arrow-repeat"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Cronograma</span></a>
             </li>
             @endif
             @if(Auth::user()->role != "aluno")
             <li class="nav-item border-bottom">
                 <a type="button" href="#exam-grade-submenu" data-bs-toggle="collapse"
-                    class="d-flex nav-link {{ request()->is('exams*')? 'active' : '' }}"><i class="bi bi-file-text"></i>
+                    class="d-flex nav-link {{ request()->is('exams*')? 'active' : '' }}"><i class="bi bi-calculator-fill"></i>
                     <span class="ms-2 d-inline d-sm-none d-md-none d-xl-inline">Provas</span>
                     <i class="ms-auto d-inline d-sm-none d-md-none d-xl-inline bi bi-chevron-down"></i>
                 </a>
@@ -136,23 +136,23 @@
                     id="exam-grade-submenu">
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.list.show')? 'font-weight:bold;' : '' }}"><a class="nav-link"
-                            href="{{route('exam.list.show')}}"><i class="bi bi-file-text me-2"></i> Ver Provas</a></li>
+                            href="{{route('exam.list.show')}}"><i class="bi bi-calculator-fill me-2"></i> Ver Provas</a></li>
                     @if (Auth::user()->role == "secretaria" || Auth::user()->role == "teacher")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.create.show')? 'font-weight:bold;' : '' }}"><a
-                            class="nav-link" href="{{route('exam.create.show')}}"><i class="bi bi-file-plus me-2"></i>
+                            class="nav-link" href="{{route('exam.create.show')}}"><i class="bi bi-calculator-fill me-2"></i>
                             Criar Prova</a></li>
                     @endif
                     @if (Auth::user()->role == "secretaria")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.grade.system.create')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('exam.grade.system.create')}}"><i
-                                class="bi bi-file-plus me-2"></i> Adicionar Grade</a></li>
+                                class="bi bi-calculator-fill me-2"></i> Adicionar Grade</a></li>
                     @endif
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.grade.system.index')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('exam.grade.system.index')}}"><i
-                                class="bi bi-file-ruled me-2"></i> Ver grade</a></li>
+                                class="bi bi-calculator-fill me-2"></i> Ver grade</a></li>
                 </ul>
             </li>
             @endif
@@ -160,22 +160,22 @@
             @if (Auth::user()->role == "secretaria")
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('notice*')? 'active' : '' }}" href="{{route('notice.create')}}"><i
-                        class="bi bi-megaphone"></i> <span
+                        class="bi-bell-fill"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Avisos</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('calendar-event*')? 'active' : '' }}"
-                    href="{{route('events.show')}}"><i class="bi bi-calendar-event"></i> <span
+                    href="{{route('events.show')}}"><i class="bi bi-calendar-date-fill"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline"> Calendario acadêmico</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('monitoria*')? 'active' : '' }}"
-                    href="{{route('class.monitoria.create')}}"><i class="bi bi-journal-text"></i> <span
+                    href="{{route('class.monitoria.create')}}"><i class="bi bi-info-circle-fill"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Monitoria</span></a>
             </li>
             <li class="nav-item border-bottom">
                 <a class="nav-link {{ request()->is('cronograma*')? 'active' : '' }}"
-                    href="{{route('section.cronograma.create')}}"><i class="bi bi-calendar4-range"></i> <span
+                    href="{{route('section.cronograma.create')}}"><i class="bi bi-arrow-repeat"></i> <span
                         class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Cronograma</span></a>
             </li>
             @endif

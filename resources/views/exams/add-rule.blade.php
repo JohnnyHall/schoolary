@@ -33,7 +33,7 @@
                                         <label for="inputMarksDistributionNote" class="form-label">Marks Distribution Note</label>
                                         <textarea class="form-control" id="inputMarksDistributionNote" rows="3" placeholder="Written: 7, MCQ: 3, ..." name="marks_distribution_note"></textarea>
                                     </div>
-                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Adicionar</button>
+                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-arrow-repeat"></i> Adicionar</button>
                                 </form>
                             </div>
                         </div>

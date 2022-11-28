@@ -8,7 +8,7 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-file-text"></i> Ver regra de avaliação
+                        <i class="bi bi-calculator-fill"></i> Ver regra de avaliação
                     </h1>
                     @include('session-messages')
                     <div class="mb-4 mt-4">
