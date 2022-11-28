@@ -59,7 +59,8 @@ Currently available locales are:
 
 ## 🖌️ Themes
 
-## 🤝 Related Projects
+## 🤝 Useful Projects
+https://github.com/barryvdh/laravel-debugbar
 
 ## 👤 Developers
  - João Victor Rokemback Tápparo
@@ -71,5 +72,3 @@ Currently available locales are:
   Created on <br>
   15/11/2022 
 </p>
-
-https://github.com/barryvdh/laravel-debugbar
