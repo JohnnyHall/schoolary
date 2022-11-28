@@ -61,7 +61,7 @@
                                         <label for="inputEnds" class="form-label">Horario de termino</label>
                                         <input type="text" class="form-control" id="inputEnds" name="end" placeholder="09:50am" required>
                                     </div>
-                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-check2"></i> Create</button>
+                                    <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-check2"></i> Criar</button>
                                 </form>
                             </div>
                         </div>
