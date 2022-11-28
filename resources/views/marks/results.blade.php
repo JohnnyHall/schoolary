@@ -50,9 +50,9 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">Foto</th>
-                                        <th scope="col">aluno Name</th>
-                                        <th scope="col">Total Marks</th>
-                                        <th scope="col">Grade Points</th>
+                                        <th scope="col">Nome do Aluno</th>
+                                        <th scope="col">Notas</th>
+                                        <th scope="col">Pontuação</th>
                                         <th scope="col">Grade</th>
                                     </tr>
                                 </thead>

@@ -18,12 +18,12 @@
                     @include('session-messages')
                     @if ($academic_setting['marks_submission_status'] == "on")
                     <p class="text-primary">
-                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Marks Submission Window is open now.
+                        <i class="bi bi-exclamation-diamond-fill me-2"></i> A janela de envio de notas está aberta.
                     </p>
                     @endif
                     @if ($final_marks_submitted)
                     <p class="text-success">
-                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Marks are submitted.
+                        <i class="bi bi-exclamation-diamond-fill me-2"></i> As notas foram enviadas.
                     </p>
                     @endif
                     <h3>Materia: {{request()->query('class_name')}}, Turma: {{request()->query('section_name')}}</h3>
