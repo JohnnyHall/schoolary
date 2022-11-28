@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/L8PWAHv.png" height='300'/>
 </p>
 
-# ✍️ [Schoolary]
+# ✍️ Schoolary
 > Projeto de gestão escolar
 
 ## 🎯 Objective
