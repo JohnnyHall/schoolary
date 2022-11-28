@@ -65,7 +65,6 @@
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
                                     <h3> Seja bem vindo a area logada do professor! </h3>
-                                    <p>teacher</p>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +77,6 @@
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
                                     <h3> Seja bem vindo a area logada do aluno! </h3>
-                                    <p>aluno</p>
                                 </div>
                             </div>
                         </div>
