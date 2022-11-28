@@ -11,7 +11,7 @@ namespace SebastianBergmann\Comparator;
 
 use RuntimeException;
 use SebastianBergmann\Diff\Differ;
-use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
+use SebastianBergmann\Diff\Output\schoolaryDiffOutputBuilder;
 
 /**
  * Thrown when an assertion for string equality failed.
@@ -114,7 +114,7 @@ class ComparisonFailure extends RuntimeException
             return '';
         }
 
-        $differ = new Differ(new UnifiedDiffOutputBuilder("\n--- Expected\n+++ Actual\n"));
+        $differ = new Differ(new schoolaryDiffOutputBuilder("\n--- Expected\n+++ Actual\n"));
 
         return $differ->diff($this->expectedAsString, $this->actualAsString);
     }

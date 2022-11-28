@@ -32,7 +32,7 @@
         <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white border-btm-e6">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <i class="bi bi-house"></i> {{ config('app.name', 'Laravel') }}
+                    <i class="bi bi-lightning-charge"></i> {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -51,11 +51,11 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             @if (session()->has('browse_session_name') && session('browse_session_name') !== $current_school_session_name)
-                                <a class="nav-link text-danger disabled" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-exclamation-diamond-fill me-2"></i> Browsing as Academico Session {{session('browse_session_name')}}</a>
+                                <a class="nav-link text-danger disabled" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-exclamation-diamond-fill me-2"></i> Navegando pela Sessão Acadêmica: {{session('browse_session_name')}}</a>
                             @elseif(\App\Models\SchoolSession::latest()->count() > 0)
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Current Academico Session {{$current_school_session_name}}</a>
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sessão Acadêmica Atual: {{$current_school_session_name}}</a>
                             @else
-                                <a class="nav-link text-danger disabled" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-exclamation-diamond-fill me-2"></i> Create an Academico Session.</a>
+                                <a class="nav-link text-danger disabled" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-exclamation-diamond-fill me-2"></i> Crie uma Sessão Acadêmica.</a>
                             @endif
                         </li>
                     </ul>
@@ -73,12 +73,12 @@
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="badge bg-light text-dark">{{ ucfirst(Auth::user()->role) }}</span>
-                                    {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
+                                    {{ Auth::user()->primeiro_nome }} {{ Auth::user()->sobrenome }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{route('password.edit')}}">
-                                        <i class="bi bi-key me-2"></i> Change Password
+                                        <i class="bi bi-key me-2"></i> Alterar Senha
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

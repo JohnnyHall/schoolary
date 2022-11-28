@@ -4,15 +4,15 @@ namespace Faker\Provider\ka_GE;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'გიორგი', 'დავითი', 'ზურაბი', 'ალექსანდრე', 'ირაკლი', 'ლევანი', 'გოჩა', 'მამუკა', 'ზაზა', 'გივი', 'ავთანდილ',
         'მიხეილი', 'გელა', 'თამაზი', 'ლაშა', 'შოთა', 'თეიმურაზი', 'შალვა', 'გურამი', 'ნიკოლოზი', 'ნოდარი', 'ვლადიმერი',
         'ვაჟა', 'მერაბი', 'თენგიზი', 'გია', 'ბადრი', 'კობა', 'ვახტანგი', 'ივანე', 'მალხაზი', 'ნუგზარი', 'ამირანი', 'პაატა',
@@ -22,7 +22,7 @@ class Person extends \Faker\Provider\Person
         'სოსო', 'გრიგოლი', 'გენადი', 'ავთანდილი', 'ემზარი', 'ჯუმბერი', 'გიგა', 'გოდერძი',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'ნინო', 'მაია', 'თამარი', 'ნანა', 'მანანა', 'ნათელა', 'ნათია', 'მარინე', 'ქეთევან', 'ხათუნა', 'მარინა', 'ლალი', 'ლიანა',
         'მზია', 'ლია', 'ეკატერინე', 'ანა', 'მარიამი', 'ირმა', 'ლეილა', 'ნანული', 'მერი', 'ლელა', 'თეა', 'სოფიო', 'ინგა',
         'ეთერი', 'ნონა', 'თეონა', 'შორენა', 'მაყვალა', 'ციალა', 'ლამარა', 'მაკა', 'თინა', 'ნელი', 'რუსუდანი', 'დალი',
@@ -57,7 +57,7 @@ class Person extends \Faker\Provider\Person
         'ჯავახიშვილი', 'ჯალაღონია', 'ჯანაშია', 'ჯანელიძე', 'ჯაფარიძე', 'ჯინჭარაძე', 'ჯიქია', 'ჯოხაძე', 'ჯოჯუა',
     ];
 
-    protected static $titleMale = ['ბნ.', 'დოქ.', 'პროფ.'];
+    protected static $titleMasculino = ['ბნ.', 'დოქ.', 'პროფ.'];
 
-    protected static $titleFemale = ['ქნ.', 'დოქ.', 'პროფ.'];
+    protected static $titleFeminino = ['ქნ.', 'დოქ.', 'პროფ.'];
 }

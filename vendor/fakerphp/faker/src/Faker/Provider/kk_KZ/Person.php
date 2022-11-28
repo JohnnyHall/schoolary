@@ -6,20 +6,20 @@ use Faker\Provider\DateTime;
 
 class Person extends \Faker\Provider\Person
 {
-    public const GENDER_MALE = 0;
-    public const GENDER_FEMALE = 1;
+    public const Sexo_Masculino = 0;
+    public const Sexo_Feminino = 1;
 
     public const CENTURY_19TH = 0;
     public const CENTURY_20TH = 1;
     public const CENTURY_21ST = 2;
 
-    public const MALE_CENTURY_19TH = 1;
-    public const MALE_CENTURY_20TH = 3;
-    public const MALE_CENTURY_21ST = 5;
+    public const Masculino_CENTURY_19TH = 1;
+    public const Masculino_CENTURY_20TH = 3;
+    public const Masculino_CENTURY_21ST = 5;
 
-    public const FEMALE_CENTURY_19TH = 2;
-    public const FEMALE_CENTURY_20TH = 4;
-    public const FEMALE_CENTURY_21ST = 6;
+    public const Feminino_CENTURY_19TH = 2;
+    public const Feminino_CENTURY_20TH = 4;
+    public const Feminino_CENTURY_21ST = 6;
 
     /**
      * @var array
@@ -34,16 +34,16 @@ class Person extends \Faker\Provider\Person
     /**
      * @var array
      */
-    public static $genderCenturyMap = [
-        self::GENDER_MALE => [
-            self::CENTURY_19TH => self::MALE_CENTURY_19TH,
-            self::CENTURY_20TH => self::MALE_CENTURY_20TH,
-            self::CENTURY_21ST => self::MALE_CENTURY_21ST,
+    public static $SexoCenturyMap = [
+        self::Sexo_Masculino => [
+            self::CENTURY_19TH => self::Masculino_CENTURY_19TH,
+            self::CENTURY_20TH => self::Masculino_CENTURY_20TH,
+            self::CENTURY_21ST => self::Masculino_CENTURY_21ST,
         ],
-        self::GENDER_FEMALE => [
-            self::CENTURY_19TH => self::FEMALE_CENTURY_19TH,
-            self::CENTURY_20TH => self::FEMALE_CENTURY_20TH,
-            self::CENTURY_21ST => self::FEMALE_CENTURY_21ST,
+        self::Sexo_Feminino => [
+            self::CENTURY_19TH => self::Feminino_CENTURY_19TH,
+            self::CENTURY_20TH => self::Feminino_CENTURY_20TH,
+            self::CENTURY_21ST => self::Feminino_CENTURY_21ST,
         ],
     ];
 
@@ -52,8 +52,8 @@ class Person extends \Faker\Provider\Person
      *
      * @var array
      */
-    protected static $maleNameFormats = [
-        '{{lastName}}ұлы {{firstNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{lastName}}ұлы {{firstNameMasculino}}',
     ];
 
     /**
@@ -61,8 +61,8 @@ class Person extends \Faker\Provider\Person
      *
      * @var array
      */
-    protected static $femaleNameFormats = [
-        '{{lastName}}қызы {{firstNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{lastName}}қызы {{firstNameFeminino}}',
     ];
 
     /**
@@ -70,7 +70,7 @@ class Person extends \Faker\Provider\Person
      *
      * @var array
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Аылғазы',
         'Әбдіқадыр',
         'Бабағожа',
@@ -106,7 +106,7 @@ class Person extends \Faker\Provider\Person
      *
      * @var array
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Асылтас',
         'Әужа',
         'Бүлдіршін',
@@ -204,11 +204,11 @@ class Person extends \Faker\Provider\Person
      * @see   https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BD%D0%BE%D0%BC%D0%B5%D1%80
      *
      * @param \DateTime $birthDate
-     * @param int       $gender
+     * @param int       $Sexo
      *
      * @return string 12 digits, like 780322300455
      */
-    public static function individualIdentificationNumber(\DateTime $birthDate = null, $gender = self::GENDER_MALE)
+    public static function individualIdentificationNumber(\DateTime $birthDate = null, $Sexo = self::Sexo_Masculino)
     {
         if (!$birthDate) {
             $birthDate = DateTime::dateTimeBetween();
@@ -219,7 +219,7 @@ class Person extends \Faker\Provider\Person
             $century = self::getCenturyByYear((int) $birthDate->format('Y'));
 
             $iin = $birthDate->format('ymd');
-            $iin .= (string) self::$genderCenturyMap[$gender][$century];
+            $iin .= (string) self::$SexoCenturyMap[$Sexo][$century];
             $iin .= (string) $population;
             $checksum = self::checkSum($iin);
         } while ($checksum === 10);

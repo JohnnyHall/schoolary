@@ -16,7 +16,7 @@ use function preg_match;
 use function preg_split;
 
 /**
- * Unified diff parser.
+ * schoolary diff parser.
  */
 final class Parser
 {

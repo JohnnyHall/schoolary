@@ -4,35 +4,35 @@ namespace Faker\Provider\ne_NP;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{middleNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{middleNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{middleNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{middleNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{middleNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{middleNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{middleNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{middleNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aadarsh', 'Aadesh', 'Aaditya', 'Aakash', 'Aanand', 'Abud', 'Achyut', 'Ajay', 'Ajit', 'Akhil', 'Akshar', 'Akshay', 'Amar', 'Amir', 'Amit', 'Amod', 'Amrit', 'Amulya', 'Ananta', 'Angel', 'Angikar', 'Anil', 'Ankit', 'Ankur', 'Anmol', 'Anshu', 'Anuj', 'Arjun', 'Arun', 'Ashish', 'Ashok', 'Ashutosh', 'Atal', 'Avinash', 'Ayush',
         'Babish', 'Badal', 'Badri', 'Baibhav', 'Bhagwam', 'Bhakti', 'Bhanu', 'Bibek', 'Bicky', 'Bidur', 'Bidwan', 'Bikal', 'Bikash', 'Bikesh', 'Bikram', 'Bimal', 'Binamra', 'Binay', 'Bipin', 'Biplav', 'Bipul', 'Biraj', 'Birendra', 'Bishal', 'Bisu', 'Biswas', 'Brijesh', 'Buddha',
         'Chaitanya', 'Chandan', 'Chandra', 'Chirag',
@@ -55,7 +55,7 @@ class Person extends \Faker\Provider\Person
         'Yogendra', 'Yogesh', 'Yuvaraj',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Aakansha', 'Aanchal', 'Aarati', 'Aashika', 'Aayusha', 'Alisha', 'Ambika', 'Amrita', 'Anamika', 'Anita', 'Anjali', 'Anjana', 'Anjela', 'Anju', 'Ankita', 'Ansu', 'Anu', 'Anupa', 'Anushree', 'Anuska', 'Apeksha', 'Archana', 'Arpita', 'Aruna', 'Asha',
         'Bandita', 'Barsa', 'Bhawana', 'Bimala', 'Bina', 'Bindu', 'Binita', 'Bipana',
         'Chadani', 'Chameli', 'Champa', 'Chandana',
@@ -87,7 +87,7 @@ class Person extends \Faker\Provider\Person
         'Jha', 'Joshi',
         'Kafle', 'Kandel', 'Kansakar', 'Karki', 'Karmacharya', 'Karna', 'Katwal', 'Kayastha', 'KC', 'Khadka', 'Khadgee', 'Khan', 'Khanal', 'Kharel', 'Khatiwada', 'Khatri', 'Khawas', 'Koirala',
         'Lama', 'Lamichhane', 'Lamsal', 'Lawoti', 'Ligal', 'Limbu', 'Lohani',
-        'Magar', 'Maharjan', 'Mainali', 'Malakar', 'Maleku', 'Manandhar', 'Marhatta', 'Mishra',
+        'Magar', 'Maharjan', 'Mainali', 'Malakar', 'Masculinoku', 'Manandhar', 'Marhatta', 'Mishra',
         'Nakarmi', 'Napit', 'Nemkul', 'Nepal', 'Neupane', 'Niroula',
         'Ojha',
         'Pachhai', 'Pahari', 'Pandey', 'Pangeni', 'Panta', 'Parajuli', 'Pathak', 'Paudel', 'Pokhrel', 'Pradhan', 'Prajapati', 'Puri',
@@ -100,22 +100,22 @@ class Person extends \Faker\Provider\Person
         'Yadav',
     ];
 
-    private static $middleNameMale = ['Bahadur', 'Dev', 'Kumar', 'Man', 'Mani', 'Nath', 'Prasad', 'Raj', 'Ratna'];
-    private static $middleNameFemale = ['Devi', 'Kumari'];
+    private static $middleNameMasculino = ['Bahadur', 'Dev', 'Kumar', 'Man', 'Mani', 'Nath', 'Prasad', 'Raj', 'Ratna'];
+    private static $middleNameFeminino = ['Devi', 'Kumari'];
 
     /**
      * @example 'Bahadur'
      */
-    public static function middleNameMale()
+    public static function middleNameMasculino()
     {
-        return static::randomElement(static::$middleNameMale);
+        return static::randomElement(static::$middleNameMasculino);
     }
 
     /**
      * @example 'Devi'
      */
-    public static function middleNameFemale()
+    public static function middleNameFeminino()
     {
-        return static::randomElement(static::$middleNameFemale);
+        return static::randomElement(static::$middleNameFeminino);
     }
 }

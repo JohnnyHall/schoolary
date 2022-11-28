@@ -4,25 +4,25 @@ namespace Faker\Provider\en_IN;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{middleNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{middleNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{middleNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{middleNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameMale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
     /**
      * @see http://www.indiaonlinepages.com/babynames/
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aayushman', 'Amrit', 'Anand', 'Abhinav', 'Anil', 'Animesh', 'Arpit', 'Akhil', 'Ajinkya', 'Aniruddh', 'Arun', 'Atul', 'Ajay', 'Abhishek', 'Aditya', 'Ajeet', 'Akshay', 'Arjun', 'Arvind', 'Aadil', 'Aadish', 'Amir', 'Aarif', 'Aatif', 'Abbas', 'Abdul', 'Aslam', 'Azhar', 'Anees', 'Alex', 'Albert',
         'Bahadur', 'Baldev', 'Baalkrishan', 'Balaji', 'Bharat', 'Bhola', 'Bijoy', 'Binod', 'Biren', 'Bishnu', 'Baber', 'Binoya', 'Brock',
         'Chitranjan', 'Chirag', 'Chinmay', 'Charandeep', 'Chand', 'Charlie',
@@ -50,7 +50,7 @@ class Person extends \Faker\Provider\Person
         'Zaad', 'Zahir', 'Zeeshan',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Aabha', 'Aarti', 'Aarushi', 'Aastha', 'Aayushi', 'Aditi', 'Afreen', 'Aisha', 'Aishwarya', 'Akanksha', 'Akhila', 'Alaknanda', 'Alka', 'Alpa', 'Anshu', 'Ambika', 'Ananya', 'Amrita', 'Amolika', 'Anjana', 'Ankita', 'Anshula', 'Anusha', 'Aruna', 'Astha', 'Avantika',
         'Babita', 'Basanti', 'Bagwati', 'Bhaagyasree', 'Bhairavi', 'Bhanupriya', 'Binita', 'Bimla',
         'Chameli', 'Charu', 'Chhavi', 'Chitra', 'Chhaya', 'Chandni',
@@ -107,19 +107,19 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://www.indianchild.com/indian_middle_names.htm
      */
-    protected static $middleNameMale = [
+    protected static $middleNameMasculino = [
         'Dev', 'Chandra', 'Kumar', 'Lal', 'Prasad', 'Raj', 'Singh', 'Rao', 'Ram', 'Pratap', 'Bhai',
     ];
 
     /**
-     * Return male middle name
+     * Return Masculino middle name
      *
      * @example 'Kumar'
      *
      * @return string Middle name
      */
-    public function middleNameMale()
+    public function middleNameMasculino()
     {
-        return static::randomElement(static::$middleNameMale);
+        return static::randomElement(static::$middleNameMasculino);
     }
 }

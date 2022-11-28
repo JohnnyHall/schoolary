@@ -37,16 +37,16 @@ class Person extends \Faker\Provider\Person
      */
     public static $idDigitValidator = [1, 9, 8, 7, 6, 5, 4, 3, 2, 1, 1];
 
-    protected static $maleNameFormats = [
-        '{{lastName}}{{firstNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{lastName}}{{firstNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{lastName}}{{firstNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{lastName}}{{firstNameFeminino}}',
     ];
 
-    protected static $titleMale = ['先生', '博士', '教授'];
-    protected static $titleFemale = ['小姐', '太太', '博士', '教授'];
+    protected static $titleMasculino = ['先生', '博士', '教授'];
+    protected static $titleFeminino = ['小姐', '太太', '博士', '教授'];
 
     /**
      * @see http://zh.wikipedia.org/wiki/%E7%99%BE%E5%AE%B6%E5%A7%93
@@ -122,7 +122,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://technology.chtsai.org/namefreq/
      */
-    protected static $characterMale = [
+    protected static $characterMasculino = [
         '佳', '俊', '信', '偉', '傑', '冠', '君', '哲',
         '嘉', '威', '宇', '安', '宏', '宗', '宜', '家',
         '庭', '廷', '建', '彥', '心', '志', '思', '承',
@@ -130,7 +130,7 @@ class Person extends \Faker\Provider\Person
         '詩', '豪', '賢', '軒', '銘', '霖',
     ];
 
-    protected static $characterFemale = [
+    protected static $characterFeminino = [
         '伶', '佩', '佳', '依', '儀', '冠', '君', '嘉',
         '如', '娟', '婉', '婷', '安', '宜', '家', '庭',
         '心', '思', '怡', '惠', '慧', '文', '欣', '涵',
@@ -150,14 +150,14 @@ class Person extends \Faker\Provider\Person
         return $name;
     }
 
-    public static function firstNameMale()
+    public static function firstNameMasculino()
     {
-        return static::randomName(static::$characterMale, self::numberBetween(1, 2));
+        return static::randomName(static::$characterMasculino, self::numberBetween(1, 2));
     }
 
-    public static function firstNameFemale()
+    public static function firstNameFeminino()
     {
-        return static::randomName(static::$characterFemale, self::numberBetween(1, 2));
+        return static::randomName(static::$characterFeminino, self::numberBetween(1, 2));
     }
 
     public static function suffix()
@@ -166,24 +166,24 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * @param string $gender Person::GENDER_MALE || Person::GENDER_FEMALE
+     * @param string $Sexo Person::Sexo_Masculino || Person::Sexo_Feminino
      *
      * @see https://en.wikipedia.org/wiki/National_Identification_Card_(Republic_of_China)
      *
      * @return string Length 10 alphanumeric characters, begins with 1 latin character (birthplace),
-     *                1 number (gender) and then 8 numbers (the last one is check digit).
+     *                1 number (Sexo) and then 8 numbers (the last one is check digit).
      */
-    public function personalIdentityNumber($gender = null)
+    public function personalIdentityNumber($Sexo = null)
     {
         $birthPlace = self::randomKey(self::$idBirthplaceCode);
         $birthPlaceCode = self::$idBirthplaceCode[$birthPlace];
 
-        $gender = ($gender != null) ? $gender : self::randomElement([self::GENDER_FEMALE, self::GENDER_MALE]);
-        $genderCode = ($gender === self::GENDER_MALE) ? 1 : 2;
+        $Sexo = ($Sexo != null) ? $Sexo : self::randomElement([self::Sexo_Feminino, self::Sexo_Masculino]);
+        $SexoCode = ($Sexo === self::Sexo_Masculino) ? 1 : 2;
 
         $randomNumberCode = self::randomNumber(7, true);
 
-        $codes = str_split($birthPlaceCode . $genderCode . $randomNumberCode);
+        $codes = str_split($birthPlaceCode . $SexoCode . $randomNumberCode);
         $total = 0;
 
         foreach ($codes as $key => $code) {
@@ -196,6 +196,6 @@ class Person extends \Faker\Provider\Person
             $checkSumDigit = 0;
         }
 
-        return $birthPlace . $genderCode . $randomNumberCode . $checkSumDigit;
+        return $birthPlace . $SexoCode . $randomNumberCode . $checkSumDigit;
     }
 }

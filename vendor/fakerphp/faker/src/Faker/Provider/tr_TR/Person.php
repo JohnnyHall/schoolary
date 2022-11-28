@@ -7,26 +7,26 @@ class Person extends \Faker\Provider\Person
     /**
      * @var array Turkish person name formats.
      */
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
     /**
      * @see http://www.guzelisimler.com/en_cok_aranan_erkek_isimleri.php
      *
-     * @var array Turkish first names.
+     * @var array Turkish Primeiro nomes.
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Ahmet', 'Ali', 'Alp', 'Armağan', 'Atakan', 'Aşkın', 'Baran', 'Bartu', 'Berk', 'Berkay', 'Berke', 'Bora', 'Burak', 'Canberk',
         'Cem', 'Cihan', 'Deniz', 'Efe', 'Ege', 'Ege', 'Emir', 'Emirhan', 'Emre', 'Ferid', 'Göktürk', 'Görkem', 'Güney',
         'Kağan', 'Kerem', 'Koray', 'Kutay', 'Mert', 'Onur', 'Ogün', 'Polat', 'Rüzgar', 'Sarp', 'Serhan', 'Toprak', 'Tuna',
@@ -36,16 +36,16 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://www.guzelisimler.com/en_cok_aranan_kiz_isimleri.php
      *
-     * @var array Turkish first names.
+     * @var array Turkish Primeiro nomes.
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ada', 'Esma', 'Emel', 'Ebru', 'Şahnur', 'Ümran', 'Sinem', 'İrem', 'Rüya', 'Ece', 'Burcu',
     ];
 
     /**
      * @see http://tr.wikipedia.org/wiki/Kategori:T%C3%BCrk%C3%A7e_soyadlar%C4%B1
      *
-     * @var array Turkish last names.
+     * @var array Turkish Sobrenomes.
      */
     protected static $lastName = [
         'Abacı', 'Abadan', 'Aclan', 'Adal', 'Adan', 'Adıvar', 'Akal', 'Akan', 'Akar', 'Akay',
@@ -74,15 +74,15 @@ class Person extends \Faker\Provider\Person
 
     protected static $title = ['Doç. Dr.', 'Dr.', 'Prof. Dr.'];
 
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**
      * replaced by specific unisex Turkish title
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
         return static::randomElement(static::$title);
     }
@@ -90,9 +90,9 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex Turkish title
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**

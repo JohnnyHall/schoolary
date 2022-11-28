@@ -4,21 +4,21 @@ namespace Faker\Provider\fi_FI;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aleksi', 'Anssi', 'Antero', 'Antti', 'Ari', 'Arttu', 'Daniel', 'Eero', 'Eetu', 'Elias', 'Elmo', 'Emil', 'Erkki',
         'Hampus', 'Hannu', 'Harri', 'Heikki', 'Helmi', 'Henri', 'Hermanni', 'Ilja', 'Jaakko', 'Jake', 'Jani', 'Janne',
         'Jari', 'Jarno', 'Jere', 'Jeremy', 'Jesper', 'Jesse', 'Jimi', 'Joakim', 'Joel', 'Joona', 'Joonas', 'Juha',
@@ -35,7 +35,7 @@ class Person extends \Faker\Provider\Person
 
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Aada', 'Ada', 'Aina', 'Aino', 'Aki', 'Aliisa', 'Amalia', 'Amanda', 'Amelia', 'Amira', 'Anissa', 'Anita', 'Anna',
         'Anne', 'Anni', 'Anniina', 'Annu', 'Anu', 'Asta', 'Atte', 'Atte', 'Aura', 'Aurora', 'Bella', 'Cara',
         'Celina', 'Christa', 'Christel', 'Clara', 'Cornelia', 'Dani', 'Eija', 'Elea', 'Elina', 'Elisa', 'Elise', 'Ella',
@@ -82,9 +82,9 @@ class Person extends \Faker\Provider\Person
         'Översti', 'Öysti', 'Öörni',
     ];
 
-    protected static $titleMale = ['Hra.', 'Tri.'];
+    protected static $titleMasculino = ['Hra.', 'Tri.'];
 
-    protected static $titleFemale = ['Rva.', 'Nti.', 'Tri.'];
+    protected static $titleFeminino = ['Rva.', 'Nti.', 'Tri.'];
 
     /**
      * National Personal Identity Number (Henkilötunnus)
@@ -92,11 +92,11 @@ class Person extends \Faker\Provider\Person
      * @see http://www.finlex.fi/fi/laki/ajantasa/2010/20100128
      *
      * @param \DateTime $birthdate
-     * @param string    $gender    Person::GENDER_MALE || Person::GENDER_FEMALE
+     * @param string    $Sexo    Person::Sexo_Masculino || Person::Sexo_Feminino
      *
      * @return string on format DDMMYYCZZZQ, where DDMMYY is the date of birth, C the century sign, ZZZ the individual number and Q the control character (checksum)
      */
-    public function personalIdentityNumber(\DateTime $birthdate = null, $gender = null)
+    public function personalIdentityNumber(\DateTime $birthdate = null, $Sexo = null)
     {
         $checksumCharacters = '0123456789ABCDEFHJKLMNPRSTUVWXY';
 
@@ -127,13 +127,13 @@ class Person extends \Faker\Provider\Person
 
         $randomDigits = self::numberBetween(0, 89);
 
-        if ($gender && $gender == static::GENDER_MALE) {
+        if ($Sexo && $Sexo == static::Sexo_Masculino) {
             if ($randomDigits === 0) {
                 $randomDigits .= static::randomElement([3, 5, 7, 9]);
             } else {
                 $randomDigits .= static::randomElement([1, 3, 5, 7, 9]);
             }
-        } elseif ($gender && $gender == static::GENDER_FEMALE) {
+        } elseif ($Sexo && $Sexo == static::Sexo_Feminino) {
             if ($randomDigits === 0) {
                 $randomDigits .= static::randomElement([2, 4, 6, 8]);
             } else {

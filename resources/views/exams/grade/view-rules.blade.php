@@ -8,19 +8,19 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-file-text"></i> View Grading Rule
+                        <i class="bi bi-calculator-fill"></i> Ver regra de avaliação
                     </h1>
                     @include('session-messages')
                     <div class="mb-4 mt-4">
                         <table class="table mt-4">
                             <thead>
                                 <tr>
-                                    <th scope="col">System Name</th>
-                                    <th scope="col">Points</th>
+                                    <th scope="col">Nome da grade</th>
+                                    <th scope="col">Pontuação</th>
                                     <th scope="col">Grade</th>
-                                    <th scope="col">Starts At</th>
-                                    <th scope="col">Ends At</th>
-                                    <th scope="col">Actions</th>
+                                    <th scope="col">Iniciado em</th>
+                                    <th scope="col">Finalizado em</th>
+                                    <th scope="col">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -35,7 +35,7 @@
                                         <td>
                                             <div class="btn-group" role="group">
                                                 <a href="{{route('exam.grade.system.rule.delete')}}" role="button" class="btn btn-sm btn-primary" onclick="event.preventDefault();
-                                                     document.getElementById('delete-form-{{$gradeRule->id}}').submit();"><i class="bi bi-trash2"></i> Delete</a>
+                                                     document.getElementById('delete-form-{{$gradeRule->id}}').submit();"><i class="bi bi-trash2"></i> Deletar</a>
                                                 <form id="delete-form-{{$gradeRule->id}}" action="{{ route('exam.grade.system.rule.delete') }}" method="POST" class="d-none">
                                                     @csrf
                                                     <input type="hidden" name="id" value="{{$gradeRule->id}}">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>

@@ -6,21 +6,21 @@ use Faker\Calculator\Luhn;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Abraham', 'Adriaan', 'Adrian', 'Ahmed', 'Alan', 'Albert', 'Alex', 'Alexander', 'Alfred', 'Allan', 'Andile', 'Andre', 'Andrew',
         'André', 'Anthony', 'Anton', 'Arnold', 'Arthur', 'Ayanda', 'Barry', 'Ben', 'Benjamin', 'Bernard', 'Bongani', 'Bradley',
         'Brandon', 'Brent', 'Brett', 'Brian', 'Bruce', 'Bryan', 'Carel', 'Carl', 'Charl', 'Charles', 'Chris', 'Christiaan',
@@ -44,14 +44,14 @@ class Person extends \Faker\Provider\Person
         'Xolani', 'Yusuf', 'andries', 'barend', 'contact', 'dumisani', 'jacobus', 'kabelo', 'kagiso', 'karabo', 'lesego', 'marthinus',
         'mashudu', 'next', 'nhlanhla', 'nicolaas', 'nkosinathi', 'personal', 'sello', 'sifiso', 'takalani', 'teboho', 'thulani', 'tumelo',
         'vusi', 'your',
-        // below are unknown gender firstnames
+        // below are unknown Sexo firstnames
         'Andries', 'Babalwa', 'Barend', 'Bulelwa', 'Contact ', 'Dumisani', 'Fikile', 'Jacobus', 'Kabelo', 'Kagiso', 'Karabo', 'Kelebogile', 'Lesego',
         'Lindiwe', 'Marthinus', 'Mashudu', 'Next', 'Nhlanhla', 'Nicolaas', 'Nkosinathi', 'Nompumelelo', 'Nonhlanhla', 'Nonkululeko', 'Nosipho', 'Nozipho',
         'Personal', 'Phumzile', 'Refiloe', 'Sello', 'Sibongile', 'Sifiso', 'Siphokazi', 'Takalani', 'Teboho', 'Thandeka', 'Thandi', 'Thembi',
         'Thulani', 'Tumelo', 'Unathi', 'Vusi', 'Vuyokazi', 'Yolandi', 'Your', 'Zandile',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Abigail', 'Adele', 'Alicia', 'Alison', 'Amanda', 'Andiswa', 'Andrea', 'Angela', 'Angelique', 'Anita', 'Anna', 'Anne', 'Anthea',
         'Antoinette', 'Asanda', 'Ashley', 'Aubrey', 'Barbara', 'Belinda', 'Beverley', 'Bianca', 'Boitumelo', 'Bongiwe', 'Brenda', 'Bronwyn',
         'Busisiwe', 'Candice', 'Carla', 'Carmen', 'Carol', 'Caroline', 'Catherine', 'Cecilia', 'Celeste', 'Chantal', 'Chantel', 'Chantelle',
@@ -70,7 +70,7 @@ class Person extends \Faker\Provider\Person
         'Tracy', 'Tshegofatso', 'Tshepiso', 'Ursula', 'Vanessa', 'Veronica', 'Victoria', 'Wendy', 'Yolanda', 'Yvette', 'Yvonne', 'Zama',
         'Zanele', 'Zelda', 'babalwa', 'bulelwa', 'fikile', 'kelebogile', 'lindiwe', 'nompumelelo', 'nonhlanhla', 'nonkululeko', 'nosipho', 'nozipho',
         'phumzile', 'refiloe', 'sibongile', 'siphokazi', 'thandeka', 'thandi', 'thembi', 'unathi', 'vuyokazi', 'yolandi', 'zandile',
-        // below are unknown gender firstnames
+        // below are unknown Sexo firstnames
         'Andries', 'Babalwa', 'Barend', 'Bulelwa', 'Contact ', 'Dumisani', 'Fikile', 'Jacobus', 'Kabelo', 'Kagiso', 'Karabo', 'Kelebogile', 'Lesego',
         'Lindiwe', 'Marthinus', 'Mashudu', 'Next', 'Nhlanhla', 'Nicolaas', 'Nkosinathi', 'Nompumelelo', 'Nonhlanhla', 'Nonkululeko', 'Nosipho', 'Nozipho',
         'Personal', 'Phumzile', 'Refiloe', 'Sello', 'Sibongile', 'Sifiso', 'Siphokazi', 'Takalani', 'Teboho', 'Thandeka', 'Thandi', 'Thembi',
@@ -117,7 +117,7 @@ class Person extends \Faker\Provider\Person
         'Mokone', 'Moosa', 'Neethling', 'September', 'Madonsela', 'Willemse', 'Mashigo', 'Simpson', 'Otto', 'Legodi', 'Mlangeni',
         'Mokwena', 'Andrews', 'Mashele', 'Gounden', 'Zuma', 'Msomi', 'Ngema', 'Bennett', 'Baker', 'Ntshangase', 'Nene',
         'Magagula', 'Tladi', 'Xulu', 'Müller', 'Laubscher', 'Maluleka', 'May', 'Rautenbach', 'Ndebele', 'Grobbelaar', 'Henning',
-        'Carstens', 'Maleka', 'Odendaal', 'Kok', 'Oliver', 'Cassim', 'Van Eeden', 'Lottering', 'Mavuso', 'Mashinini', 'Kumalo',
+        'Carstens', 'Masculinoka', 'Odendaal', 'Kok', 'Oliver', 'Cassim', 'Van Eeden', 'Lottering', 'Mavuso', 'Mashinini', 'Kumalo',
         'Mathe', 'Taljaard', 'Molepo', 'David', 'Shezi', 'Turner', 'Oberholzer', 'Motsepe', 'Alberts', 'Adonis', 'van den Heever',
         'van der Linde', 'Marshall', 'Hugo', 'Thwala', 'Park', 'Cooper', 'Nelson', 'John', 'Anthony', 'Adam', 'Naudé', 'Harrison',
         'Mulder', 'Enslin', 'Truter', 'Khuzwayo', 'Makhanya', 'Harmse', 'Loubser', 'Kleynhans', 'Paul', 'Nieuwoudt', 'Horn',
@@ -126,9 +126,9 @@ class Person extends \Faker\Provider\Person
         'Pule', 'Hlophe', 'Miya', 'Moagi',
     ];
 
-    protected static $titleMale = ['Mr.', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
+    protected static $titleMasculino = ['Mr.', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
 
-    protected static $titleFemale = ['Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
+    protected static $titleFeminino = ['Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.', 'Rev.', 'Hon.'];
 
     protected static $licenceCodes = ['A', 'A1', 'B', 'C', 'C1', 'C2', 'EB', 'EC', 'EC1', 'I', 'L', 'L1'];
 
@@ -137,36 +137,36 @@ class Person extends \Faker\Provider\Person
      *
      * @param \DateTime $birthdate
      * @param bool      $citizen
-     * @param string    $gender
+     * @param string    $Sexo
      *
      * @return string
      */
-    public function idNumber(\DateTime $birthdate = null, $citizen = true, $gender = null)
+    public function idNumber(\DateTime $birthdate = null, $citizen = true, $Sexo = null)
     {
         if (!$birthdate) {
             $birthdate = $this->generator->dateTimeThisCentury();
         }
         $birthDateString = $birthdate->format('ymd');
 
-        switch (strtolower($gender)) {
-            case static::GENDER_FEMALE:
-                $genderDigit = self::numberBetween(0, 4);
+        switch (strtolower($Sexo)) {
+            case static::Sexo_Feminino:
+                $SexoDigit = self::numberBetween(0, 4);
 
                 break;
 
-            case static::GENDER_MALE:
-                $genderDigit = self::numberBetween(5, 9);
+            case static::Sexo_Masculino:
+                $SexoDigit = self::numberBetween(5, 9);
 
                 break;
 
             default:
-                $genderDigit = self::numberBetween(0, 9);
+                $SexoDigit = self::numberBetween(0, 9);
         }
         $sequenceDigits = str_pad(self::randomNumber(3), 3, 0, STR_PAD_BOTH);
         $citizenDigit = ($citizen === true) ? '0' : '1';
         $raceDigit = self::numberBetween(8, 9);
 
-        $partialIdNumber = $birthDateString . $genderDigit . $sequenceDigits . $citizenDigit . $raceDigit;
+        $partialIdNumber = $birthDateString . $SexoDigit . $sequenceDigits . $citizenDigit . $raceDigit;
 
         return $partialIdNumber . Luhn::computeCheckDigit($partialIdNumber);
     }

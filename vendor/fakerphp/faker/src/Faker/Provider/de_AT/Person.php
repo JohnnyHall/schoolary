@@ -6,31 +6,31 @@ use Faker\Provider\DateTime;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
     ];
 
     /**
      * 60 most popular names in 1985, 1995, 2005 and 2015
      * {@link} https://www.statistik.at/wcm/idc/idcplg?IdcService=GET_NATIVE_FILE&RevisionSelectionMethod=LatestReleased&dDocName=115199
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Adrian', 'Alexander', 'Andreas', 'Anton',
         'Ben', 'Benedikt', 'Benjamin', 'Bernd', 'Bernhard',
         'Christian', 'Christoph', 'Christopher', 'Clemens',
@@ -57,7 +57,7 @@ class Person extends \Faker\Provider\Person
      * 60 most popular names in 1985, 1995, 2005 and 2015
      * {@link} https://www.statistik.at/wcm/idc/idcplg?IdcService=GET_NATIVE_FILE&RevisionSelectionMethod=LatestReleased&dDocName=115199
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Alexandra', 'Alexandrea', 'Algelika', 'Alina', 'Amelie', 'Andrea', 'Angelina', 'Anita', 'Anja', 'Anna', 'Anna-Lena', 'Annika', 'Astrid',
         'Barbara', 'Bettina', 'Bianca', 'Birgit',
         'Carina', 'Caroline', 'Celina', 'Chiara', 'Christina', 'Christine', 'Clara', 'Claudia', 'Cornelia',
@@ -107,8 +107,8 @@ class Person extends \Faker\Provider\Person
         'Zach', 'Zangerl', 'Zauner', 'Zechner', 'Zehetner', 'Zeilinger', 'Zeller', 'Zenz', 'Ziegler', 'Zimmermann', 'Zöhrer',
     ];
 
-    protected static $titleMale = ['Herr', 'Dr.', 'Mag.', 'Ing.', 'Dipl.-Ing.', 'Prof.', 'Univ.Prof.'];
-    protected static $titleFemale = ['Frau', 'Dr.', 'Maga.', 'Ing.', 'Dipl.-Ing.', 'Prof.', 'Univ.Prof.'];
+    protected static $titleMasculino = ['Herr', 'Dr.', 'Mag.', 'Ing.', 'Dipl.-Ing.', 'Prof.', 'Univ.Prof.'];
+    protected static $titleFeminino = ['Frau', 'Dr.', 'Maga.', 'Ing.', 'Dipl.-Ing.', 'Prof.', 'Univ.Prof.'];
 
     protected static $suffix = ['B.Sc.', 'B.A.', 'B.Eng.', 'MBA.'];
 

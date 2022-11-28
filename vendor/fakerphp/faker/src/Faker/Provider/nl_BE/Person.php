@@ -6,7 +6,7 @@ use Faker\Provider\DateTime;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aaron', 'Adam', 'Adrien', 'Alessio', 'Alexander', 'Alexandre', 'Alexis',
         'Antoine', 'Arne', 'Arthur', 'Axel', 'Ayoub', 'Baptiste', 'Benjamin',
         'Clément', 'Daan', 'David', 'Diego', 'Dylan', 'Elias', 'Emiel', 'Emile',
@@ -22,7 +22,7 @@ class Person extends \Faker\Provider\Person
         'Vic', 'Victor', 'Vince', 'Warre', 'Xander', 'Yanis',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Alexia', 'Alice', 'Alicia', 'Alyssa', 'Amber', 'Amélie', 'Amy', 'Anaïs',
         'Anna', 'Anouk', 'Axelle', 'Aya', 'Bo', 'Camille', 'Célia', 'Charlotte',
         'Chiara', 'Chloé', 'Clara', 'Clémence', 'Elena', 'Elias', 'Eline', 'Elisa',
@@ -76,22 +76,22 @@ class Person extends \Faker\Provider\Person
      *  Belgian Rijksregister numbers are used to identify each citizen,
      *  it consists of three parts, the person's day of birth, in the
      *  format 'ymd', followed by a number between 1 and 997, odd for
-     *  males, even for females. The last part is used to check if it's
+     *  Masculinos, even for Femininos. The last part is used to check if it's
      *  a valid number.
      *
      *  @see https://nl.wikipedia.org/wiki/Rijksregisternummer
      *
-     *  @param string|null $gender 'male', 'female' or null for any
+     *  @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      *  @return string
      */
-    public static function rrn($gender = null)
+    public static function rrn($Sexo = null)
     {
         $middle = self::numberBetween(1, 997);
 
-        if ($gender === static::GENDER_MALE) {
+        if ($Sexo === static::Sexo_Masculino) {
             $middle = $middle % 2 === 1 ? $middle : $middle + 1;
-        } elseif ($gender === static::GENDER_FEMALE) {
+        } elseif ($Sexo === static::Sexo_Feminino) {
             $middle = $middle % 2 === 0 ? $middle : $middle + 1;
         }
         $middle = sprintf('%03d', $middle);

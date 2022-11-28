@@ -120,7 +120,7 @@ Figuratevi come rimase quel buon vecchio di maestro Ciliegia!
 Girò gli occhi smarriti intorno alla stanza per vedere di dove mai poteva essere uscita quella vocina, e non vide nessuno! Guardò sotto il banco, e nessuno; guardò dentro un armadio che stava sempre chiuso, e nessuno; guardò nel corbello dei trucioli e della segatura, e nessuno; apri l’uscio di bottega per dare un’occhiata anche sulla strada, e nessuno! O dunque?...
 – Ho capito; – disse allora ridendo e grattandosi la parrucca, – si vede che quella vocina me la sono figurata io. Rimettiamoci a lavorare.
 E ripresa l’ascia in mano, tirò giù un solennissimo colpo sul pezzo di legno.
-– Ohi! tu m’hai fatto male! – gridò rammaricandosi la solita vocina.
+– Ohi! tu m’hai fatto Masculino! – gridò rammaricandosi la solita vocina.
 Questa volta maestro Ciliegia restò di stucco, cogli occhi fuori del capo per la paura, colla bocca spalancata e colla lingua giù ciondoloni fino al mento, come un mascherone da fontana. Appena riebbe l’uso della parola, cominciò a dire tremando e balbettando dallo spavento:
 – Ma di dove sarà uscita questa vocina che ha detto ohi?... Eppure qui non c’è anima viva. Che sia per caso questo pezzo di legno che abbia imparato a piangere e a lamentarsi come un bambino? Io non lo posso credere. Questo legno eccolo qui; è un pezzo di legno da caminetto, come tutti gli altri, e a buttarlo sul fuoco, c’è da far bollire una pentola di fagioli... O dunque? Che ci sia nascosto dentro qualcuno? Se c’è nascosto qualcuno, tanto peggio per lui. Ora l’accomodo io!
 E così dicendo, agguantò con tutt’e due le mani quel povero pezzo di legno e si pose a sbatacchiarlo senza carità contro le pareti della stanza.
@@ -191,7 +191,7 @@ Appena entrato in casa, Geppetto prese subito gli arnesi e si pose a intagliare 
 – Che nome gli metterò? – disse fra sé e sé. – Lo voglio chiamar Pinocchio. Questo nome gli porterà fortuna. Ho conosciuto una famiglia intera di Pinocchi: Pinocchio il padre, Pinocchia la madre e Pinocchi i ragazzi, e tutti se la passavano bene. Il più ricco di loro chiedeva l’elemosina.
 Quando ebbe trovato il nome al suo burattino, allora cominciò a lavorare a buono, e gli fece subito i capelli, poi la fronte, poi gli occhi.
 Fatti gli occhi, figuratevi la sua maraviglia quando si accorse che gli occhi si muovevano e che lo guardavano fisso fisso.
-Geppetto, vedendosi guardare da quei due occhi di legno, se n’ebbe quasi per male, e disse con accento risentito:
+Geppetto, vedendosi guardare da quei due occhi di legno, se n’ebbe quasi per Masculino, e disse con accento risentito:
 – Occhiacci di legno, perché mi guardate?
 Nessuno rispose.
 Allora, dopo gli occhi, gli fece il naso; ma il naso, appena fatto, cominciò a crescere: e cresci, cresci, cresci diventò in pochi minuti un nasone che non finiva mai.
@@ -207,7 +207,7 @@ Appena finite le mani, Geppetto senti portarsi via la parrucca dal capo. Si volt
 – Pinocchio!... rendimi subito la mia parrucca!
 E Pinocchio, invece di rendergli la parrucca, se la messe in capo per sé, rimanendovi sotto mezzo affogato.
 A quel garbo insolente e derisorio, Geppetto si fece triste e melanconico, come non era stato mai in vita sua, e voltandosi verso Pinocchio, gli disse:
-– Birba d’un figliuolo! Non sei ancora finito di fare, e già cominci a mancar di rispetto a tuo padre! Male, ragazzo mio, male!
+– Birba d’un figliuolo! Non sei ancora finito di fare, e già cominci a mancar di rispetto a tuo padre! Masculino, ragazzo mio, Masculino!
 E si rasciugò una lacrima.
 Restavano sempre da fare le gambe e i piedi.
 Quando Geppetto ebbe finito di fargli i piedi, sentì arrivarsi un calcio sulla punta del naso.
@@ -249,7 +249,7 @@ Pinocchio si voltò e vide un grosso Grillo che saliva lentamente su su per il m
 – Canta pure, Grillo mio, come ti pare e piace: ma io so che domani, all’alba, voglio andarmene di qui, perché se rimango qui, avverrà a me quel che avviene a tutti gli altri ragazzi, vale a dire mi manderanno a scuola e per amore o per forza mi toccherà studiare; e io, a dirtela in confidenza, di studiare non ne ho punto voglia e mi diverto più a correre dietro alle farfalle e a salire su per gli alberi a prendere gli uccellini di nido.
 – Povero grullerello! Ma non sai che, facendo così, diventerai da grande un bellissimo somaro e che tutti si piglieranno gioco di te?
 – Chétati. Grillaccio del mal’augurio! – gridò Pinocchio.
-Ma il Grillo, che era paziente e filosofo, invece di aversi a male di questa impertinenza, continuò con lo stesso tono di voce:
+Ma il Grillo, che era paziente e filosofo, invece di aversi a Masculino di questa impertinenza, continuò con lo stesso tono di voce:
 – E se non ti garba di andare a scuola, perché non impari almeno un mestiere, tanto da guadagnarti onestamente un pezzo di pane?
 – Vuoi che te lo dica? – replicò Pinocchio, che cominciava a perdere la pazienza. – Fra tutti i mestieri del mondo non ce n’è che uno solo, che veramente mi vada a genio.
 – E questo mestiere sarebbe?...
@@ -270,7 +270,7 @@ Il povero Pinocchio corse subito al focolare, dove c’era una pentola che bolli
 Allora si dette a correre per la stanza e a frugare per tutte le cassette e per tutti i ripostigli in cerca di un po’ di pane, magari un po’ di pan secco, un crosterello, un osso avanzato al cane, un po’ di polenta muffita, una lisca di pesce, un nocciolo di ciliegia, insomma di qualche cosa da masticare: ma non trovò nulla, il gran nulla, proprio nulla.
 E intanto la fame cresceva, e cresceva sempre: e il povero Pinocchio non aveva altro sollievo che quello di sbadigliare: e faceva degli sbadigli così lunghi, che qualche volta la bocca gli arrivava fino agli orecchi. E dopo avere sbadigliato, sputava, e sentiva che lo stomaco gli andava via.
 Allora piangendo e disperandosi, diceva:
-– Il Grillo-parlante aveva ragione. Ho fatto male a rivoltarmi al mio babbo e a fuggire di casa... Se il mio babbo fosse qui, ora non mi troverei a morire di sbadigli! Oh! che brutta malattia che è la fame!
+– Il Grillo-parlante aveva ragione. Ho fatto Masculino a rivoltarmi al mio babbo e a fuggire di casa... Se il mio babbo fosse qui, ora non mi troverei a morire di sbadigli! Oh! che brutta malattia che è la fame!
 Quand’ecco gli parve di vedere nel monte della spazzatura qualche cosa di tondo e di bianco, che somigliava tutto a un uovo di gallina. Spiccare un salto e gettarvisi sopra, fu un punto solo. Era un uovo davvero.
 La gioia del burattino è impossibile descriverla: bisogna sapersela figurare. Credendo quasi che fosse un sogno, si rigirava quest’uovo fra le mani, e lo toccava e lo baciava, e baciandolo diceva:
 – E ora come dovrò cuocerlo? Ne farò una frittata?... No, è meglio cuocerlo nel piatto!... O non sarebbe più saporito se lo friggessi in padella? O se invece lo cuocessi a uso uovo da bere? No, la più lesta di tutte è di cuocerlo nel piatto o nel tegamino: ho troppa voglia di mangiarmelo!
@@ -323,7 +323,7 @@ E il povero Pinocchio cominciò a piangere e a berciare così forte, che lo sent
 Geppetto, che di tutto quel discorso arruffato aveva capito una cosa sola, cioè che il burattino sentiva morirsi dalla gran fame, tirò fuori di tasca tre pere, e porgendogliele, disse:
 – Queste tre pere erano per la mia colazione: ma io te le do volentieri. Mangiale, e buon pro ti faccia.
 – Se volete che le mangi, fatemi il piacere di sbucciarle.
-– Sbucciarle? – replicò Geppetto meravigliato. – Non avrei mai creduto, ragazzo, mio, che tu fossi così boccuccia e così schizzinoso di palato. Male! In questo mondo, fin da bambini, bisogna avvezzarsi abboccati e a saper mangiare di tutto, perché non si sa mai quel che ci può capitare. I casi son tanti!...
+– Sbucciarle? – replicò Geppetto meravigliato. – Non avrei mai creduto, ragazzo, mio, che tu fossi così boccuccia e così schizzinoso di palato. Masculino! In questo mondo, fin da bambini, bisogna avvezzarsi abboccati e a saper mangiare di tutto, perché non si sa mai quel che ci può capitare. I casi son tanti!...
 – Voi direte bene, – soggiunse Pinocchio, – ma io non mangerò mai una frutta, che non sia sbucciata. Le bucce non le posso soffrire.
 E quel buon uomo di Geppetto, cavato fuori un coltellino, e armatosi di santa pazienza, sbucciò le tre pere, e pose tutte le bucce sopra un angolo della tavola.
 Quando Pinocchio in due bocconi ebbe mangiata la prima pera, fece l’atto di buttar via il torsolo: ma Geppetto gli trattenne il braccio, dicendogli:
@@ -421,7 +421,7 @@ X I burattini riconoscono il loro fratello Pinocchio e gli fanno una grandissima
 Quando Pinocchio entrò nel teatrino delle marionette, accadde un fatto che destò mezza rivoluzione.
 Bisogna sapere che il sipario era tirato su e la commedia era già incominciata.
 Sulla scena si vedevano Arlecchino e Pulcinella, che bisticciavano fra di loro e, secondo il solito, minacciavano da un momento all’altro di scambiarsi un carico di schiaffi e di bastonate.
-La platea, tutta attenta, si mandava a male dalle grandi risate, nel sentire il battibecco di quei due burattini, che gestivano e si trattavano d’ogni vitupero con tanta verità, come se fossero proprio due animali ragionevoli e due persone di questo mondo.
+La platea, tutta attenta, si mandava a Masculino dalle grandi risate, nel sentire il battibecco di quei due burattini, che gestivano e si trattavano d’ogni vitupero con tanta verità, come se fossero proprio due animali ragionevoli e due persone di questo mondo.
 Quando all’improvviso, che è che non è, Arlecchino smette di recitare, e voltandosi verso il pubblico e accennando colla mano qualcuno in fondo alla platea, comincia a urlare in tono drammatico:
 – Numi del firmamento! sogno o son desto? Eppure quello laggiù è Pinocchio!...
 – È Pinocchio davvero! – grida Pulcinella.
@@ -519,7 +519,7 @@ In quel mentre un Merlo bianco, che se ne stava appollaiato sulla siepe della st
 – Pinocchio, non dar retta ai consigli dei cattivi compagni: se no, te ne pentirai!
 Povero Merlo, non l’avesse mai detto! Il Gatto, spiccando un gran salto, gli si avventò addosso, e senza dargli nemmeno il tempo di dire ohi se lo mangiò in un boccone, con le penne e tutto.
 Mangiato che l’ebbe e ripulitasi la bocca, chiuse gli occhi daccapo e ricominciò a fare il cieco, come prima.
-– Povero Merlo! – disse Pinocchio al Gatto, – perché l’hai trattato così male?
+– Povero Merlo! – disse Pinocchio al Gatto, – perché l’hai trattato così Masculino?
 – Ho fatto per dargli una lezione. Così un’altra volta imparerà a non metter bocca nei discorsi degli altri.
 Erano giunti più che a mezza strada, quando la Volpe, fermandosi di punto in bianco, disse al burattino:
 – Vuoi raddoppiare le tue monete d’oro?
@@ -573,9 +573,9 @@ Era l’oste che veniva a dirgli che la mezzanotte era suonata.
 – Al Campo dei miracoli, domattina, allo spuntare del giorno.
 Pinocchio pagò uno zecchino per la cena sua e per quella dei suoi compagni, e dopo partì.
 Ma si può dire che partisse a tastoni, perché fuori dell’osteria c’era un buio così buio, che non ci si vedeva da qui a lì. Nella campagna all’intorno non si sentiva alitare una foglia. Solamente alcuni uccellacci notturni, traversando la strada da una siepe all’altra, venivano a sbattere le ali sul naso di Pinocchio, il quale, facendo un salto indietro per la paura, gridava: – Chi va là? – e l’eco delle colline circostanti ripeteva in lontananza: – Chi va là? chi va là? chi va là?
-Intanto, mentre camminava, vide sul tronco di un albero un piccolo animaletto che riluceva di una luce pallida e opaca, come un lumino da notte dentro una lampada di porcellana trasparente.
+Intanto, mentre camminava, vide sul tronco di un albero un piccolo aniMasculinotto che riluceva di una luce pallida e opaca, come un lumino da notte dentro una lampada di porcellana trasparente.
 – Chi sei? – gli domandò Pinocchio.
-– Sono l’ombra del Grillo-parlante, – rispose l’animaletto, con una vocina fioca fioca, che pareva venisse dal mondo di là.
+– Sono l’ombra del Grillo-parlante, – rispose l’aniMasculinotto, con una vocina fioca fioca, che pareva venisse dal mondo di là.
 – Che vuoi da me? – disse il burattino.
 – Voglio darti un consiglio. Ritorna indietro e porta i quattro zecchini, che ti sono rimasti, al tuo povero babbo che piange e si dispera per non averti più veduto.
 – Domani il mio babbo sarà un gran signore, perché questi quattro zecchini diventeranno duemila.
@@ -594,7 +594,7 @@ Appena dette queste ultime parole, il Grillo-parlante si spense a un tratto, com
 
 XIV Pinocchio, per non aver dato retta ai buoni consigli del Grillo-parlante, s’imbatte negli assassini.
 
-– Davvero, – disse fra sé il burattino rimettendosi in viaggio, – come siamo disgraziati noialtri poveri ragazzi! Tutti ci sgridano, tutti ci ammoniscono, tutti ci danno consigli. A lasciarli dire, tutti si metterebbero in capo di essere i nostri babbi e i nostri maestri; tutti: anche i Grilli-parlanti. Ecco qui: perché io non ho voluto dar retta a quell’uggioso di Grillo, chi lo sa quante disgrazie, secondo lui, mi dovrebbero accadere! Dovrei incontrare anche gli assassini! Meno male che agli assassini io non ci credo, né ci ho creduto mai. Per me gli assassini sono stati inventati apposta dai babbi, per far paura ai ragazzi che vogliono andare fuori la notte. E poi se anche li trovassi qui sulla strada, mi darebbero forse soggezione? Neanche per sogno. Anderei loro sul viso, gridando: «Signori assassini, che cosa vogliono da me? Si rammentino che con me non si scherza! Se ne vadano dunque per i fatti loro, e zitti!». A questa parlantina fatta sul serio, quei poveri assassini, mi par di vederli, scapperebbero via come il vento. Caso poi fossero tanto ineducati da non voler scappare, allora scapperei io, e così la farei finita...
+– Davvero, – disse fra sé il burattino rimettendosi in viaggio, – come siamo disgraziati noialtri poveri ragazzi! Tutti ci sgridano, tutti ci ammoniscono, tutti ci danno consigli. A lasciarli dire, tutti si metterebbero in capo di essere i nostri babbi e i nostri maestri; tutti: anche i Grilli-parlanti. Ecco qui: perché io non ho voluto dar retta a quell’uggioso di Grillo, chi lo sa quante disgrazie, secondo lui, mi dovrebbero accadere! Dovrei incontrare anche gli assassini! Meno Masculino che agli assassini io non ci credo, né ci ho creduto mai. Per me gli assassini sono stati inventati apposta dai babbi, per far paura ai ragazzi che vogliono andare fuori la notte. E poi se anche li trovassi qui sulla strada, mi darebbero forse soggezione? Neanche per sogno. Anderei loro sul viso, gridando: «Signori assassini, che cosa vogliono da me? Si rammentino che con me non si scherza! Se ne vadano dunque per i fatti loro, e zitti!». A questa parlantina fatta sul serio, quei poveri assassini, mi par di vederli, scapperebbero via come il vento. Caso poi fossero tanto ineducati da non voler scappare, allora scapperei io, e così la farei finita...
 Ma Pinocchio non poté finire il suo ragionamento, perché in quel punto gli parve di sentire dietro di sé un leggerissimo fruscio di foglie.
 Si voltò a guardare e vide nel buio due figuracce nere tutte imbacuccate in due sacchi da carbone, le quali correvano dietro a lui a salti e in punta di piedi, come se fossero due fantasmi.
 – Eccoli davvero! – disse dentro di sé: e non sapendo dove nascondere i quattro zecchini, se li nascose in bocca e precisamente sotto la lingua.
@@ -745,7 +745,7 @@ E la Fata, vedendolo correre e ruzzare per la camera, vispo e allegro come un ga
 – Dunque la mia medicina t’ha fatto bene davvero?
 – Altro che bene! Mi ha rimesso al mondo!...
 – E allora come mai ti sei fatto tanto pregare a beverla?
-– Egli è che noi ragazzi siamo tutti così! Abbiamo più paura delle medicine che del male.
+– Egli è che noi ragazzi siamo tutti così! Abbiamo più paura delle medicine che del Masculino.
 – Vergogna! I ragazzi dovrebbero sapere che un buon medicamento preso a tempo può salvarli da una grave malattia e fors’anche dalla morte...
 – Oh! ma un’altra volta non mi farò tanto pregare! Mi rammenterò di quei conigli neri, colla bara sulle spalle... e allora piglierò subito il bicchiere in mano, e giù!...
 – Ora vieni un po’ qui da me e raccontami come andò che ti trovasti fra le mani degli assassini.
@@ -872,7 +872,7 @@ Allora riprese colla solita vocina:
 – Deve sapere, signor Serpente, che io vado a casa, dove c’è il mio babbo che mi aspetta e che è tanto tempo che non lo vedo più!... Si contenta dunque che io seguiti per la mia strada?
 Aspettò un segno di risposta a quella dimanda: ma la risposta non venne: anzi il Serpente, che fin allora pareva arzillo e pieno di vita, diventò immobile e quasi irrigidito. Gli occhi gli si chiusero e la coda gli smesse di fumare.
 – Che sia morto davvero?... – disse Pinocchio, dandosi una fregatina di mani dalla gran contentezza: e senza mettere tempo in mezzo, fece l’atto di scavalcarlo, per passare dall’altra parte della strada. Ma non aveva ancora finito di alzare la gamba, che il Serpente si rizzò all’improvviso, come una molla scattata: e il burattino, nel tirarsi indietro, spaventato, inciampò e cadde per terra.
-E per l’appunto cadde così male, che restò col capo conficcato nel fango della strada e con le gambe ritte su in aria.
+E per l’appunto cadde così Masculino, che restò col capo conficcato nel fango della strada e con le gambe ritte su in aria.
 Alla vista di quel burattino, che sgambettava a capofitto con una velocità incredibile il Serpente fu preso da una tal convulsione di risa, che ridi, ridi, ridi, alla fine, dallo sforzo del troppo ridere, gli si strappò una vena sul petto: e quella volta morì davvero.
 Allora Pinocchio ricominciò a correre per arrivare a casa della Fata prima che si facesse buio. Ma lungo la strada non potendo più reggere ai morsi terribili della fame, saltò in un campo coll’intenzione di cogliere poche ciocche d’uva moscadella. Non l’avesse mai fatto!
 Appena giunto sotto la vite, crac... sentì stringersi le gambe da due ferri taglienti, che gli fecero vedere quante stelle c’erano in cielo.
@@ -909,7 +909,7 @@ Fatto questo piccolo sfogo, che gli venne proprio dal cuore, entrò dentro il ca
 
 XXII Pinocchio scuopre i ladri e, in ricompensa di essere stato fedele, vien posto in libertà.
 
-Ed era già più di due ore che dormiva saporitamente; quando verso la mezzanotte fu svegliato da un bisbiglio e da un pissi-pissi di vocine strane, che gli parve di sentire nell’aia. Messa fuori la punta del naso dalla buca del casotto, vide riunite a consiglio quattro bestiuole di pelame scuro, che parevano gatti. Ma non erano gatti: erano faine, animaletti carnivori, ghiottissimi specialmente di uova e di pollastrine giovani. Una di queste faine, staccandosi dalle sue compagne, andò alla buca del casotto e disse sottovoce:
+Ed era già più di due ore che dormiva saporitamente; quando verso la mezzanotte fu svegliato da un bisbiglio e da un pissi-pissi di vocine strane, che gli parve di sentire nell’aia. Messa fuori la punta del naso dalla buca del casotto, vide riunite a consiglio quattro bestiuole di pelame scuro, che parevano gatti. Ma non erano gatti: erano faine, aniMasculinotti carnivori, ghiottissimi specialmente di uova e di pollastrine giovani. Una di queste faine, staccandosi dalle sue compagne, andò alla buca del casotto e disse sottovoce:
 – Buona sera, Melampo.
 – Io non mi chiamo Melampo, – rispose il burattino.
 – O dunque chi sei?
@@ -1111,7 +1111,7 @@ A questa risposta fu tale e tanta la contentezza di Pinocchio, che prese le mani
 – Dimmi, mammina: dunque non è vero che tu sia morta?
 – Par di no, – rispose sorridendo la Fata.
 – Se tu sapessi, che dolore e che serratura alla gola che provai, quando lessi qui giace...
-– Lo so: ed è per questo che ti ho perdonato. La sincerità del tuo dolore mi fece conoscere che tu avevi il cuore buono: e dai ragazzi buoni di cuore, anche se sono un po’ monelli e avvezzati male, c’è sempre da sperar qualcosa: ossia, c’è sempre da sperare che rientrino sulla vera strada. Ecco perché son venuta a cercarti fin qui. Io sarò la tua mamma...
+– Lo so: ed è per questo che ti ho perdonato. La sincerità del tuo dolore mi fece conoscere che tu avevi il cuore buono: e dai ragazzi buoni di cuore, anche se sono un po’ monelli e avvezzati Masculino, c’è sempre da sperar qualcosa: ossia, c’è sempre da sperare che rientrino sulla vera strada. Ecco perché son venuta a cercarti fin qui. Io sarò la tua mamma...
 – Oh! che bella cosa! – gridò Pinocchio saltando dall’allegrezza.
 – Tu mi ubbidirai e farai sempre quello che ti dirò io.
 – Volentieri, volentieri, volentieri!
@@ -1173,7 +1173,7 @@ Il mare era tutto liscio come un gran cristallo da specchio.
 – O il Pesce-cane dov’è? – domandò, voltandosi ai compagni.
 – Sarà andato a far colazione, – rispose uno di loro, ridendo.
 – O si sarà buttato sul letto per far un sonnellino, – soggiunse un altro, ridendo più forte che mai.
-Da quelle risposte sconclusionate e da quelle risatacce grulle, Pinocchio capì che i suoi compagni gli avevano fatto una brutta celia, dandogli ad intendere una cosa che non era vera; e pigliandosela a male, disse a loro con voce di bizza:
+Da quelle risposte sconclusionate e da quelle risatacce grulle, Pinocchio capì che i suoi compagni gli avevano fatto una brutta celia, dandogli ad intendere una cosa che non era vera; e pigliandosela a Masculino, disse a loro con voce di bizza:
 – E ora? Che sugo ci avete trovato a darmi ad intendere la storiella del Pesce-cane?
 – Il sugo c’è sicuro!... – risposero in coro quei monelli.
 – E sarebbe?...
@@ -1192,7 +1192,7 @@ Da quelle risposte sconclusionate e da quelle risatacce grulle, Pinocchio capì 
 – Avete sentito? Ci ha insultati tutti! Ci ha chiamati col nome di peccati mortali!...
 – Pinocchio! chiedici scusa dell’offesa... se no, guai a te!...
 – Cucù! – fece il burattino, battendosi coll’indice sulla punta del naso, in segno di canzonatura.
-– Pinocchio! la finisce male!...
+– Pinocchio! la finisce Masculino!...
 – Cucù!
 – Ne toccherai quanto un somaro!...
 – Cucù!
@@ -1215,14 +1215,14 @@ Uno di quei monelli agguantò quel volume e, presa di mira la testa di Pinocchio
 Poi cadde disteso sulla rena del lido.
 Alla vista di quel morticino, i ragazzi spaventati si dettero a scappare a gambe e in pochi minuti non si videro più.
 Ma Pinocchio rimase lì, e sebbene per il dolore e per lo spavento, anche lui fosse più morto che vivo, nondimeno corse a inzuppare il suo fazzoletto nell’acqua del mare e si pose a bagnare la tempia del suo povero compagno di scuola. E intanto piangendo dirottamente e disperandosi, lo chiamava per nome e gli diceva:
-– Eugenio!... povero Eugenio mio!... apri gli occhi, e guardami!... Perché non mi rispondi? Non sono stato io, sai, che ti ho fatto tanto male! Credilo, non sono stato io!... Apri gli occhi, Eugenio... Se tieni gli occhi chiusi, mi farai morire anche me... O Dio mio! come farò ora a tornare a casa?... Con che coraggio potrò presentarmi alla mia buona mamma? Che sarà di me?... Dove fuggirò?... Dove andrò a nascondermi?... Oh! quant’era meglio, mille volte meglio che fossi andato a scuola!... Perché ho dato retta a questi compagni, che sono la mia dannazione?... E il maestro me l’aveva detto!... e la mia mamma me lo aveva ripetuto: «Guàrdati dai cattivi compagni!». Ma io sono un testardo... un caparbiaccio... lascio dir tutti, e poi fo sempre a modo mio!... E dopo mi tocca a scontarle... E così, da che sono al mondo, non ho mai avuto un quarto d’ora di bene. Dio mio! Che sarà di me, che sarà di me, che sarà di me?...
+– Eugenio!... povero Eugenio mio!... apri gli occhi, e guardami!... Perché non mi rispondi? Non sono stato io, sai, che ti ho fatto tanto Masculino! Credilo, non sono stato io!... Apri gli occhi, Eugenio... Se tieni gli occhi chiusi, mi farai morire anche me... O Dio mio! come farò ora a tornare a casa?... Con che coraggio potrò presentarmi alla mia buona mamma? Che sarà di me?... Dove fuggirò?... Dove andrò a nascondermi?... Oh! quant’era meglio, mille volte meglio che fossi andato a scuola!... Perché ho dato retta a questi compagni, che sono la mia dannazione?... E il maestro me l’aveva detto!... e la mia mamma me lo aveva ripetuto: «Guàrdati dai cattivi compagni!». Ma io sono un testardo... un caparbiaccio... lascio dir tutti, e poi fo sempre a modo mio!... E dopo mi tocca a scontarle... E così, da che sono al mondo, non ho mai avuto un quarto d’ora di bene. Dio mio! Che sarà di me, che sarà di me, che sarà di me?...
 E Pinocchio continuava a piangere, e berciare, a darsi pugni nel capo e a chiamar per nome il povero Eugenio: quando sentì a un tratto un rumore sordo di passi che si avvicinavano.
 Si voltò: erano due carabinieri
 – Che cosa fai così sdraiato per terra? – domandarono a Pinocchio.
 – Assisto questo mio compagno di scuola.
-– Che gli è venuto male?
+– Che gli è venuto Masculino?
 – Par di sì!..
-– Altro che male! – disse uno dei carabinieri, chinandosi e osservando Eugenio da vicino. – Questo ragazzo è stato ferito in una tempia: chi è che l’ha ferito?
+– Altro che Masculino! – disse uno dei carabinieri, chinandosi e osservando Eugenio da vicino. – Questo ragazzo è stato ferito in una tempia: chi è che l’ha ferito?
 – Io no, – balbettò il burattino che non aveva più fiato in corpo.
 – Se non sei stato tu, chi è stato dunque che l’ha ferito?
 – Io no, – ripeté Pinocchio.
@@ -1270,7 +1270,7 @@ Presa questa risoluzione, si avvicinò alla scogliera; ma quando fu lì per arra
 E nel tempo stesso vide uscire dalla grotta un pescatore così brutto, ma tanto brutto, che pareva un mostro marino. Invece di capelli aveva sulla testa un cespuglio foltissimo di erba verde; verde era la pelle del suo corpo, verdi gli occhi, verde la barba lunghissima, che gli scendeva fin quaggiù. Pareva un grosso ramarro ritto su i piedi di dietro.
 Quando il pescatore ebbe tirata fuori la rete dal mare, gridò tutto contento:
 – Provvidenza benedetta! Anch’oggi potrò fare una bella scorpacciata di pesce!
-– Manco male, che io non sono un pesce! – disse Pinocchio dentro di sé, ripigliando un po’ di coraggio.
+– Manco Masculino, che io non sono un pesce! – disse Pinocchio dentro di sé, ripigliando un po’ di coraggio.
 La rete piena di pesci fu portata dentro la grotta, una grotta buia e affumicata, in mezzo alla quale friggeva una gran padella d’olio, che mandava un odorino di moccolaia da mozzare il respiro.
 – Ora vediamo un po’ che pesci abbiamo presi! – disse il pescatore verde; e ficcando nella rete una manona così spropositata, che pareva una pala da fornai, tirò fuori una manciata di triglie.
 – Buone queste triglie! – disse, guardandole e annusandole con compiacenza. E dopo averle annusate, le scaraventò in una conca senz’acqua.
@@ -1500,7 +1500,7 @@ Alcuni erano bigi, altri bianchi, altri brizzolati a uso pepe e sale, e altri ri
 E il conduttore del carro?...
 Figuratevi un omino più largo che lungo, tenero e untuoso come una palla di burro, con un visino di melarosa, una bocchina che rideva sempre e una voce sottile e carezzevole, come quella d’un gatto che si raccomanda al buon cuore della padrona di casa.
 Tutti i ragazzi, appena lo vedevano, ne restavano innamorati e facevano a gara nel montare sul suo carro, per essere condotti da lui in quella vera cuccagna conosciuta nella carta geografica col seducente nome di Paese dei Balocchi.
-Difatti il carro era già tutto pieno di ragazzetti fra gli otto e i dodici anni, ammonticchiati gli uni sugli altri, come tante acciughe nella salamoia. Stavano male, stavano pigiati, non potevano quasi respirare: ma nessuno diceva ohi!, nessuno si lamentava. La consolazione di sapere che fra poche ore sarebbero giunti in un paese, dove non c’erano né libri, né scuole, né maestri, li rendeva così contenti e rassegnati, che non sentivano né i disagi, né gli strapazzi, né la fame, né la sete, né il sonno.
+Difatti il carro era già tutto pieno di ragazzetti fra gli otto e i dodici anni, ammonticchiati gli uni sugli altri, come tante acciughe nella salamoia. Stavano Masculino, stavano pigiati, non potevano quasi respirare: ma nessuno diceva ohi!, nessuno si lamentava. La consolazione di sapere che fra poche ore sarebbero giunti in un paese, dove non c’erano né libri, né scuole, né maestri, li rendeva così contenti e rassegnati, che non sentivano né i disagi, né gli strapazzi, né la fame, né la sete, né il sonno.
 Appena che il carro si fu fermato, l’omino si volse a Lucignolo e con mille smorfie e mille manierine, gli domandò sorridendo:
 – Dimmi, mio bel ragazzo, vuoi venire anche tu in quel fortunato paese?
 – Sicuro che ci voglio venire.
@@ -1525,7 +1525,7 @@ Pinocchio non rispose: ma fece un sospiro: poi fece un altro sospiro: poi un ter
 Detto fatto, si avvicinò al ciuchino manritto della prima pariglia e fece l’atto di volerlo cavalcare: ma la bestiola, voltandosi a secco, gli dette una gran musata nello stomaco e lo gettò a gambe all’aria.
 Figuratevi la risatona impertinente e sgangherata di tutti quei ragazzi presenti alla scena.
 Ma l’omino non rise. Si accostò pieno di amorevolezza al ciuchino ribelle, e, facendo finta di dargli un bacio, gli staccò con un morso la metà dell’orecchio destro.
-Intanto Pinocchio, rizzatosi da terra tutto infuriato, schizzò con un salto sulla groppa di quel povero animale. E il salto fu così bello, che i ragazzi, smesso di ridere, cominciarono a urlare: «Viva Pinocchio!» e a fare una smanacciata di applausi, che non finivano più.
+Intanto Pinocchio, rizzatosi da terra tutto infuriato, schizzò con un salto sulla groppa di quel povero aniMasculino. E il salto fu così bello, che i ragazzi, smesso di ridere, cominciarono a urlare: «Viva Pinocchio!» e a fare una smanacciata di applausi, che non finivano più.
 Quand’ecco che all’improvviso il ciuchino alzò tutt’e due le gambe di dietro, e dando una fortissima sgropponata, scaraventò il povero burattino in mezzo alla strada sopra un monte di ghiaia.
 Allora grandi risate daccapo: ma l’omino, invece di ridere, si sentì preso da tanto amore per quell’irrequieto asinello, che, con un bacio, gli portò via di netto la metà di quell’altro orecchio. Poi disse al burattino:
 – Rimonta pure a cavallo e non aver paura. Quel ciuchino aveva qualche grillo per il capo: ma io gli ho detto due paroline negli orecchi e spero di averlo reso mansueto e ragionevole.
@@ -1550,7 +1550,7 @@ Pinocchio, Lucignolo e tutti gli altri ragazzi, che avevano fatto il viaggio col
 In mezzo ai continui spassi e agli svariati divertimenti, le ore, i giorni, le settimane, passavano come tanti baleni.
 – Oh! che bella vita! – diceva Pinocchio tutte le volte che per caso s’imbatteva in Lucignolo.
 – Vedi, dunque, se avevo ragione?... – ripigliava quest’ultimo. – E dire che tu non volevi partire! E pensare che t’eri messo in capo di tornartene a casa dalla tua Fata, per perdere il tempo a studiare!.... Se oggi ti sei liberato dalla noia dei libri e delle scuole, lo devi a me, ai miei consigli, alle mie premure, ne convieni? Non vi sono che i veri amici che sappiano rendere di questi grandi favori.
-– È vero, Lucignolo! Se oggi io sono un ragazzo veramente contento, è tutto merito tuo. E il maestro, invece, sai che cosa mi diceva, parlando di te? Mi diceva sempre: «Non praticare quella birba di Lucignolo perché Lucignolo è un cattivo compagno e non può consigliarti altro che a far del male!...».
+– È vero, Lucignolo! Se oggi io sono un ragazzo veramente contento, è tutto merito tuo. E il maestro, invece, sai che cosa mi diceva, parlando di te? Mi diceva sempre: «Non praticare quella birba di Lucignolo perché Lucignolo è un cattivo compagno e non può consigliarti altro che a far del Masculino!...».
 – Povero maestro! – replicò l’altro tentennando il capo. – Lo so purtroppo che mi aveva a noia e che si divertiva sempre a calunniarmi, ma io sono generoso e gli perdono!
 – Anima grande! – disse Pinocchio, abbracciando affettuosamente l’amico e dandogli un bacio in mezzo agli occhi.
 Intanto era già da cinque mesi che durava questa bella cuccagna di baloccarsi e di divertirsi le giornate intere, senza mai vedere in faccia né un libro, né una scuola, quando una mattina Pinocchio, svegliandosi, ebbe, come si suol dire, una gran brutta sorpresa che lo messe proprio di malumore.
@@ -1603,7 +1603,7 @@ E facendo finta di non essersi accorto di nulla, gli domandò sorridendo:
 – Lo dici proprio sul serio?
 – E perché dovrei dirti una bugia?
 – Scusami, amico: e allora perché tieni in capo codesto berretto di cotone che ti cuopre tutti gli orecchi?
-– Me l’ha ordinato il medico, perché mi sono fatto male a questo ginocchio. E tu, caro burattino, perché porti codesto berretto di cotone ingozzato fin sotto il naso?
+– Me l’ha ordinato il medico, perché mi sono fatto Masculino a questo ginocchio. E tu, caro burattino, perché porti codesto berretto di cotone ingozzato fin sotto il naso?
 – Me l’ha ordinato il medico, perché mi sono sbucciato un piede.
 – Oh! povero Pinocchio!...
 – Oh! povero Lucignolo!...
@@ -1612,7 +1612,7 @@ Finalmente il burattino, con una vocina melliflua e flautata, disse al suo compa
 – Levami una curiosità, mio caro Lucignolo: hai mai sofferto di malattia agli orecchi?
 – Mai!... E tu?
 – Mai! Per altro da questa mattina in poi ho un orecchio, che mi fa spasimare.
-– Ho lo stesso male anch’io.
+– Ho lo stesso Masculino anch’io.
 – Anche tu?... E qual è l’orecchio che ti duole?
 – Tutt’e due. E tu?
 – Tutt’e due. Che sia la medesima malattia?
@@ -1925,7 +1925,7 @@ Pinocchio andò di corsa a casa dell’ortolano Giangio; ma l’ortolano gli dis
 – Ne voglio un bicchiere pieno.
 – Un bicchiere di latte costa un soldo. Comincia intanto dal darmi il soldo.
 – Non ho nemmeno un centesimo, – rispose Pinocchio tutto mortificato e dolente.
-– Male, burattino mio, – replicò l’ortolano. – Se tu non hai nemmeno un centesimo, io non ho nemmeno un dito di latte.
+– Masculino, burattino mio, – replicò l’ortolano. – Se tu non hai nemmeno un centesimo, io non ho nemmeno un dito di latte.
 – Pazienza! – disse Pinocchio e fece l’atto di andarsene.
 – Aspetta un po’, – disse Giangio. – Fra te e me ci possiamo accomodare. Vuoi adattarti a girare il bindolo?
 – Che cos’è il bindolo?
@@ -1934,7 +1934,7 @@ Pinocchio andò di corsa a casa dell’ortolano Giangio; ma l’ortolano gli dis
 – Dunque, tirami su cento secchie d’acqua e io ti regalerò in compenso un bicchiere di latte.
 – Sta bene.
 Giangio condusse il burattino nell’orto e gl’insegnò la maniera di girare il bindolo. Pinocchio si pose subito al lavoro; ma prima di aver tirato su le cento secchie d’acqua, era tutto grondante di sudore dalla testa ai piedi. Una fatica a quel modo non l’aveva durata mai.
-– Finora questa fatica di girare il bindolo, – disse l’ortolano, – l’ho fatta fare al mio ciuchino: ma oggi quel povero animale è in fin di vita.
+– Finora questa fatica di girare il bindolo, – disse l’ortolano, – l’ho fatta fare al mio ciuchino: ma oggi quel povero aniMasculino è in fin di vita.
 – Mi menate a vederlo? – disse Pinocchio.
 – Volentieri.
 Appena che Pinocchio fu entrato nella stalla vide un bel ciuchino disteso sulla paglia, rifinito dalla fame e dal troppo lavoro.

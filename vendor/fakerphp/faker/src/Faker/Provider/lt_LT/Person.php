@@ -4,27 +4,27 @@ namespace Faker\Provider\lt_LT;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
     ];
 
     protected static $lastNameFormat = [
-        '{{firstNameMale}}',
-        '{{firstNameFemale}}',
+        '{{firstNameMasculino}}',
+        '{{firstNameFeminino}}',
     ];
 
-    protected static $titleMale = ['p.', 'ponas'];
+    protected static $titleMasculino = ['p.', 'ponas'];
 
-    protected static $titleFemale = ['p.', 'ponia', 'panelė'];
+    protected static $titleFeminino = ['p.', 'ponia', 'panelė'];
 
     /**
      * @see https://lt.wikipedia.org/wiki/S%C4%85ra%C5%A1as:Lietuvoje_paplit%C4%99_vardai
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Abramas', 'Abraomas', 'Achilas', 'Adalbertas', 'Adamas', 'Adas', 'Adolfas', 'Adolis', 'Adomas',
         'Adrijus', 'Agatas', 'Agnius', 'Aidas', 'Ainius', 'Aistis', 'Aivaras', 'Akimas', 'Akvilinas', 'Albertas', 'Albrechtas',
         'Albinas', 'Aldonas', 'Aleksandras', 'Aleksas', 'Alenas', 'Alfas', 'Alfonsas', 'Alfredas', 'Algimantas', 'Algirdas',
@@ -115,7 +115,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see https://lt.wikipedia.org/wiki/S%C4%85ra%C5%A1as:Lietuvoje_paplit%C4%99_vardai
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ada', 'Adelė', 'Adelija', 'Adelina', 'Adolfa', 'Adolfina',
         'Adriana', 'Adrija', 'Adrijana', 'Agata', 'Agnė', 'Agnetė', 'Agnieška', 'Agnietė', 'Agnija',
         'Agota', 'Agripina', 'Aida', 'Aidė', 'Aimana', 'Aimantė', 'Aina', 'Ainė', 'Airė', 'Airida', 'Aistė',
@@ -237,7 +237,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://www.horoskopai.lt/gaires/populiariausios-pavardes-lietuvoje/
      */
-    protected static $lastNameMale = [
+    protected static $lastNameMasculino = [
         'Kazlaukas', 'Jankauskas', 'Petrauskas', 'Stankevičius', 'Vasiliauskas', 'Žukauskas', 'Butkus',
         'Kateiva', 'Paulauskas', 'Urbonas', 'Kavaliauskas', 'Baranauskas', 'Pocius', 'Sakalauskas',
     ];
@@ -245,54 +245,54 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://www.horoskopai.lt/gaires/populiariausios-pavardes-lietuvoje/
      */
-    protected static $lastNameFemale = [
+    protected static $lastNameFeminino = [
         'Kazlauskienė', 'Jankauskienė', 'Petrauskienė', 'Stankevičienė', 'Vasiliauskienė', 'Paulauskienė',
         'Žukauskienė', 'Urbonienė', 'Kavaliauskienė', 'Navickienė', 'Kazlauskaitė', 'Jankauskaitė', 'Stankevičiūtė',
         'Petrauskaitė', 'Vasiliauskaitė', 'Butkutė', 'Pociūtė', 'Lukoševičiūtė', 'Balčiūnaitė', 'Kavaliauskaitė',
     ];
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Doe'
      *
      * @return string
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::lastNameMale();
+        if ($Sexo === static::Sexo_Masculino) {
+            return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::lastNameFemale();
+        if ($Sexo === static::Sexo_Feminino) {
+            return static::lastNameFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$lastNameFormat));
     }
 
     /**
-     * Return male last name
+     * Return Masculino Sobrenome
      *
      * @return string
      *
      * @example 'Vasiliauskas'
      */
-    public function lastNameMale()
+    public function lastNameMasculino()
     {
-        return static::randomElement(static::$lastNameMale);
+        return static::randomElement(static::$lastNameMasculino);
     }
 
     /**
-     * Return female last name
+     * Return Feminino Sobrenome
      *
      * @return string
      *
      * @example 'Žukauskaitė'
      */
-    public function lastNameFemale()
+    public function lastNameFeminino()
     {
-        return static::randomElement(static::$lastNameFemale);
+        return static::randomElement(static::$lastNameFeminino);
     }
 
     /**
@@ -325,20 +325,20 @@ class Person extends \Faker\Provider\Person
      * @see https://en.wikipedia.org/wiki/National_identification_number#Lithuania
      * @see https://lt.wikipedia.org/wiki/Asmens_kodas
      *
-     * @param string    $gender       [male|female]
+     * @param string    $Sexo       [Masculino|Feminino]
      * @param \DateTime $birthdate
      * @param string    $randomNumber three integers
      *
      * @return string on format XXXXXXXXXXX
      */
-    public function personalIdentityNumber($gender = 'male', \DateTime $birthdate = null, $randomNumber = '')
+    public function personalIdentityNumber($Sexo = 'Masculino', \DateTime $birthdate = null, $randomNumber = '')
     {
         if (!$birthdate) {
             $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
         }
 
-        $genderNumber = ($gender == 'male') ? 1 : 0;
-        $firstNumber = (int) floor($birthdate->format('Y') / 100) * 2 - 34 - $genderNumber;
+        $SexoNumber = ($Sexo == 'Masculino') ? 1 : 0;
+        $firstNumber = (int) floor($birthdate->format('Y') / 100) * 2 - 34 - $SexoNumber;
 
         $datePart = $birthdate->format('ymd');
         $randomDigits = (string) (!$randomNumber || strlen($randomNumber) < 3) ? static::numerify('###') : substr($randomNumber, 0, 3);

@@ -25,8 +25,8 @@ for a general introduction to promises.
 - Promises have a synchronous `wait` method.
 - Promises can be cancelled.
 - Works with any object that has a `then` function.
-- C# style async/await coroutine promises using
-  `GuzzleHttp\Promise\Coroutine::of()`.
+- C# style async/await cocronograma promises using
+  `GuzzleHttp\Promise\Cocronograma::of()`.
 
 
 # Quick start
@@ -529,4 +529,4 @@ A static API was first introduced in 1.4.0, in order to mitigate problems with f
 | `is_fulfilled` | `Is::fulfilled` |
 | `is_rejected` | `Is::rejected` |
 | `is_settled` | `Is::settled` |
-| `coroutine` | `Coroutine::of` |
+| `cocronograma` | `Cocronograma::of` |

@@ -1,7 +1,7 @@
 {
     "name": "sebastian/diff",
     "description": "Diff implementation",
-    "keywords": ["diff", "udiff", "unidiff", "unified diff"],
+    "keywords": ["diff", "udiff", "unidiff", "schoolary diff"],
     "homepage": "https://github.com/sebastianbergmann/diff",
     "license": "BSD-3-Clause",
     "authors": [

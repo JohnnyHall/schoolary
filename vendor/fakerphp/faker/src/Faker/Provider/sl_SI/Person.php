@@ -4,27 +4,27 @@ namespace Faker\Provider\sl_SI;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{title}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{title}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{title}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{title}} {{firstNameFeminino}} {{lastName}}',
     ];
 
     /**
      * @see http://www.stat.si/imena_top_imena_spol.asp?r=True
      * @see http://www.stat.si/doc/vsebina/05/imena/TOPIMENA_SI.xlsx
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Adam', 'Adolf', 'Albert', 'Albin', 'Aleks', 'Aleksandar', 'Aleksander', 'Aleksej', 'Alen',
         'Alex', 'Aleš', 'Aljaž', 'Aljoša', 'Alojz', 'Alojzij', 'Andraž', 'Andrej', 'Anej', 'Anton',
         'Anže', 'Avgust', 'Ažbe', 'Benjamin', 'Bernard', 'Bine', 'Blaž', 'Bogdan', 'Bogomir',
@@ -56,7 +56,7 @@ class Person extends \Faker\Provider\Person
      * @see http://www.stat.si/imena_top_imena_spol.asp?r=True
      * @see http://www.stat.si/doc/vsebina/05/imena/TOPIMENA_SI.xlsx
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ajda', 'Ajla', 'Albina', 'Aleksandra', 'Alenka', 'Alina', 'Alja', 'Alojzija', 'Amalija',
         'Ana Marija', 'Ana', 'Andreja', 'Andrejka', 'Aneja', 'Angela', 'Anica', 'Anika', 'Anita',
         'Anja', 'Anka', 'Antonija', 'Barbara', 'Bernarda', 'Blanka', 'Bojana', 'Branka', 'Breda',
@@ -122,27 +122,27 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex slovenian title
      */
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
         return static::randomElement(static::$title);
     }
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Novak'
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
         return static::randomElement(static::$lastName);
     }
 
-    public static function lastNameMale()
+    public static function lastNameMasculino()
     {
         return static::lastName();
     }
 
-    public static function lastNameFemale()
+    public static function lastNameFeminino()
     {
         return static::lastName();
     }

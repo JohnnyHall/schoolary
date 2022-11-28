@@ -1601,8 +1601,8 @@ cuprins spaima, iară pe de alta s-a îndrăcit de ciudă. Și dă el
 să descuie ușa, nu poate; dă s-o desprindă, nici atâta. Pe urmă,
 ce să facă? Aleargă și vestește împăratului despre cele
 întâmplate. Atunci vine și împăratul cu o mulțime de oameni, cu
-cazmale ascuțite și cu cazane pline cu uncrop; și unii tăiau
-gheața cu cazmalele, alții aruncau cu uncrop pe la țâțânile ușii
+cazMasculino ascuțite și cu cazane pline cu uncrop; și unii tăiau
+gheața cu cazMasculinole, alții aruncau cu uncrop pe la țâțânile ușii
 și în borta cheii și după multă trudă, cu mare ce hălăduiesc de
 deschid ușa și scot pe oaspeți afară. Și când colo, ce să vezi?
 Toți erau cu părul, cu barba și mustețile pline de promoroacă,
@@ -2205,8 +2205,8 @@ EOT;
     composition with or without words; a cinematographic work to which are
     assimilated works expressed by a process analogous to cinematography;
     a work of drawing, painting, architecture, sculpture, engraving or
-    lithography; a photographic work to which are assimilated works
-    expressed by a process analogous to photography; a work of applied
+    lithography; a Fotographic work to which are assimilated works
+    expressed by a process analogous to Fotography; a work of applied
     art; an illustration, map, plan, sketch or three-dimensional work
     relative to geography, topography, architecture or science; a
     performance; a broadcast; a phonogram; a compilation of data to the

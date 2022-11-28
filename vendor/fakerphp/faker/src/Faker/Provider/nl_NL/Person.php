@@ -4,22 +4,22 @@ namespace Faker\Provider\nl_NL;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{title}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{title}} {{firstNameMale}} {{lastName}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{title}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{title}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{title}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{title}} {{firstNameFemale}} {{lastName}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{title}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{title}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
     ];
 
     protected static $title = [
@@ -211,7 +211,7 @@ class Person extends \Faker\Provider\Person
         'Zuérius Boxhorn van Miggrode', 'Zum Vörde Sive Vörding',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Emma', 'Sophie', 'Julia', 'Anna', 'Lisa', 'Isa', 'Eva', 'Saar', 'Lotte', 'Tess', 'Lynn', 'Fleur', 'Sara',
         'Lieke', 'Noa', 'Fenna', 'Sarah', 'Mila', 'Sanne', 'Roos', 'Elin', 'Zoë', 'Evi', 'Maud', 'Jasmijn', 'Femke',
         'Nina', 'Anne', 'Noor', 'Amy', 'Sofie', 'Olivia', 'Feline', 'Liv', 'Esmee', 'Nora', 'Iris', 'Lina', 'Luna',
@@ -235,7 +235,7 @@ class Person extends \Faker\Provider\Person
         'Sylvie', 'Annemijn', 'Helena', 'Jayda', 'Nadia', 'Amelia', 'Jinthe', 'Jolijn', 'Maja', 'Tirza',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Daan', 'Bram', 'Sem', 'Lucas', 'Milan', 'Levi', 'Luuk', 'Thijs', 'Jayden', 'Tim', 'Finn', 'Stijn', 'Thomas',
         'Lars', 'Ruben', 'Jesse', 'Noah', 'Julian', 'Max', 'Liam', 'Mees', 'Sam', 'Sven', 'Gijs', 'Luca', 'Teun',
         'Tijn', 'Siem', 'Mats', 'Jens', 'Benjamin', 'Adam', 'Ryan', 'Jan', 'Floris', 'David', 'Olivier', 'Cas', 'Tygo',
@@ -279,7 +279,7 @@ class Person extends \Faker\Provider\Person
         return $lastName;
     }
 
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
         return static::randomElement(static::$title);
     }
@@ -287,7 +287,7 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex dutch title
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
         return static::randomElement(static::$title);
     }
@@ -295,7 +295,7 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex dutch title
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
         return static::randomElement(static::$title);
     }

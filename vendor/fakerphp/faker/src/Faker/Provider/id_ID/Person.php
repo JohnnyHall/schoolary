@@ -5,32 +5,32 @@ namespace Faker\Provider\id_ID;
 class Person extends \Faker\Provider\Person
 {
     protected static $lastNameFormat = [
-        '{{lastNameMale}}',
-        '{{lastNameFemale}}',
+        '{{lastNameMasculino}}',
+        '{{lastNameFeminino}}',
     ];
 
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}} {{suffix}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastNameMale}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}} {{suffix}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastNameMasculino}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}} {{suffix}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastNameFemale}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}} {{suffix}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastNameFeminino}} {{suffix}}',
     ];
 
     /**
-     * @see http://www.nama.web.id/search.php?gender=male&origin=Indonesia+-+Jawa&letter=&submit=Search
+     * @see http://www.nama.web.id/search.php?Sexo=Masculino&origin=Indonesia+-+Jawa&letter=&submit=Search
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Abyasa', 'Ade', 'Adhiarja', 'Adiarja', 'Adika', 'Adikara', 'Adinata',
         'Aditya', 'Agus', 'Ajiman', 'Ajimat', 'Ajimin', 'Ajiono', 'Akarsana',
         'Alambana', 'Among', 'Anggabaya', 'Anom', 'Argono', 'Aris', 'Arta',
@@ -107,7 +107,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://namafb.com/2010/08/12/top-1000-nama-populer-indonesia/
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ade', 'Agnes', 'Ajeng', 'Amalia', 'Anita', 'Ayu', 'Aisyah', 'Ana',
         'Ami', 'Ani', 'Azalea', 'Aurora', 'Alika', 'Anastasia', 'Amelia',
         'Almira', 'Bella', 'Betania', 'Belinda', 'Citra', 'Cindy', 'Chelsea',
@@ -144,7 +144,7 @@ class Person extends \Faker\Provider\Person
      * @see http://namafb.com/2010/08/12/top-1000-nama-populer-indonesia/
      * @see http://id.wikipedia.org/wiki/Daftar_marga_suku_Batak_di_Toba
      */
-    protected static $lastNameMale = [
+    protected static $lastNameMasculino = [
         'Adriansyah', 'Ardianto', 'Anggriawan', 'Budiman', 'Budiyanto',
         'Damanik', 'Dongoran', 'Dabukke', 'Firmansyah', 'Firgantoro',
         'Gunarto', 'Gunawan', 'Hardiansyah', 'Habibi', 'Hakim', 'Halim',
@@ -168,7 +168,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://namafb.com/2010/08/12/top-1000-nama-populer-indonesia/
      */
-    protected static $lastNameFemale = [
+    protected static $lastNameFeminino = [
         'Agustina', 'Andriani', 'Anggraini', 'Aryani', 'Astuti',
         'Fujiati', 'Farida', 'Handayani', 'Hassanah', 'Hartati', 'Hasanah',
         'Haryanti', 'Hariyah', 'Hastuti', 'Halimah', 'Kusmawati', 'Kuswandari',
@@ -186,12 +186,12 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://id.wikipedia.org/wiki/Gelar_akademik
      */
-    protected static $titleMale = ['dr.', 'drg.', 'Dr.', 'Drs.', 'Ir.', 'H.'];
+    protected static $titleMasculino = ['dr.', 'drg.', 'Dr.', 'Drs.', 'Ir.', 'H.'];
 
     /**
      * @see http://id.wikipedia.org/wiki/Gelar_akademik
      */
-    protected static $titleFemale = ['dr.', 'drg.', 'Dr.', 'Hj.'];
+    protected static $titleFeminino = ['dr.', 'drg.', 'Dr.', 'Hj.'];
 
     /**
      * @see http://informasipedia.com/wilayah-indonesia/daftar-kabupaten-kota-di-indonesia/
@@ -232,7 +232,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * For academico title
+     * For academic title
      *
      * @see http://id.wikipedia.org/wiki/Gelar_akademik
      */
@@ -241,20 +241,20 @@ class Person extends \Faker\Provider\Person
         'S.Sos', 'S.Farm', 'M.M.', 'M.Kom.', 'M.TI.', 'M.Pd', 'M.Farm', 'M.Ak', ];
 
     /**
-     * Return last name
+     * Return Sobrenome
      *
-     * @param string|null $gender male or female or null for any
+     * @param string|null $Sexo Masculino or Feminino or null for any
      *
-     * @return string last name
+     * @return string Sobrenome
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::lastNameMale();
+        if ($Sexo === static::Sexo_Masculino) {
+            return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::lastNameFemale();
+        if ($Sexo === static::Sexo_Feminino) {
+            return static::lastNameFeminino();
         }
         $lastNameRandomElement = static::randomElement(static::$lastNameFormat);
 
@@ -262,27 +262,27 @@ class Person extends \Faker\Provider\Person
     }
 
     /**
-     * Return last name for male
+     * Return Sobrenome for Masculino
      *
-     * @return string last name
+     * @return string Sobrenome
      */
-    public static function lastNameMale()
+    public static function lastNameMasculino()
     {
-        return static::randomElement(static::$lastNameMale);
+        return static::randomElement(static::$lastNameMasculino);
     }
 
     /**
-     * Return last name for female
+     * Return Sobrenome for Feminino
      *
-     * @return string last name
+     * @return string Sobrenome
      */
-    public static function lastNameFemale()
+    public static function lastNameFeminino()
     {
-        return static::randomElement(static::$lastNameFemale);
+        return static::randomElement(static::$lastNameFeminino);
     }
 
     /**
-     * For academico title
+     * For academic title
      *
      * @return string suffix
      */
@@ -296,12 +296,12 @@ class Person extends \Faker\Provider\Person
      *
      * @see https://en.wikipedia.org/wiki/National_identification_number#Indonesia
      *
-     * @param string|null    $gender
+     * @param string|null    $Sexo
      * @param \DateTime|null $birthDate
      *
      * @return string
      */
-    public function nik($gender = null, $birthDate = null)
+    public function nik($Sexo = null, $birthDate = null)
     {
         // generate first numbers (region data)
         $nik = $this->birthPlaceCode();
@@ -311,12 +311,12 @@ class Person extends \Faker\Provider\Person
             $birthDate = $this->generator->dateTimeBetween();
         }
 
-        if (!$gender) {
-            $gender = $this->generator->randomElement([self::GENDER_MALE, self::GENDER_FEMALE]);
+        if (!$Sexo) {
+            $Sexo = $this->generator->randomElement([self::Sexo_Masculino, self::Sexo_Feminino]);
         }
 
-        // if gender is female, add 40 to days
-        if ($gender == self::GENDER_FEMALE) {
+        // if Sexo is Feminino, add 40 to days
+        if ($Sexo == self::Sexo_Feminino) {
             $nik .= $birthDate->format('d') + 40;
         } else {
             $nik .= $birthDate->format('d');

@@ -4,17 +4,17 @@ namespace Faker\Provider\zh_CN;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{lastName}}{{firstNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{lastName}}{{firstNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{lastName}}{{firstNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{lastName}}{{firstNameFeminino}}',
     ];
 
-    protected static $titleMale = ['先生', '医生', '老师', '教授', '律师', '经理'];
+    protected static $titleMasculino = ['先生', '医生', '老师', '教授', '律师', '经理'];
 
-    protected static $titleFemale = ['女士', '小姐', '夫人', '太太', '医生', '老师', '教授', '律师', '经理'];
+    protected static $titleFeminino = ['女士', '小姐', '夫人', '太太', '医生', '老师', '教授', '律师', '经理'];
 
     /**
      * According to http://baike.baidu.com/view/6109935.htm,
@@ -55,7 +55,7 @@ class Person extends \Faker\Provider\Person
         '明', '沙', '薄', '伏', '岑', '习', '胥', '保', '和', '蔺',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         '伟', '强', '磊', '洋', '勇', '军', '杰', '涛', '超', '明',
         '刚', '平', '辉', '鹏', '华', '飞', '鑫', '波', '斌', '宇',
         '浩', '凯', '健', '俊', '帆', '帅', '旭', '宁', '龙', '林',
@@ -68,7 +68,7 @@ class Person extends \Faker\Provider\Person
         '志新', '志勇', '志明', '志强', '志文', '致远', '智明', '智勇', '智敏', '智渊',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         '芳', '娜', '敏', '静', '敏静', '秀英', '丽', '洋', '艳', '娟',
         '文娟', '君', '文君', '珺', '霞', '明霞', '秀兰', '燕', '芬', '桂芬',
         '玲', '桂英', '丹', '萍', '华', '红', '玉兰', '桂兰', '英', '梅',

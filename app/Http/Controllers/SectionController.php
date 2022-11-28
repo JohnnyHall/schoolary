@@ -62,7 +62,7 @@ class SectionController extends Controller
         try {
             $this->schoolSectionRepository->create($request->validated());
 
-            return back()->with('status', 'Section creation was successful!');
+            return back()->with('status', 'Turma foi criada com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -117,7 +117,7 @@ class SectionController extends Controller
         try {
             $this->schoolSectionRepository->update($request);
 
-            return back()->with('status', 'Section edit was successful!');
+            return back()->with('status', 'Turma editada com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

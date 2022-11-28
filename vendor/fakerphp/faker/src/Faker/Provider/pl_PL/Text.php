@@ -438,7 +438,7 @@ lampy nad białą pościelą łóżka, nad pochyloną siwą głową mego ojca. A
 gdy matka późnym wieczorem wracała ze sklepu, ojciec ożywiał się,
 przywoływał ją do siebie i z dumą pokazywał jej świetne, kolorowe
 odbijanki, którymi skrzętnie wylepił stronice księgi głównej.
-Zauważyliśmy wówczas wszyscy, że ojciec zaczął z dnia na dzień maleć jak
+Zauważyliśmy wówczas wszyscy, że ojciec zaczął z dnia na dzień Masculinoć jak
 orzech, który zsycha się wewnątrz łupiny. Zanikowi temu nie towarzyszył
 bynajmniej upadek sił. Przeciwnie, stan jego zdrowia, humor, ruchliwość
 zdawały się poprawiać. Często śmiał się teraz głośno i szczebiotliwie,
@@ -1321,7 +1321,7 @@ wczorajszego. Ulżywszy sobie w ten sposób, i swobodniejszy, wciągał do
 notesu wydatki, kalkulował, obliczał i marzył. Potem leżał długo
 nieruchomy, z szklanymi oczyma, które były koloru wody, wypukłe i
 wilgotne. W wodnistym półmroku pokoju, rozjaśnionym refleksem dnia
-upalnego za storami, oczy jego jak maleńkie lusterka odbijały wszystkie
+upalnego za storami, oczy jego jak Masculinońkie lusterka odbijały wszystkie
 błyszczące przedmioty: białe plamy słońca w szparach okna, złoty
 prostokąt stor, i powtarzały, jak kropla wody, cały pokój z ciszą
 dywanów i pustych krzeseł. Tymczasem dzień za storami huczał coraz
@@ -2205,7 +2205,7 @@ się jednym pękiem gestykulacji i złorzeczeń. Zdawało się, że w
 paroksyzmie złości rozgestykuluje się na części, że rozpadnie się,
 podzieli, rozbiegnie w sto pająków, rozgałęzi się po podłodze czarnym,
 migotliwym pękiem oszalałych karakonach biegów. Zamiast tego zaczęła
-raptownie maleć, kurczyć się, wciąż roztrzęsiona i rozsypująca się
+raptownie Masculinoć, kurczyć się, wciąż roztrzęsiona i rozsypująca się
 przekleństwami. Z nagła podreptała, zgarbiona i mała, w kąt kuchni,
 gdzie leżały drwa na opał i, klnąc i kaszląc, zaczęła gorączkowo
 przebierać wśród dźwięcznych drewien, aż znalazła dwie cienkie, żółte
@@ -2216,7 +2216,7 @@ wzdłuż skośnej linii podłogi, coraz szybciej i szybciej, potem wbiegła
 na ławkę jodłową, kuśtykając na dudniących deskach, a stamtąd na półkę z
 talerzami, dźwięczną, drewnianą półkę obiegającą ściany kuchni, i biegła
 po niej, kolankując na szczudłowych kulach, by wreszcie gdzieś w kącie,
-malejąc coraz bardziej, sczernieć, zwinąć się jak zwiędły, spalony
+Masculinojąc coraz bardziej, sczernieć, zwinąć się jak zwiędły, spalony
 papier, zetlić się w płatek popiołu, skruszyć w proch i w nicość.
 Staliśmy wszyscy bezradni wobec tej szalejącej furii złości, która sama
 siebie trawiła i pożerała. Z ubolewaniem patrzyliśmy na smutny przebieg
@@ -2480,7 +2480,7 @@ dzień w owej krainie - dzień dziwny, dzień bez świtu i wieczoru. Ojciec
 mój uspokajał się powoli. Gniew jego układał się i zastygał w pokładach
 i warstwach krajobrazu. Siedział teraz na galeriach wysokich półek i
 patrzył w jesienniejący, rozległy kraj. Widział, jak na dalekich
-jeziorach odbywał się połów ryb. W maleńkich łupinkach łódek siedziało
+jeziorach odbywał się połów ryb. W Masculinońkich łupinkach łódek siedziało
 po dwóch rybaków, zapuszczając sieci w wodę. Na brzegach chłopcy
 dźwigali na głowach kosze, pełne trzepocącego się, srebrnego połowu.
 Wówczas to dostrzegł, jak grupy wędrowców w oddali zadzierały głowy ku

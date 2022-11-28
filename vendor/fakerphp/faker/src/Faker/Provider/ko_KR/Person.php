@@ -5,20 +5,20 @@ namespace Faker\Provider\ko_KR;
 class Person extends \Faker\Provider\Person
 {
     /**
-     * This provider uses wikipedia's top Korean last names. These cover more than 90% of Korean population.
+     * This provider uses wikipedia's top Korean Sobrenomes. These cover more than 90% of Korean population.
      */
-    protected static $maleNameFormats = [
-        '{{lastName}}{{firstNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{lastName}}{{firstNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{lastName}}{{firstNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{lastName}}{{firstNameFeminino}}',
     ];
 
     /**
      * {@link} http://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8%EC%99%80_%EC%9D%B4%EB%A6%84#.EC.8B.9C.EB.8C.80.EB.B3.84_.EA.B0.80.EC.9E.A5_.ED.9D.94.ED.95.9C_.EC.9D.B4.EB.A6.84_10.EC.84.A0.28.E9.81.B8.29
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         '건우', '건호', '경석', '경수', '경춘', '경환', '광수', '광현', '구범', '규산', '기수', '남수', '남호', '대선', '대수', '도윤',
         '도현', '동윤', '동하', '동현', '명식', '명호', '문용', '문창', '민석', '민성', '민수', '민재', '민준', '민철', '민환', '병철',
         '병호', '상선', '상수', '상우', '상욱', '상준', '상철', '상현', '상호', '상훈', '서준', '서호', '선엽', '성곤', '성령', '성민',
@@ -29,7 +29,7 @@ class Person extends \Faker\Provider\Person
         '혁상', '현규', '현우', '현종', '현준', '형민', '형철', '호민', '호진', '홍선', '효일',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         '가람', '강은', '강희', '경은', '경주', '근영', '기연', '나루', '나리', '나연', '나은', '나형', '누리', '다영', '도연', '동현',
         '미경', '미라', '미란', '미영', '미정', '민서', '민아', '민지', '민형', '민희', '반희', '보람', '보미', '보민', '봄', '상명',
         '새미', '서연', '서영', '서윤', '서현', '선영', '선우', '선정', '선호', '성미', '성민', '성은', '세원', '소민', '소연', '소영',

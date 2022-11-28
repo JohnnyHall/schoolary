@@ -64,7 +64,7 @@ class SchoolClassController extends Controller
         try {
             $this->schoolClassRepository->create($request->validated());
 
-            return back()->with('status', 'Class creation was successful!');
+            return back()->with('status', 'Materia criada com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -112,7 +112,7 @@ class SchoolClassController extends Controller
         try {
             $this->schoolClassRepository->update($request);
 
-            return back()->with('status', 'Class edit was successful!');
+            return back()->with('status', 'Materia editada com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

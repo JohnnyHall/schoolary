@@ -4,22 +4,22 @@ namespace Faker\Provider\hy_AM;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
     ];
 
     /**
-     * @see http://www.armeniapedia.org/wiki/Armenian_Male_Names
+     * @see http://www.armeniapedia.org/wiki/Armenian_Masculino_Names
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Աբգար', 'Աբէլ', 'Ազատ', 'Ազնաւուր', 'Ազնուական', 'Ալիշան', 'Ակնունի', 'Աղան', 'Աղասի', 'Ամարաս', 'Այգեկ', 'Անակ',
         'Անդրանիկ', 'Անուշաւան', 'Աշոտ', 'Ապիրատ', 'Արանձեր', 'Առատ', 'Արաքել', 'Առէն', 'Առուծ', 'Աժնակ', 'Ասողիկ', 'Ասպետ', 'Աստուածատուր',
         'Ասատուր', 'Ատուր', 'Ատրուշան', 'Արա', 'Արագած', 'Արայիկ', 'Արամ', 'Արամազդ', 'Արամայիս', 'Արարատ', 'Արբուն', 'Արէգ', 'Արեւ', 'Արուշատ',
@@ -55,9 +55,9 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @see http://www.armeniapedia.org/wiki/Armenian_Female_Names
+     * @see http://www.armeniapedia.org/wiki/Armenian_Feminino_Names
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Ազատուհի', 'Ազգանոյշ', 'Ազնիւ', 'Ալիծ', 'Ալին', 'Ալիս', 'Ալիք', 'Ալվարդ', 'Աղաւնի', 'Աղբիւր', 'Աղուոր', 'Ամանոր', 'Այծեամ', 'Այծեմնիկ',
         'Ալծիկ', 'Այտա', 'Անահիտ', 'Անայիս', 'Անգինէ', 'Անթառամ', 'Անի', 'Աննա', 'Աննիկ', 'Անծրեւիկ', 'Աննման', 'Անոյշ', 'Աշխէն', 'Աստղիկ',
         'Ատրինէ', 'Արազ', 'Արաքս', 'Արաքսի', 'Արեգնազ', 'Արեգնազան', 'Արեւիկ', 'Արեւահատ', 'Արծնի', 'Արծուիկ', 'Արմենուհի', 'Արմենուշ',
@@ -94,9 +94,9 @@ class Person extends \Faker\Provider\Person
         'Համբարձումյան', 'Սարգսյան',
     ];
 
-    protected static $titleMale = ['Պարոն'];
+    protected static $titleMasculino = ['Պարոն'];
 
-    protected static $titleFemale = ['տիկին', 'օրիորդ'];
+    protected static $titleFeminino = ['տիկին', 'օրիորդ'];
 
     private static $suffix = [''];
 

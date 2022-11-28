@@ -24,17 +24,16 @@ class TeacherStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name'    => 'required|string',
-            'last_name'     => 'required|string',
+            'primeiro_nome'    => 'required|string',
+            'sobrenome'     => 'required|string',
             'email'         => 'required|string|email|max:255|unique:users',
-            'gender'        => 'required|string',
-            'nationality'   => 'required|string',
+            'Sexo'        => 'required|string',
+            'nacionalidade'   => 'required|string',
             'phone'         => 'required|string',
             'address'       => 'required|string',
-            'address2'      => 'string',
             'city'          => 'required|string',
             'zip'           => 'required|string',
-            'photo'         => 'nullable|string',
+            'Foto'         => 'nullable|string',
             'password'      => 'required|string|min:8',
         ];
     }

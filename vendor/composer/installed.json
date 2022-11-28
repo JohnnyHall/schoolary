@@ -4936,7 +4936,7 @@
                 "diff",
                 "udiff",
                 "unidiff",
-                "unified diff"
+                "schoolary diff"
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
@@ -7918,7 +7918,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way",
+            "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a schoolary way",
             "homepage": "https://symfony.com",
             "keywords": [
                 "grapheme",

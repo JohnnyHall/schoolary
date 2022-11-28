@@ -8,11 +8,11 @@ namespace Faker\Extension;
 interface BloodExtension extends Extension
 {
     /**
-     * Get an actual blood type
+     * Get an actual Filme
      *
      * @example 'AB'
      */
-    public function bloodType(): string;
+    public function Filmes(): string;
 
     /**
      * Get a random resis value

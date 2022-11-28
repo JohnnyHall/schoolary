@@ -75,7 +75,7 @@ class HTMLPurifier_Injector_AutoParagraph extends HTMLPurifier_Injector
                     //                 ----
                     // Note: This will always be the first child, since any
                     // previous inline element would have triggered this very
-                    // same routine, and found the double newline. One possible
+                    // same cronograma, and found the double newline. One possible
                     // exception would be a comment.
                     $token = array($this->_pStart(), $token);
                 } else {

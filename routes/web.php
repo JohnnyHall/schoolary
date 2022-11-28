@@ -9,11 +9,11 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\NoticeController;
-use App\Http\Controllers\RoutineController;
+use App\Http\Controllers\cronogramaController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\ExamRuleController;
 use App\Http\Controllers\SemesterController;
-use App\Http\Controllers\SyllabusController;
+use App\Http\Controllers\monitoriaController;
 use App\Http\Controllers\GradeRuleController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\AssignmentController;
@@ -21,7 +21,7 @@ use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\SchoolClassController;
 use App\Http\Controllers\GradingSystemController;
 use App\Http\Controllers\SchoolSessionController;
-use App\Http\Controllers\AcademicoSettingController;
+use App\Http\Controllers\AcademicSettingController;
 use App\Http\Controllers\AssignedTeacherController;
 use App\Http\Controllers\Auth\UpdatePasswordController;
 
@@ -49,9 +49,9 @@ Route::middleware(['auth'])->group(function () {
         Route::post('session/browse', [SchoolSessionController::class, 'browse'])->name('session.browse');
 
         Route::post('semester/create', [SemesterController::class, 'store'])->name('semester.create');
-        Route::post('final-marks-submission-status/update', [AcademicoSettingController::class, 'updateFinalMarksSubmissionStatus'])->name('final.marks.submission.status.update');
+        Route::post('final-marks-submission-status/update', [AcademicSettingController::class, 'updateFinalMarksSubmissionStatus'])->name('final.marks.submission.status.update');
 
-        Route::post('attendance/type/update', [AcademicoSettingController::class, 'updateAttendanceType'])->name('attendance.type.update');
+        Route::post('attendance/type/update', [AcademicSettingController::class, 'updateAttendanceType'])->name('attendance.type.update');
 
         // Class
         Route::post('class/create', [SchoolClassController::class, 'store'])->name('class.create');
@@ -70,9 +70,9 @@ Route::middleware(['auth'])->group(function () {
         Route::post('teacher/update', [UserController::class, 'updateTeacher'])->name('teacher.update');
         Route::post('teacher/assign', [AssignedTeacherController::class, 'store'])->name('teacher.assign');
 
-        // Student
-        Route::post('student/create', [UserController::class, 'storeStudent'])->name('student.create');
-        Route::post('student/update', [UserController::class, 'updateStudent'])->name('student.update');
+        // aluno
+        Route::post('aluno/create', [UserController::class, 'storealuno'])->name('aluno.create');
+        Route::post('aluno/update', [UserController::class, 'updatealuno'])->name('aluno.update');
     });
 
 
@@ -98,12 +98,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/teachers/view/list', [UserController::class, 'getTeacherList'])->name('teacher.list.show');
     Route::get('/teachers/view/profile/{id}', [UserController::class, 'showTeacherProfile'])->name('teacher.profile.show');
 
-    //Students
-    Route::get('/students/add', [UserController::class, 'createStudent'])->name('student.create.show');
-    Route::get('/students/edit/{id}', [UserController::class, 'editStudent'])->name('student.edit.show');
-    Route::get('/students/view/list', [UserController::class, 'getStudentList'])->name('student.list.show');
-    Route::get('/students/view/profile/{id}', [UserController::class, 'showStudentProfile'])->name('student.profile.show');
-    Route::get('/students/view/attendance/{id}', [AttendanceController::class, 'showStudentAttendance'])->name('student.attendance.show');
+    //alunos
+    Route::get('/alunos/add', [UserController::class, 'createaluno'])->name('aluno.create.show');
+    Route::get('/alunos/edit/{id}', [UserController::class, 'editaluno'])->name('aluno.edit.show');
+    Route::get('/alunos/view/list', [UserController::class, 'getalunoList'])->name('aluno.list.show');
+    Route::get('/alunos/view/profile/{id}', [UserController::class, 'showalunoProfile'])->name('aluno.profile.show');
+    Route::get('/alunos/view/attendance/{id}', [AttendanceController::class, 'showalunoAttendance'])->name('aluno.attendance.show');
 
     // Marks
     Route::get('/marks/create', [MarkController::class, 'create'])->name('course.mark.create');
@@ -142,22 +142,22 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/promotions/promote', [PromotionController::class, 'create'])->name('promotions.create');
     Route::post('/promotions/promote', [PromotionController::class, 'store'])->name('promotions.store');
 
-    // Academico settings
-    Route::get('/academicos/settings', [AcademicoSettingController::class, 'index']);
+    // Academic settings
+    Route::get('/academics/settings', [AcademicSettingController::class, 'index']);
 
     // Calendar events
     Route::get('calendar-event', [EventController::class, 'index'])->name('events.show');
     Route::post('calendar-crud-ajax', [EventController::class, 'calendarEvents'])->name('events.crud');
 
-    // Routines
-    Route::get('/routine/create', [RoutineController::class, 'create'])->name('section.routine.create');
-    Route::get('/routine/view', [RoutineController::class, 'show'])->name('section.routine.show');
-    Route::post('/routine/store', [RoutineController::class, 'store'])->name('section.routine.store');
+    // cronogramas
+    Route::get('/cronograma/create', [cronogramaController::class, 'create'])->name('section.cronograma.create');
+    Route::get('/cronograma/view', [cronogramaController::class, 'show'])->name('section.cronograma.show');
+    Route::post('/cronograma/store', [cronogramaController::class, 'store'])->name('section.cronograma.store');
 
-    // Syllabus
-    Route::get('/syllabus/create', [SyllabusController::class, 'create'])->name('class.syllabus.create');
-    Route::post('/syllabus/create', [SyllabusController::class, 'store'])->name('syllabus.store');
-    Route::get('/syllabus/index', [SyllabusController::class, 'index'])->name('course.syllabus.index');
+    // monitoria
+    Route::get('/monitoria/create', [monitoriaController::class, 'create'])->name('class.monitoria.create');
+    Route::post('/monitoria/create', [monitoriaController::class, 'store'])->name('monitoria.store');
+    Route::get('/monitoria/index', [monitoriaController::class, 'index'])->name('course.monitoria.index');
 
     // Notices
     Route::get('/notice/create', [NoticeController::class, 'create'])->name('notice.create');
@@ -165,7 +165,7 @@ Route::middleware(['auth'])->group(function () {
 
     // Courses
     Route::get('courses/teacher/index', [AssignedTeacherController::class, 'getTeacherCourses'])->name('course.teacher.list.show');
-    Route::get('courses/student/index/{student_id}', [CourseController::class, 'getStudentCourses'])->name('course.student.list.show');
+    Route::get('courses/aluno/index/{aluno_id}', [CourseController::class, 'getalunoCourses'])->name('course.aluno.list.show');
     Route::get('course/edit/{id}', [CourseController::class, 'edit'])->name('course.edit');
 
     // Assignment

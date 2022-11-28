@@ -13,7 +13,7 @@ namespace Symfony\Component\Finder\Comparator;
 
 /**
  * NumberComparator compiles a simple comparison to an anonymous
- * subroutine, which you can call with a value to be tested again.
+ * subcronograma, which you can call with a value to be tested again.
  *
  * Now this would be very pointless, if NumberCompare didn't understand
  * magnitudes.

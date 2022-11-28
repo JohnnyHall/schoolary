@@ -338,7 +338,7 @@
 .phpdebugbar-fa-video-camera:before {
   content: "\f03d";
 }
-.phpdebugbar-fa-photo:before,
+.phpdebugbar-fa-Foto:before,
 .phpdebugbar-fa-image:before,
 .phpdebugbar-fa-picture-o:before {
   content: "\f03e";
@@ -987,9 +987,6 @@
 .phpdebugbar-fa-info:before {
   content: "\f129";
 }
-.phpdebugbar-fa-exclamation:before {
-  content: "\f12a";
-}
 .phpdebugbar-fa-superscript:before {
   content: "\f12b";
 }
@@ -1246,10 +1243,10 @@
 .phpdebugbar-fa-trello:before {
   content: "\f181";
 }
-.phpdebugbar-fa-female:before {
+.phpdebugbar-fa-Feminino:before {
   content: "\f182";
 }
-.phpdebugbar-fa-male:before {
+.phpdebugbar-fa-Masculino:before {
   content: "\f183";
 }
 .phpdebugbar-fa-gittip:before {
@@ -1442,7 +1439,7 @@
 .phpdebugbar-fa-file-powerpoint-o:before {
   content: "\f1c4";
 }
-.phpdebugbar-fa-file-photo-o:before,
+.phpdebugbar-fa-file-Foto-o:before,
 .phpdebugbar-fa-file-picture-o:before,
 .phpdebugbar-fa-file-image-o:before {
   content: "\f1c5";
@@ -1616,7 +1613,7 @@
 .phpdebugbar-fa-paint-brush:before {
   content: "\f1fc";
 }
-.phpdebugbar-fa-birthday-cake:before {
+.phpdebugbar-fa-Aniversario-cake:before {
   content: "\f1fd";
 }
 .phpdebugbar-fa-area-chart:before {

@@ -13,17 +13,17 @@ trait Base64ToFile {
     */
     public function convert($request) : string {
         try {
-            $photo = $request;  // your base64 encoded
-            $photo = str_replace('data:image/png;base64,', '', $photo);
-            $photo = str_replace('data:image/jpeg;base64,', '', $photo);
-            $photo = str_replace('data:image/jpg;base64,', '', $photo);
-            $photo = str_replace(' ', '+', $photo);
-            $photoPath = '/photos/'.time().Str::random(10).'.'.'png';
-            Storage::disk('public')->put($photoPath, base64_decode($photo));
+            $Foto = $request;  // your base64 encoded
+            $Foto = str_replace('data:image/png;base64,', '', $Foto);
+            $Foto = str_replace('data:image/jpeg;base64,', '', $Foto);
+            $Foto = str_replace('data:image/jpg;base64,', '', $Foto);
+            $Foto = str_replace(' ', '+', $Foto);
+            $FotoPath = '/Fotos/'.time().Str::random(10).'.'.'png';
+            Storage::disk('public')->put($FotoPath, base64_decode($Foto));
 
-            return $photoPath;
+            return $FotoPath;
         } catch (\Exception $e) {
-            throw new \Exception('Failed to save Photo. '.$e->getMessage());
+            throw new \Exception('Failed to save Foto. '.$e->getMessage());
         }
         
     }

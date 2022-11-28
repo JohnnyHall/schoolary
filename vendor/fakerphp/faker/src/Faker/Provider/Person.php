@@ -4,76 +4,76 @@ namespace Faker\Provider;
 
 class Person extends Base
 {
-    public const GENDER_MALE = 'male';
-    public const GENDER_FEMALE = 'female';
+    public const Sexo_Masculino = 'Masculino';
+    public const Sexo_Feminino = 'Feminino';
 
     protected static $titleFormat = [
-        '{{titleMale}}',
-        '{{titleFemale}}',
+        '{{titleMasculino}}',
+        '{{titleFeminino}}',
     ];
 
     protected static $firstNameFormat = [
-        '{{firstNameMale}}',
-        '{{firstNameFemale}}',
+        '{{firstNameMasculino}}',
+        '{{firstNameFeminino}}',
     ];
 
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'John',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Jane',
     ];
 
     protected static $lastName = ['Doe'];
 
-    protected static $titleMale = ['Mr.', 'Dr.', 'Prof.'];
+    protected static $titleMasculino = ['Mr.', 'Dr.', 'Prof.'];
 
-    protected static $titleFemale = ['Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.'];
+    protected static $titleFeminino = ['Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.'];
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      *
      * @example 'John Doe'
      */
-    public function name($gender = null)
+    public function name($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            $format = static::randomElement(static::$maleNameFormats);
-        } elseif ($gender === static::GENDER_FEMALE) {
-            $format = static::randomElement(static::$femaleNameFormats);
+        if ($Sexo === static::Sexo_Masculino) {
+            $format = static::randomElement(static::$MasculinoNameFormats);
+        } elseif ($Sexo === static::Sexo_Feminino) {
+            $format = static::randomElement(static::$FemininoNameFormats);
         } else {
-            $format = static::randomElement(array_merge(static::$maleNameFormats, static::$femaleNameFormats));
+            $format = static::randomElement(array_merge(static::$MasculinoNameFormats, static::$FemininoNameFormats));
         }
 
         return $this->generator->parse($format);
     }
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      *
      * @example 'John'
      */
-    public function firstName($gender = null)
+    public function firstName($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::firstNameMale();
+        if ($Sexo === static::Sexo_Masculino) {
+            return static::firstNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::firstNameFemale();
+        if ($Sexo === static::Sexo_Feminino) {
+            return static::firstNameFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$firstNameFormat));
@@ -82,17 +82,17 @@ class Person extends Base
     /**
      * @return string
      */
-    public static function firstNameMale()
+    public static function firstNameMasculino()
     {
-        return static::randomElement(static::$firstNameMale);
+        return static::randomElement(static::$firstNameMasculino);
     }
 
     /**
      * @return string
      */
-    public static function firstNameFemale()
+    public static function firstNameFeminino()
     {
-        return static::randomElement(static::$firstNameFemale);
+        return static::randomElement(static::$firstNameFeminino);
     }
 
     /**
@@ -108,18 +108,18 @@ class Person extends Base
     /**
      * @example 'Mrs.'
      *
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @return string
      */
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::titleMale();
+        if ($Sexo === static::Sexo_Masculino) {
+            return static::titleMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::titleFemale();
+        if ($Sexo === static::Sexo_Feminino) {
+            return static::titleFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$titleFormat));
@@ -130,9 +130,9 @@ class Person extends Base
      *
      * @return string
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
-        return static::randomElement(static::$titleMale);
+        return static::randomElement(static::$titleMasculino);
     }
 
     /**
@@ -140,8 +140,8 @@ class Person extends Base
      *
      * @return string
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
-        return static::randomElement(static::$titleFemale);
+        return static::randomElement(static::$titleFeminino);
     }
 }

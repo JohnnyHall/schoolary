@@ -4,33 +4,33 @@ namespace Faker\Provider\pt_PT;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} de {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} de {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}} de {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}} {{lastName}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} de {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} de {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}} de {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}} {{lastName}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} de {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} de {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}} de {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}} {{lastName}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} de {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} de {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}} de {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}} {{lastName}} {{lastName}}',
     ];
 
     /**
      * @see http://goo.gl/v6bScG document with all pt abreviations *
      */
-    protected static $titleMale = ['Sr.', 'Dr.', 'Exmo.', 'Eng.', 'Eng.º', 'Ex.', 'Exº'];
-    protected static $titleFemale = ['Sra.', 'Dra.', 'Exma', 'Eng.ª', 'Exª'];
+    protected static $titleMasculino = ['Sr.', 'Dr.', 'Exmo.', 'Eng.', 'Eng.º', 'Ex.', 'Exº'];
+    protected static $titleFeminino = ['Sra.', 'Dra.', 'Exma', 'Eng.ª', 'Exª'];
 
     protected static $firstEightDigitsFormat = [
         '1#######',
@@ -104,7 +104,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see http://nomesportugueses.blogspot.pt/2012/01/lista-dos-cem-nomes-mais-usados-em.html
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Rodrigo', 'João', 'Martim', 'Afonso', 'Tomás', 'Gonçalo', 'Francisco', 'Tiago',
         'Diogo', 'Guilherme', 'Pedro', 'Miguel', 'Rafael', 'Gabriel', 'Santiago', 'Dinis',
         'David', 'Duarte', 'José', 'Simão', 'Daniel', 'Lucas', 'Gustavo', 'André', 'Denis',
@@ -119,7 +119,7 @@ class Person extends \Faker\Provider\Person
         'Martinho', 'Emanuel', 'Marcos', 'Telmo', 'Davi', 'Wilson',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Maria', 'Leonor', 'Matilde', 'Mariana', 'Ana', 'Beatriz', 'Inês', 'Lara', 'Carolina', 'Margarida',
         'Joana', 'Sofia', 'Diana', 'Francisca', 'Laura', 'Sara', 'Madalena', 'Rita', 'Mafalda', 'Catarina',
         'Luana', 'Marta', 'Íris', 'Alice', 'Bianca', 'Constança', 'Gabriela', 'Eva', 'Clara', 'Bruna', 'Daniela',

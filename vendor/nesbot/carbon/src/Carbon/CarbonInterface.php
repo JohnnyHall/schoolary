@@ -2593,21 +2593,21 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
     public function isBetween($date1, $date2, $equal = true): bool;
 
     /**
-     * Check if its the birthday. Compares the date/month values of the two dates.
+     * Check if its the Aniversario. Compares the date/month values of the two dates.
      *
      * @example
      * ```
-     * Carbon::now()->subYears(5)->isBirthday(); // true
-     * Carbon::now()->subYears(5)->subDay()->isBirthday(); // false
-     * Carbon::parse('2019-06-05')->isBirthday(Carbon::parse('2001-06-05')); // true
-     * Carbon::parse('2019-06-05')->isBirthday(Carbon::parse('2001-06-06')); // false
+     * Carbon::now()->subYears(5)->isAniversario(); // true
+     * Carbon::now()->subYears(5)->subDay()->isAniversario(); // false
+     * Carbon::parse('2019-06-05')->isAniversario(Carbon::parse('2001-06-05')); // true
+     * Carbon::parse('2019-06-05')->isAniversario(Carbon::parse('2001-06-06')); // false
      * ```
      *
      * @param \Carbon\Carbon|\DateTimeInterface|null $date The instance to compare with or null to use current day.
      *
      * @return bool
      */
-    public function isBirthday($date = null);
+    public function isAniversario($date = null);
 
     /**
      * Determines if the instance is in the current unit given.

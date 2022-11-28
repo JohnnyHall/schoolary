@@ -13,7 +13,7 @@ class MarkRepository implements MarkInterface {
             foreach($rows as $row){
                 Mark::updateOrCreate([
                     'exam_id' => $row['exam_id'],
-                    'student_id' => $row['student_id'],
+                    'aluno_id' => $row['aluno_id'],
                     'session_id' => $row['session_id'],
                     'class_id' => $row['class_id'],
                     'section_id' => $row['section_id'],
@@ -21,13 +21,13 @@ class MarkRepository implements MarkInterface {
                 ],['marks' => $row['marks']]);
             }
         } catch (\Exception $e) {
-            throw new \Exception('Failed to update students marks. '.$e->getMessage());
+            throw new \Exception('Failed to update alunos marks. '.$e->getMessage());
         }
     }
 
     public function getAll($session_id, $semester_id, $class_id, $section_id, $course_id) {
         $exam_ids = Exam::where('semester_id', $semester_id)->pluck('id')->toArray();
-        return Mark::with('student','exam')->where('session_id', $session_id)
+        return Mark::with('aluno','exam')->where('session_id', $session_id)
                     ->whereIn('exam_id', $exam_ids)
                     ->where('class_id', $class_id)
                     ->where('section_id', $section_id)
@@ -35,11 +35,11 @@ class MarkRepository implements MarkInterface {
                     ->get();
     }
 
-    public function getAllByStudentId($session_id, $semester_id, $class_id, $section_id, $course_id, $student_id) {
+    public function getAllByalunoId($session_id, $semester_id, $class_id, $section_id, $course_id, $aluno_id) {
         $exam_ids = Exam::where('semester_id', $semester_id)->pluck('id')->toArray();
-        return Mark::with('student','exam')->where('session_id', $session_id)
+        return Mark::with('aluno','exam')->where('session_id', $session_id)
                     ->whereIn('exam_id', $exam_ids)
-                    ->where('student_id', $student_id)
+                    ->where('aluno_id', $aluno_id)
                     ->where('class_id', $class_id)
                     ->where('section_id', $section_id)
                     ->where('course_id', $course_id)
@@ -56,7 +56,7 @@ class MarkRepository implements MarkInterface {
     }
 
     public function getAllFinalMarks($session_id, $semester_id, $class_id, $section_id, $course_id) {
-        return FinalMark::with('student')->where('session_id', $session_id)
+        return FinalMark::with('aluno')->where('session_id', $session_id)
                     ->where('semester_id', $semester_id)
                     ->where('class_id', $class_id)
                     ->where('section_id', $section_id)
@@ -64,9 +64,9 @@ class MarkRepository implements MarkInterface {
                     ->get();
     }
 
-    public function getAllFinalMarksByStudentId($session_id, $student_id, $semester_id, $class_id, $section_id, $course_id) {
-        return FinalMark::with('student')->where('session_id', $session_id)
-                    ->where('student_id', $student_id)
+    public function getAllFinalMarksByalunoId($session_id, $aluno_id, $semester_id, $class_id, $section_id, $course_id) {
+        return FinalMark::with('aluno')->where('session_id', $session_id)
+                    ->where('aluno_id', $aluno_id)
                     ->where('semester_id', $semester_id)
                     ->where('class_id', $class_id)
                     ->where('section_id', $section_id)
@@ -79,7 +79,7 @@ class MarkRepository implements MarkInterface {
             foreach($rows as $row){
                 FinalMark::updateOrCreate([
                     'semester_id' => $row['semester_id'],
-                    'student_id' => $row['student_id'],
+                    'aluno_id' => $row['aluno_id'],
                     'session_id' => $row['session_id'],
                     'class_id' => $row['class_id'],
                     'section_id' => $row['section_id'],
@@ -91,7 +91,7 @@ class MarkRepository implements MarkInterface {
                 ]);
             }
         } catch (\Exception $e) {
-            throw new \Exception('Failed to update students final marks. '.$e->getMessage());
+            throw new \Exception('Failed to update alunos final marks. '.$e->getMessage());
         }
     }
 }

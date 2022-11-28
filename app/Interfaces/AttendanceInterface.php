@@ -10,5 +10,5 @@ interface AttendanceInterface {
 
     public function getCourseAttendance($class_id, $course_id, $session_id);
 
-    public function getStudentAttendance($session_id, $student_id);
+    public function getalunoAttendance($session_id, $aluno_id);
 }

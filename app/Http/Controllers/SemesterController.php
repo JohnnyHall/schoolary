@@ -26,7 +26,7 @@ class SemesterController extends Controller
         try {
             $this->semesterRepository->create($request->validated());
 
-            return back()->with('status', 'Semester creation was successful!');
+            return back()->with('status', 'Semestre foi criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

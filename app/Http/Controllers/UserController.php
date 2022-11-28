@@ -9,10 +9,9 @@ use App\Interfaces\UserInterface;
 use App\Interfaces\SectionInterface;
 use App\Interfaces\SchoolClassInterface;
 use App\Repositories\PromotionRepository;
-use App\Http\Requests\StudentStoreRequest;
+use App\Http\Requests\alunoStoreRequest;
 use App\Http\Requests\TeacherStoreRequest;
 use App\Interfaces\SchoolSessionInterface;
-use App\Repositories\StudentParentInfoRepository;
 
 class UserController extends Controller
 {
@@ -45,13 +44,13 @@ class UserController extends Controller
         try {
             $this->userRepository->createTeacher($request->validated());
 
-            return back()->with('status', 'Teacher creation was successful!');
+            return back()->with('status', 'Professor foi criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
     }
 
-    public function getStudentList(Request $request) {
+    public function getalunoList(Request $request) {
         $current_school_session_id = $this->getSchoolCurrentSession();
 
         $class_id = $request->query('class_id', 0);
@@ -61,33 +60,33 @@ class UserController extends Controller
 
             $school_classes = $this->schoolClassRepository->getAllBySession($current_school_session_id);
 
-            $studentList = $this->userRepository->getAllStudents($current_school_session_id, $class_id, $section_id);
+            $alunoList = $this->userRepository->getAllalunos($current_school_session_id, $class_id, $section_id);
 
             $data = [
-                'studentList'       => $studentList,
+                'alunoList'       => $alunoList,
                 'school_classes'    => $school_classes,
             ];
 
-            return view('students.list', $data);
+            return view('alunos.list', $data);
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
     }
 
 
-    public function showStudentProfile($id) {
-        $student = $this->userRepository->findStudent($id);
+    public function showalunoProfile($id) {
+        $aluno = $this->userRepository->findaluno($id);
 
         $current_school_session_id = $this->getSchoolCurrentSession();
         $promotionRepository = new PromotionRepository();
         $promotion_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $id);
 
         $data = [
-            'student'           => $student,
+            'aluno'           => $aluno,
             'promotion_info'    => $promotion_info,
         ];
 
-        return view('students.profile', $data);
+        return view('alunos.profile', $data);
     }
 
     public function showTeacherProfile($id) {
@@ -99,7 +98,7 @@ class UserController extends Controller
     }
 
 
-    public function createStudent() {
+    public function createaluno() {
         $current_school_session_id = $this->getSchoolCurrentSession();
 
         $school_classes = $this->schoolClassRepository->getAllBySession($current_school_session_id);
@@ -109,47 +108,44 @@ class UserController extends Controller
             'school_classes'            => $school_classes,
         ];
 
-        return view('students.add', $data);
+        return view('alunos.add', $data);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  StudentStoreRequest $request
+     * @param  alunoStoreRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function storeStudent(StudentStoreRequest $request)
+    public function storealuno(alunoStoreRequest $request)
     {
         try {
-            $this->userRepository->createStudent($request->validated());
+            $this->userRepository->createaluno($request->validated());
 
-            return back()->with('status', 'Student creation was successful!');
+            return back()->with('status', 'Aluno foi criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
     }
 
-    public function editStudent($student_id) {
-        $student = $this->userRepository->findStudent($student_id);
-        $studentParentInfoRepository = new StudentParentInfoRepository();
-        $parent_info = $studentParentInfoRepository->getParentInfo($student_id);
+    public function editaluno($aluno_id) {
+        $aluno = $this->userRepository->findaluno($aluno_id);
         $promotionRepository = new PromotionRepository();
         $current_school_session_id = $this->getSchoolCurrentSession();
-        $promotion_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $student_id);
+        $promotion_info = $promotionRepository->getPromotionInfoById($current_school_session_id, $aluno_id);
 
         $data = [
-            'student'       => $student,
-            'parent_info'   => $parent_info,
+            'aluno'       => $aluno,
             'promotion_info'=> $promotion_info,
         ];
-        return view('students.edit', $data);
+        return view('alunos.edit', $data);
     }
 
-    public function updateStudent(Request $request) {
+    public function updatealuno(Request $request) {
         try {
-            $this->userRepository->updateStudent($request->toArray());
+            $this->userRepository->updatealuno($request->toArray());
 
-            return back()->with('status', 'Student update was successful!');
+            return back()->with('status', 'Aluno atualizado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -168,7 +164,7 @@ class UserController extends Controller
         try {
             $this->userRepository->updateTeacher($request->toArray());
 
-            return back()->with('status', 'Teacher update was successful!');
+            return back()->with('status', 'Professor atualizado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

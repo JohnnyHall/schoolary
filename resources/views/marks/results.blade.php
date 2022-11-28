@@ -8,9 +8,8 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-cloud-sun"></i> View Results
+                        <i class="bi bi-code-slash"></i> View Results
                     </h1>
-                    <h6>Filter list by:</h6>
                     <div class="mb-4 mt-4">
                         <form action="{{route('course.mark.list.show')}}" method="GET">
                             <div class="row">
@@ -26,7 +25,7 @@
                                 <div class="col">
                                     <select onchange="getSectionsAndCourses(this);" class="form-select" name="class_id" aria-label="Class">
                                         @isset($classes)
-                                            <option selected disabled>Please select a class</option>
+                                            <option selected disabled>Favor selecionar uma materia</option>
                                             @foreach ($classes as $school_class)
                                                 <option value="{{$school_class->id}}">{{$school_class->class_name}}</option>
                                             @endforeach
@@ -42,7 +41,7 @@
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Load List</button>
+                                    <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Recarregar</button>
                                 </div>
                             </div>
                         </form>
@@ -50,10 +49,10 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Photo</th>
-                                        <th scope="col">Student Name</th>
-                                        <th scope="col">Total Marks</th>
-                                        <th scope="col">Grade Points</th>
+                                        <th scope="col">Foto</th>
+                                        <th scope="col">Nome do Aluno</th>
+                                        <th scope="col">Notas</th>
+                                        <th scope="col">Pontuação</th>
                                         <th scope="col">Grade</th>
                                     </tr>
                                 </thead>
@@ -62,7 +61,7 @@
                                         @foreach ($marks as $mark)
                                         <tr>
                                             <td><i class="bi bi-person-square"></i></td>
-                                            <td>{{$mark->student->first_name}} {{$mark->student->last_name}}</td>
+                                            <td>{{$mark->aluno->primeiro_nome}} {{$mark->aluno->sobrenome}}</td>
                                             <td>{{$mark->final_marks}}</td>
                                             <td>{{$mark->getAttribute('point')}}</td>
                                             <td>{{$mark->getAttribute('grade')}}</td>
@@ -75,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>
@@ -90,14 +89,14 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('section-select');
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Favor selecionar uma turma'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });
 
             var courseSelect = document.getElementById('course-select');
             courseSelect.options.length = 0;
-            data.courses.unshift({'id': 0,'course_name': 'Please select a course'})
+            data.courses.unshift({'id': 0,'course_name': 'Favor selecionar um curso'})
             data.courses.forEach(function(course, key) {
                 courseSelect[key] = new Option(course.course_name, course.id);
             });

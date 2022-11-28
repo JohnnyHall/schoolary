@@ -6,37 +6,37 @@ require_once 'check_digit.php';
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{firstNameMale}} {{lastName}} {{lastName}} {{suffix}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{titleMale}} {{firstNameMale}} {{firstNameMale}} {{lastName}} {{suffix}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}} {{lastName}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{firstNameMasculino}} {{lastName}} {{lastName}} {{suffix}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{firstNameMasculino}} {{lastName}} {{suffix}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}} {{lastName}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{firstNameFemale}} {{lastName}} {{lastName}} {{suffix}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{titleFemale}} {{firstNameFemale}} {{firstNameFemale}} {{lastName}} {{suffix}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}} {{lastName}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{firstNameFeminino}} {{lastName}} {{lastName}} {{suffix}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{firstNameFeminino}} {{lastName}} {{suffix}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}} {{lastName}} {{suffix}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aaron', 'Adriano', 'Adriel', 'Afonso', 'Agostinho', 'Alan', 'Alessandro', 'Alexandre', 'Allan', 'Alonso',
         'Anderson', 'Andres', 'André', 'Antônio', 'Arthur', 'Artur', 'Augusto', 'Benedito', 'Benjamin', 'Benício',
         'Bernardo', 'Breno', 'Bruno', 'Caio', 'Camilo', 'Carlos', 'Cauan', 'Cezar', 'Christian', 'Christopher',
@@ -58,7 +58,7 @@ class Person extends \Faker\Provider\Person
         'Ítalo',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Abgail', 'Adriana', 'Adriele', 'Agatha', 'Agustina', 'Alana', 'Alessandra', 'Alexa', 'Alice', 'Aline',
         'Allison', 'Alma', 'Alícia', 'Amanda', 'Amélia', 'Ana', 'Analu', 'Andressa', 'Andréa', 'Andréia', 'Angélica',
         'Anita', 'Antonella', 'Antonieta', 'Aparecida', 'Ariana', 'Ariane', 'Aurora', 'Ayla', 'Beatriz', 'Bella',
@@ -73,7 +73,7 @@ class Person extends \Faker\Provider\Person
         'Joana', 'Josefina', 'Joyce', 'Juliana', 'Juliane', 'Julieta', 'Jéssica', 'Júlia', 'Kamila', 'Karen', 'Karina',
         'Karine', 'Katherine', 'Kelly', 'Ketlin', 'Késia', 'Laiane', 'Lara', 'Larissa', 'Laura', 'Lavínia', 'Laís',
         'Letícia', 'Lia', 'Lidiane', 'Lilian', 'Liz', 'Lorena', 'Louise', 'Luana', 'Luara', 'Luciana', 'Luiza', 'Luna',
-        'Luzia', 'Luísa', 'Léia', 'Lívia', 'Lúcia', 'Madalena', 'Maiara', 'Maitê', 'Malena', 'Malu', 'Manoela',
+        'Luzia', 'Luísa', 'Léia', 'Lívia', 'Lúcia', 'Madalena', 'Maiara', 'Maitê', 'Masculinona', 'Malu', 'Manoela',
         'Manuela', 'Maraisa', 'Mari', 'Maria', 'Mariah', 'Mariana', 'Marina', 'Marisa', 'Marta', 'Mary', 'Marília',
         'Maya', 'Mayara', 'Maísa', 'Mel', 'Melina', 'Melinda', 'Melissa', 'Mia', 'Micaela', 'Michele', 'Michelle',
         'Mila', 'Milena', 'Milene', 'Miranda', 'Mirela', 'Mirella', 'Miriam', 'Márcia', 'Mônica', 'Naiara', 'Naomi',
@@ -108,9 +108,9 @@ class Person extends \Faker\Provider\Person
         'das Dores', 'das Neves', 'de Aguiar', 'de Arruda', 'de Freitas', 'de Oliveira', 'de Souza',
     ];
 
-    protected static $titleMale = ['Sr.', 'Dr.'];
+    protected static $titleMasculino = ['Sr.', 'Dr.'];
 
-    protected static $titleFemale = ['Sra.', 'Srta.', 'Dr.'];
+    protected static $titleFeminino = ['Sra.', 'Srta.', 'Dr.'];
 
     protected static $suffix = ['Filho', 'Neto', 'Sobrinho', 'Jr.'];
 

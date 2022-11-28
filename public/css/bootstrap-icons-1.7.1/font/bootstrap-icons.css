@@ -61,7 +61,6 @@ url("./fonts/bootstrap-icons.woff?a74547b2f0863226942ff8ded57db345") format("wof
 .bi-arrow-down-up::before { content: "\f127"; }
 .bi-arrow-down::before { content: "\f128"; }
 .bi-arrow-left-circle-fill::before { content: "\f129"; }
-.bi-arrow-left-circle::before { content: "\f12a"; }
 .bi-arrow-left-right::before { content: "\f12b"; }
 .bi-arrow-left-short::before { content: "\f12c"; }
 .bi-arrow-left-square-fill::before { content: "\f12d"; }
@@ -1364,10 +1363,10 @@ url("./fonts/bootstrap-icons.woff?a74547b2f0863226942ff8ded57db345") format("wof
 .bi-file-earmark-pdf::before { content: "\f63e"; }
 .bi-file-pdf-fill::before { content: "\f63f"; }
 .bi-file-pdf::before { content: "\f640"; }
-.bi-gender-ambiguous::before { content: "\f641"; }
-.bi-gender-female::before { content: "\f642"; }
-.bi-gender-male::before { content: "\f643"; }
-.bi-gender-trans::before { content: "\f644"; }
+.bi-Sexo-ambiguous::before { content: "\f641"; }
+.bi-Sexo-Feminino::before { content: "\f642"; }
+.bi-Sexo-Masculino::before { content: "\f643"; }
+.bi-Sexo-trans::before { content: "\f644"; }
 .bi-headset-vr::before { content: "\f645"; }
 .bi-info-lg::before { content: "\f646"; }
 .bi-mastodon::before { content: "\f647"; }

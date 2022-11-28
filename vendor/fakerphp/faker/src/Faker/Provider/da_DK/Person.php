@@ -12,30 +12,30 @@ class Person extends \Faker\Provider\Person
     /**
      * @var array Danish person name formats.
      */
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{middleName}} {{lastName}}',
-        '{{firstNameMale}} {{middleName}} {{lastName}}',
-        '{{firstNameMale}} {{middleName}}-{{middleName}} {{lastName}}',
-        '{{firstNameMale}} {{middleName}} {{middleName}}-{{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{middleName}} {{lastName}}',
+        '{{firstNameMasculino}} {{middleName}} {{lastName}}',
+        '{{firstNameMasculino}} {{middleName}}-{{middleName}} {{lastName}}',
+        '{{firstNameMasculino}} {{middleName}} {{middleName}}-{{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{middleName}} {{lastName}}',
-        '{{firstNameFemale}} {{middleName}} {{lastName}}',
-        '{{firstNameFemale}} {{middleName}}-{{middleName}} {{lastName}}',
-        '{{firstNameFemale}} {{middleName}} {{middleName}}-{{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{middleName}} {{lastName}}',
+        '{{firstNameFeminino}} {{middleName}} {{lastName}}',
+        '{{firstNameFeminino}} {{middleName}}-{{middleName}} {{lastName}}',
+        '{{firstNameFeminino}} {{middleName}} {{middleName}}-{{lastName}}',
     ];
 
     /**
-     * @var array Danish first names.
+     * @var array Danish Primeiro nomes.
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Aage', 'Adam', 'Adolf', 'Ahmad', 'Ahmed', 'Aksel', 'Albert', 'Alex', 'Alexander', 'Alf', 'Alfred', 'Ali', 'Allan',
         'Anders', 'Andreas', 'Anker', 'Anton', 'Arne', 'Arnold', 'Arthur', 'Asbjørn', 'Asger', 'August', 'Axel', 'Benjamin',
         'Benny', 'Bent', 'Bernhard', 'Birger', 'Bjarne', 'Bjørn', 'Bo', 'Brian', 'Bruno', 'Børge', 'Carl', 'Carlo',
@@ -61,7 +61,7 @@ class Person extends \Faker\Provider\Person
         'Povl', 'Richardt', 'Sigfred', 'Sofus', 'Thorkild', 'Viggo', 'Vilhelm', 'Villiam',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Aase', 'Agathe', 'Agnes', 'Alberte', 'Alexandra', 'Alice', 'Alma', 'Amalie', 'Amanda', 'Andrea', 'Ane', 'Anette', 'Anita',
         'Anja', 'Ann', 'Anna', 'Annalise', 'Anne', 'Anne-Lise', 'Anne-Marie', 'Anne-Mette', 'Annelise', 'Annette', 'Anni', 'Annie',
         'Annika', 'Anny', 'Asta', 'Astrid', 'Augusta', 'Benedikte', 'Bente', 'Berit', 'Bertha', 'Betina', 'Bettina', 'Betty',
@@ -79,7 +79,7 @@ class Person extends \Faker\Provider\Person
         'Krista', 'Kristen', 'Kristina', 'Kristine', 'Laila', 'Laura', 'Laurine', 'Lea', 'Lena', 'Lene', 'Lilian', 'Lilli',
         'Lillian', 'Lilly', 'Linda', 'Line', 'Lis', 'Lisa', 'Lisbet', 'Lisbeth', 'Lise', 'Liselotte', 'Lissi', 'Lissy',
         'Liv', 'Lizzie', 'Lone', 'Lotte', 'Louise', 'Lydia', 'Lykke', 'Lærke', 'Magda', 'Magdalene', 'Mai', 'Maiken',
-        'Maj', 'Maja', 'Majbritt', 'Malene', 'Maren', 'Margit', 'Margrethe', 'Maria', 'Mariane', 'Marianne', 'Marie', 'Marlene',
+        'Maj', 'Maja', 'Majbritt', 'Masculinone', 'Maren', 'Margit', 'Margrethe', 'Maria', 'Mariane', 'Marianne', 'Marie', 'Marlene',
         'Martha', 'Martine', 'Mary', 'Mathilde', 'Matilde', 'Merete', 'Merethe', 'Meta', 'Mette', 'Mia', 'Michelle', 'Mie',
         'Mille', 'Minna', 'Mona', 'Monica', 'Nadia', 'Nancy', 'Nanna', 'Nicoline', 'Nikoline', 'Nina', 'Ninna', 'Oda',
         'Olga', 'Olivia', 'Orla', 'Paula', 'Pauline', 'Pernille', 'Petra', 'Pia', 'Poula', 'Ragnhild', 'Randi', 'Rasmine',
@@ -123,7 +123,7 @@ class Person extends \Faker\Provider\Person
     ];
 
     /**
-     * @var array Danish last names.
+     * @var array Danish Sobrenomes.
      */
     protected static $lastName = [
         'Jensen', 'Nielsen', 'Hansen', 'Pedersen', 'Andersen', 'Christensen', 'Larsen', 'Sørensen', 'Rasmussen', 'Petersen',

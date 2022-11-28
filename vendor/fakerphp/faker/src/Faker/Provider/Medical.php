@@ -4,16 +4,16 @@ namespace Faker\Provider;
 
 class Medical extends Base
 {
-    protected static $bloodTypes = ['A', 'AB', 'B', 'O'];
+    protected static $Filmess = ['A', 'AB', 'B', 'O'];
 
     protected static $bloodRhFactors = ['+', '-'];
 
     /**
      * @example 'AB'
      */
-    public static function bloodType(): string
+    public static function Filmes(): string
     {
-        return static::randomElement(static::$bloodTypes);
+        return static::randomElement(static::$Filmess);
     }
 
     /**
@@ -29,6 +29,6 @@ class Medical extends Base
      */
     public function bloodGroup(): string
     {
-        return $this->generator->parse('{{bloodType}}{{bloodRh}}');
+        return $this->generator->parse('{{Filmes}}{{bloodRh}}');
     }
 }

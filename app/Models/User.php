@@ -3,8 +3,7 @@
 namespace App\Models;
 
 use App\Models\Mark;
-use App\Models\StudentParentInfo;
-use App\Models\StudentAcademicoInfo;
+use App\Models\alunoAcademicInfo;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -21,21 +20,19 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name',
-        'last_name',
+        'primeiro_nome',
+        'sobrenome',
         'email',
         'password',
-        'gender',
-        'nationality',
+        'Sexo',
+        'nacionalidade',
         'phone',
         'address',
-        'address2',
         'city',
         'zip',
-        'photo',
-        'birthday',
-        'religion',
-        'blood_type',
+        'Foto',
+        'Aniversario',
+        'lista_filmes',
         'role',
     ];
 
@@ -59,19 +56,11 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get the parent_info.
+     * Get the academic_info.
      */
-    public function parent_info()
+    public function academic_info()
     {
-        return $this->hasOne(StudentParentInfo::class, 'student_id', 'id');
-    }
-
-    /**
-     * Get the academico_info.
-     */
-    public function academico_info()
-    {
-        return $this->hasOne(StudentAcademicoInfo::class, 'student_id', 'id');
+        return $this->hasOne(alunoAcademicInfo::class, 'aluno_id', 'id');
     }
 
     /**
@@ -79,6 +68,6 @@ class User extends Authenticatable
      */
     public function marks()
     {
-        return $this->hasMany(Mark::class, 'student_id', 'id');
+        return $this->hasMany(Mark::class, 'aluno_id', 'id');
     }
 }

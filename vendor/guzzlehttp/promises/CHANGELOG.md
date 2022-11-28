@@ -35,7 +35,7 @@
 
 ### Fixed
 
-- Fixed coroutine promise memory leak.
+- Fixed cocronograma promise memory leak.
 
 
 ## 1.2.0 - 2016-05-18

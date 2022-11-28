@@ -8,23 +8,21 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-file-text"></i> Exam Rules
+                        <i class="bi bi-calculator-fill"></i> Regras da prova
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Exams</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Exam Rules</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     <div class="mb-4 bg-white border shadow-sm p-3">
                         <table class="table table-responsive">
                             <thead>
                                 <tr>
-                                    <th scope="col">Total Marks</th>
-                                    <th scope="col">Pass Marks</th>
-                                    <th scope="col">Marks Distribution Note</th>
-                                    <th scope="col">Actions</th>
+                                    <th scope="col">Total de notas</th>
+                                    <th scope="col">Notas acima da media</th>
+                                    <th scope="col">Distribuição de notas</th>
+                                    <th scope="col">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -37,8 +35,7 @@
                                         <div class="btn-group" role="group">
                                             <a type="button" href="{{route('exam.rule.edit', [
                                                 'exam_rule_id' => $exam_rule->id
-                                            ])}}" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Edit</a>
-                                            {{-- <button type="button" class="btn btn-sm btn-primary"><i class="bi bi-trash2"></i> Delete</button> --}}
+                                            ])}}" class="btn btn-sm btn-outline-primary"><i class="bi bi-pen"></i> Editar</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -48,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>

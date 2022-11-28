@@ -5,29 +5,29 @@ namespace Faker\Provider\sk_SK;
 class Person extends \Faker\Provider\Person
 {
     protected static $lastNameFormat = [
-        '{{lastNameMale}}',
-        '{{lastNameFemale}}',
+        '{{lastNameMasculino}}',
+        '{{lastNameFeminino}}',
     ];
 
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{titleMale}} {{firstNameMale}} {{lastNameMale}}',
-        '{{titleMale}} {{firstNameMale}} {{lastNameMale}} {{suffix}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastNameMasculino}} {{suffix}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastNameFemale}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastNameFemale}} {{suffix}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastNameFeminino}} {{suffix}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Drahoslav', 'Severín', 'Alexej', 'Ernest', 'Rastislav', 'Radovan', 'Dobroslav', 'Dalibor', 'Vincent', 'Miloš', 'Timotej', 'Gejza', 'Bohuš',
         'Alfonz', 'Gašpar', 'Emil', 'Erik', 'Blažej', 'Zdenko', 'Dezider', 'Arpád', 'Valentín', 'Pravoslav', 'Jaromír', 'Roman', 'Matej', 'Frederik',
         'Viktor', 'Alexander', 'Radomír', 'Albín', 'Bohumil', 'Kazimír', 'Fridrich', 'Radoslav', 'Tomáš', 'Alan', 'Branislav', 'Bruno', 'Gregor',
@@ -46,7 +46,7 @@ class Person extends \Faker\Provider\Person
 
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Alexandra', 'Karina', 'Daniela', 'Andrea', 'Antónia', 'Bohuslava', 'Dáša', 'Malvína', 'Kristína', 'Nataša', 'Bohdana', 'Drahomíra',
         'Sára', 'Zora', 'Tamara', 'Ema', 'Tatiana', 'Erika', 'Veronika', 'Agáta', 'Dorota', 'Vanda', 'Zoja', 'Gabriela', 'Perla', 'Ida', 'Liana',
         'Miloslava', 'Vlasta', 'Lívia', 'Eleonóra', 'Etela', 'Romana', 'Zlatica', 'Anežka', 'Bohumila', 'Františka', 'Angela', 'Matilda',
@@ -66,7 +66,7 @@ class Person extends \Faker\Provider\Person
 
     ];
 
-    protected static $lastNameMale = [
+    protected static $lastNameMasculino = [
         'Sloboda', 'Novotný', 'Kučera', 'Veselý', 'Horák', 'Marek', 'Pokorný', 'Král', 'Růžička', 'Zeman', 'Kolár', 'Urban', 'Bartoš', 'Vlček',
         'Polák', 'Kopecký', 'Konečný', 'Malý', 'Holub', 'Abrahám', 'Adam', 'Adamec', 'Almáši', 'Anderle', 'Antal', 'Babka', 'Bahna', 'Bahno',
         'Bajnok', 'Balaša', 'Balog', 'Balogh', 'Baláž', 'Baran', 'Baranka', 'Bartovič', 'Bartoš', 'Bača', 'Beck', 'Beihofner', 'Bella', 'Beran',
@@ -91,7 +91,7 @@ class Person extends \Faker\Provider\Person
 
     ];
 
-    protected static $lastNameFemale = [
+    protected static $lastNameFeminino = [
         'Slobodová', 'Novotná', 'Čierna', 'Kučerová', 'Veselá', 'Krajčíová', 'Nemcová', 'Králová', 'Růžičková', 'Fialová', 'Zemanová',
         'Kolárová', 'Kováčová', 'Vlčková', 'Poláková', 'Kopecká', 'Šimková', 'Konečná', 'Malá', 'Holubová', 'Staneková', 'Šťastná',
         'Vargová', 'Tóthová', 'Horváthová', 'Balážová', 'Szabová', 'Molnárová', 'Balogová', 'Lukáčová', 'Vícenová', 'Ringlóciová', 'Popovičová',
@@ -112,15 +112,15 @@ class Person extends \Faker\Provider\Person
         'CSc.', 'DrSc.', 'DSc.', 'Ph.D.', 'Th.D.',
     ];
 
-    public function title($gender = null)
+    public function title($Sexo = null)
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**
      * replaced by specific unisex slovakian title
      */
-    public static function titleMale()
+    public static function titleMasculino()
     {
         return static::randomElement(static::$title);
     }
@@ -128,37 +128,37 @@ class Person extends \Faker\Provider\Person
     /**
      * replaced by specific unisex slovakian title
      */
-    public static function titleFemale()
+    public static function titleFeminino()
     {
-        return static::titleMale();
+        return static::titleMasculino();
     }
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Novotný'
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::lastNameMale();
+        if ($Sexo === static::Sexo_Masculino) {
+            return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::lastNameFemale();
+        if ($Sexo === static::Sexo_Feminino) {
+            return static::lastNameFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$lastNameFormat));
     }
 
-    public static function lastNameMale()
+    public static function lastNameMasculino()
     {
-        return static::randomElement(static::$lastNameMale);
+        return static::randomElement(static::$lastNameMasculino);
     }
 
-    public static function lastNameFemale()
+    public static function lastNameFeminino()
     {
-        return static::randomElement(static::$lastNameFemale);
+        return static::randomElement(static::$lastNameFeminino);
     }
 
     /**

@@ -5,27 +5,27 @@ namespace Faker\Provider\el_GR;
 class Person extends \Faker\Provider\Person
 {
     protected static $lastNameFormat = [
-        '{{lastNameMale}}',
-        '{{lastNameFemale}}',
+        '{{lastNameMasculino}}',
+        '{{lastNameFeminino}}',
     ];
 
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{firstNameMale}} {{lastNameMale}}',
-        '{{titleMale}} {{firstNameMale}} {{lastNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{firstNameMasculino}} {{lastNameMasculino}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastNameMasculino}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{firstNameFemale}} {{lastNameFemale}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{firstNameFeminino}} {{lastNameFeminino}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastNameFeminino}}',
     ];
 
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Αβραάμ', 'Αγαθάγγελος', 'Αγαθοκλής', 'Αγαθόνικος', 'Αγαμέμνων', 'Αγαπητός', 'Αγάπιος', 'Άγγελος', 'Αγησίλαος', 'Αδάμ', 'Αδαμάντιος', 'Άδωνις', 'Αθανάσιος', 'Αθηναγόρας', 'Αθηνόδωρος', 'Αιμίλιος', 'Ακριβός', 'Ακρίτας', 'Αλέξανδρος', 'Αλέξιος', 'Αλκιβιάδης', 'Αμβρόσιος', 'Αναγνώστης', 'Ανανίας', 'Αναξαγόρας', 'Ανάργυρος', 'Αναστάσιος', 'Ανδροκλής', 'Ανδρόνικος', 'Άνθιμος', 'Ανθούλης', 'Αντίγονος', 'Αντίπατρος', 'Αντύπας', 'Αντώνιος', 'Απόλλων', 'Απόστολος', 'Αργύριος', 'Άρης', 'Αρίσταρχος', 'Αριστόβουλος', 'Αριστομένης', 'Άριστος', 'Αριστοτέλης', 'Αριστοφάνης', 'Αρτέμιος', 'Αρχέλαος', 'Αρχιμήδης', 'Ασημής', 'Ασκληπιός', 'Αστέριος', 'Αυγέρης', 'Αύγουστος', 'Αυξέντιος', 'Αφέντης', 'Αχιλλέας',
         'Βάιος', 'Βαλάντης', 'Βαλεντίνος', 'Βαλέριος', 'Βαρδής', 'Βαρθολομαίος', 'Βαρσάμος', 'Βασίλειος', 'Βασίλης', 'Βελισσάριος', 'Βενέτιος', 'Βενιαμίν', 'Βενιζέλος', 'Βησσαρίων', 'Βικέντιος', 'Βλαδίμηρος', 'Βλάσιος', 'Βρασίδας', 'Βύρων',
         'Γαβριήλ', 'Γαλάτιος', 'Γαληνός', 'Γαρύφαλλος', 'Γεράσιμος', 'Γεώργιος', 'Γκίκας', 'Γρηγόριος',
@@ -50,7 +50,7 @@ class Person extends \Faker\Provider\Person
         'Χαράλαμπος', 'Χαρίλαος', 'Χαρίτος', 'Χρήστος', 'Χριστόδουλος', 'Χριστόφορος', 'Χρύσανθος', 'Χρυσοβαλάντιος', 'Χρυσόστομος',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Αποστολία', 'Αυγή', 'Αγάθη', 'Αγάπη', 'Αγγελική', 'Αγλαΐα', 'Αγνή', 'Αγόρω', 'Αδαμαντία', 'Αηδόνα', 'Αθανασία', 'Αθηνά', 'Αθηνοδώρα', 'Αικατερίνη', 'Αιμιλία', 'Ακριβή', 'Αλεξάνδρα', 'Αλεξία', 'Αλίκη', 'Άλκηστις', 'Αλκινόη', 'Αμαλία', 'Αμβροσία', 'Αμφιθέα', 'Αμφιτρίτη', 'Ανάργυρη', 'Αναστασία', 'Ανατολή', 'Ανδριανή', 'Ανδρομάχη', 'Ανδρομέδα', 'Ανδρονίκη', 'Ανθή', 'Άννα', 'Αντιγόνη', 'Αντωνία', 'Απολλωνία', 'Αποστολία', 'Αργυρώ', 'Αρετή', 'Αριάδνη', 'Αριστέα', 'Άρτεμις', 'Αρτεμισία', 'Αρχοντία', 'Ασημίνα', 'Ασπασία', 'Αστέρω', 'Αταλάντη', 'Αυγουστίνα', 'Αφέντρα', 'Αφροδίτη', 'Αχιλλεία',
         'Βάγια', 'Βαλάντω', 'Βαλεντίνα', 'Βαλέρια', 'Βαρβάρα', 'Βαρσαμία', 'Βασιλεία', 'Βασιλική', 'Βεατρίκη', 'Βελισσαρία', 'Βενετία', 'Βερόνικα', 'Βησσαρία', 'Βικέντια', 'Βικτόρια', 'Βιολέτα', 'Βιργινία', 'Βλασία', 'Βρισηίς',
         'Γαβριέλλα', 'Γαλάτεια', 'Γαλήνη', 'Γαρυφαλλιά', 'Γενοβέφα', 'Γερακίνα', 'Γερασιμούλα', 'Γεσθημανή', 'Γεωργία', 'Γιασεμή', 'Γκόλφω', 'Γλαύκη', 'Γλυκερία', 'Γραμματική',
@@ -122,7 +122,7 @@ class Person extends \Faker\Provider\Person
         'Χάιδω', 'Χαρά', 'Χαραλαμπία', 'Χάρη', 'Χαρίκλεια', 'Χιονιά', 'Χλόη', 'Χριστοδούλα', 'Χριστόφιλη', 'Χριστοφόρα', 'Χρυσάνθη', 'Χρυσαυγή', 'Χρυσαφένια', 'Χρυσοβαλάντω', 'Χρυσόστομη', 'Χρυσούλα',
     ];
 
-    protected static $lastNameMale = [
+    protected static $lastNameMasculino = [
         'Αγγελίδης', 'Αγγελόπουλος', 'Αθανασιάδης', 'Αλαφούζος', 'Αλεβίζος', 'Αλεξόπουλος', 'Αλιβιζάτος', 'Αναγνωστόπουλος', 'Αναστασιάδης', 'Αναστασίου', 'Ανδρεάδης', 'Αντωνιάδης', 'Αντωνόπουλος', 'Αποστολόπουλος',
         'Αξιώτης', 'Βαρουξής', 'Βασιλείου', 'Βασιλόπουλος', 'Βενιζέλος', 'Βέργας', 'Βιτάλης', 'Βούλγαρης', 'Γαλάνης', 'Γερμανός', 'Γεωργίου', 'Γεωργιάδης', 'Γιάγκος', 'Γιαννόπουλος', 'Γιαννακόπουλος', 'Γιάνναρης',
         'Γούσιος', 'Γρηγοριάδης', 'Δασκαλόπουλος', 'Δελής', 'Διαμαντόπουλος', 'Δημητριάδης', 'Δουρέντης', 'Ελευθερόπουλος', 'Ελευθεριάδης', 'Ευθυμιάδης', 'Ευσταθιάδης', 'Ευταξίας', 'Ζαχαριάδης', 'Ζερβός', 'Ζωγραφός',
@@ -134,7 +134,7 @@ class Person extends \Faker\Provider\Person
         'Σταυρόπουλος', 'Στεφανόπουλος', 'Ταμτάκος', 'Τοκατλίδης', 'Τριανταφυλλίδης', 'Τρικούπη', 'Τρικούπης', 'Φιλιππίδης', 'Φλέσσας', 'Φωτιάδης', 'Φωτόπουλος', 'Χαραλαμπίδης', 'Χατζηνικόλαου', 'Χριστόπουλος',
     ];
 
-    protected static $lastNameFemale = [
+    protected static $lastNameFeminino = [
         'Αγγελίδου', 'Αγγελοπούλου', 'Αλεξάνδρου', 'Αλεξάνδρου', 'Αλεξίου', 'Αναγνώστου', 'Αναστασίου', 'Ανδρέου', 'Αντωνοπούλου', 'Ανυφαντή', 'Ανυφαντή', 'Αργυρού', 'Βαριμπόμπη', 'Βιτάλη', 'Γάσπαρη', 'Γαλάνη', 'Γεννήτη',
         'Γερμανού', 'Γεωγιάδου', 'Γεωργίβαλου', 'Γεωργίου', 'Γιακουμή', 'Γιαννακοπούλου', 'Γρηγοριάδου', 'Δασκαλοπούλου', 'Διδασκάλου', 'Δημητριάδου', 'Ελευθερίου', 'Ευθυμιάδου', 'Ηλιοπούλου', 'Θεοτόκου', 'Θεωδωροπούλου',
         'Θεωδώρου', 'Θεωδωρίδου', 'Ιωάννου', 'Καπετανάκη', 'Καπνού', 'Καρσιβάνη', 'Κοκκίνου', 'Κωνσταντινίδου', 'Κωνσταντίνου', 'Κυριακοπούλου', 'Λάσκαρη', 'Λασκαρού', 'Μάκρη', 'Μακρή', 'Μοραΐτη', 'Μπόγρη', 'Μυλωνά',
@@ -142,22 +142,22 @@ class Person extends \Faker\Provider\Person
         'Σπανού', 'Σταματιάδου', 'Σωπολιάτη', 'Τριανταφυλλίδου', 'Φοσκιά', 'Φωτιάδου', 'Χαραλαμπίδου', 'Χατζηιωάννου',
     ];
 
-    protected static $titleMale = ['κος.', 'κ.'];
-    protected static $titleFemale = ['δις.', 'δνις.', 'κα.'];
+    protected static $titleMasculino = ['κος.', 'κ.'];
+    protected static $titleFeminino = ['δις.', 'δνις.', 'κα.'];
 
     /**
-     * @param string|null $gender 'male', 'female' or null for any
+     * @param string|null $Sexo 'Masculino', 'Feminino' or null for any
      *
      * @example 'Αγγελόπουλος'
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return static::lastNameMale();
+        if ($Sexo === static::Sexo_Masculino) {
+            return static::lastNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return static::lastNameFemale();
+        if ($Sexo === static::Sexo_Feminino) {
+            return static::lastNameFeminino();
         }
 
         return $this->generator->parse(static::randomElement(static::$lastNameFormat));
@@ -166,16 +166,16 @@ class Person extends \Faker\Provider\Person
     /**
      * @example 'Θεωδωρόπουλος'
      */
-    public static function lastNameMale()
+    public static function lastNameMasculino()
     {
-        return static::randomElement(static::$lastNameMale);
+        return static::randomElement(static::$lastNameMasculino);
     }
 
     /**
      * @example 'Κοκκίνου'
      */
-    public static function lastNameFemale()
+    public static function lastNameFeminino()
     {
-        return static::randomElement(static::$lastNameFemale);
+        return static::randomElement(static::$lastNameFeminino);
     }
 }

@@ -17,19 +17,19 @@ class Promotion extends Model
      * @var array
      */
     protected $fillable = [
-        'student_id',
+        'aluno_id',
         'class_id',
         'section_id',
         'session_id',
-        'id_card_number',
+        'RA',
     ];
 
     /**
      * Get the sections for the blog post.
      */
-    public function student()
+    public function aluno()
     {
-        return $this->belongsTo(User::class, 'student_id');
+        return $this->belongsTo(User::class, 'aluno_id');
     }
 
     /**

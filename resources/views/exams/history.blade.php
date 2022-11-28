@@ -12,7 +12,7 @@
                         <div class="col-12">
                             <div class="card border-dark my-3">
                                 <div class="card-header bg-transparent border-dark">
-                                    <i class="bi bi-diagram-2"></i> Class 1
+                                    <i class="bi bi-book-fill"></i> Class 1
                                 </div>
                                 <div class="card-body text-dark">
                                     <div class="accordion" id="accordionExample">
@@ -84,7 +84,7 @@
                                                                 <div class="card-body">
                                                                 <div class="float-right">Tue, Jan 10th 2019 8:30 AM</div>
                                                                 <h4 class="card-title">Day 2 Sessions</h4>
-                                                                <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
+                                                                <p class="card-text">Sign-up for the lessons and speakers that coincide with your course monitoria. Meet and greet with instructors.</p>
                                                                 </div>
                                                             </div>
                                                             </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>

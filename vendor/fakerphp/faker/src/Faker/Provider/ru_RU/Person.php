@@ -4,25 +4,25 @@ namespace Faker\Provider\ru_RU;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{middleNameMale}} {{lastName}}',
-        '{{lastName}} {{firstNameMale}} {{middleNameMale}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{middleNameMasculino}} {{lastName}}',
+        '{{lastName}} {{firstNameMasculino}} {{middleNameMasculino}}',
     ];
 
     /**
-     * This provider uses wikipedia's 250 top russian last names
-     * That list of MALE last names could be safely extended to FEMALE list just by adding 'a' letter at the end
+     * This provider uses wikipedia's 250 top russian Sobrenomes
+     * That list of Masculino Sobrenomes could be safely extended to Feminino list just by adding 'a' letter at the end
      */
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{middleNameFemale}} {{lastName}}а',
-        '{{lastName}}а {{firstNameFemale}} {{middleNameFemale}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{middleNameFeminino}} {{lastName}}а',
+        '{{lastName}}а {{firstNameFeminino}} {{middleNameFeminino}}',
     ];
 
     /**
      * {@link} http://ru.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B5_%D0%B8%D0%BC%D1%8F
      * {@link} http://masterrussian.com/aa031701a.shtml
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Абрам', 'Август', 'Адам', 'Адриан', 'Аким', 'Александр', 'Алексей', 'Альберт', 'Ананий', 'Анатолий', 'Андрей', 'Антон', 'Антонин',
         'Аполлон', 'Аркадий', 'Арсений', 'Артемий', 'Артур', 'Артём', 'Афанасий', 'Богдан', 'Болеслав', 'Борис', 'Бронислав', 'Вадим',
         'Валентин', 'Валериан', 'Валерий', 'Василий', 'Вениамин', 'Викентий', 'Виктор', 'Виль', 'Виталий', 'Витольд', 'Влад', 'Владимир',
@@ -39,7 +39,7 @@ class Person extends \Faker\Provider\Person
     /**
      * {@link} http://masterrussian.com/aa031001a.shtml
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Александра', 'Алина', 'Алиса', 'Алла', 'Альбина', 'Алёна', 'Анастасия', 'Анжелика', 'Анна', 'Антонина', 'Анфиса', 'Валентина', 'Валерия',
         'Варвара', 'Василиса', 'Вера', 'Вероника', 'Виктория', 'Владлена', 'Галина', 'Дарья', 'Диана', 'Дина', 'Доминика', 'Ева',
         'Евгения', 'Екатерина', 'Елена', 'Елизавета', 'Жанна', 'Зинаида', 'Злата', 'Зоя', 'Изабелла', 'Изольда', 'Инга', 'Инесса',
@@ -50,13 +50,13 @@ class Person extends \Faker\Provider\Person
         'Эмма', 'Юлия', 'Яна', 'Ярослава',
     ];
 
-    protected static $middleNameMale = [
+    protected static $middleNameMasculino = [
         'Александрович', 'Алексеевич', 'Андреевич', 'Дмитриевич', 'Евгеньевич',
         'Сергеевич', 'Иванович', 'Фёдорович', 'Львович', 'Романович', 'Владимирович',
         'Борисович', 'Максимович',
     ];
 
-    protected static $middleNameFemale = [
+    protected static $middleNameFeminino = [
         'Александровна', 'Алексеевна', 'Андреевна', 'Дмитриевна', 'Евгеньевна',
         'Сергеевна', 'Ивановна', 'Фёдоровна', 'Львовна', 'Романовна', 'Владимировна',
         'Борисовна', 'Максимовна',
@@ -108,70 +108,70 @@ class Person extends \Faker\Provider\Person
     protected static $lastNameSuffix = ['а', ''];
 
     /**
-     * Return male middle name
+     * Return Masculino middle name
      *
      * @example 'Иванович'
      *
      * @return string Middle name
      */
-    public function middleNameMale()
+    public function middleNameMasculino()
     {
-        return static::randomElement(static::$middleNameMale);
+        return static::randomElement(static::$middleNameMasculino);
     }
 
     /**
-     * Return female middle name
+     * Return Feminino middle name
      *
      * @example 'Ивановна'
      *
      * @return string Middle name
      */
-    public function middleNameFemale()
+    public function middleNameFeminino()
     {
-        return static::randomElement(static::$middleNameFemale);
+        return static::randomElement(static::$middleNameFeminino);
     }
 
     /**
-     * Return middle name for the specified gender.
+     * Return middle name for the specified Sexo.
      *
-     * @param string|null $gender A gender the middle name should be generated
-     *                            for. If the argument is skipped a random gender will be used.
+     * @param string|null $Sexo A Sexo the middle name should be generated
+     *                            for. If the argument is skipped a random Sexo will be used.
      *
      * @return string Middle name
      */
-    public function middleName($gender = null)
+    public function middleName($Sexo = null)
     {
-        if ($gender === static::GENDER_MALE) {
-            return $this->middleNameMale();
+        if ($Sexo === static::Sexo_Masculino) {
+            return $this->middleNameMasculino();
         }
 
-        if ($gender === static::GENDER_FEMALE) {
-            return $this->middleNameFemale();
+        if ($Sexo === static::Sexo_Feminino) {
+            return $this->middleNameFeminino();
         }
 
         return $this->middleName(static::randomElement([
-            static::GENDER_MALE,
-            static::GENDER_FEMALE,
+            static::Sexo_Masculino,
+            static::Sexo_Feminino,
         ]));
     }
 
     /**
-     * Return last name for the specified gender.
+     * Return Sobrenome for the specified Sexo.
      *
-     * @param string|null $gender A gender of the last name should be generated
-     *                            for. If the argument is skipped a random gender will be used.
+     * @param string|null $Sexo A Sexo of the Sobrenome should be generated
+     *                            for. If the argument is skipped a random Sexo will be used.
      *
-     * @return string Last name
+     * @return string Sobrenome
      */
-    public function lastName($gender = null)
+    public function lastName($Sexo = null)
     {
         $lastName = static::randomElement(static::$lastName);
 
-        if (static::GENDER_FEMALE === $gender) {
+        if (static::Sexo_Feminino === $Sexo) {
             return $lastName . 'а';
         }
 
-        if (static::GENDER_MALE === $gender) {
+        if (static::Sexo_Masculino === $Sexo) {
             return $lastName;
         }
 

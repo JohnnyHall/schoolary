@@ -9,7 +9,7 @@ class GradingSystemRepository {
         try {
             GradingSystem::create($request);
         } catch (\Exception $e) {
-            throw new \Exception('Failed to create grading system. '.$e->getMessage());
+            throw new \Exception('Falha ao criar Grade. '.$e->getMessage());
         }
     }
 

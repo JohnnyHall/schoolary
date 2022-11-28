@@ -24,7 +24,7 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'edit users']);
         Permission::create(['name' => 'delete users']);
 
-        Permission::create(['name' => 'promote students']);
+        Permission::create(['name' => 'promote alunos']);
 
         Permission::create(['name' => 'create notices']);
         Permission::create(['name' => 'view notices']);
@@ -36,15 +36,15 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'edit events']);
         Permission::create(['name' => 'delete events']);
 
-        Permission::create(['name' => 'create syllabi']);
-        Permission::create(['name' => 'view syllabi']);
-        Permission::create(['name' => 'edit syllabi']);
-        Permission::create(['name' => 'delete syllabi']);
+        Permission::create(['name' => 'create monitor']);
+        Permission::create(['name' => 'view monitor']);
+        Permission::create(['name' => 'edit monitor']);
+        Permission::create(['name' => 'delete monitor']);
 
-        Permission::create(['name' => 'create routines']);
-        Permission::create(['name' => 'view routines']);
-        Permission::create(['name' => 'edit routines']);
-        Permission::create(['name' => 'delete routines']);
+        Permission::create(['name' => 'criar cronogramas']);
+        Permission::create(['name' => 'Ver Cronogramas']);
+        Permission::create(['name' => 'edit cronogramas']);
+        Permission::create(['name' => 'delete cronogramas']);
 
         Permission::create(['name' => 'create exams']);
         Permission::create(['name' => 'view exams']);
@@ -85,24 +85,24 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'view courses']);
         Permission::create(['name' => 'edit courses']);
 
-        Permission::create(['name' => 'view academico settings']);
+        Permission::create(['name' => 'view academic settings']);
         Permission::create(['name' => 'update marks submission window']);
         Permission::create(['name' => 'update browse by session']);
 
         Permission::create(['name' => 'create classes']);
         Permission::create(['name' => 'view classes']);
-        Permission::create(['name' => 'edit classes']);
+        Permission::create(['name' => 'Editar materias']);
         // Permission::create(['name' => 'delete classes']);
         
         Permission::create(['name' => 'create sections']);
         Permission::create(['name' => 'view sections']);
-        Permission::create(['name' => 'edit sections']);
+        Permission::create(['name' => 'Editar Turmas']);
         // Permission::create(['name' => 'delete sections']);
 
         $user = \App\Models\User::factory()->create([
             'email' => 'secretaria@puccampinas.edu.br',
-            'first_name' => 'Deus',
-            'last_name' => 'Supremo'
+            'primeiro_nome' => 'Deus',
+            'sobrenome' => 'Supremo'
         ]);
         $user->givePermissionTo(
             'create school sessions',
@@ -115,27 +115,27 @@ class PermissionSeeder extends Seeder
             'edit courses',
             'create classes',
             'view classes',
-            'edit classes',
+            'Editar materias',
             'create sections',
             'view sections',
-            'edit sections',
+            'Editar Turmas',
             'create exams',
             'view exams',
             'create exams rule',
             'edit exams rule',
             'delete exams rule',
             'view exams rule',
-            'create routines',
-            'view routines',
-            'edit routines',
-            'delete routines',
+            'criar cronogramas',
+            'Ver Cronogramas',
+            'edit cronogramas',
+            'delete cronogramas',
             'view marks',
-            'view academico settings',
+            'view academic settings',
             'update marks submission window',
             'create users',
             'edit users',
             'view users',
-            'promote students',
+            'promote alunos',
             'update attendances type',
             'view attendances',
             'take attendances',//Teacher only
@@ -155,10 +155,10 @@ class PermissionSeeder extends Seeder
             'view events',
             'edit events',
             'delete events',
-            'create syllabi',
-            'view syllabi',
-            'edit syllabi',
-            'delete syllabi',
+            'create monitor',
+            'view monitor',
+            'edit monitor',
+            'delete monitor',
             'view assignments'
         );
     }

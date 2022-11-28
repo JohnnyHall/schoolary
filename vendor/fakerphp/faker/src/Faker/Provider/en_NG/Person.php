@@ -4,22 +4,22 @@ namespace Faker\Provider\en_NG;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
     /**
-     * An array of typical Nigerian male firstnames.
+     * An array of typical Nigerian Masculino firstnames.
      *
      * @see https://andela-celisha-wigwe.github.io/names.html
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'Abimbola', 'Abisola', 'Abisoye', 'Adeboye', 'Adedayo', 'Adegoke', 'Akande', 'Akanni', 'Alade', 'Ayinde', 'Azubuike',
         'Banji', 'Bankole', 'Buchi', 'Bukola',
         'Chinedu', 'Chisom', 'Chukwu',
@@ -46,7 +46,7 @@ class Person extends \Faker\Provider\Person
     /**
      * @see https://andela-celisha-wigwe.github.io/names.html
      */
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'Adaugo', 'Akunna', 'Aminat', 'Aminu', 'Augustina', 'Ayebatari',
         'Cherechi', 'Chiamaka', 'Chimamanda', 'Chinyere', 'Chizoba',
         'Ebiere', 'Efe',

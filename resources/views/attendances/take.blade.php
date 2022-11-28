@@ -8,27 +8,26 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-calendar2-week"></i> Take Attendance
+                        <i class="bi bi-calendar2-week"></i> Pegar Presença
                     </h1>
 
                     @include('session-messages')
 
-                    <h3><i class="bi bi-compass"></i>
-                        Class #{{request()->query('class_name')}}, 
-                        @if ($academico_setting->attendance_type == 'course')
+                    <h3>
+                        Materia: {{request()->query('class_name')}}, 
+                        @if ($academic_setting->attendance_type == 'course')
                             Course: {{request()->query('course_name')}}
                         @else
-                            Section #{{request()->query('section_name')}}
+                            Turma: {{request()->query('section_name')}}
                         @endif
                     </h3>
-                    <div class="mt-4">Current Date and Time: {{ date('Y-m-d H:i:s') }}</div>
                     <div class="row mt-4">
                         <div class="col-10 bg-white border p-3 shadow-sm">
                             <form action="{{route('attendances.store')}}" method="POST">
                                 @csrf
                                 <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                 <input type="hidden" name="class_id" value="{{request()->query('class_id')}}">
-                                @if ($academico_setting->attendance_type == 'course')
+                                @if ($academic_setting->attendance_type == 'course')
                                     <input type="hidden" name="course_id" value="{{request()->query('course_id')}}">
                                     <input type="hidden" name="section_id" value="0">
                                 @else
@@ -38,27 +37,27 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col"># ID Card Number</th>
-                                            <th scope="col">Student Name</th>
-                                            <th scope="col">Present</th>
+                                            <th scope="col">RA</th>
+                                            <th scope="col">Nome do aluno</th>
+                                            <th scope="col">Presença</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($student_list as $student)
-                                        <input type="hidden" name="student_ids[]" value="{{$student->student_id}}">
+                                        @foreach ($aluno_list as $aluno)
+                                        <input type="hidden" name="aluno_ids[]" value="{{$aluno->aluno_id}}">
                                         <tr>
-                                            <th scope="row">{{$student->id_card_number}}</th>
-                                            <td>{{$student->student->first_name}} {{$student->student->last_name}}</td>
+                                            <th scope="row">{{$aluno->RA}}</th>
+                                            <td>{{$aluno->aluno->primeiro_nome}} {{$aluno->aluno->sobrenome}}</td>
                                             <td>
-                                                <input class="form-check-input" type="checkbox" name="status[{{$student->student_id}}]" checked>
+                                                <input class="form-check-input" type="checkbox" name="status[{{$aluno->aluno_id}}]" checked>
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                @if(count($student_list) > 0 && $attendance_count < 1)
+                                @if(count($aluno_list) > 0 && $attendance_count < 1)
                                 <div class="mb-4">
-                                    <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Submit</button>
+                                    <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Enviar</button>
                                 </div>
                                 @endif
                             </form>
@@ -66,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>

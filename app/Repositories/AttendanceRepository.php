@@ -19,12 +19,12 @@ class AttendanceRepository implements AttendanceInterface {
     public function prepareInput($request) {
         $input = [];
         $now = Carbon::now()->toDateTimeString();
-        for($i=0; $i < sizeof($request['student_ids']); $i++) {
-            $student_id = $request['student_ids'][$i];
+        for($i=0; $i < sizeof($request['aluno_ids']); $i++) {
+            $aluno_id = $request['aluno_ids'][$i];
             $input[] = array(
-                'status'        => (isset($request['status'][$student_id]))?$request['status'][$student_id]:'off',
+                'status'        => (isset($request['status'][$aluno_id]))?$request['status'][$aluno_id]:'off',
                 'class_id'      => $request['class_id'],
-                'student_id'    => $student_id,
+                'aluno_id'    => $aluno_id,
                 'section_id'    => $request['section_id'],
                 'course_id'     => $request['course_id'],
                 'session_id'    => $request['session_id'],
@@ -37,7 +37,7 @@ class AttendanceRepository implements AttendanceInterface {
 
     public function getSectionAttendance($class_id, $section_id, $session_id) {
         try {
-            return Attendance::with('student')
+            return Attendance::with('aluno')
                             ->where('class_id', $class_id)
                             ->where('section_id', $section_id)
                             ->where('session_id', $session_id)
@@ -50,7 +50,7 @@ class AttendanceRepository implements AttendanceInterface {
 
     public function getCourseAttendance($class_id, $course_id, $session_id) {
         try {
-            return Attendance::with('student')
+            return Attendance::with('aluno')
                             ->where('class_id', $class_id)
                             ->where('course_id', $course_id)
                             ->where('session_id', $session_id)
@@ -61,10 +61,10 @@ class AttendanceRepository implements AttendanceInterface {
         }
     }
 
-    public function getStudentAttendance($session_id, $student_id) {
+    public function getalunoAttendance($session_id, $aluno_id) {
         try {
             return Attendance::with(['section','course'])
-                            ->where('student_id', $student_id)
+                            ->where('aluno_id', $aluno_id)
                             ->where('session_id', $session_id)
                             ->get();
         } catch (\Exception $e) {

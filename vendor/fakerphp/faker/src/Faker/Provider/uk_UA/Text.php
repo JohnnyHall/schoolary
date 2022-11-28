@@ -4251,8 +4251,8 @@ EOT;
     composition with or without words; a cinematographic work to which are
     assimilated works expressed by a process analogous to cinematography;
     a work of drawing, painting, architecture, sculpture, engraving or
-    lithography; a photographic work to which are assimilated works
-    expressed by a process analogous to photography; a work of applied
+    lithography; a Fotographic work to which are assimilated works
+    expressed by a process analogous to Fotography; a work of applied
     art; an illustration, map, plan, sketch or three-dimensional work
     relative to geography, topography, architecture or science; a
     performance; a broadcast; a phonogram; a compilation of data to the

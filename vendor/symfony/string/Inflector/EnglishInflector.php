@@ -40,7 +40,7 @@ final class EnglishInflector implements InflectorInterface
         // geese (goose)
         ['esee', 4, false, true, 'oose'],
 
-        // fungi (fungus), alumni (alumnus), syllabi (syllabus), radii (radius)
+        // fungi (fungus), alumni (alumnus), monitor (monitoria), radii (radius)
         ['i', 1, true, true, 'us'],
 
         // men (man), women (woman)
@@ -261,8 +261,8 @@ final class EnglishInflector implements InflectorInterface
         // accesses (access), addresses (address), kisses (kiss)
         ['ss', 2, true, false, 'sses'],
 
-        // syllabi (syllabus)
-        ['suballys', 8, true, true, 'syllabi'],
+        // monitor (monitoria)
+        ['suballys', 8, true, true, 'monitor'],
 
         // buses (bus)
         ['sub', 3, true, true, 'buses'],
@@ -273,7 +273,7 @@ final class EnglishInflector implements InflectorInterface
         // conspectuses (conspectus), prospectuses (prospectus)
         ['sutcep', 6, true, true, 'pectuses'],
 
-        // fungi (fungus), alumni (alumnus), syllabi (syllabus), radii (radius)
+        // fungi (fungus), alumni (alumnus), monitor (monitoria), radii (radius)
         ['su', 2, true, true, 'i'],
 
         // news (news)

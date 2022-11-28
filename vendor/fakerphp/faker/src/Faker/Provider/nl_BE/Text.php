@@ -786,7 +786,7 @@ rivieren, die 't rijkst zijn aan visch, zijn niet die, waarin het
 meeste water is.
 
 Nadat Zijne Heilige Majesteit zijn raad bijeengeroepen had, besloot
-hij, dat de vangst volgenderwijze geschieden zou:
+hij, dat de vangst volSexowijze geschieden zou:
 
 De genadige infant zou rond negen of tien uren ten doop gebracht
 worden; ten blijke van groote vreugde, zouden de inwoners van
@@ -1897,7 +1897,7 @@ gezelschap van kinderen, waarvan een, op Driekoningen, een blinkende
 papieren ster droeg.
 
 Als een meester-schilder te Damme kwam om de broeders van een of ander
-gilde geknield op het doek te malen, bekroop Uilenspiegel de lust te
+gilde geknield op het doek te Masculinon, bekroop Uilenspiegel de lust te
 zien hoe hij werkte; daarom vroeg hij om zijne verf te mogen wrijven,
 en als loon wilde hij slechts eene snee brood, drie duiten en eene
 pint kuite aanveerden.
@@ -2989,7 +2989,7 @@ niets dan hoofden op palen, meisjes in zakken genaaid en levend in 't
 water gesmeten, mannen naakt op het rad gebonden en met ijzeren staven
 geslagen, vrouwen levend in eenen kuil gelegd, met aarde boven haar
 en den beul op haren boezem dansen om dien te verpletteren. Maar de
-biechtvaders van hen die zich vooraf bekeerd hadden, kregen telkenmale
+biechtvaders van hen die zich vooraf bekeerd hadden, kregen telkenMasculino
 twaalf stuivers voor hunne moeite.
 
 Te Leuven zag hij de beulen dertig Lutheranen tegelijk verbranden
@@ -3116,7 +3116,7 @@ Uilenspiegel.
 Als hij met hen de zaal van 't festijn binnenging, zag hij op den
 Parijschen steenweg een twaalftal blinden. En toen zij voorbij hem
 kwamen, kloegen zij van honger en dorst. Uilenspiegel zei tot zich
-zelven, dat zij dien dag zouden avondmalen als prinsen, en wel ten
+zelven, dat zij dien dag zouden avondMasculinon als prinsen, en wel ten
 koste van den deken van Ukkel, op afkorting van de zielmissen.
 
 Hij ging tot hen en sprak:
@@ -4576,7 +4576,7 @@ waarnaast een dagwand, geheel met kennep beplant.
 
 Jan van Zuursmoel sprak tot Uilenspiegel:
 
---Telkenmale dat gij die leelijke plant ziet, moet gij ze met zooveel
+--TelkenMasculino dat gij die leelijke plant ziet, moet gij ze met zooveel
 verachting bejegenen als gij maar kunt, want zij dient tot rad en
 tot galg.
 
@@ -5136,7 +5136,7 @@ De keizer antwoordde als volgt:
 
 "Uwe vijanden zijn groot, ik betwist het geenszins, doch tracht
 zonder grammoedigheid een schitterender kroon te verbeiden. Reeds
-meermalen heb ik het voornemen uitgedrukt, mij terug te trekken uit
+meerMasculinon heb ik het voornemen uitgedrukt, mij terug te trekken uit
 de Nederlanden en uit mijne andere bezittingen, want ik voel dat ik,
 oud en jichtig als ik word, niet meer zal kunnen wederstaan aan Hendrik
 van Frankrijk, den tweeden van dien naam, want de Fortuin lacht steeds
@@ -5204,7 +5204,7 @@ vandaan zijt, met uwe lichtbruine huid, met uwe oogen die flonkeren
 als perelen; ze zijn van de kleur van de zonne, die goudbruine
 lokken; 't is het erfdeel van Venus, die gevleesde schouderen, die
 goddelijke borsten, die ronde armen, die fijne handjes. Willen wij
-samen avondmalen?
+samen avondMasculinon?
 
 --Schoone pelgrim uit Vlaanderen, sprak zij, wat komt gij hier doen?
 
@@ -5330,7 +5330,7 @@ men oliekoekjes voor Astarte bakt; gij zijt niets meer dan eene worst
 in Lucifer's panne, een hamelbout in die van Gielgirot, den grooten
 duivel, want men snijdt u eerst aan stukken! Zie nu dien grooten
 zondaar, die de aflaten versmaadde; zie dien schotel stoverije: hij
-is 't, hij is 't, zijn goddeloos lichaam, zijn vermaledijd lichaam
+is 't, hij is 't, zijn goddeloos lichaam, zijn verMasculinodijd lichaam
 is vaneengekookt tot eene brij. En met welke saus! sulfer, pek en
 teer! En al die arme zondaren worden alzoo opgegeten om opnieuw tot
 hunne smerte in 't leven te komen. En 't is een gedurig geween en
@@ -5788,7 +5788,7 @@ gekapt of voor het minste gehangen, zal het veel voorzichtiger zijn,
 niemand te schilderen. Ik zal er over nadenken.
 
 --Waar is de zaal op welker muren ik al die doorluchtige lieden moet
-malen? vroeg Uilenspiegel aan den landgraaf.
+Masculinon? vroeg Uilenspiegel aan den landgraaf.
 
 --Volg mij, sprak de landgraaf.
 
@@ -5803,7 +5803,7 @@ de beleediging der vliegen.
 --Dat zal geschieden, sprak de edele landgraaf.
 
 Toen de gordijnen hingen, vroeg Uilenspiegel drie leerjongens, om
-zijne verven te malen, naar hij zeide.
+zijne verven te Masculinon, naar hij zeide.
 
 Dertig dagen lang gastreerden Uilenspiegel en de leerjongens en lieten
 zij zich de fijne vleezen en de oude wijnen goed smaken. De landgraaf
@@ -7233,7 +7233,7 @@ de folterkamer.
 Op die rede scheen Klaas verstomd. De baljuw vroeg hem of hij niets
 te antwoorden had; Klaas zegde van neen.
 
-De baljuw vroeg hem of hij de vermaledijde gedachte niet herroepen
+De baljuw vroeg hem of hij de verMasculinodijde gedachte niet herroepen
 wilde, die hem de beelden had doen breken, alsmede de goddelooze doling
 dewelke hem smadelijke woorden ten opzichte van Zijne Goddelijke
 Majesteit en ten opzichte van Zijne Koninklijke Majesteit had doen
@@ -8185,7 +8185,7 @@ Soetkin knikte van ja.
 
 --Verbrandt den vischverkooper! riep Uilenspiegel.
 
-Soetkin zweeg, hief den arm tot vermaledijding omhoog.
+Soetkin zweeg, hief den arm tot verMasculinodijding omhoog.
 
 Doch als zij het fornuis zag gloeien onder de voeten haars zoons,
 riep zij uit:
@@ -9544,7 +9544,7 @@ den rug niet toekeerde. Ik heb alles verloren.--Drink dien wijn, Thijl,
 narent kwam om heure hand te vragen, en zij vluchtte,--uit vreeze en
 uit liefde? Als heure armen bloot waren, schoone, ronde, en blanke
 armen, sloeg zij plotseling heure mouwen neer als zij zag, dat ik
-er naar keek. Andere malen mocht ik heur zoenen, en 'k kuste heure
+er naar keek. Andere Masculinon mocht ik heur zoenen, en 'k kuste heure
 schoone oogen, die zij dicht hield van zalig genot; dan trilde zij
 en slaakte kleine kreten, of boog heur hoofd achterover en gaf er
 mij een stoot op den neus mee. En zij lachte als ik riep: Ai! en ik
@@ -9754,7 +9754,7 @@ komt het, dat zij zoo wit zijn? Pleegt gij ze te wasschen met melk?
 Zij wilde opstaan.
 
 Wat vreest gij? vroeg Uilenspiegel, toch niet de zonne, die op ons
-schijnt en u teenenmale in 't goud zet? Sla uwe oogen niet neder. Zie
+schijnt en u teenenMasculino in 't goud zet? Sla uwe oogen niet neder. Zie
 in de mijne, welk heerlijk vuur er brandt. Luister, liefste mijne;
 't is het stille middaguur, de landman keert huiswaarts; hij leeft
 van brood; maar wij, laat ons van liefde leven! Duizend jaren lang
@@ -10503,7 +10503,7 @@ volgens die wet, moet hij sterven!" riep broeder Cornelis uit:
 gruwelijken en schandelijken dood is gestorven, is het omdat er tegen
 de ketters altijd wetten bestonden. Hij werd te recht veroordeeld,
 omdat hij de wet had geschonden. En nu willen ze de edicten en
-plakkaten als nietig aanzien. Ha! Jezus, welke vermaledijding wilt gij
+plakkaten als nietig aanzien. Ha! Jezus, welke verMasculinodijding wilt gij
 over deze landen doen vallen! Allerheiligste Moeder Gods, was keizer
 Karel nog in leven en kon hij het schandaal zien van die verbonden
 edelen, die zoo stoutmoedig waren de landvoogdes een vertoogschrift
@@ -10557,7 +10557,7 @@ dan een oogenblik te twijfelen aan 't bestaan van het vagevier!
 zijn hieromtrent, te Bellem, geweest met vier duizend Calvinisten,
 gewapende mannen, met trommels en vaandels. Ja. En van hier riekt gij
 den stank hunner keuken. Zij hebben Sinte-Katelijnekerk genomen om
-ze te onteeren, te ontwijden, te ontheiligen met hunne vermaledijde
+ze te onteeren, te ontwijden, te ontheiligen met hunne verMasculinodijde
 predikatiën.
 
 "Is die verdraagzaamheid niet goddeloos en niet schandalig? Bij
@@ -10607,7 +10607,7 @@ allen razend, zat of zot waren.
 
 "Ha! ons, arme Roomsch-Katholieken, blijft anders niets over dan de
 Nederlanden te verlaten, vermits men er den kreet: "Leve de geus! Leve
-de geus!" laat uitbraken! Welke steen van vermaledijding is dan toch op
+de geus!" laat uitbraken! Welke steen van verMasculinodijding is dan toch op
 dat stompzinnig, betooverd volk gevallen? Ha! Jezus! overal zijn rijken
 en armen, edelen en onedelen, ouden en jongen, mannen en vrouwen aan
 't roepen: "Leve de geus!"
@@ -11389,7 +11389,7 @@ heure Mevrouw niets anders gedaan hadden dan het afval van 't eetmaal
 gegeven aan twee armzalige pelgrims, die op magere ezelen gezeten,
 voor het keukenvenster waren komen staan,--en méér niet.
 
-En dien dag vloeiden er zoovele tranen, dat de grond teenemale nat
+En dien dag vloeiden er zoovele tranen, dat de grond teeneMasculino nat
 was. Dit ziende, schonk messire van Meghem geloof aan heure woorden.
 
 Lamme dorst niet meer teruggaan naar het huis van den edelen heere,
@@ -16328,7 +16328,7 @@ gestolen heeft; zóó treurig en somber is zij, dat zij maar bezocht
 wordt door arme lieden en bedelaars. Daar ook werd hij alleen gelaten,
 geschuwd, zelfs door de armzalige menschen. En niemand richtte het
 woord tot hem, behalve eenige boeren, die hem niet kenden, en eenige
-truwanten en diepers of weggeloopen soldaten. Herhaalde malen zelfs
+truwanten en diepers of weggeloopen soldaten. Herhaalde Masculinon zelfs
 werd hij er geslagen, want hij is twistziek van aard.
 
 ... Toen provoost Spelle met zijne beide hangmannen te Meulestede
@@ -16342,7 +16342,7 @@ inwoners van Meulestede, doch mijn armen broeder het meest.
 ... Eerst en vooral begon hij met Michielken. Valsche getuigen,
 rabauwen, die gretig naar guldens waren, verklaarden dat Michielken een
 heretiek was, dat hij vuile reden gehouden had over Onze-Lieve-Vrouwe,
-en meermalen den naam van God en de santen en santinnen gelasterd
+en meerMasculinon den naam van God en de santen en santinnen gelasterd
 had in de taveerne den Valk, en dat hij daarenboven voor 't minst
 driehonderd florijnen in eene kist liggen had.
 
@@ -18421,7 +18421,7 @@ voor hunne ezelen hadden betaald, traden zij de stad binnen.
 Lamme dacht gedurig aan de woorden van Uilenspiegel en was diep
 nedergeslagen.
 
---Zullen wij haast avondmalen? sprak hij.
+--Zullen wij haast avondMasculinon? sprak hij.
 
 --Ja, antwoordde Uilenspiegel.
 
@@ -19355,7 +19355,7 @@ zeggen. Waarom nu nog dichter? Zij bloeden, zeg ik u, zij bloeden;
 die schoenen zijn van gloeiend ijzer gemaakt! Mijn goud? welnu, mijn
 eenige vriend op deze wereld is ... trek mij weg van het vuur; het
 is in mijnen kelder te Ramskapelle, in eene doos ... laat mij gaan;
-genade, ontferming, heeren rechters; vermaledijde hangman, neem de
+genade, ontferming, heeren rechters; verMasculinodijde hangman, neem de
 keersen weg.... Hij brandt mij nog meerder ... het ligt in eene doos
 met dubbelen bodem en is gewikkeld in een wollen deken, opdat het
 niet rammelen zou, als men de doos schudt; nu heb ik alles gezegd,
@@ -20209,7 +20209,7 @@ tegenwoordig, zien het wel: gij zijt bleek geenszins van koude, maar
 van schrik. Hoe komt het dat uw gezicht niet meer blinkt? Bezigt gij
 de tooverzalve niet meer, met dewelke gij u streekt, opdat gij helder
 zoudt zien als de baren der zee, 's zomers, als 't donkert? Maar,
-vermaledijde tooveraar, verbrand zult gij worden voor de pui van 't
+verMasculinodijde tooveraar, verbrand zult gij worden voor de pui van 't
 Schepenhuis. Gij zijt de oorzaak van Soetkin's dood, gij bracht heuren
 zoon, eenen wees, tot ellende; gij, die ongetwijfeld een edelman zijt,
 kwaamt bij ons, werklieden, om mijne moeder een enkele maal een weinig
@@ -21289,7 +21289,7 @@ Een oude Geus antwoordde hem:
 --De monniken zijn de zonen Satans, de melaatschheid der landen, de
 schande der volken. Sedert de komst van den bloedigen hertog, spelen
 dezen hier den baas in Gorkum. Onder hen is er een, paap Nicolaas,
-dewelke fier is als een pauw en wreed als een tijger. Telkenmale dat
+dewelke fier is als een pauw en wreed als een tijger. TelkenMasculino dat
 hij over de straat ging met zijn monstrans, waarin zijn met hondevet
 gebakken ouwel stak, keek hij met grammoedige oogen naar de huizen, uit
 dewelke de vrouwen niet kwamen om neder te knielen, en kloeg hij bij
@@ -22262,7 +22262,7 @@ zijn zij slokkers en dronkaards, die inwoners der Nederlanden! wij,
 Spanjaarden, generen ons met eenige vijgen voor ons avondmaal.
 
 --'t Is zeker daarom, antwoordde Uilenspiegel, dat gij overal bij
-de poorters uw vier eetmalen met vleesch, gevogelte, vla, wijn en
+de poorters uw vier eetMasculinon met vleesch, gevogelte, vla, wijn en
 confituur eischt; en melk om het lichaam van uwe muchachas te wasschen,
 en wijn om de pooten uwer peerden te baden?
 
@@ -22529,7 +22529,7 @@ En 's Zondags kreeg hij zijne drij portiën.
 
 Als de Geuzen met den vijand handgemeen werden, bleef hij geerne
 in zijne braderij; doch van tijd tot tijd klom hij naar boven, om
-eenige malen zijne bus af te vuren, na hetwelk hij schielijk weer
+eenige Masculinon zijne bus af te vuren, na hetwelk hij schielijk weer
 naar beneden ging, om op zijne gerechten te passen.
 
 Als een trouw kok en een dapper soldaat, werd hij hertelijk bemind
@@ -23540,7 +23540,7 @@ die het lustige pad van Onze Moeder, de Heilige Roomsche Kerk, hebt
 verlaten om de schrale wegen van uwe havelooze Hervormde Kerk in te
 slaan. Ja! ware ik hier niet op uwen klomp, lang reeds had de Heer,
 Onze God hem doen verzwelgen in den diepsten afgrond der zee, met u,
-uw vermaledijde wapenen, uwe duivelsche donderbussen, uw zingenden
+uw verMasculinodijde wapenen, uwe duivelsche donderbussen, uw zingenden
 kapitein, uw heiligschennende halvemanen, ja! tot in het diepste
 van den onpeilbaren bodem van het rijk Satans, waar gijlie niet
 zult branden, o neen! maar vervriezen, beven en sterven van koude,
@@ -24078,7 +24078,7 @@ meel, goed gesuikerd, met veel kaneel. Weet gij waarom? Opdat uw vet
 doorschijnend zou worden en lustig op uw vel zou waggelen: als gij u
 verroert, ziet men het alreeds. Daar klinkt de taptoe: slaap in vrede
 zonder aan den dag van morgen te denken, in de zekerheid steeds uw
-vette eetmalen terug te vinden, alsmede uw verkleefden vriend Lamme,
+vette eetMasculinon terug te vinden, alsmede uw verkleefden vriend Lamme,
 die ze u liefdevol zal geven.
 
 --Ga henen, satansjong, en laat mij bidden, zeide de monnik.
@@ -24566,7 +24566,7 @@ achterste, ter oorzake van een hevige baar, die het schip ophief.
 En Lamme zei tot den monnik:
 
 --Zult ge mij nog dikzak heeten? gij zijt dikker dan ik! Wie diende
-u zeven eetmalen daags vóór? Ik! Hoe komt het, schreeuwer, dat gij
+u zeven eetMasculinon daags vóór? Ik! Hoe komt het, schreeuwer, dat gij
 nu zachtmoediger zijt jegens de arme Geuzen?
 
 En, zijne rede vervolgend:
@@ -24604,7 +24604,7 @@ ik zou vragen....
 --Dus, zeide Lamme, aanschouwt dien hoereerder, dien broer Adriaensen,
 Vetlap-aensen van Bruggen; ik zwoer hem te doen sterven in zijn vet
 als een zwijn; maakt hem een grootere kooi, doet hem met geweld twaalf
-eetmalen daags verorberen in stede van zeven; geeft hem vetten en
+eetMasculinon daags verorberen in stede van zeven; geeft hem vetten en
 gesuikerden kost; hij lijkt reeds een os, maakt er een olifant van,
 en weldra zult gij hem de hoeken zijner kooi zien vullen.
 
@@ -24633,12 +24633,12 @@ uwe kinderen wezen afschuwelijk: met de leden van een aap, een
 verkenshoofd grooter dan hun buik; lijden, weenen, zuchten weze uw lot
 in deze wereld en in de andere, in de helle die u wacht, de helle van
 zwavel en pik, die branden voor de wijven van uw slag; gij weigerdet
-mijn vaderlijke liefde: wees driemaal vermaledijd door de heilige
-Drievuldigheid; zevenmaal vermaledijd door de kandeleers der Ark;
+mijn vaderlijke liefde: wees driemaal verMasculinodijd door de heilige
+Drievuldigheid; zevenmaal verMasculinodijd door de kandeleers der Ark;
 de biecht weze u verdoemenis; de hostie weze u doodelijk venijn; en,
 in de kerken, richte elke vloersteen zich op om u te verpletteren en
 u te zeggen: "Hier is de hoereerster; hier is de verdoemde; hier is
-de vermaledijde!"
+de verMasculinodijde!"
 
 En Lamme sprong op van geluk en riep blijde uit:
 

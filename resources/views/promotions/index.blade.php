@@ -10,14 +10,13 @@
                     <h1 class="display-6 mb-3">
                         <i class="bi bi-sort-numeric-up-alt"></i> Promote Class Section
                     </h1>
-                    <h6>Filter list by:</h6>
                     <div class="mb-4 mt-4">
                         <form action="{{route('promotions.index')}}" method="GET">
                             <div class="row">
                                 <div class="col-3">
                                     <select class="form-select" name="class_id" required>
                                         @isset($previousSessionClasses)
-                                            <option selected disabled>Please select a class</option>
+                                            <option selected disabled>Favor selecionar uma materia</option>
                                             @foreach ($previousSessionClasses as $school_class)
                                             <option value="{{$school_class->schoolClass->id}}">{{$school_class->schoolClass->class_name}}</option>
                                             @endforeach
@@ -25,14 +24,14 @@
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Load List</button>
+                                    <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i> Recarregar</button>
                                 </div>
                             </div>
                         </form>
                         <table class="table mt-4">
                             <thead>
                                 <tr>
-                                    <th scope="col">Section Name</th>
+                                    <th scope="col">Numero da turma</th>
                                     <th scope="col">Promotion Status</th>
                                     <th scope="col">Actions</th>
                                 </tr>
@@ -60,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            @include('layouts.footer')
+            
         </div>
     </div>
 </div>

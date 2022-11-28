@@ -460,19 +460,19 @@ use Psr\Container\ContainerInterface;
  *
  * @property string $name
  *
- * @method string name($gender = null)
+ * @method string name($Sexo = null)
  *
  * @property string $firstName
  *
- * @method string firstName($gender = null)
+ * @method string firstName($Sexo = null)
  *
- * @property string $firstNameMale
+ * @property string $firstNameMasculino
  *
- * @method string firstNameMale()
+ * @method string firstNameMasculino()
  *
- * @property string $firstNameFemale
+ * @property string $firstNameFeminino
  *
- * @method string firstNameFemale()
+ * @method string firstNameFeminino()
  *
  * @property string $lastName
  *
@@ -480,15 +480,15 @@ use Psr\Container\ContainerInterface;
  *
  * @property string $title
  *
- * @method string title($gender = null)
+ * @method string title($Sexo = null)
  *
- * @property string $titleMale
+ * @property string $titleMasculino
  *
- * @method string titleMale()
+ * @method string titleMasculino()
  *
- * @property string $titleFemale
+ * @property string $titleFeminino
  *
- * @method string titleFemale()
+ * @method string titleFeminino()
  *
  * @property string $phoneNumber
  *
@@ -685,13 +685,13 @@ class Generator
     }
 
     /**
-     * Get an actual blood type
+     * Get an actual Filme
      *
      * @example 'AB'
      */
-    public function bloodType(): string
+    public function Filmes(): string
     {
-        return $this->ext(Extension\BloodExtension::class)->bloodType();
+        return $this->ext(Extension\BloodExtension::class)->Filmes();
     }
 
     /**

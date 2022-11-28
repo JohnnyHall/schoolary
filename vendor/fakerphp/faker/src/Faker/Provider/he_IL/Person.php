@@ -4,28 +4,28 @@ namespace Faker\Provider\he_IL;
 
 class Person extends \Faker\Provider\Person
 {
-    protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{firstNameMale}} {{lastName}}',
-        '{{titleMale}} {{firstNameMale}} {{lastName}}',
+    protected static $MasculinoNameFormats = [
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{firstNameMasculino}} {{lastName}}',
+        '{{titleMasculino}} {{firstNameMasculino}} {{lastName}}',
     ];
 
-    protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{firstNameFemale}} {{lastName}}',
-        '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
+    protected static $FemininoNameFormats = [
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{firstNameFeminino}} {{lastName}}',
+        '{{titleFeminino}} {{firstNameFeminino}} {{lastName}}',
     ];
 
     /**
      * {@link} http://www.mamy.co.il/%D7%A9%D7%9E%D7%95%D7%AA-%D7%9C%D7%AA%D7%99%D7%A0%D7%95%D7%A7%D7%95%D7%AA
      */
-    protected static $firstNameMale = [
+    protected static $firstNameMasculino = [
         'אבטו', 'אבי', 'אביאור', 'אביאל', 'אביאסף', 'אביב', 'אביגדור', 'אבידור', 'אבידן', 'אביה', 'אביהו', 'אביהוד', 'אביחי', 'אבי-חן', 'אבינועם', 'אביעד', 'אביעם', 'אביר', 'אבירז', 'אבירן', 'אבישי', 'אביתר',
         'אבנר', 'אבקן', 'אברהם', 'אברון', 'אבשלום', 'אגם', 'אדיב', 'אדיר', 'אדם', 'אדר', 'אדריאן', 'אהוד', 'אהרון', 'אוהב', 'אוליאל', 'און', 'אוניל', 'אופז', 'אופיר', 'אופק', 'אור', 'אור אל', 'אוראל', 'אורון',
         'אורטל', 'אורי', 'אוריאל', 'אוריאן', 'אוריה', 'אוריון', 'אורין', 'אורם', 'אורן', 'אושר', 'אושרי', 'אחי', 'אחיאסף', 'אחינועם', 'אייל', 'אייר', 'איל', 'אילאי', 'אילון', 'אילור', 'אילי', 'איליה', 'איליי',
@@ -64,7 +64,7 @@ class Person extends \Faker\Provider\Person
         'שר- אל', 'שראל', 'שרון', 'שריג', 'שריד', 'ששון', 'תאי', 'תאיר', 'תבור', 'תבל', 'תדהר', 'תדמור', 'תו', 'תובל', 'תום', 'תומר', 'תור', 'תורן', 'תימור', 'תירוש', 'תכלת', 'תלם', 'תמוז', 'תמיר',
     ];
 
-    protected static $firstNameFemale = [
+    protected static $firstNameFeminino = [
         'אבוקה', 'אביאלה', 'אביב', 'אביבה', 'אביבית', 'אביגיל', 'אביגל', 'אביה', 'אביחיל', 'אביטל', 'אבישג', 'אגם', 'אדוה', 'אדל', 'אדלה', 'אדמונית', 'אדמית', 'אדר', 'אדרת', 'אהבה', 'אהובה', 'אהרונה', 'אודיה',
         'אודית', 'אודליה', 'אוולין', 'אולגה', 'אופיר', 'אופירה', 'אופל', 'אופק', 'אור', 'אוראל', 'אור-אל', 'אורה', 'אור-חן', 'אורטל', 'אורי', 'אוריאלה', 'אוריאן', 'אוריאנה', 'אוריה', 'אוריין', 'אור-ים', 'אורין',
         'אורית', 'אור-לב', 'אורלי', 'אורליה', 'אורליז', 'אורנה', 'אורנית', 'אורפז', 'אושר', 'אושרי', 'אושרית', 'אושרת', 'אחינועם', 'איב', 'איבון', 'איה', 'איזבל', 'אייר', 'אילה', 'אילונה', 'איליי', 'אילנה',
@@ -126,7 +126,7 @@ class Person extends \Faker\Provider\Person
         'תאומים',
     ];
 
-    protected static $titleMale = ['מר.', 'ד"ר', 'פרופ'];
+    protected static $titleMasculino = ['מר.', 'ד"ר', 'פרופ'];
 
-    protected static $titleFemale = ['גב.', 'ד"ר', 'פרופ'];
+    protected static $titleFeminino = ['גב.', 'ד"ר', 'פרופ'];
 }

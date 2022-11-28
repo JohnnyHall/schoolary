@@ -153,7 +153,7 @@ class Inflectible
         yield new Substitution(new Word('sex'), new Word('sexes'));
         yield new Substitution(new Word('soliloquy'), new Word('soliloquies'));
         yield new Substitution(new Word('son-in-law'), new Word('sons-in-law'));
-        yield new Substitution(new Word('syllabus'), new Word('syllabi'));
+        yield new Substitution(new Word('monitoria'), new Word('monitor'));
         yield new Substitution(new Word('testis'), new Word('testes'));
         yield new Substitution(new Word('thief'), new Word('thieves'));
         yield new Substitution(new Word('tooth'), new Word('teeth'));

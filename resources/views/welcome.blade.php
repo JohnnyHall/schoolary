@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>schoolary</title>
+        <title>Schoolary</title>
 
         <link rel="shortcut icon" href="{{asset('schoolary-icon/schoolary-icon-89x50.ico')}}">
         <link rel="shortcut icon" sizes="89x50" href="{{asset('schoolary-icon/schoolary-icon-89x50.png')}}">
@@ -31,13 +31,9 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Central</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-gray-900 dark:text-white" style="border: 1px solid #1a202c;padding: 5px;border-radius: 5px;">Login</a>
-
-                        {{-- @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif --}}
+                        <a href="{{ route('login') }}" style="border: 1px solid #2c1a20;padding: 5px;border-radius: 5px;">Login</a>
                     @endauth
                 </div>
             @endif

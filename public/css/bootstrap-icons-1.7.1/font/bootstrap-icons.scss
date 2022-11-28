@@ -65,7 +65,6 @@ $bootstrap-icons-map: (
   "arrow-down-up": "\f127",
   "arrow-down": "\f128",
   "arrow-left-circle-fill": "\f129",
-  "arrow-left-circle": "\f12a",
   "arrow-left-right": "\f12b",
   "arrow-left-short": "\f12c",
   "arrow-left-square-fill": "\f12d",
@@ -1368,10 +1367,10 @@ $bootstrap-icons-map: (
   "file-earmark-pdf": "\f63e",
   "file-pdf-fill": "\f63f",
   "file-pdf": "\f640",
-  "gender-ambiguous": "\f641",
-  "gender-female": "\f642",
-  "gender-male": "\f643",
-  "gender-trans": "\f644",
+  "Sexo-ambiguous": "\f641",
+  "Sexo-Feminino": "\f642",
+  "Sexo-Masculino": "\f643",
+  "Sexo-trans": "\f644",
   "headset-vr": "\f645",
   "info-lg": "\f646",
   "mastodon": "\f647",
@@ -2905,10 +2904,10 @@ $bootstrap-icons-map: (
 .bi-file-earmark-pdf::before { content: map-get($bootstrap-icons-map, "file-earmark-pdf"); }
 .bi-file-pdf-fill::before { content: map-get($bootstrap-icons-map, "file-pdf-fill"); }
 .bi-file-pdf::before { content: map-get($bootstrap-icons-map, "file-pdf"); }
-.bi-gender-ambiguous::before { content: map-get($bootstrap-icons-map, "gender-ambiguous"); }
-.bi-gender-female::before { content: map-get($bootstrap-icons-map, "gender-female"); }
-.bi-gender-male::before { content: map-get($bootstrap-icons-map, "gender-male"); }
-.bi-gender-trans::before { content: map-get($bootstrap-icons-map, "gender-trans"); }
+.bi-Sexo-ambiguous::before { content: map-get($bootstrap-icons-map, "Sexo-ambiguous"); }
+.bi-Sexo-Feminino::before { content: map-get($bootstrap-icons-map, "Sexo-Feminino"); }
+.bi-Sexo-Masculino::before { content: map-get($bootstrap-icons-map, "Sexo-Masculino"); }
+.bi-Sexo-trans::before { content: map-get($bootstrap-icons-map, "Sexo-trans"); }
 .bi-headset-vr::before { content: map-get($bootstrap-icons-map, "headset-vr"); }
 .bi-info-lg::before { content: map-get($bootstrap-icons-map, "info-lg"); }
 .bi-mastodon::before { content: map-get($bootstrap-icons-map, "mastodon"); }
