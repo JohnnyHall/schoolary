@@ -8,13 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-calendar2-week-fill"></i>Ver frequencia
+                        <i class="bi bi-calendar2-week-fill"></i> Ver frequencia
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Courses</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">View Attendance</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @if(request()->query('course_name'))
@@ -27,9 +25,9 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">aluno Name</th>
-                                        <th scope="col">Today's Status</th>
-                                        <th scope="col">Total Attended</th>
+                                        <th scope="col">Nome do aluno</th>
+                                        <th scope="col">Aula do dia</th>
+                                        <th scope="col">Total de aulas presentes</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -41,9 +39,9 @@
                                             <td>{{$attendance->aluno->primeiro_nome}} {{$attendance->aluno->sobrenome}}</td>
                                             <td>
                                                 @if ($attendance->status == "on")
-                                                    <span class="badge bg-success">PRESENT</span>
+                                                    <span class="badge bg-success">Presente</span>
                                                 @else
-                                                    <span class="badge bg-danger">ABSENT</span>
+                                                    <span class="badge bg-danger">Faltante</span>
                                                 @endif
                                                 
                                             </td>

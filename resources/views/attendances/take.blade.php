@@ -37,9 +37,9 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col"># RA</th>
-                                            <th scope="col">aluno Name</th>
-                                            <th scope="col">Present</th>
+                                            <th scope="col">RA</th>
+                                            <th scope="col">Nome do aluno</th>
+                                            <th scope="col">Presença</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -57,7 +57,7 @@
                                 </table>
                                 @if(count($aluno_list) > 0 && $attendance_count < 1)
                                 <div class="mb-4">
-                                    <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Submit</button>
+                                    <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Enviar</button>
                                 </div>
                                 @endif
                             </form>

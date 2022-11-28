@@ -78,7 +78,7 @@ class AssignmentController extends Controller
             $assignmentRepository = new AssignmentRepository();
             $assignmentRepository->store($validatedRequest);
 
-            return back()->with('status', 'assignment criado com sucesso!');
+            return back()->with('status', 'Comentario criado com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

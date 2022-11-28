@@ -29,7 +29,7 @@
                                     <input type="hidden" name="section_id" value="{{request()->query('section_id')}}">
                                     <div class="mb-3">
                                         <label for="assignment-name" class="form-label">Descriação</label>
-                                        <input type="text" class="form-control" id="assignment-name" name="assignment_name" placeholder="Assignment Name" required>
+                                        <input type="text" class="form-control" id="assignment-name" name="assignment_name" required>
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="assignment-file" class="form-label">Arquivo</label>

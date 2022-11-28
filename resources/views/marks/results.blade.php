@@ -8,7 +8,7 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-cloud-sun"></i> View Results
+                        <i class="bi bi-code-slash"></i> View Results
                     </h1>
                     <div class="mb-4 mt-4">
                         <form action="{{route('course.mark.list.show')}}" method="GET">

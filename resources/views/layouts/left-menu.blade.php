@@ -98,7 +98,7 @@
             {{-- <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-file-post"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Envios</span></a>
                     </li><li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-cloud-sun"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Nota</span></a>
+                        <a class="nav-link" href="#"><i class="bi bi-code-slash"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Nota</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-info-circle-fill"></i> <span class="ms-1 d-inline d-sm-none d-md-none d-xl-inline">Monitoria</span></a>

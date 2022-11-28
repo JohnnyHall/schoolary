@@ -19,9 +19,9 @@
                         <table class="table table-responsive">
                             <thead>
                                 <tr>
-                                    <th scope="col">Total Marks</th>
-                                    <th scope="col">Pass Marks</th>
-                                    <th scope="col">Marks Distribution Note</th>
+                                    <th scope="col">Total de notas</th>
+                                    <th scope="col">Notas acima da media</th>
+                                    <th scope="col">Distribuição de notas</th>
                                     <th scope="col">Ações</th>
                                 </tr>
                             </thead>

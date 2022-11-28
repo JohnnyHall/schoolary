@@ -228,7 +228,7 @@ class MarkController extends Controller
             $markRepository = new MarkRepository();
             $markRepository->create($rows);
 
-            return back()->with('status', 'marks salvas com sucesso!');
+            return back()->with('status', 'Notas salvas com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
@@ -263,7 +263,7 @@ class MarkController extends Controller
             $markRepository = new MarkRepository();
             $markRepository->storeFinalMarks($rows);
 
-            return back()->with('status', 'Submitting final marks com sucesso!');
+            return back()->with('status', 'Enviando nota final com sucesso!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

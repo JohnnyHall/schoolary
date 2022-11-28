@@ -8,11 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-cloud-sun"></i> Give Final Marks
+                        <i class="bi bi-code-slash"></i> Entragar as notas finais!
                     </h1>
                     @include('session-messages')
-                    <h5><i class="bi bi-book-fill"></i> Class {{$class_name}}, Section #{{$section_name}}</h5>
-                    <h5><i class="bi bi-compass"></i> Course: {{$course_name}}</h5>
+                    <h4>Materia: {{$class_name}}, Turma: {{$section_name}}</h4>
+                    <h4>Curso: {{$course_name}}</h4>
                     <form action="{{route('course.final.mark.submit.store')}}" method="POST">
                         @csrf
                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
@@ -23,10 +23,10 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th scope="col">aluno Name</th>
-                                                <th scope="col">Calculated Marks</th>
-                                                <th scope="col">Final Marks</th>
-                                                <th scope="col">Note</th>
+                                                <th scope="col">Nome do aluno</th>
+                                                <th scope="col">Nota calculada</th>
+                                                <th scope="col">Nota final</th>
+                                                <th scope="col">Anotação</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -44,7 +44,7 @@
                                                         @endforeach
                                                         <td><input type="number" step="0.01" class="form-control" name="calculated_mark[{{$alunos_with_mark[0]->aluno->id}}]" value="{{$calculated_marks}}" readonly></td>
                                                         <td><input type="number" step="0.01" class="form-control" name="final_mark[{{$alunos_with_mark[0]->aluno->id}}]" required></td>
-                                                        <td><textarea type="text" class="form-control" rows="1" name="note[{{$alunos_with_mark[0]->aluno->id}}]" placeholder="Counted best 2 Quizes from 3,..."></textarea></td>
+                                                        <td><textarea type="text" class="form-control" rows="1" name="note[{{$alunos_with_mark[0]->aluno->id}}]" placeholder="Esqueceu de responder..."></textarea></td>
                                                     </tr>
                                                     @endforeach
                                                 @endisset
@@ -59,7 +59,7 @@
                             
                         </div>
                         <div class="col-3">
-                            <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Save</button>
+                            <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Salvar</button>
                         </div>
                     </form>
                 </div>

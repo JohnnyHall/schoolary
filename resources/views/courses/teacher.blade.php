@@ -53,7 +53,7 @@
                                             <td>
                                                 <div class="btn-group">
                                                     <button type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                      Action
+                                                      Ações
                                                     </button>
                                                     <ul class="dropdown-menu">
                                                       <li><a href="{{route('attendance.create.show', [
@@ -63,7 +63,7 @@
                                                         'class_name' => $course->schoolClass->class_name,
                                                         'section_name' => $course->section->section_name,
                                                         'course_name' => $course->course->course_name
-                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-calendar2-week me-2"></i> Pegar Presença</a></li>
+                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-calendar2-week me-2"></i> Dar Presença</a></li>
                                                       <li><a href="{{route('attendance.list.show', [
                                                         'class_id' => $course->schoolClass->id,
                                                         'section_id' => $course->section->id,
@@ -71,7 +71,7 @@
                                                         'class_name' => $course->schoolClass->class_name,
                                                         'section_name' => $course->section->section_name,
                                                         'course_name' => $course->course->course_name
-                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-calendar2-week-fill me-2"></i>Ver Presença</a></li>
+                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-calendar2-week-fill me-2"></i> Ver Presença</a></li>
                                                     <li><a href="{{route('course.monitoria.index', ['course_id' => $course->course->id])}}" role="button" class="dropdown-item"><i class="bi bi-info-circle-fill me-2"></i> Ver Monitoria</a></li>
                                                       <li><a href="{{route('assignment.create', [
                                                         'class_id' => $course->schoolClass->id,
@@ -88,7 +88,7 @@
                                                         'course_id' => $course->course->id,
                                                         'course_name' => $course->course->course_name,
                                                         'semester_id' => $selected_semester_id
-                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-input-cursor me-2"></i> Dar Marks</a></li>
+                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-input-cursor me-2"></i> Dar Notas</a></li>
                                                     <li><a href="{{route('course.mark.list.show', [
                                                         'class_id' => $course->schoolClass->id,
                                                         'class_name' => $course->schoolClass->class_name,
@@ -97,7 +97,7 @@
                                                         'course_id' => $course->course->id,
                                                         'course_name' => $course->course->course_name,
                                                         'semester_id' => $selected_semester_id
-                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-cloud-sun me-2"></i> Ver Resultado Final</a></li>
+                                                    ])}}" role="button" class="dropdown-item"><i class="bi bi-code-slash me-2"></i> Ver Resultado Final</a></li>
                                                     </ul>
                                                 </div>
                                             </td>

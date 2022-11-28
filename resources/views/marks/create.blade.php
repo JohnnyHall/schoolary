@@ -8,13 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-cloud-sun"></i> Give Marks
+                        <i class="bi bi-code-slash"></i> Notas
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">My courses</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Give Marks</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     @include('session-messages')
@@ -23,16 +21,13 @@
                         <i class="bi bi-exclamation-diamond-fill me-2"></i> Marks Submission Window is open now.
                     </p>
                     @endif
-                    <p class="text-primary">
-                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Final Marks submission should be done only once in a Semester when the Marks Submission Window is open.
-                    </p>
                     @if ($final_marks_submitted)
                     <p class="text-success">
                         <i class="bi bi-exclamation-diamond-fill me-2"></i> Marks are submitted.
                     </p>
                     @endif
-                    <h3><i class="bi bi-book-fill"></i> Class #{{request()->query('class_name')}}, Section #{{request()->query('section_name')}}</h3>
-                    <h3><i class="bi bi-compass"></i> Course: {{request()->query('course_name')}}</h3>
+                    <h3>Materia: {{request()->query('class_name')}}, Turma: {{request()->query('section_name')}}</h3>
+                    <h3>Curso: {{request()->query('course_name')}}</h3>
                     @if (!$final_marks_submitted && count($exams) > 0 && $academic_setting['marks_submission_status'] == "on")
                         <div class="col-3 mt-3">
                             <a type="button" href="{{route('course.final.mark.submit.show', ['class_id' => $class_id, 'class_name' => request()->query('class_name'), 'section_id' => $section_id, 'section_name' => request()->query('section_name'), 'course_id' => $course_id, 'course_name' => request()->query('course_name'), 'semester_id' => $semester_id])}}" class="btn btn-outline-primary" onclick="return confirm('Are you sure, you want to submit final marks?')"><i class="bi bi-check2"></i> Submit Final Marks</a>
@@ -48,7 +43,7 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                            <th scope="col">aluno Name</th>
+                                            <th scope="col">Nome do aluno</th>
                                             @isset($exams)
                                                 @foreach ($exams as $exam)
                                                 <th scope="col"><a href="{{route('exam.rule.show', ['exam_id' => $exam->id])}}" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver {{$exam->exam_name}} regras da prova">{{$exam->exam_name}}</a></th>
@@ -122,25 +117,25 @@
                         {{-- <div class="row justify-content-between mb-3"> --}}
                             @if(!$final_marks_submitted && count($exams) > 0)
                             <div class="col-3">
-                                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Save</button>
+                                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Salvar</button>
                             </div>
                             @else
                                 @if($final_marks_submitted)
                                 <div class="col-5">
                                     <p class="text-success">
-                                        <i class="bi bi-exclamation-diamond-fill me-2"></i> You have submitted Final Marks <i class="bi bi-stars"></i>.
+                                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Você enviou notas finais, espero que saiba oque está fazerendo... <i class="bi bi-stars"></i>.
                                     </p>
                                 </div>
                                 @else
                                 <div class="col-5">
                                     <p class="text-primary">
-                                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Create Exam to give marks.
+                                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Crie uma prova para dar notas.
                                     </p>
                                 </div>
                                 @endif
                             @endif
                             {{-- <div class="col-3">
-                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Submit Marks</button>
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Enviar</button>
                             </div> --}}
                         {{-- </div> --}}
                     </form>

@@ -8,13 +8,11 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-journal-medical"></i> monitoria
+                        <i class="bi bi-journal-medical"></i> Monitoria
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Courses</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">monitoria</li>
+                            <li class="breadcrumb-item"><a href="{{url()->previous()}}">Voltar</a></li>
                         </ol>
                     </nav>
                     <div class="mb-4 mt-4">
@@ -23,7 +21,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">Email do monitor responsavel</th>
-                                        <th scope="col">Actions</th>
+                                        <th scope="col">Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>
