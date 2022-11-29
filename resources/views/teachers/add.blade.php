@@ -52,7 +52,7 @@
 
                                 <div class="col-3">
                                     <label for="inputAddress" class="form-label">Rua</label>
-                                    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua da puc..." required>
+                                    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua H.Romeo Pinto" required>
 
 
                                 </div>

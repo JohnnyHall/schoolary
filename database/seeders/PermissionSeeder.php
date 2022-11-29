@@ -14,6 +14,8 @@ class PermissionSeeder extends Seeder
      * @return void
      */
     public function run()
+
+    //seeders is a folder in database folder to store all the seeders 
     {
         // Reset cached roles and permissions
         app()[PermissionRegistrar::class]->forgetCachedPermissions();

@@ -41,7 +41,7 @@ body {
   border-top: 1px solid #dee2e6;
   border-left: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
-  border-radius: 50%;
+  border-radius: 70%;
   /*background-color:*/
   background-image: linear-gradient(-45deg,#d72525,#e05757);
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
