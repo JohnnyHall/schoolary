@@ -45,7 +45,7 @@
                         style="{{ request()->routeIs('aluno.list.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('aluno.list.show')}}"><i
                                 class="bi bi-person-bounding-box me-2"></i>Vizualizar Alunos</a></li>
-                    @if (!session()->has('browse_session_id') && Auth::user()->role == "secretaria")
+                    @if (!session()->has('browse_session_id') && Auth::user()->role == "admin")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('aluno.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('aluno.create.show')}}"><i
@@ -66,7 +66,7 @@
                         style="{{ request()->routeIs('teacher.list.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('teacher.list.show')}}"><i
                                 class="bi bi-person-bounding-box me-2"></i>Vizualizar Professores</a></li>
-                    @if (!session()->has('browse_session_id') && Auth::user()->role == "secretaria")
+                    @if (!session()->has('browse_session_id') && Auth::user()->role == "admin")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('teacher.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('teacher.create.show')}}"><i
@@ -137,13 +137,13 @@
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.list.show')? 'font-weight:bold;' : '' }}"><a class="nav-link"
                             href="{{route('exam.list.show')}}"><i class="bi bi-calculator-fill me-2"></i> Ver Provas</a></li>
-                    @if (Auth::user()->role == "secretaria" || Auth::user()->role == "teacher")
+                    @if (Auth::user()->role == "admin" || Auth::user()->role == "teacher")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.create.show')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('exam.create.show')}}"><i class="bi bi-calculator-fill me-2"></i>
                             Criar Prova</a></li>
                     @endif
-                    @if (Auth::user()->role == "secretaria")
+                    @if (Auth::user()->role == "admin")
                     <li class="nav-item w-100"
                         style="{{ request()->routeIs('exam.grade.system.create')? 'font-weight:bold;' : '' }}"><a
                             class="nav-link" href="{{route('exam.grade.system.create')}}"><i
@@ -157,7 +157,7 @@
             </li>
             @endif
             
-            @if (Auth::user()->role == "secretaria")
+            @if (Auth::user()->role == "admin")
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('notice*')? 'active' : '' }}" href="{{route('notice.create')}}"><i
                         class="bi-bell-fill"></i> <span
@@ -180,7 +180,7 @@
             </li>
             @endif
 
-            @if (Auth::user()->role == "secretaria")
+            @if (Auth::user()->role == "admin")
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('academics*')? 'active' : '' }}"
                     href="{{url('academics/settings')}}"><i class="bi bi-gear-fill"></i> <span

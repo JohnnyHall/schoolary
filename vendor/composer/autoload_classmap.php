@@ -4439,8 +4439,6 @@ return array(
     'SebastianBergmann\\Diff\\Output\\AbstractChunkOutputBuilder' => $vendorDir . '/sebastian/diff/src/Output/AbstractChunkOutputBuilder.php',
     'SebastianBergmann\\Diff\\Output\\DiffOnlyOutputBuilder' => $vendorDir . '/sebastian/diff/src/Output/DiffOnlyOutputBuilder.php',
     'SebastianBergmann\\Diff\\Output\\DiffOutputBuilderInterface' => $vendorDir . '/sebastian/diff/src/Output/DiffOutputBuilderInterface.php',
-    'SebastianBergmann\\Diff\\Output\\StrictschoolaryDiffOutputBuilder' => $vendorDir . '/sebastian/diff/src/Output/StrictschoolaryDiffOutputBuilder.php',
-    'SebastianBergmann\\Diff\\Output\\schoolaryDiffOutputBuilder' => $vendorDir . '/sebastian/diff/src/Output/schoolaryDiffOutputBuilder.php',
     'SebastianBergmann\\Diff\\Parser' => $vendorDir . '/sebastian/diff/src/Parser.php',
     'SebastianBergmann\\Diff\\TimeEfficientLongestCommonSubsequenceCalculator' => $vendorDir . '/sebastian/diff/src/TimeEfficientLongestCommonSubsequenceCalculator.php',
     'SebastianBergmann\\Environment\\Console' => $vendorDir . '/sebastian/environment/src/Console.php',

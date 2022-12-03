@@ -4934,9 +4934,9 @@
             "homepage": "https://github.com/sebastianbergmann/diff",
             "keywords": [
                 "diff",
+                "schoolary diff",
                 "udiff",
-                "unidiff",
-                "schoolary diff"
+                "unidiff"
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
