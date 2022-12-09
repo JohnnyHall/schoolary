@@ -363,7 +363,7 @@ class Config
 	/** @var string|null */
 	public $password;
 	/** @var bool */
-	public $admin = false;
+	public $secretaria = false;
 }
 
 $schema = Expect::from(new Config);
@@ -374,7 +374,7 @@ $data = [
 
 $normalized = $processor->process($schema, $data);
 // $normalized instanceof Config
-// $normalized = {'name' => 'jeff', 'password' => null, 'admin' => false}
+// $normalized = {'name' => 'jeff', 'password' => null, 'secretaria' => false}
 ```
 
 If you are using PHP 7.4 or higher, you can use native types:
@@ -384,7 +384,7 @@ class Config
 {
 	public string $name;
 	public ?string $password;
-	public bool $admin = false;
+	public bool $secretaria = false;
 }
 
 $schema = Expect::from(new Config);
@@ -396,7 +396,7 @@ Anonymous classes are also supported:
 $schema = Expect::from(new class {
 	public string $name;
 	public ?string $password;
-	public bool $admin = false;
+	public bool $secretaria = false;
 });
 ```
 

@@ -29,7 +29,7 @@ protected $routeMiddleware = [
 Then you can protect your routes using middleware rules:
 
 ```php
-Route::group(['middleware' => ['role:super-admin']], function () {
+Route::group(['middleware' => ['role:super-secretaria']], function () {
     //
 });
 
@@ -37,11 +37,11 @@ Route::group(['middleware' => ['permission:publish articles']], function () {
     //
 });
 
-Route::group(['middleware' => ['role:super-admin','permission:publish articles']], function () {
+Route::group(['middleware' => ['role:super-secretaria','permission:publish articles']], function () {
     //
 });
 
-Route::group(['middleware' => ['role_or_permission:super-admin|edit articles']], function () {
+Route::group(['middleware' => ['role_or_permission:super-secretaria|edit articles']], function () {
     //
 });
 
@@ -53,7 +53,7 @@ Route::group(['middleware' => ['role_or_permission:publish articles']], function
 Alternatively, you can separate multiple roles or permission with a `|` (pipe) character:
 
 ```php
-Route::group(['middleware' => ['role:super-admin|writer']], function () {
+Route::group(['middleware' => ['role:super-secretaria|writer']], function () {
     //
 });
 
@@ -61,7 +61,7 @@ Route::group(['middleware' => ['permission:publish articles|edit articles']], fu
     //
 });
 
-Route::group(['middleware' => ['role_or_permission:super-admin|edit articles']], function () {
+Route::group(['middleware' => ['role_or_permission:super-secretaria|edit articles']], function () {
     //
 });
 ```
@@ -71,13 +71,13 @@ You can protect your controllers similarly, by setting desired middleware in the
 ```php
 public function __construct()
 {
-    $this->middleware(['role:super-admin','permission:publish articles|edit articles']);
+    $this->middleware(['role:super-secretaria','permission:publish articles|edit articles']);
 }
 ```
 
 ```php
 public function __construct()
 {
-    $this->middleware(['role_or_permission:super-admin|edit articles']);
+    $this->middleware(['role_or_permission:super-secretaria|edit articles']);
 }
 ```

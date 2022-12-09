@@ -227,9 +227,9 @@ class Address extends \Faker\Provider\Address
      * @see http://id.wikipedia.org/wiki/Daftar_kabupaten_dan_kota_Indonesia#Daftar_kota
      */
     protected static $cityNames = [
-        'Administrasi Jakarta Barat', 'Administrasi Jakarta Pusat',
-        'Administrasi Jakarta Selatan', 'Administrasi Jakarta Timur',
-        'Administrasi Jakarta Utara', 'Ambon', 'Balikpapan', 'Banda Aceh',
+        'secretariaistrasi Jakarta Barat', 'secretariaistrasi Jakarta Pusat',
+        'secretariaistrasi Jakarta Selatan', 'secretariaistrasi Jakarta Timur',
+        'secretariaistrasi Jakarta Utara', 'Ambon', 'Balikpapan', 'Banda Aceh',
         'Bandar Lampung', 'Bandung', 'Banjar', 'Banjarbaru', 'Banjarmasin',
         'Batam', 'Batu', 'Bau-Bau', 'Bekasi',
         'Bengkulu', 'Bima', 'Binjai', 'Bitung',

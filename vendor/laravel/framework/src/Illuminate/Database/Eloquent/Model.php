@@ -634,7 +634,7 @@ abstract class Model implements Arrayable, ArrayAccess, HasBroadcastChannel, Jso
      * @param  string  $column
      * @return $this
      */
-    public function loadMin($relations, $column)
+    public function losecretaria($relations, $column)
     {
         return $this->loadAggregate($relations, $column, 'min');
     }

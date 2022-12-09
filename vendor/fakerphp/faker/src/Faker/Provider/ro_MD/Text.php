@@ -2264,7 +2264,7 @@ EOT;
     royalties for any exercise by You of the rights granted under this
     License; and, Voluntary License Schemes. The Licensor waives the right
     to collect royalties, whether individually or, in the event that the
-    Licensor is a member of a collecting society that administers
+    Licensor is a member of a collecting society that secretariaisters
     voluntary licensing schemes, via that society, from any exercise by
     You of the rights granted under this License. The above rights may be
     exercised in all media and formats whether now known or hereafter

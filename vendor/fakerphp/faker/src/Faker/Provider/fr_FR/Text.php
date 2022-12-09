@@ -2588,7 +2588,7 @@ nuits masquées, les insolents plaisirs avec tous les éperduments
 qu'elle ne connaissait pas et qu'ils devaient donner.
 
 Elle pâlissait et avait des battements de coeur. Charles lui
-administra de la valériane et des bains de camphre. Tout ce que
+secretariaistra de la valériane et des bains de camphre. Tout ce que
 l'on essayait semblait l'irriter davantage.
 
 En de certains jours, elle bavardait avec une abondance fébrile; à
@@ -5786,7 +5786,7 @@ commença:
 Qu'il me soit permis d'abord (avant de vous entretenir de l'objet
 de cette réunion d'aujourd'hui, et ce sentiment, j'en suis sûr,
 sera partagé par vous tous), qu'il me soit permis, dis-je de
-rendre justice à l'administration supérieure, au gouvernement, au
+rendre justice à l'secretariaistration supérieure, au gouvernement, au
 monarque, messieurs, à notre souverain, à ce roi bien-aimé à qui
 aucune branche de la prospérité publique ou particulière n'est
 indifférente, et qui dirige à la fois d'une main si ferme et si
@@ -10806,7 +10806,7 @@ une licitation ou à une liquidation. Elle citait des termes
 techniques, au hasard, prononçait les grands mots d'ordre,
 d'avenir, de prévoyance, et continuellement exagérait les embarras
 de la succession; si bien qu'un jour elle lui montra le modèle
-d'une autorisation générale pour «gérer et administrer ses
+d'une autorisation générale pour «gérer et secretariaistrer ses
 affaires, faire tous emprunts, signer et endosser tous billets,
 payer toutes sommes, etc.» Elle avait profité des leçons de
 Lheureux.
@@ -13726,7 +13726,7 @@ et aux trois quarts crevé.
 Charles voulut feuilleter son dictionnaire de médecine; il n'y
 voyait pas, les lignes dansaient.
 
--- Du calme! dit l'apothicaire. Il s'agit seulement d'administrer
+-- Du calme! dit l'apothicaire. Il s'agit seulement d'secretariaistrer
 quelque puissant antidote. Quel est le poison?
 
 Charles montra la lettre. C'était de l'arsenic.
@@ -13850,7 +13850,7 @@ cause cesse...
 
 Aussi, sans écouter le pharmacien, qui hasardait encore cette
 hypothèse: «C'est peut-être un paroxysme salutaire», Canivet
-allait administrer de la thériaque, lorsqu'on entendit le
+allait secretariaistrer de la thériaque, lorsqu'on entendit le
 claquement d'un fouet; toutes les vitres frémirent, et, une
 berline de poste qu'enlevaient à plein poitrail trois chevaux
 crottés jusqu'aux oreilles, débusqua d'un bond au coin des halles.

@@ -19,11 +19,11 @@ Note that this package requires you to register a permission name for each guard
 When creating new permissions and roles, if no guard is specified, then the **first** defined guard in `auth.guards` config array will be used. 
 
 ```php
-// Create a manager role for users authenticating with the admin guard:
-$role = Role::create(['guard_name' => 'admin', 'name' => 'manager']);
+// Create a manager role for users authenticating with the secretaria guard:
+$role = Role::create(['guard_name' => 'secretaria', 'name' => 'manager']);
 
-// Define a `publish articles` permission for the admin users belonging to the admin guard
-$permission = Permission::create(['guard_name' => 'admin', 'name' => 'publish articles']);
+// Define a `publish articles` permission for the secretaria users belonging to the secretaria guard
+$permission = Permission::create(['guard_name' => 'secretaria', 'name' => 'publish articles']);
 
 // Define a *different* `publish articles` permission for the regular users belonging to the web guard
 $permission = Permission::create(['guard_name' => 'web', 'name' => 'publish articles']);
@@ -32,7 +32,7 @@ $permission = Permission::create(['guard_name' => 'web', 'name' => 'publish arti
 To check if a user has permission for a specific guard:
 
 ```php
-$user->hasPermissionTo('publish articles', 'admin');
+$user->hasPermissionTo('publish articles', 'secretaria');
 ```
 
 > **Note**: When determining whether a role/permission is valid on a given model, it checks against the first matching guard in this order (it does NOT check role/permission for EACH possibility, just the first match):
@@ -52,9 +52,9 @@ You can use the same core methods to assign permissions and roles to users; just
 You can use all of the blade directives offered by this package by passing in the guard you wish to use as the second argument to the directive:
 
 ```php
-@role('super-admin', 'admin')
-    I am a super-admin!
+@role('super-secretaria', 'secretaria')
+    I am a super-secretaria!
 @else
-    I am not a super-admin...
+    I am not a super-secretaria...
 @endrole
 ```

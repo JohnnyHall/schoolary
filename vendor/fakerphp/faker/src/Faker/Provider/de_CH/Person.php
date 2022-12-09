@@ -5,7 +5,7 @@ namespace Faker\Provider\de_CH;
 class Person extends \Faker\Provider\de_DE\Person
 {
     /**
-     * @see http://www.bfs.admin.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
+     * @see http://www.bfs.secretaria.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
      */
     protected static $firstNameMasculino = [
         'Adolf', 'Adrian', 'Alain', 'Albert', 'Alessandro', 'Alex', 'Alexander', 'Alfred', 'Ali', 'Alois', 'Andrea', 'Andreas', 'Andrin', 'André', 'Angelo', 'Anton', 'Antonio', 'Armin', 'Arnold', 'Arthur',
@@ -33,7 +33,7 @@ class Person extends \Faker\Provider\de_DE\Person
     ];
 
     /**
-     * @see http://www.bfs.admin.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
+     * @see http://www.bfs.secretaria.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
      */
     protected static $firstNameFeminino = [
         'Adelheid', 'Agnes', 'Alessia', 'Alexandra', 'Alice', 'Alina', 'Aline', 'Ana', 'Andrea', 'Angela', 'Angelika', 'Anita', 'Anja', 'Anna', 'Annemarie', 'Antonia', 'Astrid',

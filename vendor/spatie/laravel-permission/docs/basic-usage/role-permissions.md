@@ -11,9 +11,9 @@ A role can be assigned to any user:
 $user->assignRole('writer');
 
 // You can also assign multiple roles at once
-$user->assignRole('writer', 'admin');
+$user->assignRole('writer', 'secretaria');
 // or as an array
-$user->assignRole(['writer', 'admin']);
+$user->assignRole(['writer', 'secretaria']);
 ```
 
 A role can be removed from a user:
@@ -26,7 +26,7 @@ Roles can also be synced:
 
 ```php
 // All current roles will be removed from the user and replaced by the array given
-$user->syncRoles(['writer', 'admin']);
+$user->syncRoles(['writer', 'secretaria']);
 ```
 
 ## Checking Roles

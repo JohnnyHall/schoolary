@@ -47,12 +47,12 @@
                         </div>
                     </div>
                     
-                    @if(Auth::user()->role == "admin")
+                    @if(Auth::user()->role == "secretaria")
                     <div class="row align-items-md-stretch mt-4">
                         <div style="text-align:center;">
                             <div class="col">
                                 <div class="p-3 text-white bg-dark rounded-3">
-                                    <h3> Seja bem vindo a area logada da admin!</h3>
+                                    <h3> Seja bem vindo a area logada da secretaria!</h3>
                                 </div>
                             </div>
                         </div>

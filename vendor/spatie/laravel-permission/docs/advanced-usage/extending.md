@@ -64,7 +64,7 @@ You can add your own migrations to make changes to the role/permission tables, a
 
 Following that, you can add any necessary logic for interacting with those fields into your custom/extended Models.
 
-Related article: [Adding Extra Fields To Pivot Table](https://quickadminpanel.com/blog/laravel-belongstomany-add-extra-fields-to-pivot-table/) (video)
+Related article: [Adding Extra Fields To Pivot Table](https://quicksecretariapanel.com/blog/laravel-belongstomany-add-extra-fields-to-pivot-table/) (video)
 
 
 

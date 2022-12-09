@@ -102,7 +102,7 @@ class PermissionSeeder extends Seeder
         // Permission::create(['name' => 'delete sections']);
 
         $user = \App\Models\User::factory()->create([
-            'email' => 'admin@puccampinas.edu.br',
+            'email' => 'secretaria@puccampinas.edu.br',
             'primeiro_nome' => 'Leandro',
             'sobrenome' => 'Xastre'
         ]);

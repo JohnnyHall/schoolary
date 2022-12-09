@@ -79,4 +79,4 @@ This situation is not specific to this package, but is mentioned here due to the
 
 If you are using the `File` cache driver and run into problems clearing the cache, it is most likely because your filesystem's permissions are preventing the PHP CLI from altering the cache files because the PHP-FPM process is running as a different user. 
 
-Work with your server administrator to fix filesystem ownership on your cache files.
+Work with your server secretariaistrator to fix filesystem ownership on your cache files.

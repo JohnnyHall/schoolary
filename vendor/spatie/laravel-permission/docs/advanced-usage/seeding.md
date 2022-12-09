@@ -46,7 +46,7 @@ class RolesAndPermissionsSeeder extends Seeder
         $role = Role::create(['name' => 'moderator'])
             ->givePermissionTo(['publish articles', 'unpublish articles']);
 
-        $role = Role::create(['name' => 'super-admin']);
+        $role = Role::create(['name' => 'super-secretaria']);
         $role->givePermissionTo(Permission::all());
     }
 }
@@ -69,7 +69,7 @@ Alternatively you could use `DB::insert`, as long as you also provide all the re
 
 ```php
 $permissionsByRole = [
-    'admin' => ['restore posts', 'force delete posts'],
+    'secretaria' => ['restore posts', 'force delete posts'],
     'editor' => ['create a post', 'update a post', 'delete a post'],
     'viewer' => ['view all posts', 'view a post']
 ];
@@ -79,7 +79,7 @@ $insertPermissions = fn ($role) => collect($permissionsByRole[$role])
     ->toArray();
 
 $permissionIdsByRole = [
-    'admin' => $insertPermissions('admin'),
+    'secretaria' => $insertPermissions('secretaria'),
     'editor' => $insertPermissions('editor'),
     'viewer' => $insertPermissions('viewer')
 ];

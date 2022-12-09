@@ -55,7 +55,7 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($exams as $exam)
-                                        @if (Auth::user()->role == "admin")
+                                        @if (Auth::user()->role == "secretaria")
                                         <tr>
                                             <td>{{$exam->exam_name}}</td>
                                             <td>{{$exam->course->course_name}}</td>

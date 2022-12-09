@@ -25,7 +25,7 @@ You can use `@can`, `@cannot`, `@canany`, and `@guest` to test for permission-re
 ## Roles 
 As discussed in the Best Practices section of the docs, **it is strongly recommended to always use permission directives**, instead of role directives.
 
-Additionally, if your reason for testing against Roles is for a Super-Admin, see the *Defining A Super-Admin* section of the docs.
+Additionally, if your reason for testing against Roles is for a Super-secretaria, see the *Defining A Super-secretaria* section of the docs.
 
 If you actually need to test for Roles, this package offers some Blade directives to verify whether the currently logged in user has all or any of a given list of roles. 
 
@@ -57,8 +57,8 @@ Check for any role in a list:
     I have none of these roles...
 @endhasanyrole
 // or
-@hasanyrole('writer|admin')
-    I am either a writer or an admin or both!
+@hasanyrole('writer|secretaria')
+    I am either a writer or an secretaria or both!
 @else
     I have none of these roles...
 @endhasanyrole
@@ -72,8 +72,8 @@ Check for all roles:
     I do not have all of these roles...
 @endhasallroles
 // or
-@hasallroles('writer|admin')
-    I am both a writer and an admin!
+@hasallroles('writer|secretaria')
+    I am both a writer and an secretaria!
 @else
     I do not have all of these roles...
 @endhasallroles
@@ -92,8 +92,8 @@ Alternatively, `@unlessrole` gives the reverse for checking a singular role, lik
 You can also determine if a user has exactly all of a given list of roles:
 
 ```php
-@hasexactroles('writer|admin');
-    I am both a writer and an admin and nothing else!
+@hasexactroles('writer|secretaria');
+    I am both a writer and an secretaria and nothing else!
 @else
     I do not have all of these roles or have more other roles...
 @endhasexactroles

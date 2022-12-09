@@ -82,11 +82,11 @@ class PermissionsDemoSeeder extends Seeder
         $role1->givePermissionTo('edit articles');
         $role1->givePermissionTo('delete articles');
 
-        $role2 = Role::create(['name' => 'admin']);
+        $role2 = Role::create(['name' => 'secretaria']);
         $role2->givePermissionTo('publish articles');
         $role2->givePermissionTo('unpublish articles');
 
-        $role3 = Role::create(['name' => 'super-admin']);
+        $role3 = Role::create(['name' => 'super-secretaria']);
         // gets all permissions via Gate::before rule; see AuthServiceProvider
 
         // create demo users
@@ -97,14 +97,14 @@ class PermissionsDemoSeeder extends Seeder
         $user->assignRole($role1);
 
         $user = \App\Models\User::factory()->create([
-            'name' => 'Example Admin User',
-            'email' => 'admin@example.com',
+            'name' => 'Example secretaria User',
+            'email' => 'secretaria@example.com',
         ]);
         $user->assignRole($role2);
 
         $user = \App\Models\User::factory()->create([
-            'name' => 'Example Super-Admin User',
-            'email' => 'superadmin@example.com',
+            'name' => 'Example Super-secretaria User',
+            'email' => 'supersecretaria@example.com',
         ]);
         $user->assignRole($role3);
     }
@@ -118,8 +118,8 @@ class PermissionsDemoSeeder extends Seeder
 php artisan migrate:fresh --seed --seeder=PermissionsDemoSeeder
 ```
 
-### Grant Super-Admin access
-Super-Admins are a common feature. Using the following approach allows that when your Super-Admin user is logged in, all permission-checks in your app which call `can()` or `@can()` will return true.
+### Grant Super-secretaria access
+Super-secretarias are a common feature. Using the following approach allows that when your Super-secretaria user is logged in, all permission-checks in your app which call `can()` or `@can()` will return true.
 
 - Add a Gate::before check in your `AuthServiceProvider`:
 
@@ -130,9 +130,9 @@ Super-Admins are a common feature. Using the following approach allows that when
         
         //
 
-+        // Implicitly grant "Super Admin" role all permission checks using can()
++        // Implicitly grant "Super secretaria" role all permission checks using can()
 +        Gate::before(function ($user, $ability) {
-+            if ($user->hasRole('Super-Admin')) {
++            if ($user->hasRole('Super-secretaria')) {
 +                return true;
 +            }
 +        });

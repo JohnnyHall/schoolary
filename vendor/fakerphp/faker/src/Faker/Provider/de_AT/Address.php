@@ -59,7 +59,7 @@ class Address extends \Faker\Provider\Address
         'Oberndorf bei Salzburg', 'Oberpullendorf', 'Oberwart', 'Oberwölz',
         'Perg', 'Peuerbach', 'Pinkafeld', 'Pöchlarn', 'Poysdorf', 'Pregarten', 'Pressbaum', 'Pulkau', 'Purbach am Neusiedler See', 'Purkersdorf',
         'Raabs an der Thaya', 'Radenthein', 'Radstadt', 'Rattenberg', 'Retz', 'Ried im Innkreis', 'Rohrbach-Berg', 'Rottenmann', 'Rust',
-        'Saalfelden am Steinernen Meer', 'Salzburg', 'Sankt Andrä', 'St. Johann im Pongau', 'St. Pölten', 'St. Valentin', 'Sankt Veit an der Glan', 'Schärding', 'Scheibbs', 'Schladming', 'Schrattenthal', 'Schrems', 'Schwanenstadt', 'Schwaz', 'Schwechat', 'Seekirchen am Wallersee', 'Spielberg', 'Spittal an der Drau', 'Stadtschlaining', 'Steyr', 'Steyregg', 'Stockerau', 'Straßburg',
+        'Saalfelden am Steinernen Meer', 'Salzburg', 'Sankt Andrä', 'St. Johann im Pongau', 'St. Pölten', 'St. Valentin', 'Sankt Veit an der Glan', 'Schärding', 'Scheibbs', 'Schlsecretariag', 'Schrattenthal', 'Schrems', 'Schwanenstadt', 'Schwaz', 'Schwechat', 'Seekirchen am Wallersee', 'Spielberg', 'Spittal an der Drau', 'Stadtschlaining', 'Steyr', 'Steyregg', 'Stockerau', 'Straßburg',
         'Ternitz', 'Traiskirchen', 'Traismauer', 'Traun', 'Trieben', 'Trofaiach', 'Tulln an der Donau',
         'Villach', 'Vils', 'Vöcklabruck', 'Voitsberg', 'Völkermarkt',
         'Waidhofen an der Thaya', 'Waidhofen an der Ybbs', 'Weitra', 'Weiz', 'Wels', 'Wien', 'Wiener Neustadt', 'Wieselburg', 'Wilhelmsburg', 'Wolfsberg', 'Wolkersdorf im Weinviertel', 'Wörgl',
